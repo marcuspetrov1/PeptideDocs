@@ -143,13 +143,13 @@
 /* ── Grid ── */
 .catalog__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 3fr 2fr;
   gap: 20px;
 }
 
 @media (max-width: 900px) {
   .catalog__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
