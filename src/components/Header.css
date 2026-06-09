@@ -11,7 +11,7 @@
   justify-content: space-between;
 
   /* warm glass */
-  background: rgba(250, 248, 244, 0.88);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -22,17 +22,20 @@
 }
 
 .header-logo {
-  font-family: var(--heading);
-  font-size: 26px;
-  font-weight: 400;
-  color: var(--text-h);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.5px;
   transition: opacity 0.2s;
 }
 
 .header-logo:hover {
   opacity: 0.75;
+}
+
+.header-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .header-shop-btn {
@@ -51,7 +54,7 @@
 
 .header-shop-btn:hover {
   opacity: 0.88;
-  box-shadow: 0 2px 10px rgba(26, 74, 58, 0.4);
+  box-shadow: 0 2px 10px rgba(84, 126, 239, 0.4);
 }
 
 [data-theme="dark"] .header-shop-btn:hover {

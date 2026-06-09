@@ -222,7 +222,7 @@
 
 .get-started__btn:hover {
   opacity: 0.88;
-  box-shadow: 0 2px 14px rgba(26, 74, 58, 0.35);
+  box-shadow: 0 2px 14px rgba(84, 126, 239, 0.35);
 }
 
 [data-theme="dark"] .get-started__btn:hover {

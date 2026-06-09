@@ -1,16 +1,16 @@
 :root {
-  --text: #6b5e52;
-  --text-h: #1a1410;
-  --bg: #faf8f4;
-  --border: #e8e3da;
-  --code-bg: #f0ece2;
-  --accent: #1a4a3a;
-  --accent-bg: rgba(26, 74, 58, 0.07);
-  --accent-border: rgba(26, 74, 58, 0.25);
+  --text: #64748b;
+  --text-h: #0f172a;
+  --bg: #ffffff;
+  --border: #e2e8f0;
+  --code-bg: #f8fafc;
+  --accent: #547eef;
+  --accent-bg: rgba(84, 126, 239, 0.08);
+  --accent-border: rgba(84, 126, 239, 0.28);
   --warning: #f59e0b;
-  --social-bg: rgba(240, 236, 226, 0.5);
+  --social-bg: rgba(248, 250, 252, 0.5);
   --shadow:
-    rgba(26, 74, 58, 0.1) 0 10px 15px -3px,
+    rgba(84, 126, 239, 0.1) 0 10px 15px -3px,
     rgba(0, 0, 0, 0.04) 0 4px 6px -2px;
 
   --sans: 'DM Sans', system-ui, sans-serif;
@@ -19,7 +19,7 @@
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: light;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -96,7 +96,7 @@ p {
 
 /* ── Shared utility ── */
 .glass {
-  background: rgba(250, 248, 244, 0.65);
+  background: rgba(255, 255, 255, 0.65);
   border: 1px solid var(--border);
   border-radius: 12px;
   backdrop-filter: blur(10px);
