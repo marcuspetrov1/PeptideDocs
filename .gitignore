@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Development and raw data sources
+sources/
+.superpowers/
+docs/
+peptide-site.md
+.claude/
