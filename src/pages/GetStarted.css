@@ -52,8 +52,9 @@
 }
 
 .get-started__heading {
+  font-family: var(--heading);
   font-size: 56px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -1.68px;
   color: var(--text-h);
   margin: 0 0 16px;
@@ -221,11 +222,11 @@
 
 .get-started__btn:hover {
   opacity: 0.88;
-  box-shadow: 0 2px 14px rgba(170, 59, 255, 0.35);
+  box-shadow: 0 2px 14px rgba(26, 74, 58, 0.35);
 }
 
 [data-theme="dark"] .get-started__btn:hover {
-  box-shadow: 0 2px 14px rgba(192, 132, 252, 0.35);
+  box-shadow: 0 2px 14px rgba(74, 140, 111, 0.4);
 }
 
 .get-started__btn:focus-visible {
