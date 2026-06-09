@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "bpc-157",
+    "name": "BPC-157",
+    "category": "recovery",
+    "overview": "Body Protection Compound 157 is a stable gastric pentadecapeptide known for its ability to accelerate healing of tendons, ligaments, muscle tissue, and gut. It is particularly popular among athletes and individuals recovering from injuries seeking to optimize tissue repair and reduce inflammation.",
+    "mechanism": "BPC-157 functions by upregulating growth hormone receptor expression, promoting angiogenesis through new blood vessel formation, and modulating nitric oxide production. These mechanisms work synergistically to enhance protein synthesis, reduce inflammatory cytokines, and improve blood flow to damaged tissues, facilitating rapid repair processes.",
+    "dosage": "250–500 micrograms per day via subcutaneous or intramuscular injection, typically administered in 4–12 week cycles. Many users split the daily dose into two injections for more consistent tissue exposure and improved results.",
+    "effects": "Users typically experience reduced inflammation at injury sites, accelerated tissue repair and regeneration, improved joint comfort and mobility, and potential gut healing benefits including improved digestion and intestinal permeability. The systemic effects extend beyond injection sites.",
+    "results_timeline": "Joint and tendon improvements are often noticed within 2–4 weeks of consistent use. Gut health effects can appear more rapidly, sometimes within days to one week of starting treatment.",
+    "half_life": "~4 hours",
+    "available_sizes": "5mg / 10mg",
+    "research_notes": null
+  },
+  {
+    "slug": "tb-500",
+    "name": "TB-500",
+    "category": "recovery",
+    "overview": "Thymosin Beta-4 (TB-500) is a synthetic version of a naturally occurring protein present in human cells. It works systemically throughout the body and is frequently stacked with BPC-157 for comprehensive recovery support, offering broader tissue repair benefits.",
+    "mechanism": "TB-500 promotes cell migration and angiogenesis through actin polymerization, facilitating improved blood flow and tissue repair across multiple systems. Unlike localized peptides, it distributes systemically, making it effective for whole-body recovery, flexibility improvements, and addressing inflammation in multiple locations simultaneously.",
+    "dosage": "Loading phase: 2–2.5 mg twice per week for 4–6 weeks. Maintenance phase: 2–2.5 mg once per week thereafter. This dosing strategy builds therapeutic levels quickly while maintaining benefits long-term with reduced injection frequency.",
+    "effects": "Significant reduction in inflammation and soreness, improved flexibility and range of motion, enhanced systemic tissue repair and recovery, and anecdotally reported improvements in hair growth and skin quality. Effects tend to be whole-body rather than localized.",
+    "results_timeline": "Noticeable improvements in flexibility and reduced post-workout soreness are typically observed within 2–3 weeks of consistent use. Full systemic benefits develop gradually over 4–6 weeks.",
+    "half_life": "~days (extended duration due to protein binding in circulation)",
+    "available_sizes": "5mg / 10mg",
+    "research_notes": null
+  },
+  {
+    "slug": "semaglutide",
+    "name": "Semaglutide",
+    "category": "fat loss",
+    "overview": "Semaglutide is a GLP-1 receptor agonist originally developed for type 2 diabetes management. It has gained significant attention for weight management due to its potent appetite-suppressing effects and metabolic benefits, enabling consistent fat loss through reduced caloric intake.",
+    "mechanism": "Semaglutide mimics the glucagon-like peptide-1 hormone by binding to GLP-1 receptors throughout the body. It increases insulin secretion in response to glucose, decreases glucagon secretion, slows gastric emptying to extend satiety, and activates central nervous system pathways that reduce appetite and food cravings.",
+    "dosage": "Begin with 0.25 mg once weekly for 4 weeks, then titrate upward based on response and tolerance. Target dose ranges from 0.5 mg to 2.4 mg once weekly. Maintenance doses are typically in the 1.0–2.4 mg weekly range for optimal fat loss without excessive gastrointestinal side effects.",
+    "effects": "Profound appetite suppression, dramatically reduced desire to eat and cravings, significant reduction in caloric intake often without conscious effort, accelerated fat loss (10–20% body weight reduction in clinical trials), improved blood sugar control, and increased metabolic efficiency.",
+    "results_timeline": "Appetite suppression effects are felt within the first week of treatment. Meaningful and visible weight loss typically becomes apparent by week 4–8 of consistent use. Full metabolic effects and maximum fat loss outcomes develop over a 3–6 month period.",
+    "half_life": "~7 days",
+    "available_sizes": "2mg / 5mg / 10mg",
+    "research_notes": null
+  }
+]
