@@ -168,8 +168,15 @@
   padding: 20px 22px 22px;
   text-decoration: none;
   color: inherit;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   animation: fadeUp 0.4s ease both;
+}
+
+[data-theme="dark"] .catalog__card {
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .catalog__card:hover {

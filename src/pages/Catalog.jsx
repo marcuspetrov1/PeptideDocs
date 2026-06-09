@@ -84,7 +84,7 @@ export default function Catalog() {
             <Link
               key={peptide.slug}
               to={`/peptides/${peptide.slug}`}
-              className="catalog__card glass"
+              className="catalog__card"
             >
               <span className="catalog__category">{CATEGORY_LABELS[peptide.category] ?? peptide.category}</span>
               <h2 className="catalog__name">{peptide.name}</h2>
