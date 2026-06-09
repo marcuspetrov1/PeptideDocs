@@ -2,7 +2,7 @@
 .get-started {
   max-width: 800px;
   margin: 0 auto;
-  padding: calc(56px + 2rem) 24px 5rem;
+  padding: calc(120px + 2rem) 24px 5rem;
   text-align: left;
   box-sizing: border-box;
   width: 100%;
@@ -10,13 +10,13 @@
 
 @media (max-width: 1024px) {
   .get-started {
-    padding: calc(56px + 1.5rem) 24px 4rem;
+    padding: calc(120px + 1.5rem) 24px 4rem;
   }
 }
 
 @media (max-width: 600px) {
   .get-started {
-    padding: calc(56px + 1rem) 16px 3rem;
+    padding: calc(120px + 1rem) 16px 3rem;
   }
 }
 

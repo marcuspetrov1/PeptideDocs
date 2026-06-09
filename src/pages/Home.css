@@ -62,7 +62,7 @@
 
 .home__hero-inner {
   max-width: none;
-  padding: calc(56px + 3rem) 32px 4rem;
+  padding: calc(84px + 3rem) 32px 4rem;
   position: relative;
   z-index: 1;
   box-sizing: border-box;
@@ -70,7 +70,7 @@
 
 @media (max-width: 1024px) {
   .home__hero-inner {
-    padding: calc(56px + 2rem) 24px 3rem;
+    padding: calc(84px + 2rem) 24px 3rem;
   }
 }
 
@@ -80,7 +80,7 @@
   }
 
   .home__hero-inner {
-    padding: calc(56px + 1.5rem) 16px 2.5rem;
+    padding: calc(84px + 1.5rem) 16px 2.5rem;
   }
 }
 
