@@ -7,6 +7,7 @@
   --accent: #1a4a3a;
   --accent-bg: rgba(26, 74, 58, 0.07);
   --accent-border: rgba(26, 74, 58, 0.25);
+  --warning: #f59e0b;
   --social-bg: rgba(240, 236, 226, 0.5);
   --shadow:
     rgba(26, 74, 58, 0.1) 0 10px 15px -3px,
@@ -55,7 +56,7 @@ body {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
