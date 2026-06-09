@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
 import { SHOP_URL } from '../config.js'
 import './Home.css'
+import heroImg from '../assets/hero.png'
 
 // Derive unique categories with counts
 const categoryMap = peptides.reduce((acc, p) => {
@@ -60,7 +61,7 @@ export default function Home() {
         <div className="home__hero-inner">
           <p className="home__hero-eyebrow">Research peptide reference</p>
           <h1 className="home__hero-heading">
-            Your peptide<br />
+            Your <em>peptide</em><br />
             reference guide
           </h1>
           <p className="home__hero-sub">
@@ -76,6 +77,9 @@ export default function Home() {
               How to Get Started
             </Link>
           </div>
+        </div>
+        <div className="home__hero-image" aria-hidden="true">
+          <img src={heroImg} alt="" />
         </div>
       </section>
 
