@@ -2,19 +2,21 @@
   width: 100%;
   box-sizing: border-box;
   padding: 32px 24px;
-  background: #0e0f14;
-  border-top: 1px solid #1c1e27;
+  background: var(--code-bg);
+  border-top: 1px solid var(--border);
   text-align: center;
 }
 
 .footer .disclaimer {
   font-size: 13px;
   line-height: 160%;
-  color: #4b4d5a;
-  margin: 0 0 12px;
+  color: var(--text);
+  margin: 0 auto 12px;
+  max-width: 640px;
 }
 
 .footer-copyright {
-  font-size: 13px;
-  color: #6b6d7a;
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.6;
 }

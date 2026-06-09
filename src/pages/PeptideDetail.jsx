@@ -10,7 +10,6 @@ const INFO_ROWS = [
   { key: 'mechanism',       label: 'Mechanism'       },
   { key: 'effects',         label: 'Effects'         },
   { key: 'results_timeline', label: 'Results'        },
-  { key: 'half_life',       label: 'Half-Life'       },
   { key: 'timing',          label: 'Timing'          },
   { key: 'administration',  label: 'Administration'  },
   { key: 'research_notes',  label: 'Research Notes'  },
