@@ -1,7 +1,7 @@
 .peptide-detail {
   max-width: 800px;
   margin: 0 auto;
-  padding: calc(120px + 0.75rem) 24px 4rem;
+  padding: 2rem 24px 4rem;
   text-align: left;
 }
 
@@ -350,7 +350,7 @@
 
 /* ── Not found ── */
 .peptide-detail--not-found {
-  padding: calc(120px + 3rem) 24px 4rem;
+  padding: 3rem 24px 4rem;
   text-align: center;
   color: var(--text);
 }
