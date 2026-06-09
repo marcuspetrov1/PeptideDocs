@@ -234,43 +234,6 @@
   outline-offset: 3px;
 }
 
-/* ── Contact placeholder ── */
-.get-started__placeholder {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 24px 28px;
-  border-radius: 12px;
-}
-
-.get-started__placeholder-icon {
-  font-size: 22px;
-  flex-shrink: 0;
-  line-height: 1;
-  margin-top: 2px;
-}
-
-.get-started__placeholder-body {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.get-started__placeholder-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-h);
-  letter-spacing: -0.1px;
-}
-
-.get-started__placeholder-text {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--text);
-  font-style: italic;
-  margin: 0;
-  opacity: 0.8;
-}
 
 /* ── Section intro text ── */
 .get-started__section-intro {

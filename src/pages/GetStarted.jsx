@@ -165,18 +165,18 @@ export default function GetStarted() {
         </ol>
       </section>
 
-      {/* ── Contact placeholder ── */}
+      {/* ── Contact & Ordering ── */}
       <section className="get-started__contact-section">
-        <h2 className="get-started__section-heading">Contact &amp; Ordering</h2>
-        <div className="get-started__placeholder glass">
-          <span className="get-started__placeholder-icon" aria-hidden="true">📋</span>
-          <div className="get-started__placeholder-body">
-            <strong className="get-started__placeholder-title">Contact &amp; Ordering</strong>
-            <p className="get-started__placeholder-text">
-              Contact and ordering information to be added.
-            </p>
-          </div>
-        </div>
+        <h2 className="get-started__section-heading">Ready to order?</h2>
+        <p className="get-started__section-intro">
+          Browse the full catalog and complete your order at{' '}
+          <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="get-started__link">
+            optimalpep.com
+          </a>
+          . All products are sourced from our trusted supplier and ship with standard
+          research-grade handling.
+        </p>
+        <Link to="/catalog" className="get-started__btn">Browse the Catalog</Link>
       </section>
     </main>
   )
