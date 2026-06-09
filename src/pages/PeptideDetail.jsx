@@ -4,7 +4,29 @@ import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
 import DoseSelector from '../components/DoseSelector.jsx'
 import ReconstitutionPanel from '../components/ReconstitutionPanel.jsx'
+import { SHOP_URL } from '../config.js'
 import './PeptideDetail.css'
+
+function WarningIcon() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      style={{ flexShrink: 0, marginTop: '1px' }}
+    >
+      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+      <line x1="12" y1="9" x2="12" y2="13" />
+      <line x1="12" y1="17" x2="12.01" y2="17" />
+    </svg>
+  )
+}
 
 const INFO_ROWS = [
   { key: 'mechanism',       label: 'Mechanism'       },
@@ -70,17 +92,26 @@ export default function PeptideDetail() {
 
       {/* Disclaimer */}
       <div className="peptide-detail__disclaimer">
-        <span className="peptide-detail__disclaimer-icon" aria-hidden="true">⚠</span>
+        <WarningIcon />
         <p className="peptide-detail__disclaimer-text">
-          [Disclaimer — to be added]
+          This information is for educational and research purposes only. It does not
+          constitute medical advice, diagnosis, or treatment. Research peptides are not
+          approved for human use by any regulatory authority. Always consult a qualified
+          healthcare professional before using any compound. Not for use by persons under
+          18 years of age.
         </p>
       </div>
 
       {/* CTA */}
       <div className="peptide-detail__cta">
-        <Link to="/get-started" className="peptide-detail__cta-link">
-          How to get started
-        </Link>
+        <a
+          href={SHOP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="peptide-detail__cta-link"
+        >
+          Purchase at OptimalPep
+        </a>
       </div>
     </article>
   )
