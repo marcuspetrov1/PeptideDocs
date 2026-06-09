@@ -10,21 +10,21 @@
   align-items: center;
   justify-content: space-between;
 
-  /* glass effect */
-  background: rgba(255, 255, 255, 0.75);
+  /* warm glass */
+  background: rgba(250, 248, 244, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
 [data-theme="dark"] .header {
-  background: rgba(22, 23, 29, 0.8);
+  background: rgba(24, 20, 15, 0.88);
 }
 
 .header-logo {
   font-family: var(--heading);
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--text-h);
   text-decoration: none;
   letter-spacing: -0.3px;
@@ -51,7 +51,11 @@
 
 .header-shop-btn:hover {
   opacity: 0.88;
-  box-shadow: 0 2px 10px rgba(170, 59, 255, 0.35);
+  box-shadow: 0 2px 10px rgba(26, 74, 58, 0.4);
+}
+
+[data-theme="dark"] .header-shop-btn:hover {
+  box-shadow: 0 2px 10px rgba(74, 140, 111, 0.45);
 }
 
 .header-shop-btn:focus-visible {
