@@ -107,7 +107,7 @@ export default function Home() {
         </p>
         <div className="home__steps">
           {steps.map(step => (
-            <div key={step.number} className="home__step glass">
+            <div key={step.number} className="home__step">
               <span className="home__step-number">{step.number}</span>
               <strong className="home__step-title">{step.title}</strong>
               <p className="home__step-desc">{step.description}</p>
