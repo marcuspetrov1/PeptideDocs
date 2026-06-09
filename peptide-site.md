@@ -15,7 +15,7 @@ Replace the Notes app workflow with a public-facing, professional catalog. No tr
 - **Frontend**: Vite + React
 - **Styling**: Vanilla CSS (Premium, modern aesthetics)
 - **CMS/Data**: Local JSON or Markdown files
-- **Domain**: info.optimalpep.com
+- **Domain**: optimalpepinfo.com
 - **Legal copy**: Research chemical disclaimer (required)
 
 ---
@@ -85,7 +85,7 @@ All views verified at mobile widths. Three breakpoints in every page CSS.
 - [x] Sun/moon toggle button in header
 
 ### 4.4 Deployment
-Deploy to **Vercel or Netlify** — both handle React Router's client-side routing natively. Connect domain: `info.optimalpep.com`
+Deploy to **Vercel or Netlify** — both handle React Router's client-side routing natively. Connect domain: `optimalpepinfo.com`
 
 ### 4.5 Publish
 Share with a few people first for a gut check before wider distribution.
@@ -264,7 +264,7 @@ CTA
 
 ## Open decisions
 
-- [x] Domain — subdomain of existing site (`info.optimalpep.com`)
+- [x] Domain — subdomain of existing site (`optimalpepinfo.com`)
 - [x] CTA — "Shop" button in header linking to existing sales site
 - [x] Tech stack — Vite + React + Vanilla CSS
 - [ ] Disclaimer copy — copy from optimalpep.com and paste into §1.3
