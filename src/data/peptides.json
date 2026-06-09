@@ -5,37 +5,642 @@
     "category": "recovery",
     "overview": "Body Protection Compound 157 is a stable gastric pentadecapeptide known for its ability to accelerate healing of tendons, ligaments, muscle tissue, and gut. It is particularly popular among athletes and individuals recovering from injuries seeking to optimize tissue repair and reduce inflammation.",
     "mechanism": "BPC-157 functions by upregulating growth hormone receptor expression, promoting angiogenesis through new blood vessel formation, and modulating nitric oxide production. These mechanisms work synergistically to enhance protein synthesis, reduce inflammatory cytokines, and improve blood flow to damaged tissues, facilitating rapid repair processes.",
-    "dosage": "250–500 micrograms per day via subcutaneous or intramuscular injection, typically administered in 4–12 week cycles. Many users split the daily dose into two injections for more consistent tissue exposure and improved results.",
-    "effects": "Users typically experience reduced inflammation at injury sites, accelerated tissue repair and regeneration, improved joint comfort and mobility, and potential gut healing benefits including improved digestion and intestinal permeability. The systemic effects extend beyond injection sites.",
-    "results_timeline": "Joint and tendon improvements are often noticed within 2–4 weeks of consistent use. Gut health effects can appear more rapidly, sometimes within days to one week of starting treatment.",
+    "effects": "Reduced inflammation at injury sites, accelerated tissue repair and regeneration, improved joint comfort and mobility, and potential gut healing benefits including improved digestion and intestinal permeability. Systemic effects extend beyond the injection site.",
+    "results_timeline": "Joint and tendon improvements are often noticed within 2–4 weeks of consistent use. Gut health effects can appear more rapidly, sometimes within days to one week of starting.",
     "half_life": "~4 hours",
-    "available_sizes": "5mg / 10mg",
-    "research_notes": null
+    "timing": "Typically administered in 2 daily injections for consistent tissue exposure. Timing relative to meals is not critical. Can be injected near the site of injury for localized benefit, or systemically via abdominal SubQ.",
+    "administration": "Subcutaneous or intramuscular",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.25 },
+          { "units": 10, "mg": 0.5 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 30, "mg": 1.5 },
+          { "units": 40, "mg": 2.0 },
+          { "units": 50, "mg": 2.5 }
+        ],
+        "dosage_text": "250–500 mcg (5–10 units) per injection, 1–2 times daily. A 4–12 week cycle is typical. Many users split the daily dose into two injections (morning and evening) for consistent tissue exposure. At 5 mg/mL: 0.25 mg = 5 units, 0.5 mg = 10 units.",
+        "titration": null
+      }
+    ]
   },
   {
     "slug": "tb-500",
     "name": "TB-500",
     "category": "recovery",
-    "overview": "Thymosin Beta-4 (TB-500) is a synthetic version of a naturally occurring protein present in human cells. It works systemically throughout the body and is frequently stacked with BPC-157 for comprehensive recovery support, offering broader tissue repair benefits.",
-    "mechanism": "TB-500 promotes cell migration and angiogenesis through actin polymerization, facilitating improved blood flow and tissue repair across multiple systems. Unlike localized peptides, it distributes systemically, making it effective for whole-body recovery, flexibility improvements, and addressing inflammation in multiple locations simultaneously.",
-    "dosage": "Loading phase: 2–2.5 mg twice per week for 4–6 weeks. Maintenance phase: 2–2.5 mg once per week thereafter. This dosing strategy builds therapeutic levels quickly while maintaining benefits long-term with reduced injection frequency.",
+    "overview": "Thymosin Beta-4 (TB-500) is a synthetic version of a naturally occurring protein present in human cells. It works systemically throughout the body and is frequently stacked with BPC-157 for comprehensive recovery support, offering broader whole-body tissue repair benefits.",
+    "mechanism": "TB-500 promotes cell migration and angiogenesis through actin polymerization, facilitating improved blood flow and tissue repair across multiple systems. Unlike localized peptides, it distributes systemically — making it effective for whole-body recovery, flexibility improvements, and addressing inflammation in multiple locations simultaneously.",
     "effects": "Significant reduction in inflammation and soreness, improved flexibility and range of motion, enhanced systemic tissue repair and recovery, and anecdotally reported improvements in hair growth and skin quality. Effects tend to be whole-body rather than localized.",
     "results_timeline": "Noticeable improvements in flexibility and reduced post-workout soreness are typically observed within 2–3 weeks of consistent use. Full systemic benefits develop gradually over 4–6 weeks.",
-    "half_life": "~days (extended duration due to protein binding in circulation)",
-    "available_sizes": "5mg / 10mg",
-    "research_notes": null
+    "half_life": "~Days (extended duration due to protein binding in circulation)",
+    "timing": "Injected twice weekly during the loading phase (4–6 weeks), then once weekly for maintenance. SubQ injection anywhere on the body — site-specific injection is not necessary as TB-500 distributes systemically.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 10, "mg": 0.5 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 40, "mg": 2.0 },
+          { "units": 50, "mg": 2.5 },
+          { "units": 100, "mg": 5.0 }
+        ],
+        "dosage_text": "Loading phase: 2–2.5 mg (40–50 units) twice per week for 4–6 weeks. Maintenance phase: 2–2.5 mg (40–50 units) once per week thereafter. This strategy builds therapeutic levels quickly while sustaining benefits with reduced injection frequency. At 5 mg/mL: 2 mg = 40 units, 2.5 mg = 50 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "glow",
+    "name": "Glow Blend",
+    "category": "beauty",
+    "overview": "Glow is a pre-formulated blend of GHK-Cu, BPC-157, and TB-500 — three peptides with complementary mechanisms targeting skin rejuvenation, collagen synthesis, tissue repair, and systemic anti-inflammatory support. It is designed for users seeking comprehensive aesthetic and recovery benefits from a single preparation.",
+    "mechanism": "GHK-Cu drives collagen and elastin production and supports microvascular repair for skin and connective tissue. BPC-157 modulates nitric oxide signaling and growth factor expression for localized and systemic tissue repair. TB-500 promotes cell migration and actin polymerization for systemic healing and flexibility improvements. Together they address skin quality, joint health, and inflammation through three complementary pathways.",
+    "effects": "Improved skin firmness, texture, and tone; reduced appearance of fine lines; improved hair follicle environment; enhanced tendon and joint recovery; systemic anti-inflammatory support; improved microcirculation delivering better nutrient flow to skin and connective tissue.",
+    "results_timeline": "Week 1–2: improved skin hydration and reduced irritation. Weeks 2–4: joint comfort improving. Weeks 3–6: skin firmness and tone improve. Weeks 4–8: collagen-related changes more visible.",
+    "half_life": "Varies by component (~4 hours BPC-157, days TB-500, 1–3 hours GHK-Cu)",
+    "timing": "Skin and anti-aging focus: 1–2 mg daily or 5× per week. Recovery focus: 2–4 mg daily for 3–4 weeks, then drop to 1–2 mg 2–3× weekly for maintenance.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "70mg",
+        "vial_mg": 70,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 23.3,
+        "syringe_reference": [
+          { "units": 5, "mg": 1.17 },
+          { "units": 10, "mg": 2.33 },
+          { "units": 15, "mg": 3.5 },
+          { "units": 20, "mg": 4.66 },
+          { "units": 25, "mg": 5.8 },
+          { "units": 30, "mg": 7.0 }
+        ],
+        "dosage_text": "Skin / anti-aging focus: 1–2 mg (5–10 units) daily or 5× per week. Recovery / injury focus: 2–4 mg (10–17 units) daily for 3–4 weeks. Maintenance: 1–2 mg (5–10 units) 2–3× per week. At 23.3 mg/mL: 1 mg ≈ 5 units, 2 mg ≈ 10 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "klow",
+    "name": "KLOW Blend",
+    "category": "beauty",
+    "overview": "KLOW is a pre-formulated blend of GHK-Cu, KPV, and BPC-157 that targets the gut-skin-recovery triad. The inclusion of KPV — a tripeptide derived from alpha-MSH with potent gut-protective and anti-inflammatory effects — distinguishes it from other blends by adding a gut health dimension alongside skin and tissue repair.",
+    "mechanism": "GHK-Cu stimulates collagen synthesis and microvascular repair for skin and tissue health. KPV (Lys-Pro-Val) modulates inflammatory cytokine signaling in gut epithelial cells, supports gut barrier function, and reduces systemic inflammatory load through alpha-MSH derived pathways. BPC-157 promotes tissue repair via growth factor modulation and angiogenesis. Together they address the interconnected gut-skin-recovery axis.",
+    "effects": "Improved skin texture and appearance, support for gut barrier function and digestive comfort, reduced systemic inflammatory response, enhanced recovery from training or illness, and overall wellness through the gut-skin connection.",
+    "results_timeline": "Week 1–2: improved hydration and recovery feel. Weeks 2–4: better digestion and reduced gut irritation. Weeks 3–6: improvements in skin appearance and texture. Weeks 4–8: more noticeable collagen and recovery-related benefits.",
+    "half_life": "Varies by component",
+    "timing": "General wellness: 1–2 mg daily or 5× per week. Recovery / inflammation: 2–4 mg daily for 3–6 weeks, followed by 1–2 mg maintenance 2–3× weekly.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "80mg",
+        "vial_mg": 80,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 26.7,
+        "syringe_reference": [
+          { "units": 5, "mg": 1.33 },
+          { "units": 10, "mg": 2.67 },
+          { "units": 15, "mg": 4.0 },
+          { "units": 20, "mg": 5.33 },
+          { "units": 25, "mg": 6.67 },
+          { "units": 30, "mg": 8.0 }
+        ],
+        "dosage_text": "Skin / gut / wellness focus: 1–2 mg (4–8 units) daily or 5× per week. Recovery / inflammation focus: 2–4 mg (8–15 units) daily for 3–6 weeks. Maintenance: 1–2 mg (4–8 units) 2–3× per week. At 26.7 mg/mL: 1 mg ≈ 4 units, 2 mg ≈ 8 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "ghk-cu",
+    "name": "GHK-Cu",
+    "category": "beauty",
+    "overview": "GHK-Cu (Copper Peptide GHK) is a naturally occurring copper-binding tripeptide found throughout the body, essential for collagen synthesis, wound healing, and tissue remodeling. It is widely used for skin rejuvenation, hair follicle support, and connective tissue repair, making it popular in aesthetic and recovery applications.",
+    "mechanism": "GHK-Cu activates collagen and elastin synthesis in fibroblasts, promotes angiogenesis for improved microvascular repair, and regulates matrix metalloproteinases (MMPs) involved in tissue remodeling. Its copper-binding function supports enzymatic activity in collagen cross-linking and antioxidant pathways, while anti-inflammatory signaling reduces tissue degradation and promotes healing.",
+    "effects": "Improved skin firmness, elasticity, and texture; reduced appearance of fine lines over time; improved hair follicle environment and potential scalp circulation support; accelerated wound healing and scar remodeling; systemic anti-inflammatory effects with improved nutrient delivery to skin and connective tissue.",
+    "results_timeline": "Week 1–2: improved skin hydration and reduced irritation. Weeks 2–4: tone and texture begin noticeably improving. Weeks 4–8: collagen-related firmness and more visible structural skin changes.",
+    "half_life": "~1–3 hours",
+    "timing": "Can be used any time of day. Daily or 5× per week is standard. Start low for the first week to gauge tolerance — GHK-Cu can cause mild stinging at the injection site.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "100mg",
+        "vial_mg": 100,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 33.3,
+        "syringe_reference": [
+          { "units": 1, "mg": 0.33 },
+          { "units": 3, "mg": 1.0 },
+          { "units": 5, "mg": 1.67 },
+          { "units": 10, "mg": 3.33 },
+          { "units": 15, "mg": 5.0 },
+          { "units": 20, "mg": 6.66 }
+        ],
+        "dosage_text": "Skin / cosmetic: 0.5–2 mg (1.5–6 units) daily or 5× per week. Tissue repair cycles: 2–5 mg (6–15 units) daily for 2–4 weeks, then drop to 1–2 mg 2–3× weekly. Note: small unit changes equal significant dose jumps at this concentration — dose carefully. At 33.3 mg/mL: 1 mg = 3 units, 2 mg = 6 units, 5 mg = 15 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "ipamorelin",
+    "name": "Ipamorelin",
+    "category": "gh-secretagogue",
+    "overview": "Ipamorelin is a selective growth hormone secretagogue peptide that stimulates pulsatile GH release from the pituitary without significantly affecting cortisol, prolactin, or appetite. Its high selectivity makes it a preferred choice for recovery support, sleep quality improvement, and body composition research.",
+    "mechanism": "Ipamorelin acts as a ghrelin receptor agonist and GHRP (growth hormone releasing peptide), binding to specific receptors in the pituitary and hypothalamus to trigger GH secretion. Unlike other GHRPs, it shows high receptor selectivity, producing GH pulses without the cortisol or appetite-stimulating side effects associated with less selective secretagogues.",
+    "effects": "Improved sleep quality and depth, enhanced recovery between training sessions, support for joint and connective tissue health, potential improvements in body composition with consistent use, and mild anti-aging effects associated with optimized GH levels.",
+    "results_timeline": "Sleep improvements are often noticed within 1–2 weeks. Recovery benefits develop over 3–6 weeks. Body composition changes require 8–12 weeks of consistent use.",
+    "half_life": "~2 hours",
+    "timing": "Best injected before bed or in a fasted state (morning or between meals). Avoid injection within 1 hour of a high-carbohydrate meal — insulin can blunt GH response.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 2, "mg": 0.1 },
+          { "units": 4, "mg": 0.2 },
+          { "units": 6, "mg": 0.3 },
+          { "units": 10, "mg": 0.5 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 30, "mg": 1.5 }
+        ],
+        "dosage_text": "Typical research range: 0.1–0.3 mg per administration (2–6 units). Recovery / repair: 0.1–0.2 mg (2–4 units). Sleep / GH support: 0.1–0.3 mg (2–6 units) before bed. Some research setups explore multiple smaller doses (e.g. 0.1 mg AM fasted + 0.1 mg before bed). At 5 mg/mL: 0.1 mg = 2 units, 0.2 mg = 4 units, 0.3 mg = 6 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "cjc-ipamorelin",
+    "name": "CJC-1295 + Ipamorelin",
+    "category": "gh-secretagogue",
+    "overview": "A pre-blended combination of CJC-1295 (no DAC) and Ipamorelin at equal ratio, designed to amplify natural GH pulses through dual-pathway stimulation. CJC-1295 extends the duration of GH release while Ipamorelin triggers the pulse, creating a synergistic effect stronger than either peptide alone.",
+    "mechanism": "CJC-1295 (no DAC) acts as a GHRH analogue, signaling the pituitary to prepare and release GH. Ipamorelin acts simultaneously as a GHRP, mimicking ghrelin to trigger GH secretion through a complementary receptor pathway. Their dual-mechanism synergy produces stronger, more sustained GH pulses than either compound alone, while maintaining selectivity and avoiding cortisol elevation.",
+    "effects": "Boosted natural GH pulses, improved sleep quality and recovery, enhanced fat metabolism over time, faster tissue repair, joint and connective tissue support, and general anti-aging effects on skin and body composition.",
+    "results_timeline": "Week 1–2: improved sleep. Weeks 2–4: fat loss begins and energy improves. Weeks 3–6: recovery enhancement. Weeks 6–10: visible physique and body composition changes.",
+    "half_life": "~30 minutes (CJC no DAC), ~2 hours (Ipamorelin)",
+    "timing": "Best before bed or in the morning fasted. Avoid carbohydrates and fats for 60–90 minutes after injection for optimal GH response. 1:1 blend means 1 mg total = 0.5 mg CJC + 0.5 mg Ipamorelin.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.25 },
+          { "units": 10, "mg": 0.5 },
+          { "units": 15, "mg": 0.75 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 30, "mg": 1.5 },
+          { "units": 40, "mg": 2.0 }
+        ],
+        "dosage_text": "Anti-aging / recovery / sleep: 0.25–0.5 mg (5–10 units) before bed. Fat loss / performance: 1 mg (20 units) once or twice daily (AM fasted + bedtime). Remember: 1 mg total = 0.5 mg CJC-1295 + 0.5 mg Ipamorelin. At 5 mg/mL: 0.25 mg = 5 units, 0.5 mg = 10 units, 1 mg = 20 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "sermorelin",
+    "name": "Sermorelin",
+    "category": "gh-secretagogue",
+    "overview": "Sermorelin is a synthetic analogue of growth hormone-releasing hormone (GHRH) that stimulates the pituitary gland to produce and secrete natural GH. It is commonly studied for anti-aging support, fat loss, sleep quality, and recovery — preserving the body's natural GH feedback regulation rather than replacing it.",
+    "mechanism": "Sermorelin binds to GHRH receptors in the anterior pituitary, triggering pulsatile GH secretion in a physiologically regulated manner. Unlike exogenous GH administration, sermorelin preserves the body's natural feedback loop — GH release remains self-limiting and pulsatile, which is considered more physiologic and avoids the desensitization seen with constant GH exposure.",
+    "effects": "Improved sleep quality and depth, enhanced body composition over time, increased energy and vitality, improved skin quality, enhanced recovery from training, and potential reduction in visceral fat with extended use.",
+    "results_timeline": "Sleep improvements often noticed within 1–2 weeks. Meaningful fat loss and body composition changes develop over 6–12 weeks of consistent use.",
+    "half_life": "~11 minutes (short-acting; acts via pulse mechanism on the pituitary)",
+    "timing": "Best injected at night before bed or in the morning fasted. Avoid after high-carbohydrate meals as elevated insulin can blunt GH release.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 4, "mg": 0.2 },
+          { "units": 6, "mg": 0.3 },
+          { "units": 10, "mg": 0.5 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 30, "mg": 1.5 },
+          { "units": 40, "mg": 2.0 }
+        ],
+        "dosage_text": "Typical range: 0.2–0.5 mg daily (4–10 units). Fat loss / recovery: 0.2–0.5 mg daily. Anti-aging / sleep: 0.2–0.3 mg (4–6 units) before bed. Higher experimental dosing: 0.5–1 mg daily. At 5 mg/mL: 0.2 mg = 4 units, 0.3 mg = 6 units, 0.5 mg = 10 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "tesamorelin",
+    "name": "Tesamorelin",
+    "category": "fat-loss",
+    "overview": "Tesamorelin is a stabilized synthetic analogue of GHRH developed specifically for visceral fat reduction. It is FDA-approved for HIV-associated lipodystrophy and is studied more broadly for abdominal fat loss and metabolic support, driving results through the GH/IGF-1 axis rather than appetite suppression.",
+    "mechanism": "Tesamorelin binds to GHRH receptors in the pituitary, stimulating GH secretion which in turn elevates IGF-1 levels. The resulting GH/IGF-1 signal drives lipolysis, with particularly pronounced effects on visceral adipose tissue in the abdominal region. Unlike raw GH administration, it maintains natural pulsatility and preserves feedback regulation.",
+    "effects": "Reduction in visceral and abdominal fat, improvements in body composition, potential improvements in lipid profiles, and general effects associated with optimized GH levels including enhanced recovery and improved skin quality.",
+    "results_timeline": "Visible reduction in abdominal fat is typically noted within 4–8 weeks of consistent use. Full body composition changes develop over 3–6 months.",
+    "half_life": "~38 minutes",
+    "timing": "Best injected before bed or in the morning fasted. Avoid after high-carbohydrate meals to maximize GH response. Consistent daily dosing is recommended for optimal results.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 10, "mg": 0.5 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 30, "mg": 1.5 },
+          { "units": 40, "mg": 2.0 },
+          { "units": 50, "mg": 2.5 }
+        ],
+        "dosage_text": "Fat loss / visceral fat: 0.5–2 mg daily (10–40 units). Most research uses 1–2 mg per day. Best results seen with consistent daily dosing over 3–6 months. At 5 mg/mL: 0.5 mg = 10 units, 1 mg = 20 units, 2 mg = 40 units.",
+        "titration": null
+      }
+    ]
   },
   {
     "slug": "semaglutide",
     "name": "Semaglutide",
-    "category": "fat loss",
-    "overview": "Semaglutide is a GLP-1 receptor agonist originally developed for type 2 diabetes management. It has gained significant attention for weight management due to its potent appetite-suppressing effects and metabolic benefits, enabling consistent fat loss through reduced caloric intake.",
-    "mechanism": "Semaglutide mimics the glucagon-like peptide-1 hormone by binding to GLP-1 receptors throughout the body. It increases insulin secretion in response to glucose, decreases glucagon secretion, slows gastric emptying to extend satiety, and activates central nervous system pathways that reduce appetite and food cravings.",
-    "dosage": "Begin with 0.25 mg once weekly for 4 weeks, then titrate upward based on response and tolerance. Target dose ranges from 0.5 mg to 2.4 mg once weekly. Maintenance doses are typically in the 1.0–2.4 mg weekly range for optimal fat loss without excessive gastrointestinal side effects.",
-    "effects": "Profound appetite suppression, dramatically reduced desire to eat and cravings, significant reduction in caloric intake often without conscious effort, accelerated fat loss (10–20% body weight reduction in clinical trials), improved blood sugar control, and increased metabolic efficiency.",
-    "results_timeline": "Appetite suppression effects are felt within the first week of treatment. Meaningful and visible weight loss typically becomes apparent by week 4–8 of consistent use. Full metabolic effects and maximum fat loss outcomes develop over a 3–6 month period.",
+    "category": "fat-loss",
+    "overview": "Semaglutide is a GLP-1 receptor agonist originally developed for type 2 diabetes management that has become one of the most effective researched agents for sustained fat loss. It works by powerfully suppressing appetite and slowing gastric emptying, enabling consistent caloric reduction with minimal conscious effort.",
+    "mechanism": "Semaglutide mimics the glucagon-like peptide-1 hormone by binding to GLP-1 receptors throughout the body. It increases glucose-dependent insulin secretion, decreases glucagon release, slows gastric emptying to extend satiety, and activates central nervous system pathways in the hypothalamus that reduce appetite and food cravings. Its long half-life allows once-weekly dosing.",
+    "effects": "Profound appetite suppression, dramatically reduced food cravings, significant reduction in caloric intake with minimal conscious effort, accelerated fat loss (10–20% body weight in clinical trials), improved blood sugar control, and increased metabolic efficiency.",
+    "results_timeline": "Appetite suppression is felt within the first week. Meaningful and visible fat loss typically becomes apparent by weeks 4–8 of consistent use. Full metabolic effects and maximum fat loss develop over 3–6 months.",
     "half_life": "~7 days",
-    "available_sizes": "2mg / 5mg / 10mg",
-    "research_notes": null
+    "timing": "Once weekly, same day each week. Subcutaneous injection in the abdomen, thigh, or love handles. Food timing does not matter. Slow titration is critical to minimize nausea — do not rush the ramp.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          { "units": 2.5, "mg": 0.25 },
+          { "units": 5, "mg": 0.5 },
+          { "units": 10, "mg": 1.0 },
+          { "units": 17, "mg": 1.7 },
+          { "units": 20, "mg": 2.0 },
+          { "units": 24, "mg": 2.4 },
+          { "units": 30, "mg": 3.0 }
+        ],
+        "dosage_text": "Start at 0.25 mg (~2.5 units) weekly and titrate slowly to minimize nausea. Most fat-loss benefit is achieved between 1–2.4 mg weekly. At 10 mg/mL: 0.25 mg = 2.5 units, 0.5 mg = 5 units, 1 mg = 10 units, 1.7 mg = 17 units, 2.4 mg = 24 units.",
+        "titration": [
+          { "weeks": "1–4", "dose_mg": "0.25", "units": "~2.5" },
+          { "weeks": "5–8", "dose_mg": "0.5", "units": "~5" },
+          { "weeks": "9–12", "dose_mg": "1.0", "units": "10" },
+          { "weeks": "13–16", "dose_mg": "1.7", "units": "~17" },
+          { "weeks": "17+", "dose_mg": "2.0–2.4", "units": "20–24" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tirzepatide",
+    "name": "Tirzepatide",
+    "category": "fat-loss",
+    "overview": "Tirzepatide is a dual GLP-1 and GIP receptor agonist that produces significant fat loss and metabolic improvements. By simultaneously activating both receptor systems, it achieves stronger appetite suppression and metabolic effects than GLP-1-only peptides, with clinical data showing 15–20% body weight reduction.",
+    "mechanism": "GLP-1 agonism activates satiety centers in the hypothalamus, slows gastric emptying to extend fullness, and increases glucose-dependent insulin secretion. GIP agonism complements this by improving insulin sensitivity, reducing glucagon levels, and enhancing fat tissue energy metabolism. The combined dual-receptor effect produces potent, sustained appetite control with favorable metabolic outcomes.",
+    "effects": "Significant appetite suppression and reduced food cravings, consistent fat loss with proper titration, improved blood sugar regulation, enhanced metabolic efficiency. Side effects (primarily nausea) are greatly minimized with slow dose titration.",
+    "results_timeline": "Appetite suppression noticeable in weeks 1–4. Meaningful fat loss visible by weeks 4–8. Maximum fat loss and metabolic effects develop over 3–6 months at maintenance dose.",
+    "half_life": "~5 days",
+    "timing": "Once weekly, same day each week. Subcutaneous injection in the abdomen, thigh, or love handles. Food timing does not affect efficacy. Titrate slowly — never skip titration steps.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          { "units": 2.5, "mg": 0.25 },
+          { "units": 5, "mg": 0.5 },
+          { "units": 10, "mg": 1.0 },
+          { "units": 15, "mg": 1.5 },
+          { "units": 20, "mg": 2.0 },
+          { "units": 25, "mg": 2.5 },
+          { "units": 30, "mg": 3.0 },
+          { "units": 40, "mg": 4.0 },
+          { "units": 50, "mg": 5.0 }
+        ],
+        "dosage_text": "Begin at 2.5 mg (25 units) weekly for weeks 1–4 and titrate upward. Most fat-loss benefit at 5–12.5 mg weekly. At 10 mg/mL: 2.5 mg = 25 units, 5 mg = 50 units, 7.5 mg = 75 units, 10 mg = 100 units.",
+        "titration": [
+          { "weeks": "1–4", "dose_mg": "2.5", "units": "25" },
+          { "weeks": "5–8", "dose_mg": "5.0", "units": "50" },
+          { "weeks": "9–12", "dose_mg": "7.5", "units": "75" },
+          { "weeks": "13–16", "dose_mg": "10.0", "units": "100" },
+          { "weeks": "17+", "dose_mg": "12.5–15.0", "units": "125–150" }
+        ]
+      },
+      {
+        "label": "30mg",
+        "vial_mg": 30,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 15,
+        "syringe_reference": [
+          { "units": 2, "mg": 0.3 },
+          { "units": 5, "mg": 0.75 },
+          { "units": 10, "mg": 1.5 },
+          { "units": 15, "mg": 2.25 },
+          { "units": 20, "mg": 3.0 },
+          { "units": 25, "mg": 3.75 },
+          { "units": 30, "mg": 4.5 },
+          { "units": 40, "mg": 6.0 },
+          { "units": 50, "mg": 7.5 }
+        ],
+        "dosage_text": "Begin at 2.5 mg (~17 units) weekly for weeks 1–4 and titrate upward. Most fat-loss benefit at 5–12.5 mg weekly. At 15 mg/mL: 2.5 mg ≈ 17 units, 5 mg ≈ 33 units, 7.5 mg ≈ 50 units, 10 mg ≈ 67 units.",
+        "titration": [
+          { "weeks": "1–4", "dose_mg": "2.5", "units": "~17" },
+          { "weeks": "5–8", "dose_mg": "5.0", "units": "~33" },
+          { "weeks": "9–12", "dose_mg": "7.5", "units": "~50" },
+          { "weeks": "13–16", "dose_mg": "10.0", "units": "~67" },
+          { "weeks": "17+", "dose_mg": "12.5–15.0", "units": "~83–100" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "retatrutide",
+    "name": "Retatrutide",
+    "category": "fat-loss",
+    "overview": "Retatrutide is a next-generation triple receptor agonist targeting GLP-1, GIP, and glucagon receptors simultaneously. In clinical trials it has demonstrated fat loss outcomes exceeding other peptides in its class, with some participants achieving 20%+ body weight reduction — driven in part by its unique thermogenic glucagon component.",
+    "mechanism": "GLP-1 agonism reduces appetite and slows gastric emptying. GIP agonism improves insulin sensitivity and fat metabolism. Glucagon receptor activation increases basal energy expenditure and promotes fat oxidation — adding a thermogenic dimension absent in dual-receptor agonists. The triple-receptor effect amplifies fat loss through both appetite reduction and increased energy expenditure simultaneously.",
+    "effects": "Profound appetite suppression, accelerated fat loss exceeding other GLP-1-class peptides, improved blood sugar regulation, potential increases in basal energy expenditure via glucagon activation, and improvements in metabolic health markers.",
+    "results_timeline": "Week 1–2: reduced appetite and fewer cravings. Weeks 2–4: improved portion control and satiety. Weeks 4–8: consistent weight loss and improved energy. Weeks 8–12+: more noticeable body composition changes and continued appetite control.",
+    "half_life": "~6 days",
+    "timing": "Once per week, same day each week. Subcutaneous injection in the abdomen, thigh, or love handles. Timing relative to meals is not critical. Start conservatively and increase only after tolerating lower doses.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "15mg",
+        "vial_mg": 15,
+        "bac_water_ml": 1.5,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.5 },
+          { "units": 10, "mg": 1.0 },
+          { "units": 15, "mg": 1.5 },
+          { "units": 20, "mg": 2.0 },
+          { "units": 25, "mg": 2.5 },
+          { "units": 30, "mg": 3.0 },
+          { "units": 40, "mg": 4.0 },
+          { "units": 50, "mg": 5.0 }
+        ],
+        "dosage_text": "Conservative start: 0.5–1 mg (5–10 units) once weekly. Fat loss / appetite support: 1–3 mg (10–30 units) once weekly. Advanced: 3–5 mg (30–50 units) once weekly (for those who have tolerated lower doses). At 10 mg/mL: 0.5 mg = 5 units, 1 mg = 10 units, 2 mg = 20 units, 3 mg = 30 units.",
+        "titration": null
+      },
+      {
+        "label": "30mg",
+        "vial_mg": 30,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.5 },
+          { "units": 10, "mg": 1.0 },
+          { "units": 15, "mg": 1.5 },
+          { "units": 20, "mg": 2.0 },
+          { "units": 25, "mg": 2.5 },
+          { "units": 30, "mg": 3.0 },
+          { "units": 40, "mg": 4.0 },
+          { "units": 50, "mg": 5.0 }
+        ],
+        "dosage_text": "Conservative start: 0.5–1 mg (5–10 units) once weekly. Fat loss / appetite support: 1–3 mg (10–30 units) once weekly. Advanced: 3–5 mg (30–50 units) once weekly. Most fat-loss benefit at 2–4 mg weekly — higher doses increase nausea risk without proportional benefit. At 10 mg/mL: 1 mg = 10 units, 2 mg = 20 units, 4 mg = 40 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "mots-c",
+    "name": "MOTS-c",
+    "category": "metabolic",
+    "overview": "MOTS-c is a mitochondria-derived peptide (MDP) encoded within mitochondrial DNA that acts as a metabolic regulator. It improves cellular energy efficiency, insulin sensitivity, and exercise performance at the mitochondrial level — effectively mimicking many of the metabolic benefits of exercise at the cellular level.",
+    "mechanism": "MOTS-c activates AMPK (AMP-activated protein kinase), the master cellular energy sensor, and modulates metabolic pathways including glucose uptake, fatty acid oxidation, and mitochondrial stress response. It improves metabolic flexibility — the body's ability to switch between fuel sources — and activates stress resistance pathways linked to healthy aging and longevity biology.",
+    "effects": "Improved energy levels and sustained endurance, enhanced metabolic flexibility and insulin sensitivity, better glucose utilization, improved body composition during exercise protocols, cleaner energy without stimulant effects, and potential support for longevity-related pathways via AMPK activation.",
+    "results_timeline": "Week 1: noticeable energy shift. Weeks 2–3: improved workout stamina. Weeks 3–5: body composition changes begin. Weeks 4–6: metabolic rhythm stabilizes.",
+    "half_life": "Not well established (peptide-based; likely hours)",
+    "timing": "Often taken earlier in the day as it can feel energizing. Some research users time it with training days for enhanced exercise effect. Many protocols run 4–6 weeks on, then take a break.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.25 },
+          { "units": 10, "mg": 0.5 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 30, "mg": 1.5 },
+          { "units": 40, "mg": 2.0 },
+          { "units": 50, "mg": 2.5 }
+        ],
+        "dosage_text": "Performance / endurance: 2.5–5 mg (50–100 units), 2× per week. Conservative start: 2.5 mg (50 units) 2× per week. Most protocols run 4–6 weeks on, then take a break. At 5 mg/mL: 0.5 mg = 10 units, 1 mg = 20 units, 2.5 mg = 50 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "nad-plus",
+    "name": "NAD+",
+    "category": "metabolic",
+    "overview": "NAD+ (Nicotinamide Adenine Dinucleotide) is a critical coenzyme present in every cell, essential for energy metabolism, DNA repair, and cellular signaling. Injectable NAD+ allows direct systemic delivery, bypassing the digestive conversion limitations of oral supplementation for higher bioavailability.",
+    "mechanism": "NAD+ serves as a substrate for sirtuins (SIRT1–7), which regulate metabolism, inflammation, and longevity pathways. It is essential for the citric acid cycle and oxidative phosphorylation (ATP production), and supports PARP enzymes involved in DNA repair. Systemic NAD+ levels naturally decline with age, and supplementation aims to restore cellular energy and repair capacity.",
+    "effects": "Enhanced cellular energy production, improved cognitive function and mental clarity, support for DNA repair processes, improved metabolism, potential neuroprotective effects, improved recovery, and a general increase in vitality. Higher doses are more stimulating and are reserved for performance and cognitive applications.",
+    "results_timeline": "Energy and cognitive effects can often be felt within the first injection session. Cumulative metabolic and repair benefits develop over several weeks of consistent use.",
+    "half_life": "Variable (rapidly taken up by cells; metabolic effects can persist hours to days depending on dose and frequency)",
+    "timing": "Best earlier in the day as it can be stimulating. 3–5× per week is a standard research protocol. Start at low doses (10–20 mg) and assess tolerance before increasing — NAD+ can feel intense at higher doses.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "1000mg",
+        "vial_mg": 1000,
+        "bac_water_ml": 5,
+        "concentration_mg_per_ml": 200,
+        "syringe_reference": [
+          { "units": 5, "mg": 10 },
+          { "units": 10, "mg": 20 },
+          { "units": 15, "mg": 30 },
+          { "units": 20, "mg": 40 },
+          { "units": 25, "mg": 50 }
+        ],
+        "dosage_text": "Low / daily support: 10–20 mg (5–10 units), 3–5× per week. Energy / cognitive push: 20–50 mg (10–25 units). Go slow — NAD+ can feel intense. At 200 mg/mL: 10 mg = 5 units, 20 mg = 10 units, 50 mg = 25 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "glutathione",
+    "name": "Glutathione",
+    "category": "metabolic",
+    "overview": "Glutathione is the body's master antioxidant — a tripeptide synthesized from glutamate, cysteine, and glycine present in every cell. Injectable glutathione bypasses digestive breakdown, delivering high concentrations systemically for antioxidant support, detoxification, immune function, and skin brightening.",
+    "mechanism": "Glutathione neutralizes reactive oxygen species and free radicals, regenerates vitamins C and E, and supports Phase II liver detoxification. It is central to immune cell function and anti-inflammatory regulation. At higher doses, it modulates melanin synthesis by inhibiting tyrosinase activity, contributing to its well-documented skin-brightening effect.",
+    "effects": "Powerful antioxidant and detox support, reduced oxidative stress and cellular damage, enhanced immune function, improved recovery from training and illness, and skin brightening with more even tone at higher doses over extended use.",
+    "results_timeline": "Antioxidant effects are immediate at the cellular level. Visible skin brightening typically requires several weeks of consistent higher-dose use. Recovery and immune benefits accumulate over weeks of regular use.",
+    "half_life": "~10 minutes in blood (cellular effects persist much longer as intracellular GSH is replenished)",
+    "timing": "Best post-workout or in the morning. Pairs well with NAD+ for a combined energy and recovery protocol. 2–4× per week is typical.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "1500mg",
+        "vial_mg": 1500,
+        "bac_water_ml": 5,
+        "concentration_mg_per_ml": 300,
+        "syringe_reference": [
+          { "units": 5, "mg": 15 },
+          { "units": 10, "mg": 30 },
+          { "units": 20, "mg": 60 },
+          { "units": 30, "mg": 90 },
+          { "units": 40, "mg": 120 },
+          { "units": 50, "mg": 150 }
+        ],
+        "dosage_text": "General wellness / antioxidant: 50–100 mg (15–30 units) 2–4× per week. Skin brightening / higher antioxidant push: 100–200 mg (30–70 units). Pairs well with 10–25 units of NAD+. At 300 mg/mL: 50 mg = 17 units, 100 mg = 33 units, 150 mg = 50 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "semax",
+    "name": "Semax",
+    "category": "cognitive",
+    "overview": "Semax is a synthetic analogue of ACTH (adrenocorticotropic hormone) developed in Russia and studied extensively for cognitive enhancement, neuroprotection, and stress resilience. It is one of the most well-researched nootropic peptides, with clinical applications in stroke recovery and cognitive impairment research.",
+    "mechanism": "Semax enhances BDNF (brain-derived neurotrophic factor) and NGF (nerve growth factor) levels in the brain, modulates dopamine and serotonin neurotransmitter systems, and supports neuroplasticity. It also improves cerebral blood circulation and has neuroprotective effects, supporting both acute cognitive performance and long-term brain health through multiple pathways.",
+    "effects": "Enhanced focus and mental clarity, improved memory encoding and recall, increased mental energy and motivation without stimulant crash, improved stress resilience, and neuroprotective support for brain circulation and cognitive recovery. Effects are often described as 'clear-headed drive' rather than stimulation.",
+    "results_timeline": "First dose: mental clarity often noticed within hours. Week 1: consistent focus improvement. Weeks 2–3: memory and learning feel easier and more efficient. Weeks 3–5: stable cognitive performance baseline established.",
+    "half_life": "~1–2 hours",
+    "timing": "Best in the morning or before mentally demanding work. Can be taken before training for a focus enhancement effect. Avoid late evening as it can be stimulating. Use 1–2× daily.",
+    "administration": "Subcutaneous or intranasal",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.17 },
+          { "units": 10, "mg": 0.33 },
+          { "units": 15, "mg": 0.5 },
+          { "units": 20, "mg": 0.67 },
+          { "units": 30, "mg": 1.0 }
+        ],
+        "dosage_text": "Focus / productivity / cognitive boost: 0.3–0.6 mg (10–20 units) 1–2× daily. Memory / learning / neuro-support: 0.6–1 mg (20–30 units) morning or pre-task. Conservative start: 0.17 mg (5 units) once daily for the first few days. At 3.33 mg/mL: 0.17 mg = 5 units, 0.33 mg = 10 units, 0.5 mg = 15 units, 1 mg = 30 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "selank",
+    "name": "Selank",
+    "category": "cognitive",
+    "overview": "Selank is a synthetic heptapeptide analogue of the endogenous immunomodulatory peptide Tuftsin, developed in Russia. It is studied for anxiolytic, nootropic, and mood-stabilizing effects without sedation, dependence potential, or cognitive impairment — making it distinct from pharmaceutical anxiolytics.",
+    "mechanism": "Selank modulates GABA receptor expression, serotonin transport activity, and BDNF levels in the hippocampus. It also exerts immunomodulatory effects by influencing cytokine expression. Unlike benzodiazepines, Selank does not directly bind GABA-A receptors, which explains its anxiolytic effect without sedation, tolerance, or withdrawal.",
+    "effects": "Reduced anxiety and acute stress response, improved mood stability and emotional resilience, enhanced cognitive function including memory and focus, calm mental clarity without drowsiness or cognitive impairment. Effects are calming rather than sedating.",
+    "results_timeline": "First dose: anxiety reduction may be felt within hours. Week 1: improved stress tolerance and mood baseline. Weeks 2–3: consistent cognitive improvements and greater stress resilience.",
+    "half_life": "~1–2 hours",
+    "timing": "Best in the morning or before high-stress situations. Can be used 1–2× daily. Generally calming rather than stimulating — can be used later in the day if needed.",
+    "administration": "Subcutaneous or intranasal",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.17 },
+          { "units": 10, "mg": 0.33 },
+          { "units": 15, "mg": 0.5 },
+          { "units": 20, "mg": 0.67 },
+          { "units": 30, "mg": 1.0 }
+        ],
+        "dosage_text": "Anxiety / stress support: 0.25–0.5 mg (8–15 units) 1–2× daily. Mood balance / calm focus: 0.3–0.6 mg (10–20 units) morning or as needed. Conservative start: 0.17 mg (5 units) once daily for the first few days. At 3.33 mg/mL: 0.17 mg = 5 units, 0.5 mg = 15 units, 1 mg = 30 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "melanotan-2",
+    "name": "Melanotan II",
+    "category": "sexual-health",
+    "overview": "Melanotan II is a synthetic analogue of alpha-melanocyte-stimulating hormone (α-MSH) that activates melanocortin receptors to stimulate melanin production for enhanced tanning, while also producing libido-enhancing and mild appetite-suppressing effects through central melanocortin pathways.",
+    "mechanism": "MT-2 binds to multiple melanocortin receptor subtypes: MC1R activation in skin cells drives melanin production for enhanced tanning with less UV exposure; MC4R activation in the hypothalamus produces the libido-enhancing and appetite-suppressing effects; MC5R contributes to sebaceous gland signaling. The tanning effect requires UV light exposure — MT-2 primes the skin to respond to UV more efficiently.",
+    "effects": "Enhanced and faster tanning response with UV exposure, deeper and more even skin pigmentation, libido stimulation and enhanced arousal, mild appetite suppression in early use. Initial doses typically cause flushing and warmth — a normal response that diminishes with continued use.",
+    "results_timeline": "First doses: warmth and flushing (normal). Days 3–5: skin begins darkening with UV exposure. Week 1–2: noticeable tan develops. Maintenance: color is sustained with reduced dosing frequency.",
+    "half_life": "~1–2 hours",
+    "timing": "Evening injection is preferred as the flushing response is better tolerated at rest. UV light exposure is required to activate tanning — plan sun or tanning sessions during the loading phase. Loading: daily for 7–14 days. Maintenance: 1–2× weekly.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          { "units": 3, "mg": 0.1 },
+          { "units": 6, "mg": 0.2 },
+          { "units": 9, "mg": 0.3 },
+          { "units": 15, "mg": 0.5 },
+          { "units": 30, "mg": 1.0 }
+        ],
+        "dosage_text": "Loading phase (build pigment): 0.25 mg (~8 units) daily, increasing to 0.5 mg (15 units) daily after tolerance is established. Run for 7–14 days while getting small UV exposure. Maintenance: 0.25–0.5 mg (8–15 units) 1–2× per week. At 3.33 mg/mL: 0.1 mg = 3 units, 0.25 mg = ~8 units, 0.5 mg = 15 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "pt-141",
+    "name": "PT-141",
+    "category": "sexual-health",
+    "overview": "PT-141 (Bremelanotide) is a synthetic melanocortin agonist that acts centrally on brain pathways to enhance sexual arousal and libido in both men and women. Unlike PDE5 inhibitors, it works through the nervous system rather than vascular blood flow, making it effective through a fundamentally different mechanism.",
+    "mechanism": "PT-141 activates melanocortin receptors MC3R and MC4R in the hypothalamus and limbic system, modulating dopaminergic and noradrenergic pathways involved in sexual arousal and motivation. This central nervous system mechanism is effective regardless of blood flow status, distinguishing it from vasodilatory approaches and making it useful in a broader range of research contexts.",
+    "effects": "Enhanced sexual desire and arousal in men and women, improved libido and motivation, and potential mood elevation. Some users experience flushing and mild nausea at higher doses — manageable by dialing in the individual response dose. Effects vary significantly between individuals.",
+    "results_timeline": "Onset within 30–60 minutes of injection. Peak effects at 1–2 hours post-injection. Effects can persist for several hours. Dial in the effective dose before the intended use window.",
+    "half_life": "~2.7 hours",
+    "timing": "Inject 30–60 minutes before desired effect. SubQ injection in abdomen or thigh. Use 1–2× per week maximum — not suitable for daily use. Start at the low end (0.25–0.5 mg) to assess individual response.",
+    "administration": "Subcutaneous",
+    "research_notes": null,
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          { "units": 5, "mg": 0.25 },
+          { "units": 10, "mg": 0.5 },
+          { "units": 20, "mg": 1.0 },
+          { "units": 30, "mg": 1.5 },
+          { "units": 40, "mg": 2.0 },
+          { "units": 50, "mg": 2.5 }
+        ],
+        "dosage_text": "Tolerance testing: 0.25–0.5 mg (5–10 units). Noticeable effect: 1 mg (20 units). Strong effect: 1.5–2 mg (30–40 units). Maximum range: 2.5 mg (50 units) — higher side effects possible. Use 1–2× per week only. Dial in your individual effective dose. At 5 mg/mL: 0.25 mg = 5 units, 1 mg = 20 units, 2 mg = 40 units.",
+        "titration": null
+      }
+    ]
   }
 ]

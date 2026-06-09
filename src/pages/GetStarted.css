@@ -222,10 +222,8 @@
   box-shadow: 0 2px 14px rgba(170, 59, 255, 0.35);
 }
 
-@media (prefers-color-scheme: dark) {
-  .get-started__btn:hover {
-    box-shadow: 0 2px 14px rgba(192, 132, 252, 0.35);
-  }
+[data-theme="dark"] .get-started__btn:hover {
+  box-shadow: 0 2px 14px rgba(192, 132, 252, 0.35);
 }
 
 .get-started__btn:focus-visible {

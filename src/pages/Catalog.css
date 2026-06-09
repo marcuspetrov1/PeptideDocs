@@ -70,21 +70,6 @@
   }
 }
 
-/* ── Glass card base ── */
-.glass {
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-@media (prefers-color-scheme: dark) {
-  .glass {
-    background: rgba(30, 31, 40, 0.6);
-  }
-}
-
 /* ── Peptide card ── */
 .catalog__card {
   display: flex;
@@ -102,10 +87,8 @@
   box-shadow: 0 4px 20px rgba(170, 59, 255, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
-  .catalog__card:hover {
-    box-shadow: 0 4px 20px rgba(192, 132, 252, 0.2);
-  }
+[data-theme="dark"] .catalog__card:hover {
+  box-shadow: 0 4px 20px rgba(192, 132, 252, 0.2);
 }
 
 .catalog__card:focus-visible {

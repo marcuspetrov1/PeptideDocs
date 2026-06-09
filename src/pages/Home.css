@@ -140,10 +140,8 @@
   box-shadow: 0 2px 14px rgba(170, 59, 255, 0.35);
 }
 
-@media (prefers-color-scheme: dark) {
-  .home__cta--primary:hover {
-    box-shadow: 0 2px 14px rgba(192, 132, 252, 0.35);
-  }
+[data-theme="dark"] .home__cta--primary:hover {
+  box-shadow: 0 2px 14px rgba(192, 132, 252, 0.35);
 }
 
 .home__cta--secondary {
@@ -259,21 +257,6 @@
   .home__steps {
     grid-template-columns: 1fr;
     max-width: 480px;
-  }
-}
-
-/* glass is defined in Catalog.css; replicate here so Home is self-contained */
-.home .glass {
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-@media (prefers-color-scheme: dark) {
-  .home .glass {
-    background: rgba(30, 31, 40, 0.6);
   }
 }
 
