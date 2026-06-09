@@ -9,16 +9,17 @@
 
 /* ── Section helpers ── */
 .home__section-heading {
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: -0.6px;
+  font-family: var(--heading);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
   color: var(--text-h);
   margin: 0 0 8px;
 }
 
 @media (max-width: 1024px) {
   .home__section-heading {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
