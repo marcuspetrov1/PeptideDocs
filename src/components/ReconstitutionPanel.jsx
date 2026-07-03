@@ -4,9 +4,15 @@ export default function ReconstitutionPanel({ dose }) {
       <div className="recon-panel__header">
         <span className="recon-panel__label">Reconstitution</span>
         <span className="recon-panel__formula">
-          {dose.vial_mg}mg + {dose.bac_water_ml}mL bac water
-          <span className="recon-panel__arrow">→</span>
-          <strong>{dose.concentration_mg_per_ml} mg/mL</strong>
+          {dose.vial_mg == null ? (
+            dose.label
+          ) : (
+            <>
+              {dose.vial_mg}mg + {dose.bac_water_ml}mL bac water
+              <span className="recon-panel__arrow">→</span>
+              <strong>{dose.concentration_mg_per_ml} mg/mL</strong>
+            </>
+          )}
         </span>
       </div>
 
@@ -21,7 +27,7 @@ export default function ReconstitutionPanel({ dose }) {
           {dose.syringe_reference.map(row => (
             <tr key={row.units}>
               <td>{row.units} units</td>
-              <td>{row.mg} mg</td>
+              <td>{row.mg != null ? `${row.mg} mg` : `${row.iu} IU`}</td>
             </tr>
           ))}
         </tbody>
@@ -47,7 +53,7 @@ export default function ReconstitutionPanel({ dose }) {
               {dose.titration.map(row => (
                 <tr key={row.weeks}>
                   <td>{row.weeks}</td>
-                  <td>{row.dose_mg} mg</td>
+                  <td>{row.dose_mg != null ? `${row.dose_mg} mg` : `${row.dose_iu} IU`}</td>
                   <td>{row.units}</td>
                 </tr>
               ))}
