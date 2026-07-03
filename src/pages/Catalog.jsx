@@ -12,16 +12,26 @@ const CATEGORY_ORDER = [
   'metabolic',
   'cognitive',
   'sexual-health',
+  'hormonal',
+  'immune',
+  'longevity',
+  'sleep-repair',
+  'research-peptide',
 ]
 
 const CATEGORY_LABELS = {
   'recovery':       'Recovery',
   'beauty':         'Beauty',
-  'gh-secretagogue':'GH Secretagogue',
+  'gh-secretagogue':'Growth Hormone',
   'fat-loss':       'Fat Loss',
   'metabolic':      'Metabolic',
   'cognitive':      'Cognitive',
   'sexual-health':  'Sexual Health',
+  'hormonal':       'Hormonal',
+  'immune':         'Immune',
+  'longevity':      'Longevity',
+  'sleep-repair':   'Sleep & Repair',
+  'research-peptide':'Research',
 }
 
 const sorted = [...peptides].sort((a, b) => a.name.localeCompare(b.name))
