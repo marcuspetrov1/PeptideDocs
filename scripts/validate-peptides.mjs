@@ -122,11 +122,28 @@ try {
           }
         }
 
-        if (!hasValidSyringeRef) {
+        // IU-only dosing also requires a non-empty dose.label
+        const hasLabel =
+          dose.label !== null &&
+          dose.label !== undefined &&
+          typeof dose.label === 'string' &&
+          dose.label.trim().length > 0;
+
+        if (!hasValidSyringeRef || !hasLabel) {
+          const reasons = [];
+          if (!hasValidSyringeRef) {
+            reasons.push('no syringe_reference entry with a numeric mg or iu value');
+          }
+          if (!hasLabel) {
+            reasons.push('dose.label is missing or empty');
+          }
+
           errors.push(
-            `Item ${itemIndex} (${item.slug}), dose ${doseIndex} (label: "${dose.label}"): all-null dose detected. ` +
+            `Item ${itemIndex} (${item.slug}), dose ${doseIndex} (label: "${dose.label}"): invalid dose (${reasons.join(
+              '; '
+            )}). ` +
               `Either vial_mg AND concentration_mg_per_ml must both be non-null, ` +
-              `or at least one syringe_reference entry must have a numeric mg or iu value.`
+              `or dose.label must be a non-empty string AND at least one syringe_reference entry must have a numeric mg or iu value.`
           );
           exitCode = 1;
         }
