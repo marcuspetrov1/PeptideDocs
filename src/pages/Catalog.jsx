@@ -2,37 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
+import { CATEGORY_ORDER, CATEGORY_LABELS } from '../data/categories.js'
 import './Catalog.css'
-
-const CATEGORY_ORDER = [
-  'recovery',
-  'beauty',
-  'gh-secretagogue',
-  'fat-loss',
-  'metabolic',
-  'cognitive',
-  'sexual-health',
-  'hormonal',
-  'immune',
-  'longevity',
-  'sleep-repair',
-  'research-peptide',
-]
-
-const CATEGORY_LABELS = {
-  'recovery':       'Recovery',
-  'beauty':         'Beauty',
-  'gh-secretagogue':'Growth Hormone',
-  'fat-loss':       'Fat Loss',
-  'metabolic':      'Metabolic',
-  'cognitive':      'Cognitive',
-  'sexual-health':  'Sexual Health',
-  'hormonal':       'Hormonal',
-  'immune':         'Immune',
-  'longevity':      'Longevity',
-  'sleep-repair':   'Sleep & Repair',
-  'research-peptide':'Research',
-}
 
 const sorted = [...peptides].sort((a, b) => a.name.localeCompare(b.name))
 

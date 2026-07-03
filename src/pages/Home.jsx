@@ -2,22 +2,28 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
 import { SHOP_URL } from '../config.js'
+import { CATEGORY_ORDER, CATEGORY_LABELS } from '../data/categories.js'
 import './Home.css'
 import heroImg from '../assets/hero.png'
 
-// Derive unique categories with counts
+// Derive unique categories present in the data, with counts, ordered to
+// match Catalog and labeled from the shared category map so chip text never
+// diverges from Catalog's curated labels.
 const categoryMap = peptides.reduce((acc, p) => {
   acc[p.category] = (acc[p.category] || 0) + 1
   return acc
 }, {})
 
-const categories = Object.entries(categoryMap).map(([slug, count]) => ({
+const presentSlugs = Object.keys(categoryMap)
+const orderedSlugs = [
+  ...CATEGORY_ORDER.filter(slug => presentSlugs.includes(slug)),
+  ...presentSlugs.filter(slug => !CATEGORY_ORDER.includes(slug)),
+]
+
+const categories = orderedSlugs.map(slug => ({
   slug,
-  label: slug
-    .split('-')
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' '),
-  count,
+  label: CATEGORY_LABELS[slug] ?? slug,
+  count: categoryMap[slug],
 }))
 
 const steps = [
