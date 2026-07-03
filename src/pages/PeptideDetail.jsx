@@ -37,6 +37,46 @@ const INFO_ROWS = [
   { key: 'research_notes',  label: 'Research Notes'  },
 ]
 
+const URL_PATTERN = /https?:\/\/\S+/g
+
+function linkifyCitation(citation) {
+  const parts = []
+  let lastIndex = 0
+  let match
+  URL_PATTERN.lastIndex = 0
+  let matchIdx = 0
+
+  while ((match = URL_PATTERN.exec(citation)) !== null) {
+    const url = match[0]
+    if (match.index > lastIndex) {
+      parts.push(citation.slice(lastIndex, match.index))
+    }
+    parts.push(
+      <a key={matchIdx++} href={url} target="_blank" rel="noopener noreferrer">
+        {url}
+      </a>
+    )
+    lastIndex = match.index + url.length
+  }
+
+  if (lastIndex < citation.length) {
+    parts.push(citation.slice(lastIndex))
+  }
+
+  return parts
+}
+
+function ResearchNotes({ value }) {
+  const citations = value.split(' | ')
+  return (
+    <ul className="peptide-detail__research-notes">
+      {citations.map((citation, idx) => (
+        <li key={idx}>{linkifyCitation(citation)}</li>
+      ))}
+    </ul>
+  )
+}
+
 export default function PeptideDetail() {
   const { slug } = useParams()
   const peptide = peptides.find(p => p.slug === slug)
@@ -81,7 +121,9 @@ export default function PeptideDetail() {
           return (
             <div key={key} className="peptide-detail__row" role="listitem">
               <dt className="peptide-detail__label">{label}</dt>
-              <dd className="peptide-detail__value">{value}</dd>
+              <dd className="peptide-detail__value">
+                {key === 'research_notes' ? <ResearchNotes value={value} /> : value}
+              </dd>
             </div>
           )
         })}
