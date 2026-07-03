@@ -1076,5 +1076,2607 @@
         "titration": null
       }
     ]
+  },
+  {
+    "slug": "5-amino-1mq",
+    "name": "5-Amino-1MQ",
+    "category": "metabolic",
+    "overview": "5-Amino-1MQ (5-amino-1-methylquinolinium) is a small-molecule, selective inhibitor of Nicotinamide N-methyltransferase (NNMT) studied for its potential to support fat metabolism, preserve lean muscle, and raise intracellular NAD+ levels.",
+    "mechanism": "By inhibiting NNMT, an enzyme often overexpressed in adipose tissue during obesity, 5-Amino-1MQ spares nicotinamide for the NAD+ salvage pathway rather than letting it be methylated and cleared. The resulting rise in NAD+ activates SIRT1 pathways linked to mitochondrial biogenesis, fat oxidation, and metabolic flexibility.",
+    "effects": "Preclinical models show reduced fat mass with preserved lean muscle, elevated NAD+ and SIRT1 activation, and improved grip strength in aged mice when paired with exercise. Generally well tolerated, with occasional mild headache, jitteriness, or injection-site reactions reported.",
+    "results_timeline": "Not specified in source beyond general week-by-week dosing titration; long-term human outcome timelines are not established.",
+    "timing": "Once or twice daily subcutaneous injection; twice-daily (BID) dosing may better sustain NNMT inhibition given a plasma half-life of roughly 3.8–6.9 hours. Morning administration is preferred, with BID protocols split AM/PM.",
+    "administration": "Subcutaneous",
+    "research_notes": "Nature Medicine (2014) — Nicotinamide N-methyltransferase knockdown protects against diet-induced obesity, https://pubmed.ncbi.nlm.nih.gov/24717514/ | PMC (2024) — Nicotinamide N-methyltransferase inhibition mitigates obesity-related metabolic dysfunctions, https://pmc.ncbi.nlm.nih.gov/articles/PMC11622326/ | Frontiers in Pharmacology (2024) — NNMT: a novel therapeutic target for metabolic syndrome, https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1410479/full | PubMed (2021) — LC-MS/MS assay for 5-amino-1-methylquinolinium: pharmacokinetic and oral bioavailability study, https://pubmed.ncbi.nlm.nih.gov/34304009/",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          {
+            "units": 10,
+            "mg": 0.5
+          },
+          {
+            "units": 25,
+            "mg": 1.25
+          },
+          {
+            "units": 50,
+            "mg": 2.5
+          },
+          {
+            "units": 100,
+            "mg": 5
+          }
+        ],
+        "dosage_text": "Start at 2.5 mg (50 units) once daily for days 1–2 to assess tolerance, then move to the standard 5 mg (100 units) once daily, or split as 2.5 mg AM + 2.5 mg PM (50 units each). At 5 mg/mL: 1 unit = 0.05 mg. A single 10 mg vial lasts about 2–4 days at these doses.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "adamax",
+    "name": "Adamax",
+    "category": "fat-loss",
+    "overview": "Adamax is an adamantane-modified analog of Semax, a heptapeptide derivative of ACTH(4-10) studied for nootropic and neuroprotective properties. The adamantane modification is intended to improve blood-brain barrier penetration and stability compared to standard Semax.",
+    "mechanism": "Structurally derived from Semax, Adamax is believed to increase brain-derived neurotrophic factor (BDNF) expression and enhance TrkB receptor sensitivity in the hippocampus, promoting neuroplasticity and neuronal survival. It also modulates dopamine and serotonin signaling and activates cAMP/CREB intracellular pathways linked to memory and stress resilience. The adamantane group is thought to add lipophilicity and enzymatic stability versus Semax, extending its effects and reducing dosing frequency needs.",
+    "effects": "Reported benefits include improved learning and memory consolidation, mental clarity, neuroprotection under oxidative or ischemic stress, mood/stress resilience via dopamine-serotonin modulation, and increased neuroplasticity from elevated BDNF.",
+    "results_timeline": "Weeks 1–2: adaptation period with subtle mood or clarity shifts. Weeks 3–6: more noticeable cognitive benefits (memory, focus). Weeks 6–12: sustained neuroplasticity effects with continued use.",
+    "timing": "Once daily subcutaneous injection, preferably in the morning for consistency.",
+    "administration": "Subcutaneous",
+    "research_notes": "PubMed — Semax: structure, mechanism, and therapeutic potential (ACTH analog overview), https://pubmed.ncbi.nlm.nih.gov/11146367/ | Journal of Neurochemistry (2006) — Semax binds specific brain sites and increases BDNF protein in rat basal forebrain, https://pubmed.ncbi.nlm.nih.gov/16635254/ | Medicinal Chemistry Letters (ACS) — Adamantane modifications enhance peptide stability and CNS penetration, https://pubs.acs.org/doi/10.1021/acsmedchemlett.8b00361 | PubMed — Clinical safety and tolerability of Semax in human studies (no major adverse effects), https://pubmed.ncbi.nlm.nih.gov/15001158/",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          {
+            "units": 9,
+            "mg": 0.3
+          },
+          {
+            "units": 15,
+            "mg": 0.5
+          },
+          {
+            "units": 23,
+            "mg": 0.75
+          },
+          {
+            "units": 30,
+            "mg": 1
+          }
+        ],
+        "dosage_text": "Gradual titration: 300 mcg (9 units) daily weeks 1–2, 500 mcg (15 units) weeks 3–4, 750 mcg (23 units) weeks 5–6, up to 1000 mcg (30 units) weeks 7–8. Once daily, subcutaneous. Cycle 8–12 weeks (up to 16), followed by an equal off-cycle break. At 3.33 mg/mL, 1 unit is about 33.3 mcg — a 30- or 50-unit syringe helps precision at the lower starting doses.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.3,
+            "units": 9
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.5,
+            "units": 15
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 0.75,
+            "units": 23
+          },
+          {
+            "weeks": "7-8",
+            "dose_mg": 1,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "adipotide",
+    "name": "Adipotide",
+    "category": "fat-loss",
+    "overview": "Adipotide is a synthetic peptidomimetic that targets prohibitin on blood vessels within white adipose tissue, delivering a pro-apoptotic sequence that destroys those vessels. Preclinical studies in obese rodents and primates showed substantial weight loss, but clinical development was discontinued after a Phase 1 human trial due to safety concerns.",
+    "mechanism": "Adipotide binds prohibitin-1 on the vascular endothelium of white adipose tissue. Once bound, it delivers a pro-apoptotic peptide sequence that triggers destruction of those blood vessels, cutting off blood supply to nearby fat cells so they undergo apoptosis and are metabolized away.",
+    "effects": "Preclinical studies reported roughly 30% body weight reduction in obese rodents and about 11% weight loss in obese primates after 4 weeks. The mechanism appears to selectively spare non-adipose tissue in animal models, but reversible kidney toxicity was observed at higher doses.",
+    "results_timeline": "Weeks 1–2 correspond to the titration/tolerance-assessment phase. Primate studies observed roughly 11% weight loss by week 4. Rodent studies showed continued fat-loss trajectory through weeks 4–8.",
+    "timing": "Once daily, any consistent time, with systematic rotation of injection sites.",
+    "administration": "Subcutaneous",
+    "research_notes": "Science Translational Medicine (PubMed) — A peptidomimetic targeting white fat causes weight loss and improved insulin resistance in obese monkeys, https://pubmed.ncbi.nlm.nih.gov/22072637/ | MD Anderson Cancer Center — Obese Monkeys Lose Weight on Drug that Attacks Blood Supply of Fat Cells, https://www.mdanderson.org/newsroom/obese-monkeys-lose-weight-on-drug-that-attacks-blood-supply-of-f.h00-158676579.html | Arrowhead Pharmaceuticals News — Dosing of First Patient with Anti-Obesity Treatment Adipotide in a Phase 1 Clinical Trial, https://arrowheadpharma.com/news-press/arrowhead-announces-dosing-of-first-patient-with-anti-obesity-treatment-adipotide-in-a-phase-1-clinical-trial/ | ScienceDaily — Obese monkeys lose weight on drug that attacks blood supply of fat cells, https://www.sciencedaily.com/releases/2011/11/111109143009.htm",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          {
+            "units": 7.5,
+            "mg": 0.25
+          },
+          {
+            "units": 15,
+            "mg": 0.5
+          },
+          {
+            "units": 22.5,
+            "mg": 0.75
+          },
+          {
+            "units": 30,
+            "mg": 1
+          }
+        ],
+        "dosage_text": "Cautious titration starting at 250 mcg (7.5 units) once daily, increasing by 250 mcg every 2 weeks as tolerated, up to 1000 mcg (30 units) daily by weeks 7–8. Keep cycles short (4–8 weeks) given the discontinued clinical development and preclinical kidney toxicity signal at higher doses. At 3.33 mg/mL, 1 unit is about 33.3 mcg.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.25,
+            "units": 7.5
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.5,
+            "units": 15
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 0.75,
+            "units": 22.5
+          },
+          {
+            "weeks": "7-8",
+            "dose_mg": 1,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "aicar",
+    "name": "AICAR",
+    "category": "metabolic",
+    "overview": "AICAR (5-aminoimidazole-4-carboxamide ribonucleoside) is a research compound that activates AMP-activated protein kinase (AMPK), earning it the nickname 'exercise pill' after studies showed sedentary animals given AICAR had dramatic endurance improvements. It is banned by WADA and not approved for human therapeutic use.",
+    "mechanism": "AICAR is metabolized intracellularly to ZMP, an AMP analog that directly activates AMPK, the master regulator of cellular energy homeostasis. AMPK activation stimulates glucose uptake and fatty-acid oxidation in muscle and promotes mitochondrial biogenesis, mimicking the cellular effects of exercise or fasting.",
+    "effects": "Sedentary mice treated with AICAR showed a 44% increase in endurance without training. Other observed effects in animal models include increased mitochondrial enzyme activity, improved insulin sensitivity, and potential protection against diabetic neuropathy. Generally well tolerated in studies with occasional mild injection-site reactions.",
+    "results_timeline": "Weeks 1–2 are typically a titration/tolerance phase. Weeks 3–4 are when subjective energy or endurance shifts are commonly reported. Weeks 5–8 and beyond are where metabolic marker changes would be expected based on animal studies.",
+    "timing": "Once daily, subcutaneous, at any consistent time; rotate injection sites daily.",
+    "administration": "Subcutaneous",
+    "research_notes": "U.S. Anti-Doping Agency (USADA) — What Athletes Should Know About AICAR and Other Prohibited AMPK Activated Protein Kinase Activators, https://www.usada.org/spirit-of-sport/aicar-and-other-prohibited-amp-activated-protein-kinase-activators/ | PubMed (2017) — Doping control study of AICAR; endurance enhancement in sedentary animals (Drug Testing and Analysis), https://pubmed.ncbi.nlm.nih.gov/28407446/ | PubMed (2013) — Acadesine (AICAR) Phase I/II study; maximum tolerated dose 210 mg/kg IV (Cancer Chemotherapy and Pharmacology), https://pubmed.ncbi.nlm.nih.gov/23228986/ | MDPI (2024) — AICAR prevents and reverses diabetic polyneuropathy by regulating mitophagy, https://www.mdpi.com/1422-0067/26/1/80",
+    "doses": [
+      {
+        "label": "50mg",
+        "vial_mg": 50,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 16.7,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 1
+          },
+          {
+            "units": 12,
+            "mg": 2
+          },
+          {
+            "units": 18,
+            "mg": 3
+          },
+          {
+            "units": 30,
+            "mg": 5
+          }
+        ],
+        "dosage_text": "Conservative track: 1 mg (6 units) daily weeks 1–2, 2 mg (12 units) weeks 3–4, 3 mg (18 units) weeks 5–8. An advanced track exists in the literature going up to 5 mg (30 units) daily by weeks 7–12, but should only be used when explicitly supported by protocol design. At 16.7 mg/mL, 1 unit is about 167 mcg. Once daily subcutaneous.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 1,
+            "units": 6
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 2,
+            "units": 12
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 3,
+            "units": 18
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "aod-9604",
+    "name": "AOD-9604",
+    "category": "fat-loss",
+    "overview": "AOD-9604 is a modified fragment of human growth hormone (Tyr-hGH 177–191) that retains GH's lipolytic (fat-reducing) properties without its growth-promoting effects. Clinical trials found it exhibits a placebo-like safety profile in obese adults.",
+    "mechanism": "AOD-9604 binds adipose tissue and triggers breakdown of stored fat (lipolysis) while blocking fat cells from restocking (re-esterification). Chronic administration appears to upregulate beta-3 adrenergic receptors in fat tissue, reversing an obesity-associated suppression of these fat-burning receptors. Unlike full-length hGH, it does not meaningfully raise IGF-1 or worsen glucose tolerance.",
+    "effects": "Clinical trials showed modest but statistically significant weight loss (about 2.6 kg vs 0.8 kg placebo over 12 weeks at 1 mg/day), with preferential loss of abdominal fat similar to low-dose hGH therapy. Placebo-like tolerability with no anti-AOD9604 antibodies detected. Preclinical work suggests possible cartilage repair and bone health benefits.",
+    "results_timeline": "Weeks 1–4 are the titration period at 300 mcg. Weeks 5–8 establish the 500 mcg dose with fat-oxidation effects building. Weeks 8–12 is where clinically observed weight-loss differences became most apparent in trials.",
+    "timing": "Once daily, subcutaneous; morning administration on an empty stomach is common.",
+    "administration": "Subcutaneous",
+    "research_notes": "Journal of Endocrinology and Metabolism (2014) — Safety and metabolism of AOD9604 as a nutraceutical ingredient, https://jofem.org/index.php/jofem/article/view/213/278 | Journal of Endocrinology and Metabolism (2013) — Safety and tolerability of AOD9604 in humans; no IGF-1 increase; placebo-like safety profile, https://www.jofem.org/index.php/jofem/article/view/157/194 | Gastroenterology — Drug treatment of the overweight patient; AOD-9604 RCT summary and clinical efficacy, https://www.gastrojournal.org/article/S0016-5085(07)00574-4/fulltext | Endocrinology (OUP) — Chronic AOD9604 treatment in obese and beta3-AR knockout mice; receptor upregulation, https://academic.oup.com/endo/article/142/12/5182/2988749",
+    "doses": [
+      {
+        "label": "2mg",
+        "vial_mg": 2,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 0.667,
+        "syringe_reference": [
+          {
+            "units": 45,
+            "mg": 0.3
+          },
+          {
+            "units": 75,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "300 mcg (45 units) once daily for weeks 1–4, increasing to 500 mcg (75 units) once daily for weeks 5–12. At 0.667 mg/mL, 1 unit is about 6.67 mcg. Each 2 mg vial lasts roughly 4 days at 500 mcg/day, or 6–7 days at 300 mcg/day.",
+        "titration": [
+          {
+            "weeks": "1-4",
+            "dose_mg": 0.3,
+            "units": 45
+          },
+          {
+            "weeks": "5-12",
+            "dose_mg": 0.5,
+            "units": 75
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ara-290",
+    "name": "Ara-290",
+    "category": "recovery",
+    "overview": "Ara-290 (cibinetide) is an 11-amino-acid non-erythropoietic peptide derived from erythropoietin's helix-B domain. It selectively activates the innate repair receptor to promote anti-inflammatory and tissue-protective effects without stimulating red blood cell production.",
+    "mechanism": "Ara-290 binds the innate repair receptor (IRR), a heterodimer of EPOR and CD131 (beta common subunit) distinct from the classical erythropoietin receptor. This triggers anti-apoptotic and anti-inflammatory signaling that protects tissue and supports repair. It has also been shown to inhibit TRPV1 ion channels, contributing to an analgesic effect independent of the IRR pathway.",
+    "effects": "Clinical trials in diabetic neuropathy showed improvements in HbA1c, lipid profiles, and neuropathic pain scores at 4 mg/day. A sarcoidosis-associated small-fiber neuropathy trial found significant increases in corneal nerve fiber density (objective nerve regrowth) alongside symptom improvement versus placebo. Unlike full EPO, it does not stimulate erythropoiesis, avoiding related side effects. Well tolerated with occasional mild injection-site reactions.",
+    "results_timeline": "Week 1 is a titration period at 2 mg to assess tolerance. Weeks 2 onward use the 4 mg/day maintenance dose that clinical trials (28-day protocols) were built around. Nerve fiber density changes in the sarcoidosis trial were measured over similar multi-week windows.",
+    "timing": "Once daily, subcutaneous, at any consistent time; rotate injection sites.",
+    "administration": "Subcutaneous",
+    "research_notes": "Molecular Medicine (2014) — Brines M. et al.: ARA 290 improves metabolic control and neuropathic symptoms in patients with type 2 diabetes, https://molmed.biomedcentral.com/articles/10.2119/molmed.2014.00215 | Molecular Medicine (2013) — Dahan A. et al.: ARA 290 improves symptoms in sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density, https://molmed.biomedcentral.com/articles/10.2119/molmed.2013.00122 | ClinicalTrials.gov (NCT02039687) — Phase 2 study of ARA 290 on corneal nerve fiber density in sarcoidosis (1 mg vs 4 mg vs 8 mg daily SC for 28 days), https://clinicaltrials.gov/study/NCT02039687 | Peptides Journal (2016) — Zhang W. et al.: ARA 290 relieves pathophysiological pain by targeting TRPV1 channel, https://pubmed.ncbi.nlm.nih.gov/26774587/",
+    "doses": [
+      {
+        "label": "16mg",
+        "vial_mg": 16,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 8,
+        "syringe_reference": [
+          {
+            "units": 25,
+            "mg": 2
+          },
+          {
+            "units": 50,
+            "mg": 4
+          }
+        ],
+        "dosage_text": "2 mg (25 units) once daily during week 1 to assess tolerance, then 4 mg (50 units) once daily from week 2 onward — the dose used as the clinical target, since 8 mg showed no added benefit over 4 mg in trials. At 8 mg/mL, 1 unit is 80 mcg.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 2,
+            "units": 25
+          },
+          {
+            "weeks": "2-16",
+            "dose_mg": 4,
+            "units": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cagrilintide",
+    "name": "Cagrilintide",
+    "category": "fat-loss",
+    "overview": "Cagrilintide is a long-acting acylated analogue of the pancreatic hormone amylin, designed for once-weekly subcutaneous administration. It activates central amylin receptors to promote satiety, slow gastric emptying, and reduce food intake.",
+    "mechanism": "Native amylin promotes satiation, slows gastric emptying, and inhibits postprandial glucagon secretion. Cagrilintide acts on central amylin receptors, particularly in the area postrema and hindbrain, to reduce appetite and energy intake. Lipid (fatty acid) modification of the molecule extends its half-life to roughly 160–195 hours, enabling once-weekly dosing.",
+    "effects": "In a phase 2 trial, cagrilintide at 4.5 mg weekly produced approximately 10.8% body weight loss over 26 weeks versus 3.0% with placebo. Combined with semaglutide 2.4 mg (the CagriSema combination), phase 3 REDEFINE trials showed roughly 20% weight loss at 68 weeks, exceeding either agent alone. Side effects are primarily gastrointestinal — nausea, vomiting, diarrhea, constipation — generally mild-to-moderate and transient, minimized by gradual titration.",
+    "results_timeline": "Weeks 1–4 are titration, mostly managing GI side effects. Weeks 5–8 approach or reach the 4.5 mg maintenance dose. Weeks 8–26 is where the weight-loss curve builds, with ~10.8% total loss the 26-week phase 2 benchmark at full dose.",
+    "timing": "Once weekly, subcutaneous, on a consistent day each week.",
+    "administration": "Subcutaneous",
+    "research_notes": "The Lancet (2021) — Once-weekly cagrilintide for weight management: phase 2 dose-finding trial (Lau et al.), https://pubmed.ncbi.nlm.nih.gov/34798060/ | N Engl J Med (2025) — REDEFINE 1: Coadministered cagrilintide and semaglutide in adults with overweight or obesity, https://www.nejm.org/doi/full/10.1056/NEJMoa2502081 | N Engl J Med (2025) — REDEFINE 2: Cagrilintide-semaglutide in adults with overweight/obesity and type 2 diabetes, https://pubmed.ncbi.nlm.nih.gov/40544432/ | J Med Chem (2021) — Development of cagrilintide: a long-acting amylin analogue, https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c00565",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 36,
+            "mg": 0.6
+          },
+          {
+            "units": 72,
+            "mg": 1.2
+          },
+          {
+            "units": 144,
+            "mg": 2.4
+          },
+          {
+            "units": 270,
+            "mg": 4.5
+          }
+        ],
+        "dosage_text": "Weekly titration: 0.6 mg (36 units) weeks 1–2, 1.2 mg (72 units) weeks 3–4, 2.4 mg (144 units, 1.44 mL) weeks 5–6, up to 4.5 mg (270 units, 2.70 mL) maintenance from week 7 on. At 1.67 mg/mL, 1 unit is about 16.7 mcg. Doses above 1 mL (100 units) require a 3 mL syringe with a subcutaneous needle rather than a standard U-100 insulin syringe.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.6,
+            "units": 36
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 1.2,
+            "units": 72
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 2.4,
+            "units": 144
+          },
+          {
+            "weeks": "7-16",
+            "dose_mg": 4.5,
+            "units": 270
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cartalax",
+    "name": "Cartalax",
+    "category": "longevity",
+    "overview": "Cartalax is a synthetic tripeptide bioregulator (Ala-Glu-Asp, sequence 'AED') developed by Prof. Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology. It corresponds to a motif in type XI collagen and is studied in preclinical models for effects on fibroblast and chondrocyte function. Published human dosing data is limited; this profile draws on preclinical and observational sources.",
+    "mechanism": "As one of the Khavinson bioregulator peptides, Cartalax is proposed to interact with DNA and modulate gene expression at nanomolar concentrations. In fibroblast and chondrocyte culture studies it has been reported to upregulate Ki-67 (a proliferation marker), increase SIRT-1/SIRT-6 expression, reduce p53 and caspase-3 activity (pro-apoptotic signals), and inhibit MMP-9 synthesis, an enzyme linked to extracellular matrix breakdown.",
+    "effects": "Preclinical data suggest support for fibroblast proliferation, reduced markers of cellular senescence in aged cell cultures, and modulation of extracellular matrix homeostasis via MMP-9 inhibition and collagen-related gene expression. Khavinson bioregulator peptides are generally described as well tolerated in observational use, with occasional mild injection-site reactions possible.",
+    "results_timeline": "Not specified in source with clinical confidence — the site notes evidence is limited to in vitro/rodent studies rather than human trial timelines.",
+    "timing": "Once daily, any consistent time, with rotation of injection sites.",
+    "administration": "Subcutaneous",
+    "research_notes": "Neuroendocrinology Letters (2002) — Khavinson VK. Peptides and Ageing. Overview of bioregulatory peptide development and geroprotective mechanisms, https://pubmed.ncbi.nlm.nih.gov/12374906/ | Bulletin of Experimental Biology and Medicine (2016) — Lin'kova NS et al. Peptide Regulation of Skin Fibroblast Functions during Their Aging In Vitro, https://pubmed.ncbi.nlm.nih.gov/27259496/ | International Journal of Molecular Sciences (2023) — Linkova N, Khavinson V et al. Peptide Regulation of Chondrogenic Stem Cell Differentiation, https://pubmed.ncbi.nlm.nih.gov/37175656/ | Bulletin of Experimental Biology and Medicine (2014) — Khavinson VK et al. Peptides regulate the expression of signaling molecules in kidney cell cultures during in vitro aging, https://pubmed.ncbi.nlm.nih.gov/24958378/",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 30,
+            "mg": 2
+          },
+          {
+            "units": 45,
+            "mg": 3
+          },
+          {
+            "units": 60,
+            "mg": 4
+          },
+          {
+            "units": 75,
+            "mg": 5
+          }
+        ],
+        "dosage_text": "Gradual titration: 2 mg (30 units) daily weeks 1–2, 3 mg (45 units) weeks 3–4, 4 mg (60 units) weeks 5–8, 5 mg (75 units) weeks 9–12. At 6.67 mg/mL, 1 unit is about 66.7 mcg. Note this schedule is extrapolated from preclinical fibroblast/chondrocyte research, not established human dosing data.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 2,
+            "units": 30
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 3,
+            "units": 45
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 4,
+            "units": 60
+          },
+          {
+            "weeks": "9-12",
+            "dose_mg": 5,
+            "units": 75
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cerebrolysin",
+    "name": "Cerebrolysin",
+    "category": "cognitive",
+    "overview": "Cerebrolysin is a porcine brain-derived peptide preparation containing low-molecular-weight neuropeptides and free amino acids that crosses the blood-brain barrier to support neuronal survival. It mimics endogenous neurotrophic factors such as NGF and BDNF and modulates neuroinflammatory mediators.",
+    "mechanism": "Composed of biologically active neuropeptides and amino acids under 10 kDa in molecular weight, Cerebrolysin crosses the blood-brain barrier and exerts neurotrophic effects similar to nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF). Preclinical studies show neuroprotective effects including reduced infarct size and improved recovery in ischemia models.",
+    "effects": "Meta-analyses of human dementia trials suggest modest cognitive benefits with daily dosing; stroke trial results have been more variable. Generally well tolerated short-term, with occasional mild injection-site reactions, dizziness, headache, or gastrointestinal upset reported.",
+    "results_timeline": "Week 1 begins at the 20 mg starting dose as a single daily injection. Weeks 2–4 involve titrating up to the 32 mg/day maintenance dose split AM/PM. From week 4 onward, at the maintenance dose, cognitive or neuroprotective effects described in trial literature would be expected to build.",
+    "timing": "Once or twice daily; doses above 20 mg are split into AM and PM injections at different sites.",
+    "administration": "Subcutaneous",
+    "research_notes": "International Peptide Society — Cerebrolysin Monograph: mechanism, pharmacology, and clinical applications (2018), https://peptidesociety.org/wp-content/uploads/2018/08/Cerebrolysin-Monograph-Complete-1.pdf | Alzheimer's Drug Discovery Foundation — Cerebrolysin cognitive vitality report: evidence synthesis and safety overview (2016), https://www.alzdiscovery.org/uploads/cognitive_vitality_media/addf-cerebrolysin-full-report.pdf | Zhang et al., Med Sci Monit (PMC) — Meta-analysis of Cerebrolysin efficacy and safety in acute ischemic stroke (2017), https://pmc.ncbi.nlm.nih.gov/articles/PMC5474547/ | Kurkin et al., PLOS One — Neuroprotective action of Cerebrolysin in acute/chronic brain ischemia in rats (2021), https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254493",
+    "doses": [
+      {
+        "label": "60mg",
+        "vial_mg": 60,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 20,
+        "syringe_reference": [
+          {
+            "units": 60,
+            "mg": 12
+          },
+          {
+            "units": 70,
+            "mg": 14
+          },
+          {
+            "units": 80,
+            "mg": 16
+          },
+          {
+            "units": 100,
+            "mg": 20
+          }
+        ],
+        "dosage_text": "Week 1: 20 mg (100 units) once daily as a single injection. Week 2: 24 mg/day split as 60 units AM + 60 units PM. Week 3: 28 mg/day split as 70 units AM + 70 units PM. Week 4+: 32 mg/day split as 80 units AM + 80 units PM. At 20 mg/mL, 1 unit = 0.2 mg. Doses exceeding 100 units (1 mL) must be split into two separate injections at different sites.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 20,
+            "units": 100
+          },
+          {
+            "weeks": "2",
+            "dose_mg": 24,
+            "units": 60
+          },
+          {
+            "weeks": "3",
+            "dose_mg": 28,
+            "units": 70
+          },
+          {
+            "weeks": "4+",
+            "dose_mg": 32,
+            "units": 80
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chonluten",
+    "name": "Chonluten",
+    "category": "longevity",
+    "overview": "Chonluten is a short bioregulatory tripeptide (Glu-Asp-Gly) from the Khavinson peptide bioregulator family, studied specifically for its effects on bronchopulmonary tissue and inflammatory signaling in monocyte/macrophage cell models.",
+    "mechanism": "Research in THP-1 monocyte/macrophage cell models suggests Chonluten modulates proliferative activity and inflammatory pathways at nanomolar concentrations, consistent with its classification as a tissue-specific bioregulator peptide targeting lung and bronchial tissue.",
+    "effects": "May support bronchopulmonary tissue function and help regulate inflammatory and proliferative pathways in respiratory-relevant cell models. Short peptides in this bioregulator class are generally well tolerated, with occasional mild injection-site irritation.",
+    "results_timeline": "As a slow-titration protocol run over 8-16 weeks, most users don't expect noticeable effects until well into the schedule, once doses reach the 2-4 mg/day range around weeks 9-16.",
+    "timing": "Once daily, subcutaneous, any consistent time of day with sites rotated between abdomen, thighs, and upper arms.",
+    "administration": "Subcutaneous",
+    "research_notes": "Peptides Regulating Proliferative Activity and Inflammatory Pathways in the Monocyte/Macrophage THP-1 Cell Line, Int J Mol Sci (2022), https://doi.org/10.3390/ijms23073607 | Overcoming Oral Cavity Barriers for Peptide Delivery Using Advanced Pharmaceutical Techniques and Nano-Formulation Platforms, Biomedicines (2025), https://doi.org/10.3390/biomedicines13112735 | Therapeutic peptides: current applications and future directions, Signal Transduction and Targeted Therapy (2022), https://www.nature.com/articles/s41392-022-00904-4",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 3.75,
+            "mg": 0.25
+          },
+          {
+            "units": 7.5,
+            "mg": 0.5
+          },
+          {
+            "units": 15,
+            "mg": 1
+          },
+          {
+            "units": 22.5,
+            "mg": 1.5
+          },
+          {
+            "units": 30,
+            "mg": 2
+          },
+          {
+            "units": 45,
+            "mg": 3
+          },
+          {
+            "units": 60,
+            "mg": 4
+          }
+        ],
+        "dosage_text": "Once-daily subcutaneous injection, titrated gradually from 250 mcg (3.75 units) up to 4 mg (60 units) over 8-16 weeks, increasing roughly every 1-2 weeks. At 6.67 mg/mL: 250 mcg = 3.75 units, 1 mg = 15 units, 4 mg = 60 units. Use a 30- or 50-unit syringe for the smallest early doses.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.25,
+            "units": 3.75
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.5,
+            "units": 7.5
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 1,
+            "units": 15
+          },
+          {
+            "weeks": "7-8",
+            "dose_mg": 1.5,
+            "units": 22.5
+          },
+          {
+            "weeks": "9-10",
+            "dose_mg": 2,
+            "units": 30
+          },
+          {
+            "weeks": "11-12",
+            "dose_mg": 3,
+            "units": 45
+          },
+          {
+            "weeks": "13-16",
+            "dose_mg": 4,
+            "units": 60
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cjc-1295-dac",
+    "name": "CJC-1295 DAC",
+    "category": "gh-secretagogue",
+    "overview": "CJC-1295 DAC is a long-acting growth hormone-releasing hormone (GHRH) analog modified with a Drug Affinity Complex (DAC) that binds to serum albumin, extending its half-life to roughly 6-8 days. This allows once-weekly dosing rather than the daily injections needed for standard GHRH analogs.",
+    "mechanism": "The DAC modification causes the peptide to bind covalently to albumin in the bloodstream after injection, dramatically slowing its clearance. It then acts on GHRH receptors on pituitary somatotrope cells to amplify natural, pulsatile GH synthesis and release, while preserving the normal frequency and amplitude of GH pulses rather than flooding the body with GH the way exogenous HGH does.",
+    "effects": "Sustained elevation of GH (2-10 fold) and IGF-1 (1.5-3 fold) supporting muscle growth, recovery, and lean body composition; improved fat metabolism with potential reduction in visceral fat; improved slow-wave sleep quality; preserved natural GH pulsatility. Mild flushing, injection-site reactions, water retention, or headache can occur but serious effects are uncommon at standard doses.",
+    "results_timeline": "Sleep quality changes can appear within 1-2 weeks. Recovery and fat metabolism effects tend to show up around weeks 3-6, with more visible body composition changes by weeks 6-12. IGF-1 elevation can persist up to 28 days after repeated dosing.",
+    "timing": "Once weekly, subcutaneous, ideally in the evening before bed on an empty stomach (2+ hours after eating) to align with natural nocturnal GH release and avoid blood-sugar-related blunting.",
+    "administration": "Subcutaneous",
+    "research_notes": "Teichman et al., Prolonged stimulation of growth hormone and insulin-like growth factor I secretion by CJC-1295, a long-acting growth hormone-releasing hormone analog, Journal of Clinical Endocrinology & Metabolism, https://academic.oup.com/jcem/article/91/3/799/2843268 | DAC technology: albumin-binding for extended peptide half-life, Clinical Pharmacology & Therapeutics, https://pubmed.ncbi.nlm.nih.gov/16988206/ | Activation of the GH/IGF-1 axis by CJC-1295 and serum protein profile changes, Growth Hormone & IGF Research, https://www.sciencedirect.com/science/article/abs/pii/S1096637409000409 | GHRH analogs and preservation of pulsatile GH secretion patterns, Endocrine Reviews, https://academic.oup.com/edrv/article/19/6/717/2530852",
+    "doses": [
+      {
+        "label": "2mg",
+        "vial_mg": 2,
+        "bac_water_ml": 1,
+        "concentration_mg_per_ml": 2,
+        "syringe_reference": [
+          {
+            "units": 20,
+            "mg": 0.4
+          },
+          {
+            "units": 40,
+            "mg": 0.8
+          },
+          {
+            "units": 50,
+            "mg": 1
+          },
+          {
+            "units": 100,
+            "mg": 2
+          }
+        ],
+        "dosage_text": "2 mg (100 units, the full vial) injected once weekly, ideally in the evening. A more conservative 1 mg (50 units) weekly option exists for those wanting a lower starting point. Typical cycles run 8-12 weeks with an optional 4-week break between cycles. At 2 mg/mL: 1 mg = 50 units, 2 mg = 100 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "cjc-1295-no-dac",
+    "name": "CJC-1295 NO DAC",
+    "category": "gh-secretagogue",
+    "overview": "CJC-1295 NO DAC, also known as Modified GRF 1-29 or Mod GRF, is a short-acting synthetic 29-amino-acid GHRH analog. Unlike the DAC version, it lacks the albumin-binding tail, giving it a short half-life of roughly 30 minutes and producing a sharper, more physiologic GH pulse.",
+    "mechanism": "Four amino acid substitutions (D-Ala2, Gln8, Ala15, Leu27) protect the peptide from enzymatic degradation. It binds to GHRH receptors on pituitary somatotrophs to stimulate synthesis and pulsatile release of endogenous growth hormone, preserving the body's physiologic feedback loop rather than producing supraphysiologic GH levels the way exogenous GH would.",
+    "effects": "Stimulates pulsatile GH release and raises IGF-1 with chronic use; may support improved body composition (more lean mass, less fat mass), better recovery, sleep quality, and energy levels. Generally well tolerated, with occasional injection-site reactions, transient flushing, or headache.",
+    "results_timeline": "Early weeks (1-2) are mostly adjustment with possible early sleep changes. Recovery and energy improvements tend to show around weeks 3-6, with body composition and IGF-1-related changes becoming more noticeable from week 5 through week 12.",
+    "timing": "Once daily, subcutaneous, typically at bedtime and in a fasted state (2+ hours since last meal) to align with and not blunt the natural nocturnal GH pulse.",
+    "administration": "Subcutaneous",
+    "research_notes": "Modified GRF (1-29): structure, amino acid substitutions, and pharmacokinetics, Wikipedia, https://en.wikipedia.org/wiki/CJC-1295 | Teichman et al., Prolonged stimulation of growth hormone and IGF-I by CJC-1295 in healthy adults, Journal of Clinical Endocrinology & Metabolism (2006), https://pubmed.ncbi.nlm.nih.gov/16352683/ | Alba et al., Once-daily CJC-1295 normalizes growth in GHRH knockout mice, American Journal of Physiology (2006), https://pubmed.ncbi.nlm.nih.gov/16822960/ | Veldhuis et al., Pulsatile GH secretion persists during continuous CJC-1295 stimulation, Journal of Clinical Endocrinology & Metabolism (2006), https://pubmed.ncbi.nlm.nih.gov/17018654/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 0.1
+          },
+          {
+            "units": 9,
+            "mg": 0.15
+          },
+          {
+            "units": 12,
+            "mg": 0.2
+          },
+          {
+            "units": 15,
+            "mg": 0.25
+          },
+          {
+            "units": 18,
+            "mg": 0.3
+          }
+        ],
+        "dosage_text": "Once-daily subcutaneous injection at bedtime, titrated from 100 mcg (6 units) up to 250-300 mcg (15-18 units) over 8-12 weeks, increasing roughly every 1-2 weeks. At 1.67 mg/mL: 100 mcg = 6 units, 300 mcg = 18 units. Best taken fasted to maximize GH response.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.1,
+            "units": 6
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.15,
+            "units": 9
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 0.2,
+            "units": 12
+          },
+          {
+            "weeks": "7-12",
+            "dose_mg": 0.3,
+            "units": 18
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cortagen",
+    "name": "Cortagen",
+    "category": "longevity",
+    "overview": "Cortagen (Ala-Glu-Asp-Pro) is a synthetic tetrapeptide derived from amino acid analysis of the brain cortex preparation Cortexin, part of the Khavinson bioregulator peptide class. It is studied for neuroprotective and neuroregenerative properties, particularly peripheral nerve regeneration and cognitive function.",
+    "mechanism": "Cortagen acts as a gene expression modulator and epigenetic regulator, influencing synthesis of proteins involved in neuronal growth, differentiation, and stress resistance. Preclinical studies show it can upregulate neurotrophic factors, reduce oxidative stress markers, and accelerate peripheral nerve regeneration.",
+    "effects": "Supports peripheral nerve regeneration with improved nerve fiber growth rate and conduction velocity (27-40% improvement in injury models); neuroprotective in cerebral ischemia models by reducing lipid peroxidation and preserving antioxidant enzyme activity; may enhance cognitive function through synaptic plasticity and neurite outgrowth. Generally well tolerated with no significant adverse effects reported in animal studies at therapeutic doses.",
+    "results_timeline": "Weeks 1-2 are a titration phase at the lower 1 mg dose with limited expected effect. Once the full 2 mg dose is reached in weeks 3-4, this is where most of the reported research effects would be expected to apply, continuing through an optional 8-week extension.",
+    "timing": "Once daily, subcutaneous, morning administration preferred over evening.",
+    "administration": "Subcutaneous",
+    "research_notes": "Effect of tetrapeptide cortagen on regeneration of sciatic nerve, PubMed, https://pubmed.ncbi.nlm.nih.gov/11276314/ | Cortexin and cortagen as correcting agents in functional and metabolic disorders in the brain in chronic ischemia, PubMed, https://pubmed.ncbi.nlm.nih.gov/21476278/ | Elucidation of the effect of brain cortex tetrapeptide Cortagen on gene expression in mouse heart by microarray, PubMed (Neuroendocrinology Letters), https://pubmed.ncbi.nlm.nih.gov/15159690/ | Peptide bioregulation of aging: results and prospects, PubMed (Biogerontology), https://pubmed.ncbi.nlm.nih.gov/19830585/",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 15,
+            "mg": 1
+          },
+          {
+            "units": 30,
+            "mg": 2
+          }
+        ],
+        "dosage_text": "Once-daily morning subcutaneous injection: 1 mg (15 units) for weeks 1-2, stepping up to 2 mg (30 units) for weeks 3-4. Standard cycle is 4 weeks, extendable to 8 weeks. At 6.67 mg/mL: 1 mg = 15 units, 2 mg = 30 units.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 1,
+            "units": 15
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 2,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "dsip",
+    "name": "DSIP",
+    "category": "sleep-repair",
+    "overview": "DSIP (Delta Sleep-Inducing Peptide) is a naturally occurring nonapeptide first isolated from rabbit brain tissue, studied for its effects on slow-wave sleep architecture and stress modulation.",
+    "mechanism": "DSIP is thought to influence sleep by modulating GABAergic transmission and interacting with opioid receptor systems, increasing delta-wave (slow-wave) sleep duration without significantly altering REM architecture. It has also shown stress-protective and adaptogenic properties in various models, potentially through modulation of the hypothalamic-pituitary-adrenal axis.",
+    "effects": "May promote deeper, more restorative slow-wave sleep and improve subjective sleep quality; potential stress-protective and anxiolytic-like effects; some studies indicate it does not induce tolerance with continued use. Generally well tolerated, though long-term safety data is limited.",
+    "results_timeline": "Week 1 is mostly adjustment to injections with possibly subtle early changes. Sleep depth and quality shifts tend to appear around weeks 2-3, with the most consistent sleep and stress-resilience benefits reported from week 4 through week 8.",
+    "timing": "Once daily, subcutaneous, typically in the evening before bedtime.",
+    "administration": "Subcutaneous",
+    "research_notes": "Schoenenberger GA, Monnier M, Characterization of a delta-electroencephalogram (-sleep)-inducing peptide, Proc Natl Acad Sci USA (1977), https://pubmed.ncbi.nlm.nih.gov/16592440/ | Schneider-Helmert D, Schoenenberger GA, Effects of DSIP in man: multifunctional psychophysiological properties, Neuropsychobiology (1983), https://pubmed.ncbi.nlm.nih.gov/6633115/ | Sudakov KV et al., Delta-sleep-inducing peptide sequelae: stress protective effect, Ann N Y Acad Sci (2004), https://pubmed.ncbi.nlm.nih.gov/15677401/ | Graf MV, Kastin AJ, Delta-sleep-inducing peptide (DSIP): a review, Neurosci Biobehav Rev (1984), https://pubmed.ncbi.nlm.nih.gov/6392951/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 0.1
+          },
+          {
+            "units": 9,
+            "mg": 0.15
+          },
+          {
+            "units": 12,
+            "mg": 0.2
+          },
+          {
+            "units": 15,
+            "mg": 0.25
+          },
+          {
+            "units": 18,
+            "mg": 0.3
+          },
+          {
+            "units": 24,
+            "mg": 0.4
+          },
+          {
+            "units": 30,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "Once-daily subcutaneous injection before bed, titrated from 100 mcg (6 units) in week 1 up to 250-300 mcg (15-18 units) by weeks 4-8. An anecdotal extended range up to 400-500 mcg (24-30 units) exists but is not well studied — formal research has mostly used doses up to 300 mcg/day. At 1.67 mg/mL: 100 mcg = 6 units, 300 mcg = 18 units.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 0.1,
+            "units": 6
+          },
+          {
+            "weeks": "2",
+            "dose_mg": 0.15,
+            "units": 9
+          },
+          {
+            "weeks": "3",
+            "dose_mg": 0.2,
+            "units": 12
+          },
+          {
+            "weeks": "4-8",
+            "dose_mg": 0.3,
+            "units": 18
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "epitalon",
+    "name": "Epitalon",
+    "category": "longevity",
+    "overview": "Epitalon (also called Epithalon) is a synthetic tetrapeptide (Ala-Glu-Asp-Gly) developed from pineal gland research, studied for its geroprotective potential — particularly telomerase activation, melatonin regulation, and longevity outcomes in both animal and human studies.",
+    "mechanism": "Epitalon's primary mechanism is telomerase activation, which promotes telomere elongation in cells, allowing continued division beyond the normal Hayflick limit in vitro. It also stimulates nocturnal melatonin release from the pineal gland, normalizing circadian hormone rhythms, along with reported antioxidant and immune-modulating effects.",
+    "effects": "Supports telomere maintenance and cellular longevity through telomerase activation; restores healthy melatonin production and circadian rhythm regulation; extended lifespan and reduced tumor incidence in animal models; a 12-year human follow-up study showed improved cardiovascular outcomes and reduced mortality. Generally well tolerated with no serious adverse events reported in long-term studies.",
+    "results_timeline": "Sleep and circadian rhythm shifts may begin within the first week as melatonin regulation kicks in. The core 20-day dosing window is what most research protocols are built around. Telomere and longevity-related effects are long-horizon outcomes not felt day to day.",
+    "timing": "Once daily, subcutaneous, preferably in the evening or at bedtime to align with natural melatonin rhythms, for 20 consecutive days followed by a 4-6 month break.",
+    "administration": "Subcutaneous",
+    "research_notes": "Overview of Epitalon: Highly Bioactive Pineal Tetrapeptide with Promising Properties, Int J Mol Sci (MDPI) (2025), https://www.mdpi.com/1422-0067/26/6/2691 | Epitalon increases telomere length in human cell lines through telomerase upregulation, PMC/Biogerontology, https://pmc.ncbi.nlm.nih.gov/articles/PMC12411320/ | Synthetic tetrapeptide Epitalon restores neuroendocrine regulation in senescent monkeys, Neuroendocrinology Letters (PubMed), https://pubmed.ncbi.nlm.nih.gov/11524632/ | Geroprotective effect of epithalamine in elderly with accelerated aging (12-year RCT), Bull Exp Biol Med (PubMed), https://pubmed.ncbi.nlm.nih.gov/17426848/",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          {
+            "units": 20,
+            "mg": 1
+          },
+          {
+            "units": 40,
+            "mg": 2
+          },
+          {
+            "units": 60,
+            "mg": 3
+          },
+          {
+            "units": 80,
+            "mg": 4
+          },
+          {
+            "units": 100,
+            "mg": 5
+          }
+        ],
+        "dosage_text": "5 mg (100 units, full vial) injected once daily for 20 consecutive days, then a 4-6 month break before repeating (roughly 2 cycles per year). An alternative schedule uses 10 mg/day for 10 days for the same total cycle dose of 100 mg. At 5 mg/mL: 1 mg = 20 units, 5 mg = 100 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "foxo4-dri",
+    "name": "FOXO4-DRI",
+    "category": "longevity",
+    "overview": "FOXO4-DRI (also known as Proxofim) is a synthetic D-retro-inverso peptide designed to selectively induce apoptosis in senescent cells by disrupting the FOXO4-p53 protein interaction. It is one of the most-discussed senolytic peptides in longevity research, though it currently has no human clinical data behind it.",
+    "mechanism": "In normal cells, FOXO4 binds p53 and sequesters it in the nucleus. FOXO4-DRI disrupts this interaction specifically in senescent cells, causing p53 to translocate to the mitochondria and trigger apoptotic cell death in aged, dysfunctional cells while sparing healthy ones. Its D-retro-inverso structure enhances resistance to enzymatic breakdown.",
+    "effects": "Animal studies show selective clearance of senescent cells, improved tissue regeneration, reduced inflammation, and enhanced organ function. In aged mice, treatment improved testosterone levels and cellular health markers. No human clinical safety or efficacy data currently exist, so tolerability in humans is uncharacterized.",
+    "results_timeline": "Not specified in source for humans — all reported tissue-level improvements come from mouse studies measured over weeks to months of dosing, not days, and there is no established human timeline.",
+    "timing": "Once daily, subcutaneous, any consistent time, with doses gradually titrated upward over 8-16 weeks.",
+    "administration": "Subcutaneous",
+    "research_notes": "FOXO4-DRI induces keloid senescent fibroblast apoptosis by promoting nuclear exclusion of upregulated p53-serine 15 phosphorylation, Nature Communications Biology, https://www.nature.com/articles/s42003-025-07738-0 | FOXO4-DRI alleviates age-related testosterone secretion insufficiency by targeting senescent Leydig cells in aged mice, Aging (Albany NY), https://www.aging-us.com/article/102682/text | FOXO4 peptide targets myofibroblast, ameliorates bleomycin-induced pulmonary fibrosis in mice, Journal of Cellular and Molecular Medicine, https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17333 | FOXO4-DRI safety note: no human clinical dosing data exist yet, Aging (Albany NY) — Methods & Protocols, https://www.aging-us.com/article/102682/text#materialsandmethods",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          {
+            "units": 7.5,
+            "mg": 0.25
+          },
+          {
+            "units": 11,
+            "mg": 0.375
+          },
+          {
+            "units": 15,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "Once-daily subcutaneous injection, titrated from 250 mcg (7.5 units) for weeks 1-4, up to 375 mcg (11 units) for weeks 5-8, then 500 mcg (15 units) for weeks 9-16. All doses stay under 0.2 mL at this dilution. At 3.33 mg/mL: 250 mcg = 7.5 units, 500 mcg = 15 units.",
+        "titration": [
+          {
+            "weeks": "1-4",
+            "dose_mg": 0.25,
+            "units": 7.5
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 0.375,
+            "units": 11
+          },
+          {
+            "weeks": "9-16",
+            "dose_mg": 0.5,
+            "units": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ghrp-2",
+    "name": "GHRP-2",
+    "category": "gh-secretagogue",
+    "overview": "GHRP-2 (Growth Hormone-Releasing Peptide-2) is a synthetic hexapeptide that stimulates potent, dose-dependent growth hormone release by activating ghrelin receptors — a distinct mechanism from GHRH analogs like CJC-1295.",
+    "mechanism": "GHRP-2 binds to and activates ghrelin (GH secretagogue) receptors, triggering pulsatile GH release from the pituitary in a dose-dependent manner. Clinical studies in GH-deficient children demonstrated meaningful GH increases even at low doses over months of treatment.",
+    "effects": "Stimulates robust pulsatile GH release that may support favorable body composition and metabolic changes. In combination with GHRH analogs, can meaningfully increase IGF-1 with strict compliance. Generally well tolerated with a near placebo-like safety profile; transient effects may include mild hunger or flushing.",
+    "results_timeline": "Weeks 1-2 at the starting dose are mostly about gauging tolerance. Weeks 3-4 involve stepping the dose up, where appetite and energy changes may appear. From week 5 through week 16 at the full dose, body composition changes are most likely to become noticeable with consistent use.",
+    "timing": "Once daily, subcutaneous; evening administration may align with nocturnal GH rhythms. Frequent dosing (e.g., every 2 hours) causes rapid receptor desensitization, so once-daily is preferred over multiple daily injections.",
+    "administration": "Subcutaneous",
+    "research_notes": "Effects of GHRP-2 on GH release and growth performance in swine, Domest Anim Endocrinol, https://pubmed.ncbi.nlm.nih.gov/10793268/ | Effects of eight months treatment with graded doses of GHRP-2 in GH-deficient children, J Clin Endocrinol Metab, https://pubmed.ncbi.nlm.nih.gov/9661608/ | Five-day treatment with daily subcutaneous GHRP-2: response attenuation and IGF-I effects in healthy young men, Eur J Endocrinol, https://pubmed.ncbi.nlm.nih.gov/9820615/ | GH/IGF-1 response to acute and chronic GHRP-2, GHRH 1-44, and their combination in older adults, Endocrine, https://pubmed.ncbi.nlm.nih.gov/11322505/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 0.1
+          },
+          {
+            "units": 9,
+            "mg": 0.15
+          },
+          {
+            "units": 12,
+            "mg": 0.2
+          },
+          {
+            "units": 18,
+            "mg": 0.3
+          }
+        ],
+        "dosage_text": "Once-daily subcutaneous injection, titrated from 100 mcg (6 units) for weeks 1-2, to 150 mcg (9 units) for weeks 3-4, up to 200 mcg (12 units) for weeks 5-16 as the practical ceiling for most use. Advanced users occasionally push to 250-300 mcg (15-18 units), though this offers limited added benefit. At 1.67 mg/mL: 100 mcg = 6 units, 200 mcg = 12 units.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.1,
+            "units": 6
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.15,
+            "units": 9
+          },
+          {
+            "weeks": "5-16",
+            "dose_mg": 0.2,
+            "units": 12
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ghrp-6",
+    "name": "GHRP-6",
+    "category": "gh-secretagogue",
+    "overview": "GHRP-6 (Growth Hormone-Releasing Peptide 6) is a synthetic hexapeptide and potent growth hormone secretagogue that binds the ghrelin receptor (GHS-R1a). Its short half-life means it's typically dosed multiple times per day rather than once, and it also carries a separate tissue-protective signaling pathway distinct from its GH effects.",
+    "mechanism": "GHRP-6 mimics ghrelin by binding GHS-R1a in the pituitary and hypothalamus, triggering pulsatile GH release while reducing somatostatin's inhibitory brake — though the body's natural feedback loop still keeps GH within physiologic ranges. Separately, it interacts with CD36 receptors on immune and muscle cells, activating PI3K/Akt cell-survival signaling that underlies reported cardioprotective, neuroprotective, and anti-fibrotic effects in preclinical models.",
+    "effects": "Elevated GH and IGF-1 supporting lean mass and fat loss over time; improved sleep architecture (more slow-wave sleep) and recovery; appetite stimulation from ghrelin-receptor activation; preclinical tissue-protective effects including reduced scar formation, cardioprotection, and neuroprotection. Side effects include transient mild cortisol/ACTH increases, appetite stimulation, water retention, and occasional injection-site irritation or brief flushing.",
+    "results_timeline": "Weeks 1-2 involve adjusting to the three-times-daily schedule, with appetite increase most noticeable here. Recovery and sleep architecture improvements tend to show around weeks 3-6, with muscle/fat composition changes and accumulated tissue-protective effects appearing from week 6 through week 12 of consistent dosing.",
+    "timing": "Three times daily, subcutaneous, spaced at least 4 hours apart, on an empty stomach (2-3 hours after eating, waiting 30 minutes before the next meal) to maximize GH response.",
+    "administration": "Subcutaneous",
+    "research_notes": "Growth hormone-releasing peptides: comprehensive review of GHRP mechanisms and effects, European Journal of Endocrinology (1997), https://pubmed.ncbi.nlm.nih.gov/9186261/ | Synthetic GHRPs: historical appraisal of cytoprotective effects and mechanisms, Clinical Medicine Insights: Cardiology (2017), https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5392015/ | Pharmacokinetic study of GHRP-6 in healthy male volunteers, European Journal of Pharmaceutical Sciences (2013), https://pubmed.ncbi.nlm.nih.gov/23099431/ | GHRP-6 prevents cutaneous hypertrophic scarring: proteome study, International Wound Journal (2018), https://doi.org/10.1111/iwj.12895",
+    "doses": [
+      {
+        "label": "2mg",
+        "vial_mg": 2,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 0.67,
+        "syringe_reference": [
+          {
+            "units": 15,
+            "mg": 0.1
+          },
+          {
+            "units": 30,
+            "mg": 0.2
+          },
+          {
+            "units": 45,
+            "mg": 0.3
+          }
+        ],
+        "dosage_text": "Three-times-daily subcutaneous injections, spaced 4+ hours apart, titrated from 100 mcg (15 units) per shot in weeks 1-2 (300 mcg/day total), to 200 mcg (30 units) per shot in weeks 3-4 (600 mcg/day total), up to 300 mcg (45 units) per shot in weeks 5-12 (900 mcg/day total). At 0.67 mg/mL: 100 mcg = 15 units, 300 mcg = 45 units.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.1,
+            "units": 15
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.2,
+            "units": 30
+          },
+          {
+            "weeks": "5-12",
+            "dose_mg": 0.3,
+            "units": 45
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "gonadorelin",
+    "name": "Gonadorelin",
+    "category": "hormonal",
+    "overview": "Gonadorelin is a synthetic version of gonadotropin-releasing hormone (GnRH), the decapeptide the hypothalamus naturally secretes in pulses. It's used in research protocols to reactivate the hypothalamic-pituitary-gonadal (HPG) axis by prompting the pituitary to release LH and FSH.",
+    "mechanism": "Gonadorelin binds GnRH receptors on pituitary gonadotrophs, triggering pulsatile release of LH and FSH. LH drives Leydig cell testosterone production in men and ovulation in women, while FSH supports spermatogenesis and follicle development. Because it mimics the body's own short, pulsatile GnRH signal (rather than a continuous agonist), brief periodic dosing preserves normal signaling instead of desensitizing receptors.",
+    "effects": "Supports endogenous testosterone production via LH stimulation, may help maintain testicular size/function during exogenous testosterone therapy, and can promote spermatogenesis and fertility in hypogonadotropic hypogonadism when dosed in a pulsatile pattern. Generally well tolerated; occasional mild injection-site irritation, transient headache, or flushing have been reported.",
+    "results_timeline": "Not specified in source in week-by-week detail; effects on LH/FSH stimulation are described as occurring with each pulsatile dose, with functional outcomes (testosterone, spermatogenesis) building over the 4-8 week protocol.",
+    "timing": "Subcutaneous injections 2-3 times weekly on non-consecutive days (e.g., Mon/Wed/Fri) to mimic pulsatile GnRH release; morning injections preferred. An advanced/post-cycle approach uses daily dosing but strictly limited to 14 consecutive days to avoid receptor desensitization.",
+    "administration": "Subcutaneous",
+    "research_notes": "GnRH agonists: gonadorelin, leuprolide, and nafarelin - overview of pharmacology and clinical applications, PubMed, https://pubmed.ncbi.nlm.nih.gov/1835275/ | Gonadorelin injection routes and indications for LH/FSH stimulation testing, Mayo Clinic, https://www.mayoclinic.org/drugs-supplements/gonadorelin-intravenous-route-injection-route/description/drg-20067426 | Gonadotropin-releasing hormone analogs: pulsatile vs. continuous effects on FSH/LH, PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC4229791/ | Pulsatile gonadorelin pump induces earlier spermatogenesis in congenital HH men, PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC6775549/",
+    "doses": [
+      {
+        "label": "2mg",
+        "vial_mg": 2,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 1,
+        "syringe_reference": [
+          {
+            "units": 5,
+            "mg": 0.05
+          },
+          {
+            "units": 10,
+            "mg": 0.1
+          },
+          {
+            "units": 15,
+            "mg": 0.15
+          },
+          {
+            "units": 20,
+            "mg": 0.2
+          }
+        ],
+        "dosage_text": "50-150 mcg (5-15 units) per injection, 2-3 times weekly on non-consecutive days, for a 4-8 week cycle. At 1 mg/mL, each unit equals 10 mcg. An advanced post-cycle approach uses 200 mcg (20 units) daily for a week, tapering to 100 mcg (10 units), but daily dosing should not exceed 14 consecutive days.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.05,
+            "units": 5
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.1,
+            "units": 10
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 0.125,
+            "units": 12.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hcg",
+    "name": "HCG",
+    "category": "hormonal",
+    "overview": "Human Chorionic Gonadotropin (HCG) is a glycoprotein hormone that mimics luteinizing hormone (LH), used in research and clinical protocols to maintain testicular function and fertility, especially alongside testosterone replacement therapy or after suppression from anabolic steroid use.",
+    "mechanism": "HCG binds the same LH receptors as endogenous LH on testicular Leydig cells, stimulating testosterone production. Unlike LH, which has roughly a 30-minute half-life, HCG's half-life is about 36 hours, giving it sustained gonadal stimulation from infrequent dosing. Low doses maintain intratesticular testosterone during suppression from exogenous testosterone; higher doses are used to restart spermatogenesis and endogenous production after prolonged suppression.",
+    "effects": "Maintains intratesticular testosterone and spermatogenesis during TRT, helps prevent or reverse testicular atrophy from exogenous testosterone use, and can restore endogenous testosterone production in hypogonadotropic hypogonadism or post-cycle scenarios. Possible side effects include elevated estradiol (via testicular aromatase stimulation), mild injection site reactions, acne, transient testicular discomfort as Leydig cells reactivate, and rare gynecomastia risk if estradiol rises significantly.",
+    "results_timeline": "Not specified in source with a discrete week-by-week timeline; standard maintenance protocols run 8-16 weeks, while high-dose recovery protocols for restarting spermatogenesis are typically continued 3-6 months.",
+    "timing": "Subcutaneous injections 3 times weekly (e.g., Mon/Wed/Fri) is sufficient given HCG's long half-life; daily dosing is unnecessary. Consistent injection days/times are recommended, with site rotation across abdomen and thighs.",
+    "administration": "Subcutaneous",
+    "research_notes": "Human Chorionic Gonadotropin: structure, function, and LH receptor binding mechanisms, National Center for Biotechnology Information (NCBI), https://www.ncbi.nlm.nih.gov/books/NBK532950/ | Pharmacokinetics and pharmacodynamics of HCG: extended half-life and sustained activity, Seminars in Reproductive Medicine, https://pubmed.ncbi.nlm.nih.gov/11265525/ | Coviello AD et al., Low-dose hCG maintains intratesticular testosterone in men with testosterone-induced gonadotropin suppression, The Journal of Clinical Endocrinology & Metabolism (2005), https://pubmed.ncbi.nlm.nih.gov/15713727/ | Chorionic Gonadotropin (Pregnyl/Novarel): reconstituted solution stable for 60 days when refrigerated; do not freeze, FDA Prescribing Information, https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f93b2baa-03ac-4650-b35a-20b818d712d6",
+    "doses": [
+      {
+        "label": "5000IU",
+        "vial_mg": null,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": null,
+        "syringe_reference": [
+          {
+            "units": 10,
+            "iu": 250
+          },
+          {
+            "units": 20,
+            "iu": 500
+          },
+          {
+            "units": 40,
+            "iu": 1000
+          },
+          {
+            "units": 60,
+            "iu": 1500
+          },
+          {
+            "units": 80,
+            "iu": 2000
+          }
+        ],
+        "dosage_text": "Dosed in IU, not mg. Reconstituting 5000 IU with 2 mL bacteriostatic water yields 2,500 IU/mL, where 1 unit on a U-100 syringe = 25 IU. Standard maintenance is 500 IU (20 units) subcutaneously 3 times weekly (1,500 IU/week total), used to preserve testicular function during TRT. High-dose recovery protocols use 1,500-2,500 IU (60-100 units) 3 times weekly for 3-6 months to restart spermatogenesis after prolonged suppression, then taper to maintenance.",
+        "titration": [
+          {
+            "weeks": "1-4",
+            "dose_iu": 1500,
+            "units": 60
+          },
+          {
+            "weeks": "5-8",
+            "dose_iu": 2000,
+            "units": 80
+          },
+          {
+            "weeks": "9-12",
+            "dose_iu": 1000,
+            "units": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hgh-191aa",
+    "name": "HGH 191AA",
+    "category": "gh-secretagogue",
+    "overview": "HGH 191AA is recombinant human growth hormone (somatropin), structurally identical to the growth hormone naturally secreted by the pituitary gland. It's studied for effects on body composition, fat metabolism, and tissue repair, typically dosed once daily by subcutaneous injection to mimic the body's natural GH secretion pattern.",
+    "mechanism": "As a bioidentical copy of endogenous GH, it acts on GH receptors throughout the body to enhance lipolysis, stimulate protein synthesis, and drive IGF-1 production in the liver. Once-daily subcutaneous dosing, especially at bedtime, is meant to approximate the body's natural nighttime GH secretion pattern rather than deliver a single large pulse.",
+    "effects": "Clinical literature associates GH administration with increases in lean body mass and reductions in fat mass, enhanced fat oxidation, and (in GH-deficient adults) sustained improvements in muscle strength and body composition with long-term use. Notably, a systematic review in healthy athletes found GH increased lean mass without reliably improving strength or exercise performance. Possible side effects include injection site irritation, fluid retention/edema (more common at higher doses), joint discomfort, and potential effects on glucose metabolism warranting monitoring in extended protocols.",
+    "results_timeline": "Not specified in source as a discrete short-term timeline; body composition changes were measured over six months in the foundational Rudman study, and long-term GH-deficient adult follow-up studies showed sustained improvements over roughly 10 years of maintenance dosing.",
+    "timing": "Once daily subcutaneous injection, preferably at bedtime to mirror the body's physiological GH secretion pattern. Injection sites should be rotated systematically to prevent lipoatrophy.",
+    "administration": "Subcutaneous",
+    "research_notes": "Rudman et al., Six months of HGH administration in older men significantly increased lean body mass and decreased adipose mass compared to placebo, N. Engl. J. Med. (1990), https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1549453/full | Gotherstrom et al., 10-year adult GH deficiency follow-up showed sustained increases in muscle strength and improved body composition with maintenance dosing, J. Clin. Endocrinol. Metab. (2010), https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1549453/full | Liu et al., Systematic review of GH in healthy athletes found GH increased lean body mass but did not significantly improve muscle strength or exercise performance, Ann. Intern. Med. (2008) | Hadzovic et al., Moderate doses of GH (70-400 mcg) in healthy adults produce dose-dependent increases in lipolysis and fat oxidation, Bosn. J. Basic Med. Sci. (2004), https://www.bjbms.org/ojs/index.php/bjbms/article/download/3365/971/12109",
+    "doses": [
+      {
+        "label": "10IU (3.33mg)",
+        "vial_mg": 3.33,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.11,
+        "syringe_reference": [
+          {
+            "units": 18,
+            "mg": 0.2
+          },
+          {
+            "units": 27,
+            "mg": 0.3
+          },
+          {
+            "units": 36,
+            "mg": 0.4
+          },
+          {
+            "units": 45,
+            "mg": 0.5
+          },
+          {
+            "units": 63,
+            "mg": 0.7
+          },
+          {
+            "units": 81,
+            "mg": 0.9
+          }
+        ],
+        "dosage_text": "Conservative replacement-style protocols use 150-500 mcg daily, while advanced metabolic/performance research protocols use 1000-2000 mcg daily. At ~1.11 mg/mL, 200 mcg = 18 units, 500 mcg = 45 units. An 8-week titration schedule starts at 200 mcg daily and increases by roughly 100 mcg per week, injected once daily (subcutaneous, preferably bedtime).",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 0.2,
+            "units": 18
+          },
+          {
+            "weeks": "2",
+            "dose_mg": 0.3,
+            "units": 27
+          },
+          {
+            "weeks": "3",
+            "dose_mg": 0.4,
+            "units": 36
+          },
+          {
+            "weeks": "4",
+            "dose_mg": 0.5,
+            "units": 45
+          },
+          {
+            "weeks": "5",
+            "dose_mg": 0.6,
+            "units": 54
+          },
+          {
+            "weeks": "6",
+            "dose_mg": 0.7,
+            "units": 63
+          },
+          {
+            "weeks": "7",
+            "dose_mg": 0.8,
+            "units": 72
+          },
+          {
+            "weeks": "8",
+            "dose_mg": 0.9,
+            "units": 81
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hmg",
+    "name": "HMG",
+    "category": "hormonal",
+    "overview": "Human Menopausal Gonadotropin (HMG) is a purified gonadotropin preparation providing a 1:1 mix of FSH and LH activity. In male fertility protocols it is used alongside HCG to add the FSH stimulation needed for spermatogenesis, particularly in hypogonadotropic hypogonadism or infertility where HCG alone is insufficient.",
+    "mechanism": "HMG supplies both FSH and LH activity derived from purified human menopausal urine. FSH is essential for spermatogenesis; when HCG (which mainly drives LH-like testosterone production) fails to induce adequate sperm production on its own, adding HMG's FSH activity supports testicular function and fertility.",
+    "effects": "Stimulates spermatogenesis in men with hypogonadotropic hypogonadism or secondary infertility, and when combined with HCG has been shown to improve sperm motility, morphology, and concentration, along with increased pregnancy rates in treated couples. Possible side effects include injection site reactions, occasional headache/fatigue/mood changes, gynecomastia from hormonal stimulation, and rare overstimulation or allergic reactions.",
+    "results_timeline": "Clinical response typically requires a minimum of 12 weeks, with full spermatogenesis taking 3-6 months to develop.",
+    "timing": "Subcutaneous injection three times weekly (e.g., Monday/Wednesday/Friday), almost always combined with concurrent HCG dosing (2-3 times weekly) for a minimum 12-week course, extendable to 16 weeks.",
+    "administration": "Subcutaneous",
+    "research_notes": "hMG composition: 1:1 blend of FSH and LH derived from postmenopausal urine, Metrovan Urology, https://www.metrovanurology.com/hormones-and-male-infertility | Human menopausal gonadotropin for subcutaneous administration; each vial contains 75 IU FSH + 75 IU LH activity, Menopur (Menotropins) Product Monograph, https://pdf.hres.ca/dpd_pm/00061244.PDF | Randomized trial: HMG 75 IU subcutaneously three times weekly for 3 months significantly improved sperm motility and morphology; pregnancy rate 57% vs. control, International Journal of Reproductive BioMedicine (2014) | Review of hCG and hMG combination therapy for hypogonadotropic hypogonadism; FSH supplementation critical for spermatogenesis when hCG monotherapy inadequate, Reproductive Medicine and Biology (2018), https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6105660/",
+    "doses": [
+      {
+        "label": "75IU (0.15mg)",
+        "vial_mg": 0.15,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 0.05,
+        "syringe_reference": [
+          {
+            "units": 100,
+            "iu": 25
+          },
+          {
+            "units": 200,
+            "iu": 50
+          },
+          {
+            "units": 300,
+            "iu": 75
+          }
+        ],
+        "dosage_text": "Dosed in IU. Reconstituting the 75 IU vial with 3.0 mL bacteriostatic water yields 25 IU/mL. A full 75 IU dose requires 3.0 mL of solution -- more than a standard 1 mL insulin syringe holds, so it's typically drawn with a 3 mL syringe or split into three 1 mL injections (25 IU each) at different sites in the same session. Standard protocol is 75 IU three times weekly (Mon/Wed/Fri) for a minimum of 12 weeks, usually paired with concurrent hCG therapy.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "igf-1-lr3",
+    "name": "IGF-1 LR3",
+    "category": "gh-secretagogue",
+    "overview": "IGF-1 LR3 (Long R3 Insulin-like Growth Factor-1) is a modified analog of human IGF-1 engineered for a significantly extended half-life. It's studied in research settings for anabolic and metabolic effects, with once-daily dosing made possible by its reduced binding to IGF binding proteins.",
+    "mechanism": "IGF-1 LR3 carries an N-terminal 13-amino-acid extension and a glutamic acid substitution at position 3, which sharply reduces its binding affinity to IGF binding proteins. This extends its half-life from the minutes seen with native IGF-1 to several hours, allowing more stable plasma levels and once-daily administration. It exerts anabolic and metabolic effects via IGF-1 receptor binding but has insulin-like activity that requires active blood glucose management.",
+    "effects": "Associated with enhanced anabolic signaling and protein synthesis, and extended bioavailability versus native IGF-1. The dominant safety concern is hypoglycemia risk from its insulin-like effect on blood glucose (shakiness, confusion, sweating, dizziness), which is why it's typically dosed with food. It has never received regulatory approval for human therapeutic use. Mild injection site irritation is possible; safety data above 50-60 mcg/day is limited, and continuous use beyond 6-8 weeks may lead to diminished response (receptor desensitization).",
+    "results_timeline": "Not specified in source as a discrete results timeline; dosing follows an 8-week titration/maintenance cycle, with cycling protocols (e.g., 8 weeks on, 4-8 weeks off) used to manage diminishing response over time.",
+    "timing": "Once daily subcutaneous injection, typically administered in the morning or post-workout, with or shortly after food to mitigate insulin-like effects on blood glucose.",
+    "administration": "Subcutaneous",
+    "research_notes": "Insulin-Like Growth Factor-1 (IGF-1) and Its Monitoring in Medical Diagnostic and in Sports, Biomolecules (MDPI), https://www.mdpi.com/2218-273X/11/2/217 | Insulin-like growth factor 1 (IGF-1) and long chain IGF (LR3IGF-1): Medical information and safety overview, Dopinglinkki (FINCIS Anti-Doping Authority), https://dopinglinkki.fi/en/info-bank/doping-substances/insulin-like-growth-factor-1-igf-1-and-long-chain-igf-ir3igf-1/ | Mecasermin (Subcutaneous route): Proper Use and Handling - guidance on IGF-1 administration timing with meals, Mayo Clinic / IBM Micromedex, https://www.mayoclinic.org/drugs-supplements/mecasermin-subcutaneous-route/proper-use/drg-20068117 | Detection of LongR3-IGF-I, Des(1-3)-IGF-I, and R3-IGF-I using immunopurification and high resolution mass spectrometry for antidoping purposes, Drug Testing and Analysis (PubMed), https://pubmed.ncbi.nlm.nih.gov/33587816/",
+    "doses": [
+      {
+        "label": "1mg",
+        "vial_mg": 1,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 0.333,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 0.02
+          },
+          {
+            "units": 12,
+            "mg": 0.04
+          },
+          {
+            "units": 15,
+            "mg": 0.05
+          }
+        ],
+        "dosage_text": "20-50 mcg once daily subcutaneously with gradual titration. At ~0.333 mg/mL, 20 mcg = 6 units, 50 mcg = 15 units. An 8-week protocol starts at 20 mcg/day for weeks 1-2, rises to 40 mcg/day for weeks 3-4, then holds at 50 mcg/day for weeks 5-8 -- considered the conservative upper end for most research use. Should be taken with food due to insulin-like blood sugar effects.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.02,
+            "units": 6
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.04,
+            "units": 12
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 0.05,
+            "units": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kisspeptin",
+    "name": "Kisspeptin",
+    "category": "hormonal",
+    "overview": "Kisspeptin (also known as metastin) is a naturally occurring neuroendocrine peptide central to human reproduction, acting as the upstream trigger that stimulates GnRH secretion. It is studied in research protocols as a once-daily subcutaneous approach to support the hypothalamic-pituitary-gonadal (HPG) axis.",
+    "mechanism": "Kisspeptin binds GPR54 (kisspeptin) receptors on GnRH neurons in the hypothalamus, causing an immediate release of GnRH, which in turn stimulates the pituitary to secrete LH and FSH, driving sex steroid production and gametogenesis. Its action is strictly GnRH-dependent -- if GnRH release is blocked, kisspeptin cannot induce LH/FSH secretion -- meaning it works by unlocking the body's own GnRH stores rather than replacing GnRH directly.",
+    "effects": "Increases endogenous testosterone and estrogen by amplifying the body's own LH/FSH signals without suppressing the HPG axis. Shows promise for restoring GnRH/LH pulsatility and resuming cycles in functional hypothalamic amenorrhea, and is used clinically to trigger a robust LH surge for oocyte maturation in IVF, potentially with lower OHSS risk than traditional hCG triggers. Generally well tolerated, with occasional mild injection-site redness or itching.",
+    "results_timeline": "Not specified in source as a discrete timeline; protocols run 8-12 weeks with an initial 1-2 week lower-dose period to assess sensitivity before titrating up.",
+    "timing": "Once-daily subcutaneous injection at any consistent time, with systematic site rotation. Cycle length is kept to 8-12 weeks, avoiding prolonged continuous use to reduce the risk of tachyphylaxis.",
+    "administration": "Subcutaneous",
+    "research_notes": "Emerging Therapeutic Potential of Kisspeptin and Neurokinin B, Endocrine Reviews (Oxford Academic), https://academic.oup.com/edrv/article/45/1/30/7226658 | Kisspeptin-54 triggers egg maturation in IVF with reduced OHSS risk, Journal of Clinical Investigation, https://www.jci.org/articles/view/75730 | Kisspeptin-10 Clinical Reference Sheet -- starting dose recommendations and titration guidance, https://genoracle.com/wp-content/uploads/sites/26/2024/03/Kisspeptin-10-Doctor-Sheet.pdf",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          {
+            "units": 3,
+            "mg": 0.1
+          },
+          {
+            "units": 6,
+            "mg": 0.2
+          }
+        ],
+        "dosage_text": "100-200 mcg once daily subcutaneously. At ~3.33 mg/mL, 100 mcg = 3 units, 200 mcg = 6 units. Titration starts at 100 mcg/day for weeks 1-2 to assess sensitivity, then increases to 200 mcg/day from week 3 through week 8-12 if tolerated.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.1,
+            "units": 3
+          },
+          {
+            "weeks": "3-12",
+            "dose_mg": 0.2,
+            "units": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kpv",
+    "name": "KPV",
+    "category": "immune",
+    "overview": "KPV (Lysine-Proline-Valine) is the C-terminal tripeptide fragment of alpha-melanocyte-stimulating hormone (alpha-MSH), studied for potent anti-inflammatory activity without the melanotropic (skin-pigmentation) effects of the parent hormone.",
+    "mechanism": "KPV retains the anti-inflammatory portion of the alpha-MSH molecule while dropping its melanotropic activity. Preclinical work shows it reduces pro-inflammatory cytokines (TNF-alpha, IL-6, IL-1beta) and modulates immune cell activity, largely through inhibition of NF-kappaB signaling and modulation of inflammatory mediator release.",
+    "effects": "Reduces pro-inflammatory cytokines and modulates immune responses in preclinical models of inflammatory bowel disease and systemic inflammation. Both oral and subcutaneous routes show activity, with subcutaneous favored for systemic delivery. Some preclinical evidence suggests support for wound healing via reduced local inflammation. Generally well tolerated, with occasional mild injection-site redness or swelling and no melanotropic side effects.",
+    "results_timeline": "Not specified in source with a discrete week-by-week outcomes timeline; standard protocols run 8-12 weeks with a ~4 week dose titration built in.",
+    "timing": "Once-daily subcutaneous injection at any consistent time, with systematic site rotation.",
+    "administration": "Subcutaneous",
+    "research_notes": "Pawar K. et al., KPV as an alpha-MSH fragment retains potent anti-inflammatory activity without melanotropic side effects, Journal of Pharmaceutical Drug Delivery Research (2022), https://www.scitechnol.com/peer-review/recent-advances-in-kpv-peptidedelivery-8OYD.php?article_id=18216 | Brzoska T. et al., alpha-MSH and related tripeptides: modulation of colitis, inflammation, and melanocortin receptors, FASEB Journal (2003) | Dalmasso G. et al., PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation in DSS colitis models, Gastroenterology (2008), https://pubmed.ncbi.nlm.nih.gov/18061177/",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 0.2
+          },
+          {
+            "units": 9,
+            "mg": 0.3
+          },
+          {
+            "units": 12,
+            "mg": 0.4
+          },
+          {
+            "units": 15,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "200-500 mcg once daily subcutaneously with gradual weekly titration. At ~3.33 mg/mL, 200 mcg = 6 units, 500 mcg = 15 units. Typical schedule: 200 mcg in week 1, rising ~100 mcg per week to reach 500 mcg by weeks 4-8, which is held as the maintenance dose through the end of an 8-12 week cycle.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 0.2,
+            "units": 6
+          },
+          {
+            "weeks": "2",
+            "dose_mg": 0.3,
+            "units": 9
+          },
+          {
+            "weeks": "3",
+            "dose_mg": 0.4,
+            "units": 12
+          },
+          {
+            "weeks": "4-8",
+            "dose_mg": 0.5,
+            "units": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "l-carnitine",
+    "name": "L-Carnitine",
+    "category": "metabolic",
+    "overview": "L-Carnitine is an amino acid derivative essential for shuttling fatty acids into mitochondria for energy production. Subcutaneous dosing is used in research protocols to achieve near-complete bioavailability and avoid the gut-bacteria-driven TMAO production associated with oral high-dose carnitine.",
+    "mechanism": "L-Carnitine acts as an obligate cofactor for the carnitine palmitoyltransferase (CPT) enzyme system, which transports long-chain fatty acids across the inner mitochondrial membrane for beta-oxidation -- a core step in converting fat stores to usable energy. Oral L-Carnitine has poor bioavailability (5-18% at high doses) and unabsorbed carnitine is converted by gut bacteria into trimethylamine, which becomes TMAO in the liver, a metabolite linked to cardiovascular risk. Subcutaneous or IV administration bypasses this pathway entirely, providing close to 100% bioavailability without TMAO production.",
+    "effects": "Facilitates mitochondrial fatty acid oxidation and ATP production from fat stores. A meta-analysis of 37 randomized trials found oral dosing around 2 g/day produces modest weight loss (about 1.2 kg on average) with diminishing returns above that dose. May improve exercise capacity and reduce fatigue, particularly in carnitine-deficient populations -- clinical trials in dialysis patients using IV dosing showed increased plasma carnitine, reduced fatigue, and preserved exercise capacity over 24 weeks. Side effects are generally mild injection-site reactions; high oral doses can cause GI upset and fishy body odor, which subcutaneous dosing avoids.",
+    "results_timeline": "Not specified in source as a discrete short-term timeline; benefits in the cited dialysis-patient trial were measured over a 24-week course of treatment.",
+    "timing": "Once-daily subcutaneous injection, any consistent time (morning or pre-exercise commonly used). Doses above about 1.0 mL may be split into two injections at different sites for comfort. Letting the solution reach room temperature before injecting reduces discomfort.",
+    "administration": "Subcutaneous",
+    "research_notes": "Sawicka AK et al., The bright and the dark sides of L-carnitine supplementation: a systematic review, Journal of the International Society of Sports Nutrition (2020), https://jissn.biomedcentral.com/articles/10.1186/s12970-020-00377-2 | Talenezhad N et al., Meta-analysis of 37 RCTs: L-carnitine supplementation yields ~1.2 kg weight loss at ~2,000 mg/day oral dosing, Clinical Nutrition ESPEN (2020), https://pubmed.ncbi.nlm.nih.gov/32359762/ | Evans AM & Fornasini G., Pharmacokinetics of L-carnitine: oral bioavailability only 5-18% at high doses vs. much higher absorption from IV/parenteral routes, Clinical Pharmacokinetics (2003), https://pubmed.ncbi.nlm.nih.gov/12908852/ | Zhao Y et al., Subcutaneous L-carnitine bypasses gut bacterial TMAO production and does not promote atherosclerosis in ApoE-/- mice, unlike oral dosing, Molecular Nutrition & Food Research (2018), https://pubmed.ncbi.nlm.nih.gov/29178259/",
+    "doses": [
+      {
+        "label": "200mg",
+        "vial_mg": 200,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 100,
+        "syringe_reference": [
+          {
+            "units": 50,
+            "mg": 50
+          },
+          {
+            "units": 100,
+            "mg": 100
+          }
+        ],
+        "dosage_text": "50-100 mg once daily subcutaneously, with advanced protocols using up to 200 mg daily. At 100 mg/mL, the ratio is 1 unit = 1 mg, so 50 mg = 50 units and the 100 mg maintenance dose = exactly 100 units (1.0 mL). Titration starts at 50 mg/day for weeks 1-2, then moves to the 100 mg/day maintenance dose from week 3 onward.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 50,
+            "units": 50
+          },
+          {
+            "weeks": "3-12",
+            "dose_mg": 100,
+            "units": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "livagen",
+    "name": "Livagen",
+    "category": "longevity",
+    "overview": "Livagen (Lys-Glu-Asp-Ala) is a synthetic tetrapeptide bioregulator studied in preclinical research for effects on peptidase inhibition and epigenetic modulation in aging tissue. No standardized human dosing protocol exists; research-context dosing is extrapolated from similar peptide bioregulators.",
+    "mechanism": "Livagen strongly inhibits enkephalin-degrading enzymes in human serum, which may prolong endogenous enkephalin activity, notably without directly binding opioid receptors. In aging cells it has been shown to induce heterochromatin decondensation and reactivate ribosomal genes, and in rat liver organ cultures it enhanced cellular structure and regenerative processes.",
+    "effects": "Preclinical evidence points to inhibition of enkephalin-degrading enzymes, modulation of gene expression/chromatin structure in aging tissue, and support for cellular homeostasis and regenerative capacity. In aged rodents, oral dosing normalized digestive enzyme activity toward more youthful levels. No human clinical administration studies have been reported, so the human side-effect profile is unknown; occasional mild injection-site irritation is possible with subcutaneous use.",
+    "results_timeline": "Not specified in source; no human trial data exists to establish a results timeline.",
+    "timing": "Once-daily subcutaneous injection at any consistent time, with systematic site rotation.",
+    "administration": "Subcutaneous",
+    "research_notes": "Effects of Livagen and Epitalon on Enkephalin-Degrading Enzymes from Human Serum, Biology Bulletin (Springer), https://link.springer.com/article/10.1023/A:1024809822681 | Effect of peptide Livagen on activity of digestive enzymes in gastrointestinal tract and non-digestive organs in rats of different ages, PubMed, https://pubmed.ncbi.nlm.nih.gov/16075683/ | Functional morphology of an organotypic liver culture exposed to the peptide Livagen, PubMed, https://pubmed.ncbi.nlm.nih.gov/12577697/ | Peptides and Ageing: heterochromatin decondensation and gene reactivation, ResearchGate / Neuroendocrinology Letters, https://www.researchgate.net/publication/11084943_Peptides_and_Ageing",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 7.5,
+            "mg": 0.5
+          },
+          {
+            "units": 15,
+            "mg": 1
+          },
+          {
+            "units": 22.5,
+            "mg": 1.5
+          },
+          {
+            "units": 30,
+            "mg": 2
+          }
+        ],
+        "dosage_text": "0.5-2.0 mg once daily subcutaneously with gradual titration over 8-12 weeks. At ~6.67 mg/mL, 0.5 mg = 7.5 units, 2.0 mg = 30 units. Schedule starts at 0.5 mg/day for weeks 1-2, doubling roughly every 2 weeks (1.0 mg weeks 3-4, 1.5 mg weeks 5-6) up to a 2.0 mg/day ceiling held through week 12.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.5,
+            "units": 7.5
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 1,
+            "units": 15
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 1.5,
+            "units": 22.5
+          },
+          {
+            "weeks": "7-12",
+            "dose_mg": 2,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ll-37",
+    "name": "LL-37",
+    "category": "immune",
+    "overview": "LL-37 (also called CAP-18) is a 37-amino-acid cationic peptide and the only cathelicidin produced naturally in humans, cleaved from the hCAP18 precursor. It is studied for broad-spectrum antimicrobial activity and immune-modulating effects, with particular research interest in wound healing and infection control.",
+    "mechanism": "LL-37 is amphipathic and carries a strong net positive charge, allowing it to bind and disrupt negatively charged microbial cell membranes directly. Separately, it can bind bacterial LPS (endotoxin) and block its interaction with CD14/TLR4, dampening the inflammatory cytokine cascade that follows infection. In animal sepsis models it also triggered neutrophils to release antimicrobial-protein-rich microvesicles, which lowered bacterial burden and improved survival.",
+    "effects": "Broad-spectrum antimicrobial action, modulation of inflammatory signaling from bacterial endotoxin, and support for wound-healing processes. Human trial data specifically point to faster healing in venous leg ulcers and improved granulation tissue in diabetic foot ulcers when applied topically.",
+    "results_timeline": "Effects are dose- and goal-dependent; wound-healing changes in trials were assessed over multi-week treatment courses. For general immune/tissue-repair use, most protocols run 8-12 weeks before evaluating results, with the option to extend to 16 weeks.",
+    "timing": "Once-daily subcutaneous injection, any consistent time of day; some protocols use a 5-days-on/2-days-off schedule instead of daily dosing.",
+    "administration": "Subcutaneous",
+    "research_notes": "Kanji S et al., Journal of Immunology (PMC3836506) — Little peptide, big effects: the role of LL-37 in inflammation and autoimmune disease, https://pmc.ncbi.nlm.nih.gov/articles/PMC3836506/ | Innate Immunity (PMC7556193) — Antimicrobial peptide LL-37 ameliorates a murine sepsis model via microvesicle release from neutrophils, https://pmc.ncbi.nlm.nih.gov/articles/PMC7556193/ | Wound Repair and Regeneration (PMC9298190) — Evaluation of LL-37 in healing of hard-to-heal venous leg ulcers: a multicentric prospective RCT, https://pmc.ncbi.nlm.nih.gov/articles/PMC9298190/ | Archives of Dermatological Research (PMC10514151) — Efficacy of LL-37 cream in enhancing healing of diabetic foot ulcer: a randomized double-blind controlled trial, https://pmc.ncbi.nlm.nih.gov/articles/PMC10514151/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 3,
+            "mg": 0.05
+          },
+          {
+            "units": 6,
+            "mg": 0.1
+          },
+          {
+            "units": 9,
+            "mg": 0.15
+          },
+          {
+            "units": 12,
+            "mg": 0.2
+          },
+          {
+            "units": 15,
+            "mg": 0.25
+          },
+          {
+            "units": 18,
+            "mg": 0.3
+          },
+          {
+            "units": 24,
+            "mg": 0.4
+          }
+        ],
+        "dosage_text": "Start around 50-100 mcg (3-6 units) once daily and increase roughly 50 mcg per week as tolerated, targeting 200-400 mcg daily by weeks 4-8. Typical cycles run 8-12 weeks, extendable to 16. At 1.67 mg/mL: 1 unit = 16.7 mcg.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 0.05,
+            "units": 3
+          },
+          {
+            "weeks": "2",
+            "dose_mg": 0.1,
+            "units": 6
+          },
+          {
+            "weeks": "3",
+            "dose_mg": 0.15,
+            "units": 9
+          },
+          {
+            "weeks": "4",
+            "dose_mg": 0.2,
+            "units": 12
+          },
+          {
+            "weeks": "5",
+            "dose_mg": 0.25,
+            "units": 15
+          },
+          {
+            "weeks": "6",
+            "dose_mg": 0.3,
+            "units": 18
+          },
+          {
+            "weeks": "7",
+            "dose_mg": 0.35,
+            "units": 21
+          },
+          {
+            "weeks": "8",
+            "dose_mg": 0.4,
+            "units": 24
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mazdutide",
+    "name": "Mazdutide",
+    "category": "fat-loss",
+    "overview": "Mazdutide (IBI362) is a long-acting dual GLP-1/glucagon receptor agonist developed for chronic weight management and type 2 diabetes. It has shown 6-14% body weight reduction over 24-48 weeks in clinical trials, with mostly mild gastrointestinal side effects, and received initial regulatory approval for obesity in China.",
+    "mechanism": "Mazdutide activates both GLP-1 and glucagon receptors simultaneously, combining GLP-1's appetite suppression and glucose-lowering action with the added energy-expenditure boost from glucagon receptor activity. This dual-agonist approach differentiates it from single-target GLP-1 drugs and appears to drive its strong weight-loss efficacy in trials.",
+    "effects": "Significant body weight reduction (6-14% over 24-48 weeks), meaningful HbA1c improvement (~1.7%) in type 2 diabetes populations, and favorable changes in lipid profile and glucose control. Once-weekly dosing supports better adherence than daily regimens.",
+    "results_timeline": "Phase 2 data showed 6.7-11.3% weight loss over 24 weeks at 3-6 mg weekly. A 48-week phase 3 trial reported 11-14% sustained weight loss at 4-6 mg weekly maintenance dosing.",
+    "timing": "Once-weekly subcutaneous injection, same day each week. Volumes over 3 mL should be split across two injection sites.",
+    "administration": "Subcutaneous",
+    "research_notes": "EClinicalMedicine (PubMed 36247927) — Phase 1b trial: Safety and efficacy of mazdutide 9-10 mg in Chinese adults with overweight/obesity, https://pubmed.ncbi.nlm.nih.gov/36247927/ | Nature Communications — Phase 2 randomized controlled trial of mazdutide in Chinese overweight/obese adults, https://www.nature.com/articles/s41467-023-44067-4 | New England Journal of Medicine (PubMed 40421736) — Phase 3 trial: Once-weekly mazdutide in Chinese adults with obesity or overweight (48-week results), https://pubmed.ncbi.nlm.nih.gov/40421736/ | Diabetes Care (PubMed 37482087) — Phase 2 trial: Efficacy and safety of mazdutide in Chinese patients with type 2 diabetes (20-week results), https://pubmed.ncbi.nlm.nih.gov/37482087/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 50,
+            "mg": 0.83
+          },
+          {
+            "units": 90,
+            "mg": 1.5
+          },
+          {
+            "units": 100,
+            "mg": 1.67
+          },
+          {
+            "units": 150,
+            "mg": 2.5
+          },
+          {
+            "units": 180,
+            "mg": 3
+          },
+          {
+            "units": 300,
+            "mg": 5
+          }
+        ],
+        "dosage_text": "Start at 2.5 mg once weekly for the first 4 weeks, then increase to 5 mg weekly for week 5 onward as the maintenance dose. Because weekly volumes exceed a standard 100-unit pen, use a 1-3 mL syringe; split doses over 3 mL into two injection sites. At 1.67 mg/mL: 2.5 mg = 1.5 mL (150 units), 5 mg = 3.0 mL (300 units).",
+        "titration": [
+          {
+            "weeks": "1-4",
+            "dose_mg": 2.5,
+            "units": 150
+          },
+          {
+            "weeks": "5-8+",
+            "dose_mg": 5,
+            "units": 300
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mgf",
+    "name": "MGF",
+    "category": "recovery",
+    "overview": "Mechano Growth Factor (MGF) is a splice variant of IGF-1 (IGF-1Ec) produced locally in muscle tissue in response to mechanical stress or injury. It is studied in preclinical models for its role in muscle repair, satellite cell activation, and bone regeneration, though no completed human clinical trials exist.",
+    "mechanism": "MGF arises from alternative splicing of the IGF-1 gene after mechanical loading or tissue damage, producing a peptide with a unique C-terminal E domain not found in systemic IGF-1. This E domain activates satellite cells (muscle stem cells), promotes osteoblast proliferation, and has been linked to neurogenesis in preclinical models, suggesting MGF functions as a localized, transient tissue-repair signal rather than a systemic growth factor.",
+    "effects": "Preclinical research shows activation of satellite cells and myoblast proliferation in muscle tissue, support for bone-defect healing via osteoblast activity, and early evidence of neurogenesis/neuroprotection in aging brain tissue. All data is from animal or cell-culture studies.",
+    "results_timeline": "No human trial data exists to anchor a timeline. Preclinical protocols generally run 8-12 weeks with gradual titration, extendable to 16 weeks; any training-related recovery changes would track with resistance-training cycles.",
+    "timing": "Once-daily subcutaneous injection, any consistent time; pairing administration with resistance training is commonly discussed since mechanical loading is what naturally triggers MGF expression.",
+    "administration": "Subcutaneous",
+    "research_notes": "PLOS ONE (2013) — Insulin-like growth factor I (IGF-1) Ec/Mechano Growth Factor: splice variant characterization within the growth plate, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0076133 | International Orthopaedics (2011) — Mechano growth factor E peptide promotes osteoblast proliferation and bone-defect healing in rabbits, https://link.springer.com/article/10.1007/s00264-010-1141-2 | Molecular Brain (2017) — Mechano growth factor promotes neurogenesis in the aging mouse brain, https://link.springer.com/article/10.1186/s13041-017-0304-0 | Experimental Cell Research (2008) — MGF E-peptide activates human muscle satellite cells, https://pubmed.ncbi.nlm.nih.gov/17950277/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 0.1
+          },
+          {
+            "units": 9,
+            "mg": 0.15
+          },
+          {
+            "units": 12,
+            "mg": 0.2
+          },
+          {
+            "units": 15,
+            "mg": 0.25
+          },
+          {
+            "units": 18,
+            "mg": 0.3
+          }
+        ],
+        "dosage_text": "Start at 100 mcg (6 units) daily and step up roughly 50 mcg per week, reaching 250-300 mcg (15-18 units) daily by weeks 4-8. Typical cycles run 8-12 weeks, up to 16. At 1.67 mg/mL: 100 mcg = 6 units, 300 mcg = 18 units.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 0.1,
+            "units": 6
+          },
+          {
+            "weeks": "2",
+            "dose_mg": 0.15,
+            "units": 9
+          },
+          {
+            "weeks": "3",
+            "dose_mg": 0.2,
+            "units": 12
+          },
+          {
+            "weeks": "4",
+            "dose_mg": 0.25,
+            "units": 15
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 0.3,
+            "units": 18
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ovagen",
+    "name": "Ovagen",
+    "category": "longevity",
+    "overview": "Ovagen is a synthetic ultrashort tripeptide (Glu-Asp-Leu, or EDL) studied as a bioregulator of gastrointestinal and liver tissue. In vitro research shows it increases cell proliferation and shifts aging-related gene markers in kidney cell cultures, though no controlled human trials exist.",
+    "mechanism": "As an ultrashort peptide, EDL is thought to enter cells and interact directly with DNA, modulating gene expression and protein synthesis rather than acting through a conventional surface receptor. In vitro work shows it alters aging-related gene markers (p16, p21, p53, SIRT-6) in renal cell cultures, pointing to cytoprotective effects; it has also been separately identified as an HIV-1 protease inhibitor with measurable binding affinity in the enzyme's active site.",
+    "effects": "Potential support for gastrointestinal and hepatic tissue bioregulation, and in vitro evidence of cytoprotective effects through modulation of aging-related gene expression. Ultrashort peptides in this class are generally rapidly metabolized and low in immunogenicity.",
+    "results_timeline": "No human trial data exists. The studied protocol uses a slow 16-week titration, with the low-dose phase in weeks 1-8 and a maintenance phase in weeks 9-16 where cumulative bioregulatory effects would theoretically be most relevant based on the underlying cell research.",
+    "timing": "Once-daily subcutaneous injection, any consistent time; doses are very small (10-150 mcg) and titrated slowly, adding 10-20 mcg every 1-2 weeks as tolerated.",
+    "administration": "Subcutaneous",
+    "research_notes": "MDPI International Journal of Molecular Sciences — Transport of biologically active ultrashort peptides using POT and LAT carriers, https://www.mdpi.com/1422-0067/23/14/7733 | PubMed — Advances in Gerontology — Tripeptides slow down aging process in renal cell culture (Khavinson et al., 2014), https://pubmed.ncbi.nlm.nih.gov/25946838/ | Nature — Signal Transduction and Targeted Therapy — Therapeutic peptides: current applications and future directions (Li et al., 2022), https://www.nature.com/articles/s41392-022-00904-4 | PubMed — Biochemistry — HIV-1 protease inhibitors Glu-Asp-Leu and Glu-Asp-Phe: thermodynamic studies (Velazquez-Campoy & Freire, 2000), https://pubmed.ncbi.nlm.nih.gov/11062223/",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          {
+            "units": 0.1,
+            "mg": 0.01
+          },
+          {
+            "units": 0.2,
+            "mg": 0.02
+          },
+          {
+            "units": 0.5,
+            "mg": 0.05
+          },
+          {
+            "units": 1,
+            "mg": 0.1
+          },
+          {
+            "units": 1.5,
+            "mg": 0.15
+          }
+        ],
+        "dosage_text": "Start at 10 mcg (0.1 unit) daily for weeks 1-2, then step up every 1-2 weeks to 20 mcg, 50 mcg, and 100 mcg by weeks 7-8, settling into a 100-150 mcg maintenance range for weeks 9-16. Because every dose is under 1.5 units at 10 mg/mL, a 30- or 50-unit syringe is far more readable than a standard 100-unit pen.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.01,
+            "units": 0.1
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.02,
+            "units": 0.2
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 0.05,
+            "units": 0.5
+          },
+          {
+            "weeks": "7-8",
+            "dose_mg": 0.1,
+            "units": 1
+          },
+          {
+            "weeks": "9-16",
+            "dose_mg": 0.15,
+            "units": 1.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "oxytocin",
+    "name": "Oxytocin",
+    "category": "hormonal",
+    "overview": "Oxytocin is a nonapeptide hormone best known for its roles in childbirth, lactation, and social bonding. In research settings it is studied for effects on stress, social cognition, appetite/metabolism, and pain modulation, administered here via subcutaneous injection.",
+    "mechanism": "Oxytocin binds oxytocin receptors (OXTR), G-protein coupled receptors expressed centrally and peripherally. Centrally it acts as a neuromodulator influencing dopamine signaling and dampening the HPA stress axis, underlying its effects on trust and social bonding. Peripherally it contracts smooth muscle (uterine contraction, milk ejection) and appears to modulate pain and inflammation via sensory nerves or immune cells in skin tissue. It does not cross the blood-brain barrier well from the bloodstream, so subcutaneous dosing primarily engages peripheral receptors, while intranasal dosing is used in research to better reach central receptors.",
+    "effects": "Increased trust and reduced social anxiety in research contexts; anxiolytic and mood-modulating properties in short-term studies; reduced caloric intake and increased fat oxidation after a single dose in human research, with animal data suggesting modest weight loss and improved insulin sensitivity with chronic use; localized analgesic effects shown in a randomized pain trial.",
+    "results_timeline": "Oxytocin has rapid clearance, so most documented effects are acute and per-dose rather than cumulative. For metabolic or mood-related research goals, protocols typically run 8-12 weeks (extendable to 16) before assessing trends.",
+    "timing": "Once-daily subcutaneous injection, any consistent time; effects are largely acute given oxytocin's rapid clearance rather than building up gradually.",
+    "administration": "Subcutaneous",
+    "research_notes": "PubMed (38815173) — Intranasal Oxytocin for Obesity (8-week trial using 96 IU per day in adults), https://pubmed.ncbi.nlm.nih.gov/38815173/ | PubMed (38642595) — Subcutaneous Oxytocin Injection Reduces Heat Pain: A Randomized-Controlled Trial, https://pubmed.ncbi.nlm.nih.gov/38642595/ | PubMed (21429671) — A review of safety, side-effects and subjective reactions to intranasal oxytocin in human research, https://pubmed.ncbi.nlm.nih.gov/21429671/ | PubMed (28960210) — The effects of oxytocin on eating behaviour and metabolism in humans, https://pubmed.ncbi.nlm.nih.gov/28960210/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 6,
+            "mg": 0.1
+          },
+          {
+            "units": 12,
+            "mg": 0.2
+          },
+          {
+            "units": 18,
+            "mg": 0.3
+          },
+          {
+            "units": 24,
+            "mg": 0.4
+          },
+          {
+            "units": 30,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "Start at 100 mcg (6 units) daily for 2 weeks, then increase by about 100 mcg every 2 weeks up to a typical research ceiling of 500 mcg (30 units) daily by weeks 9-12. Cycles typically run 8-12 weeks, extendable to 16. At 1.67 mg/mL: 100 mcg = 6 units, 500 mcg = 30 units.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.1,
+            "units": 6
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.2,
+            "units": 12
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 0.3,
+            "units": 18
+          },
+          {
+            "weeks": "7-8",
+            "dose_mg": 0.4,
+            "units": 24
+          },
+          {
+            "weeks": "9-12",
+            "dose_mg": 0.5,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pe-22-28",
+    "name": "PE-22-28",
+    "category": "cognitive",
+    "overview": "PE-22-28 is a synthetic heptapeptide (GVSWGLR) derived from the sortilin propeptide, engineered as a shortened, more potent analog of spadin that selectively blocks TREK-1 potassium channels. Preclinical research shows rapid antidepressant-like effects, enhanced neurogenesis, and neuroprotection with a clean cardiac and metabolic safety profile, though no human trials exist.",
+    "mechanism": "PE-22-28 selectively antagonizes TREK-1 (KCNK2) two-pore-domain potassium channels, which depolarizes neurons and increases serotonergic neuron firing and monoamine transmission. In rodent studies this produces measurable increases in hippocampal neurogenesis and synaptogenesis markers within 4 days, alongside activation of CaMKII/CREB pathways linked to neuronal survival and plasticity. It is roughly 300 times more potent than its parent compound spadin (IC50 ~0.12 nM vs 40-60 nM) and has a longer duration of action (~23 hours vs ~7 hours).",
+    "effects": "Rapid antidepressant-like behavioral improvements in rodent models within days, increased hippocampal neurogenesis and dendritic spine density, and neuroprotective effects in stroke models including preservation of dopaminergic neurons and prevention of post-stroke depressive behavior. Preclinical safety data show no effect on cardiac hERG channels, heart rate, blood pressure, glucose regulation, or pain perception.",
+    "results_timeline": "In rodent studies, neurogenesis and synaptogenesis marker changes appear within 4 days. No human timeline exists; suggested human protocols use a 2-week low-dose start, 100 mcg maintenance through week 8, with optional escalation to 150-200 mcg through week 16.",
+    "timing": "Once-daily subcutaneous injection, consistent timing, with systematic site rotation.",
+    "administration": "Subcutaneous",
+    "research_notes": "Mazella J et al., PLoS Biology (2010) — Spadin, a sortilin-derived peptide targeting TREK-1 channels; novel antidepressant mechanism, https://pubmed.ncbi.nlm.nih.gov/20405001/ | Moha Ou Maati H et al., Neuropharmacology (2012) — Spadin as antidepressant; absence of TREK-1-related side effects, https://pubmed.ncbi.nlm.nih.gov/21807005/ | Djillani A et al., Frontiers in Pharmacology (2017) — Shortened spadin analogs (PE-22-28); superior TREK-1 inhibition, in vivo stability, antidepressant activity, https://pubmed.ncbi.nlm.nih.gov/28955242/ | Pietri M et al., Neuropharmacology (2019) — Protective effects on stroke recovery and post-stroke depression induced by sortilin-derived peptides, https://pubmed.ncbi.nlm.nih.gov/31325429/",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          {
+            "units": 1.5,
+            "mg": 0.05
+          },
+          {
+            "units": 3,
+            "mg": 0.1
+          },
+          {
+            "units": 4.5,
+            "mg": 0.15
+          },
+          {
+            "units": 6,
+            "mg": 0.2
+          }
+        ],
+        "dosage_text": "Start at 50 mcg (1.5 units) daily for 2 weeks to assess tolerance, then move to a 100 mcg (3 units) maintenance dose for weeks 3-8, which many researchers find sufficient given the peptide's high potency. Optional escalation to 150 mcg or 200 mcg can follow in weeks 9-16 if well tolerated. At 3.33 mg/mL: 50 mcg = 1.5 units, 200 mcg = 6 units.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.05,
+            "units": 1.5
+          },
+          {
+            "weeks": "3-8",
+            "dose_mg": 0.1,
+            "units": 3
+          },
+          {
+            "weeks": "9-12 (optional)",
+            "dose_mg": 0.15,
+            "units": 4.5
+          },
+          {
+            "weeks": "13-16 (optional)",
+            "dose_mg": 0.2,
+            "units": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "peg-mgf",
+    "name": "PEG MGF",
+    "category": "recovery",
+    "overview": "PEG-MGF is a pegylated variant of Mechano Growth Factor, a muscle-derived IGF-1 splice isoform upregulated after mechanical stress or injury. Pegylation extends its half-life to allow once-daily systemic subcutaneous dosing, unlike native MGF which requires frequent local injection. All efficacy data comes from animal and cell-based studies, with no completed human trials.",
+    "mechanism": "MGF's unique C-terminal E peptide activates muscle satellite cells and drives local protein synthesis to initiate tissue repair, working alongside conventional IGF-1 receptor signaling. Pegylation slows clearance of this normally short-lived, locally-acting signal, letting a single daily subcutaneous injection achieve systemic exposure instead of relying on repeated intramuscular dosing.",
+    "effects": "Animal studies show enhanced muscle, bone, and cartilage regeneration with MGF analogs administered over multiple weeks, along with improved myogenic precursor cell proliferation and better muscle repair outcomes in models of induced muscle depletion or injury.",
+    "results_timeline": "No human data exists to define a timeline. Preclinical protocols run a standard 8-week titration cycle, extendable to 12-16 weeks, with regeneration markers building progressively across that window in animal models.",
+    "timing": "Once-daily subcutaneous injection, any consistent time; often discussed alongside resistance training since mechanical loading is what naturally triggers MGF expression.",
+    "administration": "Subcutaneous",
+    "research_notes": "The Physiological Society — MGF: a local growth factor or a local tissue repair factor?, https://www.physoc.org/magazine-articles/mgf-a-local-growth-factor-or-a-local-tissue-repair-factor/ | In Vivo, PubMed (19567392) — Expression of IGF-1 isoforms after exercise-induced muscle damage in humans: characterization of the MGF E peptide actions in vitro, https://pubmed.ncbi.nlm.nih.gov/19567392/ | American Journal of Transplantation, PubMed (17845560) — A synthetic mechano growth factor E peptide enhances myogenic precursor cell transplantation success, https://pubmed.ncbi.nlm.nih.gov/17845560/ | Frontiers in Physiology, PubMed (31164836) — Impaired skeletal muscle regeneration induced by macrophage depletion could be partly ameliorated by MGF injection, https://pubmed.ncbi.nlm.nih.gov/31164836/",
+    "doses": [
+      {
+        "label": "2mg",
+        "vial_mg": 2,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 0.667,
+        "syringe_reference": [
+          {
+            "units": 30,
+            "mg": 0.2
+          },
+          {
+            "units": 45,
+            "mg": 0.3
+          },
+          {
+            "units": 60,
+            "mg": 0.4
+          },
+          {
+            "units": 75,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "Start at 200 mcg (30 units) daily and increase roughly 100 mcg every 2 weeks, reaching 400-500 mcg (60-75 units) daily by weeks 5-8. Standard cycle is 8 weeks, optionally extended to 12-16. At 0.667 mg/mL doses run large in units, so a standard 1 mL insulin syringe is needed rather than a low-volume 30/50-unit pen.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.2,
+            "units": 30
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.3,
+            "units": 45
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 0.4,
+            "units": 60
+          },
+          {
+            "weeks": "7-8",
+            "dose_mg": 0.5,
+            "units": 75
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pinealon",
+    "name": "Pinealon",
+    "category": "longevity",
+    "overview": "Pinealon is a synthetic tripeptide bioregulator (Glu-Asp-Arg) developed as part of Professor Vladimir Khavinson's peptide bioregulator research program. It is studied for neuroprotective effects, cognitive support, and gene expression modulation in brain tissue, run in short 10-20 day cycles rather than long-term weekly protocols.",
+    "mechanism": "As an ultrashort tripeptide, Pinealon is believed to cross cellular and nuclear membranes and interact directly with DNA, regulating gene expression in brain tissue. Research indicates it reduces reactive oxygen species accumulation and necrotic cell death in neurons, modulates the cell cycle toward proliferative pathways, and reduces caspase-3 activity (an apoptosis-related enzyme), which may lower unnecessary neuronal cell death.",
+    "effects": "Neuroprotection against oxidative stress and preservation of neuronal viability, improvements in memory and learning capacity in animal studies, and reported improvements in memory, attention, cognitive function, and emotional stability in human trials involving traumatic brain injury and cerebral disorder patients. Also linked to circadian rhythm and pineal gland function as a secondary research thread.",
+    "results_timeline": "Effects are reported to typically become noticeable after 10-14 days of consistent daily administration, aligning with the mid-to-late portion of the standard 10-20 day cycle.",
+    "timing": "Once-daily subcutaneous injection, preferably morning or early afternoon to align with reported cognitive benefit timing. Run in short 10-20 day cycles (extendable to 28 days), repeated every 2-3 months rather than continuously.",
+    "administration": "Subcutaneous",
+    "research_notes": "Khavinson VK, Biogerontology (PubMed 19830585) — Peptide bioregulation of aging: 35-year research overview by Khavinson and Anisimov, https://pubmed.ncbi.nlm.nih.gov/19830585/ | PMC (PMC3342713) — Pinealon protects rat offspring from prenatal hyperhomocysteinemia and cognitive deficits, https://pmc.ncbi.nlm.nih.gov/articles/PMC3342713/ | Doklady Biological Sciences (PubMed 18336762) — Regulatory peptides protect brain neurons from hypoxia in vivo, https://pubmed.ncbi.nlm.nih.gov/18336762/ | PubMed (26390612) — Effects of synthetic peptides in patients with chronic polymorbidity and organic brain syndrome, https://pubmed.ncbi.nlm.nih.gov/26390612/",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 15,
+            "mg": 1
+          },
+          {
+            "units": 22.5,
+            "mg": 1.5
+          },
+          {
+            "units": 30,
+            "mg": 2
+          }
+        ],
+        "dosage_text": "Start at 1.0 mg (15 units) daily for days 1-5, increase to 1.5 mg (22.5 units) for days 6-14, then reach 2.0 mg (30 units) for days 15-20. This is a short bioregulator cycle (10-20 days, extendable to 28), not a long weekly protocol; repeat every 2-3 months rather than continuously. At 6.67 mg/mL: 1 mg = 15 units, 2 mg = 30 units.",
+        "titration": [
+          {
+            "weeks": "Days 1-5",
+            "dose_mg": 1,
+            "units": 15
+          },
+          {
+            "weeks": "Days 6-14",
+            "dose_mg": 1.5,
+            "units": 22.5
+          },
+          {
+            "weeks": "Days 15-20",
+            "dose_mg": 2,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pnc-27",
+    "name": "PNC-27",
+    "category": "research-peptide",
+    "overview": "PNC-27 is a synthetic 32-amino-acid chimeric peptide combining a p53-derived HDM-2-binding domain with a membrane-penetrating sequence, studied preclinically for selective cytotoxicity toward cancer cells expressing abnormal p53/HDM-2 complexes. No human clinical trials exist, and the FDA has explicitly warned that PNC-27 products are unapproved with no established safety data.",
+    "mechanism": "PNC-27 fuses a segment of the p53 tumor suppressor protein (residues 12-26) to a membrane-penetrating leader sequence. Preclinical studies indicate it selectively binds HDM-2 expressed on the surface of cancer cells, causing membrane destabilization and necrotic cell death via direct membrane lysis rather than the conventional apoptosis pathway, while reportedly sparing normal cells.",
+    "effects": "Preclinical studies suggest selective cytotoxicity toward cancer cells expressing abnormal p53/HDM-2, with mouse tumor model research showing inhibited cancer cell growth via intraperitoneal administration. No human efficacy or safety data exists in any form.",
+    "results_timeline": "Not specified in source. No human trials have been conducted, so no legitimate timeline for human effects exists; all timing data below is a speculative extrapolation, not a validated finding.",
+    "timing": "Not specified in source beyond a proposed once-daily subcutaneous schedule; the source explicitly states any human dosing above a few hundred micrograms per day is speculative, and PNC-27 has no established human safety profile.",
+    "administration": "Subcutaneous (per proposed educational protocol; underlying animal research used intraperitoneal administration)",
+    "research_notes": "Journal of Biomedical Science (2017) — Review of therapeutic peptides; PNC-27 mechanism and cancer cell selectivity, https://link.springer.com/article/10.1186/s12929-017-0328-x | Cancer Chemotherapy and Pharmacology (2010) — PNC-27 induces tumor cell membrane lysis; preclinical mechanism study, https://pubmed.ncbi.nlm.nih.gov/20182728/ | FDA Drug Safety Communication (2015) — Warning: PNC-27 is unapproved; safety not established, https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-cancer-patients-not-use-pnc-27-products-treatment | BMC Cancer (2008) — PNC-27 selectively kills cancer cells via HDM-2 binding and membrane disruption, https://bmccancer.biomedcentral.com/articles/10.1186/1471-2407-8-237",
+    "doses": [
+      {
+        "label": "30mg",
+        "vial_mg": 30,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          {
+            "units": 1,
+            "mg": 0.1
+          },
+          {
+            "units": 2,
+            "mg": 0.2
+          },
+          {
+            "units": 3,
+            "mg": 0.3
+          },
+          {
+            "units": 4,
+            "mg": 0.4
+          },
+          {
+            "units": 5,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "No validated human dosing exists. A speculative educational schedule extrapolated from animal data starts at 100 mcg (1 unit) daily and rises by roughly 100 mcg every 2-4 weeks toward 500 mcg (5 units) by weeks 13-16. The source is explicit that this is theoretical, not an established protocol, and that the FDA warns against use of PNC-27 products entirely. At 10 mg/mL: 100 mcg = 1 unit, 500 mcg = 5 units.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "prostamax",
+    "name": "Prostamax",
+    "category": "longevity",
+    "overview": "Prostamax is a synthetic tetrapeptide (Lys-Glu-Asp-Pro, or KEDP) belonging to the Khavinson-style class of bioregulator peptides, originally derived from research into prostate tissue peptide complexes. It has been studied in animal models for supporting prostate tissue health, particularly reducing inflammation associated with prostatitis and BPH.",
+    "mechanism": "Prostamax is theorized to act through epigenetic mechanisms, interacting with chromatin structure and histone proteins to modulate gene expression rather than working through a conventional receptor-ligand pathway. In preclinical rat models, intramuscular KEDP administration reduced inflammatory markers and appeared to help prevent fibrotic changes in prostate tissue.",
+    "effects": "In animal prostatitis models, reduced inflammation and supported normalization of prostate tissue. In BPH models, favorable effects were observed on prostate weight and histological parameters. No human clinical trial data exist, so effects in people are extrapolated from these animal studies rather than confirmed.",
+    "results_timeline": "Not specified in source (based on preclinical studies running 15-60 days of daily administration in animal models; no human timeline data available).",
+    "timing": "Administered once daily at a consistent time, intramuscularly into large muscle groups (rotate between deltoid, vastus lateralis, glute).",
+    "administration": "Intramuscular (subcutaneous mentioned as an alternative route)",
+    "research_notes": "Zhurbenko et al., Modern Research in Inflammation (2013) — experimental study of Prostamax in chronic aseptic prostatitis therapy, https://doi.org/10.4236/mri.2013.23007 | Modern Research in Inflammation (2014) — experimental study of KEDP tetrapeptide in a benign prostatic hyperplasia model, https://doi.org/10.4236/mri.2014.33013 | Bulletin of Experimental Biology and Medicine (2004) — effects of short peptides on lymphocyte chromatin in senile subjects, https://doi.org/10.1023/B:BEBM.0000024393.40560.05 | Stem Cell Reviews and Reports (2020) — peptide regulation of cell differentiation and epigenetic mechanisms of short bioregulatory peptides, https://doi.org/10.1007/s12015-019-09938-8",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          {
+            "units": 1,
+            "mg": 0.1
+          },
+          {
+            "units": 5,
+            "mg": 0.5
+          },
+          {
+            "units": 7.5,
+            "mg": 0.75
+          },
+          {
+            "units": 10,
+            "mg": 1
+          }
+        ],
+        "dosage_text": "500 mcg to 1 mg once daily via intramuscular injection, titrated up gradually over 8-12 weeks (extendable to 16). At 10 mg/mL: start at 5 units (500 mcg) for weeks 1-2, step up to 7.5 units (750 mcg) for weeks 3-4, then reach 10 units (1 mg) by weeks 5-8 as a maintenance dose. Use a 30- or 50-unit syringe for better precision at these low volumes.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.5,
+            "units": 5
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.75,
+            "units": 7.5
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 1,
+            "units": 10
+          },
+          {
+            "weeks": "9-12 (optional)",
+            "dose_mg": 1,
+            "units": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "slu-pp-332",
+    "name": "SLU-PP-332",
+    "category": "metabolic",
+    "overview": "SLU-PP-332 is a synthetic small-molecule pan-agonist of the estrogen-related receptors (ERRalpha, ERRbeta, and ERRgamma), studied exclusively in mouse models for its ability to trigger an exercise-mimetic gene program that boosts mitochondrial function, endurance, and cardiometabolic health. As of the source material, no human trials have been conducted, so all information here reflects preclinical animal research only.",
+    "mechanism": "The compound acts as a pan-agonist across all three ERR subtypes, with the strongest activity at ERRalpha, activating the transcriptional program normally triggered by aerobic exercise. In mouse studies this increased mitochondrial respiration and fatty-acid oxidation in skeletal muscle without requiring physical exertion.",
+    "effects": "In murine studies: improved endurance and treadmill running capacity, enhanced mitochondrial function and fatty-acid oxidation, improved glucose tolerance in diet-induced obese mice, improved cardiac fatty-acid metabolism and mitochondrial function in heart failure models, and reversal of mitochondrial dysfunction and inflammation in aging kidney models. No human safety or efficacy data exist.",
+    "results_timeline": "Not specified in source — all timeline data comes from acute-to-8-week murine study designs, not human use.",
+    "timing": "Not applicable to humans; published murine protocols used twice-daily intraperitoneal dosing at consistent intervals.",
+    "administration": "Intraperitoneal in published animal studies; subcutaneous route is not validated for this compound in humans",
+    "research_notes": "Billon et al., ACS Chemical Biology (2023) — synthetic ERRa/b/g agonist induces an ERRalpha-dependent acute aerobic exercise response and enhances exercise capacity, https://pubmed.ncbi.nlm.nih.gov/36988910/ | Journal of Pharmacology and Experimental Therapeutics (2024) — a synthetic ERR agonist alleviates metabolic syndrome, https://pubmed.ncbi.nlm.nih.gov/37739806/ | Circulation (2024) — novel pan-ERR agonists ameliorate heart failure through enhancing cardiac fatty acid metabolism and mitochondrial function, https://pubmed.ncbi.nlm.nih.gov/37961903/ | American Journal of Pathology (2023) — estrogen-related receptor agonism reverses mitochondrial dysfunction and inflammation in the aging kidney, https://pubmed.ncbi.nlm.nih.gov/37717940/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 37.5,
+            "mg": 0.625
+          },
+          {
+            "units": 75,
+            "mg": 1.25
+          }
+        ],
+        "dosage_text": "No validated human dosing exists. Published murine studies used 25-50 mg/kg intraperitoneally, twice daily. Scaled to a 25g mouse and this vial's 1.67 mg/mL concentration, that works out to roughly 625 mcg (37.5 units) per injection during an initial two-week phase, then 1.25 mg (75 units) per injection twice daily for weeks 3-8 in the murine-equivalent framework. This is preclinical research information only, not a human protocol.",
+        "titration": null
+      }
+    ]
+  },
+  {
+    "slug": "snap-8",
+    "name": "SNAP-8",
+    "category": "beauty",
+    "overview": "SNAP-8 (Acetyl Octapeptide-3) is a synthetic octapeptide developed as a cosmeceutical anti-wrinkle ingredient. It is an extended, more potent analog of the hexapeptide Argireline, designed to mimic part of the SNAP-25 protein involved in neurotransmitter release at neuromuscular junctions.",
+    "mechanism": "SNAP-8 competitively inhibits SNAP-25 within the SNARE complex, reducing acetylcholine release at neuromuscular junctions. This relaxes the small facial muscles responsible for expression lines without causing full paralysis the way botulinum toxin does, since it does not cleave SNAP-25 but rather competes for the same binding site. Lab work found it roughly 30% more effective at reducing neurotransmitter release than Argireline, with better formulation stability.",
+    "effects": "Reduces the depth of expression lines and wrinkles while preserving natural facial movement. Topical studies reported wrinkle depth reductions averaging around 35%, with peak improvements near 60% in some areas after about a month. Generally well tolerated with only occasional mild injection-site irritation reported for the subcutaneous route.",
+    "results_timeline": "Noticeable smoothing of expression lines typically appears after 2-4 weeks of consistent daily use, with continued improvement through 8-12 weeks as dosing reaches its target level.",
+    "timing": "Once daily at any consistent time, subcutaneously, with gradual dose titration over 8-12 weeks (extendable to 16).",
+    "administration": "Subcutaneous",
+    "research_notes": "International Journal of Cosmetic Science — Argireline hexapeptide with antiwrinkle activity in a human study, https://pubmed.ncbi.nlm.nih.gov/18498523/ | Annals of Dermatology — clinical safety and efficacy of a dissolving microneedle patch containing SNAP-8 in a 24-subject trial, https://doi.org/10.5021/ad.23.136 | Journal of Drugs in Dermatology — open-label 14-week trial of a multi-peptide serum including SNAP-8, https://jddonline.com/articles/an-open-label-clinical-trial-of-a-peptide-treatment-serum-and-supporting-regimen-designed-to-improve-S1545961616P1100X | Frontiers in Chemistry — cosmeceutical peptides review covering SNAP-8's SNARE-complex mechanism and comparative potency versus Argireline, https://www.frontiersin.org/articles/10.3389/fchem.2020.572923/full",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 3.33,
+        "syringe_reference": [
+          {
+            "units": 10,
+            "mg": 0.33
+          },
+          {
+            "units": 15,
+            "mg": 0.5
+          },
+          {
+            "units": 30,
+            "mg": 1
+          }
+        ],
+        "dosage_text": "330 mcg to 1 mg once daily via subcutaneous injection, titrated gradually over 8-12 weeks. At 3.33 mg/mL: start at 10 units (330 mcg) for the first 4 weeks, increase to 15 units (500 mcg) for weeks 5-8, and reach 30 units (1 mg) by weeks 9-12 for maximal effect. Protocol can extend to 16 weeks at the top dose.",
+        "titration": [
+          {
+            "weeks": "1-4",
+            "dose_mg": 0.33,
+            "units": 10
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 0.5,
+            "units": 15
+          },
+          {
+            "weeks": "9-12",
+            "dose_mg": 1,
+            "units": 30
+          },
+          {
+            "weeks": "13-16 (optional)",
+            "dose_mg": 1,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ss-31",
+    "name": "SS-31",
+    "category": "metabolic",
+    "overview": "SS-31 (elamipretide) is a mitochondria-targeted tetrapeptide that binds cardiolipin in the inner mitochondrial membrane. It has shown protective effects in preclinical models of heart failure, neurodegeneration, kidney disease, and age-related muscle atrophy, and received FDA accelerated approval in 2025 (as Forzinity) as the first treatment for Barth syndrome.",
+    "mechanism": "SS-31 selectively accumulates in the inner mitochondrial membrane, binding cardiolipin — a phospholipid essential for organizing electron transport chain supercomplexes and maintaining cristae structure. By stabilizing these cardiolipin-protein interactions, it improves electron transport efficiency, reduces pathological reactive oxygen species generation, and enhances ATP synthesis in metabolically demanding tissues.",
+    "effects": "Stabilizes mitochondrial membranes and supports electron transport chain function, increasing ATP output and lowering oxidative stress in metabolically active tissue. In Barth syndrome patients, produced measurable gains in muscle strength and six-minute walk distance. Phase II trials in heart failure and primary mitochondrial myopathy did not meet their primary efficacy endpoints despite a favorable safety profile. Does not meaningfully change blood pressure, heart rate, or standard lab values.",
+    "results_timeline": "Not specified in source for general use; clinical trials assessing functional outcomes ran 4-12 weeks, with the Barth syndrome (TAZPOWER) trial showing significant strength and walk-distance improvements over its trial duration.",
+    "timing": "Once daily subcutaneous injection at a consistent time; doses above 10 mg should be split into two injections at sites at least two inches apart.",
+    "administration": "Subcutaneous",
+    "research_notes": "International Journal of Molecular Sciences (MDPI) — comprehensive review of elamipretide structure, mechanism of action, and therapeutic potential, https://www.mdpi.com/1422-0067/26/3/944 | U.S. Food & Drug Administration — FDA grants accelerated approval to elamipretide (Forzinity) as first treatment for Barth syndrome (2025), https://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-first-treatment-barth-syndrome | Journal of the American College of Cardiology (JACC) — PROGRESS-HF trial: safety and tolerability of elamipretide in heart failure patients, https://www.jacc.org/doi/10.1016/j.jchf.2020.02.009 | Neurology (AAN Journals) — MMPOWER-2 trial: elamipretide in primary mitochondrial myopathy, https://n.neurology.org/content/94/7/e733",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 1,
+        "concentration_mg_per_ml": 10,
+        "syringe_reference": [
+          {
+            "units": 50,
+            "mg": 5
+          },
+          {
+            "units": 75,
+            "mg": 7.5
+          },
+          {
+            "units": 100,
+            "mg": 10
+          }
+        ],
+        "dosage_text": "5-10 mg once daily via subcutaneous injection for standard protocols; advanced protocols under medical supervision may reach 15-20 mg/day. At 10 mg/mL: 50 units = 5 mg, 100 units = 10 mg (a full syringe). Doses above 10 mg (100 units) exceed a single U-100 syringe and must be split into two separate injections at different sites. Standard protocols run 8-12 weeks; data beyond 12 weeks is limited.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 5,
+            "units": 50
+          },
+          {
+            "weeks": "3-8",
+            "dose_mg": 10,
+            "units": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "survodutide",
+    "name": "Survodutide",
+    "category": "fat-loss",
+    "overview": "Survodutide (BI 456906) is an investigational dual GLP-1/glucagon receptor agonist under development for obesity and metabolic liver disease. In phase 2 trials, once-weekly dosing produced dose-dependent weight loss of 12.5-14.9% versus placebo over 46 weeks.",
+    "mechanism": "The GLP-1 component enhances satiety and improves glycemic control, while the glucagon receptor component increases energy expenditure and promotes hepatic lipid oxidation. This dual mechanism is hypothesized to provide additive or synergistic effects on body weight and liver fat compared to GLP-1 agonism alone.",
+    "effects": "Dose-dependent weight loss of 12.5-14.9% versus placebo over 46 weeks in phase 2 obesity trials, along with improvements in liver-related biomarkers in NAFLD/NASH populations. A meta-analysis confirmed consistent weight-loss efficacy across multiple randomized controlled trials. Adverse effects are primarily gastrointestinal (nausea, vomiting, diarrhea, constipation), most common during dose escalation.",
+    "results_timeline": "Not specified in source beyond the 46-week phase 2 trial window showing the full weight-loss effect; gradual titration over the first 10-12 weeks is intended to reduce GI side effects along the way.",
+    "timing": "Once weekly subcutaneous injection, same day each week, with rotating injection sites; gradual dose titration over 10-12 weeks to a maintenance dose.",
+    "administration": "Subcutaneous",
+    "research_notes": "Le Roux et al., Lancet Diabetes & Endocrinology (2024) — phase 2 trial of once-weekly subcutaneous survodutide (0.6-4.8 mg) in obesity showing dose-dependent weight loss of 12.5-14.9%, https://pubmed.ncbi.nlm.nih.gov/38330987/ | Guo et al., Journal of Hepatology (2023) — efficacy, tolerability, and pharmacokinetics of survodutide in NAFLD/NASH patients, https://pubmed.ncbi.nlm.nih.gov/38857788/ | Wharton et al., Obesity (Silver Spring) (2024) — SYNCHRONIZE-1 & 2 phase 3 trial design for survodutide in obesity, https://pubmed.ncbi.nlm.nih.gov/39495965/ | Wan et al., Diabetology & Metabolic Syndrome (2024) — meta-analysis of survodutide weight-loss efficacy across randomized controlled trials, https://link.springer.com/article/10.1186/s13098-024-01501-x",
+    "doses": [
+      {
+        "label": "10mg",
+        "vial_mg": 10,
+        "bac_water_ml": 2,
+        "concentration_mg_per_ml": 5,
+        "syringe_reference": [
+          {
+            "units": 12,
+            "mg": 0.6
+          },
+          {
+            "units": 24,
+            "mg": 1.2
+          },
+          {
+            "units": 48,
+            "mg": 2.4
+          },
+          {
+            "units": 72,
+            "mg": 3.6
+          },
+          {
+            "units": 96,
+            "mg": 4.8
+          },
+          {
+            "units": 120,
+            "mg": 6
+          }
+        ],
+        "dosage_text": "0.6 mg to 6.0 mg once weekly via subcutaneous injection, titrated gradually over 10-12+ weeks. At 5 mg/mL: 12 units = 0.6 mg, 96 units = 4.8 mg. The 6.0 mg maintenance dose (120 units / 1.2 mL) exceeds a standard 100-unit insulin syringe and requires a 1-3 mL Luer-lock syringe or splitting into two injections.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.6,
+            "units": 12
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 1.2,
+            "units": 24
+          },
+          {
+            "weeks": "5-6",
+            "dose_mg": 1.8,
+            "units": 36
+          },
+          {
+            "weeks": "7-8",
+            "dose_mg": 2.4,
+            "units": 48
+          },
+          {
+            "weeks": "9-10",
+            "dose_mg": 3.6,
+            "units": 72
+          },
+          {
+            "weeks": "11-12",
+            "dose_mg": 4.8,
+            "units": 96
+          },
+          {
+            "weeks": "13+",
+            "dose_mg": 6,
+            "units": 120
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "testagen",
+    "name": "Testagen",
+    "category": "longevity",
+    "overview": "Testagen is a synthetic tetrapeptide (Lys-Glu-Asp-Gly, or KEDG), an anterior pituitary-derived bioregulator studied for its role in modulating endocrine function, particularly the pituitary-gonadal axis. Preclinical research points to effects on thyroid hormone normalization and male reproductive hormone modulation.",
+    "mechanism": "Testagen belongs to a class of short bioregulatory peptides hypothesized to act through gene-regulatory mechanisms influencing hormone synthesis and secretion, rather than through a conventional receptor-based pathway. Preclinical avian research showed it could normalize thyroid hormone levels in hypophysectomized (pituitary-removed) subjects and modulate signaling along the pituitary-gonadal axis.",
+    "effects": "In avian preclinical models, normalization of thyroid hormone parameters in hypophysectomized subjects and apparent modulation of male reproductive hormone activity via pituitary pathways. No published human safety or efficacy data exist, so the human effect profile is unknown.",
+    "results_timeline": "Not specified in source — no human trial timeline exists; animal studies do not translate directly to a human onset timeline.",
+    "timing": "Once daily at a consistent time, subcutaneously, with gradual titration over 8-12 weeks (extendable to 16).",
+    "administration": "Subcutaneous",
+    "research_notes": "MDPI Molecules — the inhibitory effect and adsorption properties of Testagen peptide on copper surfaces (structural characterization), https://doi.org/10.3390/molecules30153141 | MDPI Molecules — peptide regulation of gene expression: a systematic review, https://www.mdpi.com/1420-3049/26/22/7053 | PubMed — effects of hypophyseal Lys-Glu-Asp-Gly peptide on immunity, hemostasis, and thyroid function in hypophysectomized chickens, https://pubmed.ncbi.nlm.nih.gov/20731122/ | PubMed — effects of Lys-Glu-Asp-Gly peptide on hormonal activity and thyroid morphology in hypophysectomized mature and old birds, https://pubmed.ncbi.nlm.nih.gov/21809626/",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 1.5,
+            "mg": 0.1
+          },
+          {
+            "units": 2.25,
+            "mg": 0.15
+          },
+          {
+            "units": 3,
+            "mg": 0.2
+          },
+          {
+            "units": 4.5,
+            "mg": 0.3
+          }
+        ],
+        "dosage_text": "100-300 mcg once daily via subcutaneous injection, titrated gradually over 8-12 weeks. At 6.67 mg/mL: start at 1.5 units (100 mcg) for weeks 1-2, step up to 2.25 units (150 mcg) for weeks 3-4, reach 3 units (200 mcg) by weeks 5-8, with an optional push to 3.75-4.5 units (250-300 mcg) for weeks 9-12. Given the very low unit counts, a 30- or 50-unit syringe is recommended for accuracy.",
+        "titration": [
+          {
+            "weeks": "1-2",
+            "dose_mg": 0.1,
+            "units": 1.5
+          },
+          {
+            "weeks": "3-4",
+            "dose_mg": 0.15,
+            "units": 2.25
+          },
+          {
+            "weeks": "5-8",
+            "dose_mg": 0.2,
+            "units": 3
+          },
+          {
+            "weeks": "9-12 (optional)",
+            "dose_mg": 0.3,
+            "units": 4.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "thymosin-alpha-1",
+    "name": "Thymosin Alpha-1",
+    "category": "immune",
+    "overview": "Thymosin Alpha-1 (Ta1) is a 28-amino-acid peptide originally isolated from the thymus gland, recognized for broad immunomodulatory properties. It has been investigated as an immune enhancer in chronic viral infections (hepatitis B/C, HIV/AIDS) and critical illness including sepsis and COVID-19.",
+    "mechanism": "Thymosin Alpha-1 enhances the maturation and differentiation of T-cells, augments dendritic cell function, and promotes production of key cytokines including interferon-alpha and interleukin-2, modulating immune function through multiple coordinated pathways.",
+    "effects": "Supports enhanced T-cell function and overall immune competence. Clinical studies have shown it enhances immune responses in immunocompromised individuals, including those with chronic hepatitis B and C. Meta-analyses found it reduced mortality in moderate-to-critical COVID-19 patients. It has demonstrated an excellent safety profile, with doses up to 1.6 mg twice weekly for 6-12 months well tolerated, and no significant compound-specific toxicity observed even at experimental doses up to 16 mg subcutaneously over 12 months.",
+    "results_timeline": "Not specified in source as a standalone timeline; clinical benefit in the studied conditions (chronic viral infection, critical illness) was evaluated over the course of multi-week to multi-month treatment courses.",
+    "timing": "Once daily subcutaneous injection at a consistent time; an 8-week protocol starts at a lower dose in week 1 to gauge tolerance before increasing to a maintenance dose from week 2 onward. Treatment durations of 8-16 weeks are commonly reported.",
+    "administration": "Subcutaneous",
+    "research_notes": "Dominari et al., World Journal of Virology (2020) — comprehensive review of Thymosin Alpha-1 mechanisms, dosing (0.8-6.4 mg SC), and clinical applications, https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/ | Tao et al., Molecules (2023) — Thymosin Alpha-1 in viral diseases: mechanisms and therapeutic applications in HBV, HCV, and HIV, https://pmc.ncbi.nlm.nih.gov/articles/PMC10144284/ | Soeroto et al., Inflammopharmacology (2023) — meta-analysis of Ta1 in COVID-19 showing significant mortality reduction in moderate-to-critical patients, https://pmc.ncbi.nlm.nih.gov/articles/PMC10589223/ | Annals of the New York Academy of Sciences — Thymosin Alpha-1: biological activities, clinical applications, and pharmacokinetics review, https://pubmed.ncbi.nlm.nih.gov/17804536/",
+    "doses": [
+      {
+        "label": "5mg",
+        "vial_mg": 5,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 1.67,
+        "syringe_reference": [
+          {
+            "units": 18,
+            "mg": 0.3
+          },
+          {
+            "units": 30,
+            "mg": 0.5
+          }
+        ],
+        "dosage_text": "300-500 mcg once daily via subcutaneous injection. At 1.67 mg/mL: start at 18 units (300 mcg) during week 1 to assess tolerance, then move to 30 units (500 mcg) daily from week 2 onward as maintenance. The 500 mcg/day dose works out to roughly 3.5 mg/week, consistent with typical clinical dosing ranges. Treatment courses commonly run 8-16 weeks; reconstituted solution should be used within 7 days.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 0.3,
+            "units": 18
+          },
+          {
+            "weeks": "2-8",
+            "dose_mg": 0.5,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vesugen",
+    "name": "Vesugen",
+    "category": "longevity",
+    "overview": "Vesugen (Lys-Glu-Asp, or KED) is a tripeptide bioregulator synthesized at the Saint Petersburg Institute of Bioregulation and Gerontology, derived from amino acids associated with vascular wall proteins. Research suggests it may support vascular endothelial cell renewal and has also shown neuroprotective signals in preliminary studies.",
+    "mechanism": "Vesugen is thought to support vascular endothelial cell proliferation by modulating expression of Ki-67, a protein closely tied to cell division, potentially through epigenetic interaction with the Ki-67 gene's promoter region. Additional research suggests it may normalize endothelin-1 expression and increase sirtuin-1 (SIRT-1) expression in vascular endothelial cells.",
+    "effects": "May support vascular endothelial cell proliferation and renewal through Ki-67 gene regulation. Preliminary research suggests neuroprotective properties — oral application improved memory and attention in elderly individuals with functional CNS disorders in one study, and it may restore synaptic plasticity in in vitro Alzheimer's disease models. Generally well tolerated, with occasional mild injection-site reactions.",
+    "results_timeline": "Not specified in source for the injectable protocol; cited neuroprotective findings come from separate oral-administration research in elderly subjects rather than the dosing schedule described here.",
+    "timing": "Once daily at a consistent time, subcutaneously, with gradual titration over 8-12 weeks (extendable to 16).",
+    "administration": "Subcutaneous",
+    "research_notes": "Khavinson et al., Bulletin of Experimental Biology and Medicine (2016) — short peptides regulate gene expression, https://pubmed.ncbi.nlm.nih.gov/27909961/ | Advances in Gerontology (2014) — epigenetic aspects of peptidergic regulation of vascular endothelial cell proliferation during aging, https://pubmed.ncbi.nlm.nih.gov/25051766/ | Advances in Gerontology (2016) — molecular aspects of vasoprotective peptide KED activity during atherosclerosis and restenosis, https://pubmed.ncbi.nlm.nih.gov/28539025/ | Bulletin of Experimental Biology and Medicine (2021) — peptide KED: molecular-genetic aspects of neurogenesis regulation in Alzheimer's disease, https://pubmed.ncbi.nlm.nih.gov/34173097/",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 7.5,
+            "mg": 0.5
+          },
+          {
+            "units": 15,
+            "mg": 1
+          },
+          {
+            "units": 22.5,
+            "mg": 1.5
+          },
+          {
+            "units": 30,
+            "mg": 2
+          }
+        ],
+        "dosage_text": "500 mcg to 2 mg once daily via subcutaneous injection, titrated gradually over 8-12 weeks. At 6.67 mg/mL: start at 7.5 units (500 mcg) in week 1, increase to 15 units (1 mg) in week 2, 22.5 units (1.5 mg) in week 3, and reach 22.5-30 units (1.5-2 mg) as a maintenance range from week 4 through week 8 or beyond. A 50-unit syringe with half-unit gradations helps with the smaller early doses.",
+        "titration": [
+          {
+            "weeks": "1",
+            "dose_mg": 0.5,
+            "units": 7.5
+          },
+          {
+            "weeks": "2",
+            "dose_mg": 1,
+            "units": 15
+          },
+          {
+            "weeks": "3",
+            "dose_mg": 1.5,
+            "units": 22.5
+          },
+          {
+            "weeks": "4-8+",
+            "dose_mg": 2,
+            "units": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vilon",
+    "name": "Vilon",
+    "category": "longevity",
+    "overview": "Vilon (Lys-Glu) is a synthetic immunoregulatory dipeptide made of lysine and glutamic acid residues, one of the shortest bioregulator peptides studied by Russian gerontology researchers. Preclinical work suggests it may enhance immune markers including CD5+ lymphocytes and interleukin-2 expression in thymic and splenic cell cultures.",
+    "mechanism": "Vilon is proposed to modulate lymphocyte populations and cytokine gene expression. In vitro studies show it increases CD5+ cell counts in thymus cell cultures and upregulates interleukin-2 (IL-2) mRNA expression in splenocyte preparations. Additional preclinical work suggests effects on TGF-beta1 and vascular permeability in renal stress models.",
+    "effects": "Supports immune cell marker expression (CD5+ lymphocytes) and IL-2 gene activity in cell culture models. May modulate inflammatory cytokines such as TGF-beta1 under experimental renal stress conditions. Early mouse studies suggest possible tumor growth inhibition and lifespan extension, though human data remain limited. Generally well tolerated in preclinical settings, with only occasional mild injection-site reactions.",
+    "results_timeline": "Not specified in source for human use; the pulsed cycle protocol itself (5 days on, roughly 23 days off, run for 2-4 cycles) is analogized from related short-peptide regimens such as Epitalon rather than derived from human timeline data.",
+    "timing": "Once daily subcutaneous injection for 5 consecutive days per 4-week cycle, then a rest period for the remainder of the cycle; repeat for 2-4 cycles total.",
+    "administration": "Subcutaneous",
+    "research_notes": "Sevostianova et al. (2013) — immunomodulating effects of Vilon and its analogue in the culture of human and animal thymus cells, https://doi.org/10.1007/s10517-013-2000-0 | Kazakova et al. (2002) — in vitro effect of short peptides on expression of interleukin-2 gene in splenocytes, https://link.springer.com/article/10.1023/A:1020210615148 | Gavrisheva et al. (2005) — effect of Vilon peptide on TGF-beta1 and vascular permeability in chronic renal failure, https://pubmed.ncbi.nlm.nih.gov/16027222/ | Chernyak et al. (2000) — synthetic dipeptide Vilon inhibits tumor growth and prolongs life in mice, https://pubmed.ncbi.nlm.nih.gov/10994281/",
+    "doses": [
+      {
+        "label": "20mg",
+        "vial_mg": 20,
+        "bac_water_ml": 3,
+        "concentration_mg_per_ml": 6.67,
+        "syringe_reference": [
+          {
+            "units": 1,
+            "mg": 0.067
+          },
+          {
+            "units": 2,
+            "mg": 0.133
+          },
+          {
+            "units": 3,
+            "mg": 0.2
+          },
+          {
+            "units": 5,
+            "mg": 0.333
+          },
+          {
+            "units": 10,
+            "mg": 0.667
+          }
+        ],
+        "dosage_text": "67-667 mcg once daily via subcutaneous injection, given only on 5 consecutive days per 4-week cycle (pulsed, not continuous). At 6.67 mg/mL: cycle 1 titrates up day by day from 1 unit (67 mcg) on day 1 to 5 units (333 mcg) on day 5. From cycle 2 onward, daily dose during the 5 injection days runs 5-10 units (333-667 mcg). Repeat for 2-4 total cycles. A 30- or 50-unit syringe is recommended given the very low unit counts.",
+        "titration": [
+          {
+            "weeks": "Cycle 1, Day 1",
+            "dose_mg": 0.067,
+            "units": 1
+          },
+          {
+            "weeks": "Cycle 1, Day 2",
+            "dose_mg": 0.133,
+            "units": 2
+          },
+          {
+            "weeks": "Cycle 1, Day 3",
+            "dose_mg": 0.2,
+            "units": 3
+          },
+          {
+            "weeks": "Cycle 1, Day 4",
+            "dose_mg": 0.267,
+            "units": 4
+          },
+          {
+            "weeks": "Cycle 1, Day 5",
+            "dose_mg": 0.333,
+            "units": 5
+          },
+          {
+            "weeks": "Cycle 2+ (Days 1-5)",
+            "dose_mg": "0.333-0.667",
+            "units": "5-10"
+          }
+        ]
+      }
+    ]
   }
 ]
