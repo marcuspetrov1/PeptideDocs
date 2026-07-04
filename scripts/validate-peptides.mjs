@@ -46,9 +46,9 @@ try {
     process.exit(1);
   }
 
-  if (data.length !== 64) {
+  if (data.length !== 65) {
     console.error(
-      `ERROR: Expected exactly 64 items, but found ${data.length}`
+      `ERROR: Expected exactly 65 items, but found ${data.length}`
     );
     process.exit(1);
   }
