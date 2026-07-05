@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
+import { CATEGORY_LABELS } from '../data/categories.js'
 import DoseSelector from '../components/DoseSelector.jsx'
 import ReconstitutionPanel from '../components/ReconstitutionPanel.jsx'
 import { SHOP_URL } from '../config.js'
@@ -102,7 +103,7 @@ export default function PeptideDetail() {
       </Helmet>
 
       {/* Hero */}
-      <span className="peptide-detail__category">{peptide.category}</span>
+      <span className="peptide-detail__category">{CATEGORY_LABELS[peptide.category] ?? peptide.category}</span>
       <div className="peptide-detail__name-row">
         <h1 className="peptide-detail__name">{peptide.name}</h1>
         <DoseSelector
