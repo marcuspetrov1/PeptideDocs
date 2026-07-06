@@ -1,9 +1,8 @@
-import { createContext, useContext, useEffect, useState } from 'react'
-
-const ThemeContext = createContext(null)
+import { useEffect, useState } from 'react'
+import ThemeContext from './theme-context.js'
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('light')
+  const [theme] = useState('light')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -14,8 +13,4 @@ export function ThemeProvider({ children }) {
       {children}
     </ThemeContext.Provider>
   )
-}
-
-export function useTheme() {
-  return useContext(ThemeContext)
 }
