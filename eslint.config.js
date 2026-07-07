@@ -24,4 +24,12 @@ export default defineConfig([
       globals: globals.node,
     },
   },
+  {
+    // shadcn/ui primitives intentionally export a `*Variants` helper alongside
+    // the component (e.g. buttonVariants) — allow it in this vendored directory.
+    files: ['src/components/ui/**/*.{js,jsx}'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  },
 ])
