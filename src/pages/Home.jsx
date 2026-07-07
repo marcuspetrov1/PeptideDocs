@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
 import { CATEGORY_ORDER, CATEGORY_LABELS } from '../data/categories.js'
+import { Button } from '../components/ui/button.jsx'
+import { Badge } from '../components/ui/badge.jsx'
 import heroImg from '../assets/frontpage-main-peptide.webp'
 
 // Derive unique categories present in the data, with counts, ordered to
@@ -67,18 +69,19 @@ export default function Home() {
             medical advice.
           </p>
           <div className="flex flex-wrap gap-3 [animation:fadeUp_0.5s_ease_360ms_both] motion-reduce:[animation:none]">
-            <Link
-              to="/catalog"
-              className="inline-flex items-center rounded-full bg-primary px-6 py-[11px] text-[15px] font-medium tracking-[0.05px] text-white no-underline transition-[opacity,box-shadow,background] duration-200 hover:opacity-[0.88] hover:shadow-[0_2px_14px_rgba(84,126,239,0.35)] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-primary"
+            <Button
+              asChild
+              className="h-auto rounded-full bg-primary px-6 py-[11px] text-[15px] font-medium tracking-[0.05px] text-white no-underline transition-[opacity,box-shadow,background] duration-200 hover:bg-primary hover:opacity-[0.88] hover:shadow-[0_2px_14px_rgba(84,126,239,0.35)] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-primary"
             >
-              Browse Catalog
-            </Link>
-            <Link
-              to="/get-started"
-              className="inline-flex items-center rounded-full border border-border bg-transparent px-6 py-[11px] text-[15px] font-medium tracking-[0.05px] text-foreground no-underline transition-[opacity,box-shadow,background] duration-200 hover:border-primary-border hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-primary"
+              <Link to="/catalog">Browse Catalog</Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              className="h-auto rounded-full border-border bg-transparent px-6 py-[11px] text-[15px] font-medium tracking-[0.05px] text-foreground no-underline transition-[opacity,box-shadow,background] duration-200 hover:border-primary-border hover:bg-transparent hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-primary"
             >
-              How to Get Started
-            </Link>
+              <Link to="/get-started">How to Get Started</Link>
+            </Button>
           </div>
         </div>
         <div className="relative overflow-hidden after:absolute after:inset-0 after:z-[1] after:bg-[linear-gradient(to_right,var(--bg)_0%,transparent_35%)] after:content-[''] max-lg:hidden">
@@ -94,16 +97,18 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-2.5">
           {categories.map(cat => (
-            <Link
+            <Badge
               key={cat.slug}
-              to="/catalog"
-              className="inline-flex items-center gap-1.5 rounded-full border border-primary-border bg-primary-bg px-3.5 py-[7px] font-mono text-xs font-semibold tracking-[0.06em] text-primary uppercase no-underline transition-[opacity,box-shadow] duration-200 hover:opacity-[0.82] hover:shadow-[0_0_0_1px_var(--color-primary-border)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              asChild
+              className="h-auto gap-1.5 rounded-full border-primary-border bg-primary-bg px-3.5 py-[7px] font-mono text-xs font-semibold tracking-[0.06em] text-primary uppercase no-underline transition-[opacity,box-shadow] duration-200 hover:!bg-primary-bg hover:opacity-[0.82] hover:shadow-[0_0_0_1px_var(--color-primary-border)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              {cat.label}
-              <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-full bg-primary text-[10px] font-bold tracking-[0] text-white">
-                {cat.count}
-              </span>
-            </Link>
+              <Link to="/catalog">
+                {cat.label}
+                <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-full bg-primary text-[10px] font-bold tracking-[0] text-white">
+                  {cat.count}
+                </span>
+              </Link>
+            </Badge>
           ))}
         </div>
       </section>
