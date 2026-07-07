@@ -26,7 +26,6 @@ export default function Catalog() {
       </Helmet>
 
       <h1 className="catalog__heading">Browse Peptides</h1>
-      <p className="catalog__subtitle">Information on each peptide we carry</p>
 
       <div className="catalog__search-row">
         <input
