@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
 import { CATEGORY_ORDER, CATEGORY_LABELS } from '../data/categories.js'
 import './Home.css'
-import heroImg from '../assets/hero.png'
+import heroImg from '../assets/frontpage-main-peptide.webp'
 
 // Derive unique categories present in the data, with counts, ordered to
 // match Catalog and labeled from the shared category map so chip text never
