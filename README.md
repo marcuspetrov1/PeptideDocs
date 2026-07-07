@@ -1,4 +1,4 @@
-# OptimalPepInfo
+# PeptideDocs
 
 Informational catalog website for a peptide research business. Visitors can browse the peptide catalog, read per-peptide profiles (mechanism, dosing, effects, timeline, half-life), and find guidance on how to get started. The site is informational and inquiry-only — there are no transactions, purchases, or checkout flows.
 
