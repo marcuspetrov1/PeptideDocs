@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
 import { CATEGORY_LABELS } from '../data/categories.js'
-import DoseSelector from '../components/DoseSelector.jsx'
 import ReconstitutionPanel from '../components/ReconstitutionPanel.jsx'
 import './PeptideDetail.css'
 
@@ -80,7 +78,6 @@ function ResearchNotes({ value }) {
 export default function PeptideDetail() {
   const { slug } = useParams()
   const peptide = peptides.find(p => p.slug === slug)
-  const [selectedDoseIdx, setSelectedDoseIdx] = useState(0)
 
   if (!peptide) {
     return (
@@ -92,7 +89,7 @@ export default function PeptideDetail() {
     )
   }
 
-  const activeDose = peptide.doses[selectedDoseIdx]
+  const activeDose = peptide.doses[0]
 
   return (
     <article className="peptide-detail">
@@ -105,11 +102,6 @@ export default function PeptideDetail() {
       <span className="peptide-detail__category">{CATEGORY_LABELS[peptide.category] ?? peptide.category}</span>
       <div className="peptide-detail__name-row">
         <h1 className="peptide-detail__name">{peptide.name}</h1>
-        <DoseSelector
-          doses={peptide.doses}
-          selectedIdx={selectedDoseIdx}
-          onChange={setSelectedDoseIdx}
-        />
       </div>
       <p className="peptide-detail__overview">{peptide.overview}</p>
 
@@ -129,7 +121,7 @@ export default function PeptideDetail() {
         })}
       </div>
 
-      {/* Reconstitution panel — updates with dose selection */}
+      {/* Reconstitution panel */}
       <ReconstitutionPanel dose={activeDose} />
 
       {/* Disclaimer */}
