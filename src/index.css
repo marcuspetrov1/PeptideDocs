@@ -19,6 +19,9 @@
   --heading: 'DM Serif Display', Georgia, serif;
   --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
 
+  /* Page-frame width shared by #root, Catalog, and BackBar (Phase 4/5 point them here). */
+  --container-max: 1126px;
+
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light;
@@ -34,97 +37,108 @@
   }
 }
 
-[data-theme="dark"] {
-  --text: #a09080;
-  --text-h: #f0ebe4;
-  --bg: #18140f;
-  --border: #332c24;
-  --code-bg: #211c16;
-  --accent: #4a8c6f;
-  --accent-bg: rgba(74, 140, 111, 0.12);
-  --accent-border: rgba(74, 140, 111, 0.35);
-  --social-bg: rgba(33, 28, 22, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.5) 0 10px 15px -3px,
-    rgba(0, 0, 0, 0.3) 0 4px 6px -2px;
-  color-scheme: dark;
+/* ── Theme layer: aliases the existing palette onto shadcn's naming so hand-written
+   utilities and shadcn primitives read one source. Old --bg/--text/... vars above are
+   kept as the values of record — unmigrated component CSS (Phases 4-5) still consumes
+   them directly, so nothing here can break an unported page. ── */
+@theme {
+  --color-background: var(--bg);
+  --color-foreground: var(--text-h);
+  --color-muted-foreground: var(--text);
+  --color-primary: var(--accent);
+  --color-primary-bg: var(--accent-bg);
+  --color-primary-border: var(--accent-border);
+  --color-border: var(--border);
+  --color-code-bg: var(--code-bg);
+  --color-warning: var(--warning);
+  --color-social-bg: var(--social-bg);
+
+  --font-sans: var(--sans);
+  --font-heading: var(--heading);
+  --font-mono: var(--mono);
+
+  --shadow-brand: var(--shadow);
+
+  /* Radius + type scale from docs/component-design-audit.md. No --space-* override:
+     Tailwind's default p-1..p-12 scale (4/8/12/16/24/32/48px) already matches the audit. */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+
+  --text-sm: 15px;
+  --text-base: 18px;
+  --text-lg: 24px;
+  --text-2xl: 36px;
+  --text-3xl: 56px;
 }
 
-body {
-  margin: 0;
-}
+/* ── Base element styles, placed after Tailwind's Preflight (same @layer base, later in
+   source) so they win the cascade instead of being reset by it. ── */
+@layer base {
+  body {
+    margin: 0;
+  }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: left;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
+  #root {
+    width: var(--container-max);
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    border-inline: 1px solid var(--border);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
 
-h1 {
-  font-family: var(--heading);
-  font-weight: 400;
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  color: var(--text-h);
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+  h1 {
+    font-family: var(--heading);
+    font-weight: 400;
+    font-size: 56px;
+    letter-spacing: -1.68px;
+    color: var(--text-h);
+    margin: 32px 0;
+    @media (max-width: 1024px) {
+      font-size: 36px;
+      margin: 20px 0;
+    }
+  }
+
+  h2 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: -0.24px;
+    color: var(--text-h);
+    margin: 0 0 8px;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  code,
+  .counter {
+    font-family: var(--mono);
+    display: inline-flex;
+    border-radius: 4px;
+    color: var(--text-h);
+  }
+
+  code {
+    font-size: 15px;
+    line-height: 135%;
+    padding: 4px 8px;
+    background: var(--code-bg);
   }
 }
 
-h2 {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  color: var(--text-h);
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-
-p {
-  margin: 0;
-}
-
-/* ── Shared utility ── */
-.glass {
-  background: rgba(255, 255, 255, 0.65);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-[data-theme="dark"] .glass {
-  background: rgba(24, 20, 15, 0.65);
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
-}
-
-/* ── Entrance animation ── */
+/* ── Entrance animation (consumed by Home/Catalog; ported with those pages in Phase 5) ── */
 @keyframes fadeUp {
   from {
     opacity: 0;
