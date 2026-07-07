@@ -7,7 +7,7 @@ Live at [optimalpepinfo.com](https://optimalpepinfo.com).
 ## Stack
 
 - **Frontend**: React 19 + Vite, client-side routing via React Router
-- **Styling**: Vanilla CSS
+- **Styling**: Tailwind CSS v4 + shadcn/ui components
 - **Content**: Local JSON data file (no external CMS/backend)
 - **Testing**: Playwright (end-to-end smoke tests)
 - **Linting**: ESLint
@@ -18,12 +18,12 @@ Live at [optimalpepinfo.com](https://optimalpepinfo.com).
 ```
 src/
   pages/         Home, Catalog, PeptideDetail, GetStarted
-  components/    Header, Footer, Layout, DoseSelector, ReconstitutionPanel, etc.
-  context/       Theme (light/dark) context
+  components/    Header, Footer, Layout, BackBar, ReconstitutionPanel, etc.
+    ui/          shadcn/ui primitives (Button, Card, Badge, Input)
+  lib/           utils.js (shadcn's cn() helper)
   data/
     peptides.json   Peptide catalog content (schema below)
     categories.js    Category definitions used across Home/Catalog
-  config.js
 scripts/
   validate-peptides.mjs   Validates peptides.json schema/integrity
 tests/
