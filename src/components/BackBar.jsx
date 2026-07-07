@@ -1,5 +1,4 @@
 import { useLocation, Link } from 'react-router-dom'
-import './BackBar.css'
 
 function getBack(pathname) {
   if (pathname === '/catalog') return { to: '/', label: 'Home' }
@@ -14,9 +13,12 @@ export default function BackBar() {
   if (!back) return null
 
   return (
-    <div className="back-bar">
-      <div className="back-bar__inner">
-        <Link to={back.to} className="back-bar__link">
+    <div className="sticky top-[84px] z-[99] border-b border-border bg-background/92 backdrop-blur-md">
+      <div className="mx-auto flex h-9 max-w-[var(--container-max)] items-center px-8 max-lg:px-6 max-[600px]:px-4">
+        <Link
+          to={back.to}
+          className="inline-flex items-center gap-[5px] font-sans text-[13px] font-medium text-muted-foreground opacity-65 no-underline transition-[opacity,color] duration-150 hover:text-primary hover:opacity-100 focus-visible:rounded-[3px] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-primary"
+        >
           <svg
             width="14"
             height="14"
