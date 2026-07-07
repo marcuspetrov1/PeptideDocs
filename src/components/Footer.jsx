@@ -14,7 +14,7 @@ export default function Footer() {
           <Link
             key={link.to}
             to={link.to}
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="rounded-sm text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {link.label}
           </Link>

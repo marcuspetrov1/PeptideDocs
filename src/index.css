@@ -191,18 +191,19 @@
     display: inline-flex;
     border-radius: 4px;
     color: var(--text-h);
-  }
-
-  code {
     font-size: 15px;
     line-height: 135%;
     padding: 4px 8px;
     background: var(--code-bg);
   }
+
   * {
-    @apply border-border outline-ring/50;}
+    @apply border-border outline-ring/50;
+  }
+
   html {
-    @apply font-sans;}
+    @apply font-sans;
+  }
 }
 
 /* ── Home hero grain texture: a data-URI ::before is impractical as a utility

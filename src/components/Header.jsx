@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-[100] flex h-[84px] w-full items-center justify-between border-b border-border bg-background/88 px-5 backdrop-blur-md">
       <Link
         to="/"
-        className="font-heading text-[22px] font-medium text-foreground transition-opacity hover:opacity-75"
+        className="rounded-sm font-heading text-[22px] font-medium text-foreground transition-opacity hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         PeptideDocs
       </Link>
@@ -20,7 +20,7 @@ export default function Header() {
             key={link.to}
             to={link.to}
             className={({ isActive }) =>
-              `text-sm font-medium transition-colors hover:text-foreground ${
+              `rounded-sm text-sm font-medium transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                 isActive ? 'text-foreground' : 'text-muted-foreground'
               }`
             }

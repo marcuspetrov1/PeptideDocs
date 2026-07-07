@@ -55,7 +55,7 @@ function linkifyCitation(citation) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-primary underline underline-offset-2 hover:opacity-80"
+        className="rounded-sm text-primary underline underline-offset-2 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         {url}
       </a>
@@ -90,7 +90,12 @@ export default function PeptideDetail() {
       <div className="pt-12 pb-16 px-6 text-center text-muted-foreground">
         <h1>Peptide not found</h1>
         <p>No peptide matches <strong>{slug}</strong>.</p>
-        <Link to="/catalog">Back to catalog</Link>
+        <Link
+          to="/catalog"
+          className="rounded-sm text-primary underline underline-offset-2 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          Back to catalog
+        </Link>
       </div>
     )
   }
