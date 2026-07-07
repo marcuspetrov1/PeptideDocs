@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <Header />
       <BackBar />
-      <main style={{ flex: '1 0 auto', minHeight: '60vh' }}>
+      <main className="min-h-[60vh] flex-[1_0_auto]">
         {children}
       </main>
       <Footer />
