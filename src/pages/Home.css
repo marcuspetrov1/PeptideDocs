@@ -371,14 +371,3 @@
   color: var(--text);
   margin: 0;
 }
-
-.home__step-link {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: opacity 0.2s;
-}
-
-.home__step-link:hover {
-  opacity: 0.75;
-}

@@ -313,41 +313,6 @@
   margin: 0;
 }
 
-/* ── CTA ── */
-.peptide-detail__cta {
-  text-align: left;
-  padding: 8px 0 16px;
-}
-
-.peptide-detail__cta-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 14px 52px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: 0.1px;
-  transition: opacity 0.2s, box-shadow 0.2s;
-}
-
-.peptide-detail__cta-link:hover {
-  opacity: 0.88;
-  box-shadow: 0 4px 18px rgba(84, 126, 239, 0.4);
-}
-
-[data-theme="dark"] .peptide-detail__cta-link:hover {
-  box-shadow: 0 4px 18px rgba(74, 140, 111, 0.45);
-}
-
-.peptide-detail__cta-link:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-}
-
 /* ── Not found ── */
 .peptide-detail--not-found {
   padding: 3rem 24px 4rem;

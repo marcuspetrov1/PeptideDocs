@@ -21,7 +21,7 @@ export default function Catalog() {
   return (
     <section className="catalog">
       <Helmet>
-        <title>Peptide Catalog — OptimalPep</title>
+        <title>Peptide Catalog — PeptideDocs</title>
         <meta name="description" content="Browse all available research peptides. Information on mechanisms, dosage, effects, and timelines for each compound." />
       </Helmet>
 

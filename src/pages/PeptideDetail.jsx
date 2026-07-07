@@ -5,7 +5,6 @@ import peptides from '../data/peptides.json'
 import { CATEGORY_LABELS } from '../data/categories.js'
 import DoseSelector from '../components/DoseSelector.jsx'
 import ReconstitutionPanel from '../components/ReconstitutionPanel.jsx'
-import { SHOP_URL } from '../config.js'
 import './PeptideDetail.css'
 
 function WarningIcon() {
@@ -98,7 +97,7 @@ export default function PeptideDetail() {
   return (
     <article className="peptide-detail">
       <Helmet>
-        <title>{peptide.name} — OptimalPep</title>
+        <title>{peptide.name} — PeptideDocs</title>
         <meta name="description" content={`${peptide.overview.slice(0, 155)}...`} />
       </Helmet>
 
@@ -143,18 +142,6 @@ export default function PeptideDetail() {
           healthcare professional before using any compound. Not for use by persons under
           18 years of age.
         </p>
-      </div>
-
-      {/* CTA */}
-      <div className="peptide-detail__cta">
-        <a
-          href={SHOP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="peptide-detail__cta-link"
-        >
-          Purchase at OptimalPep
-        </a>
       </div>
     </article>
   )

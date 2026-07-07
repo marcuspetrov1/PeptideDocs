@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { SHOP_URL } from '../config.js'
 import './GetStarted.css'
 
 const orderSteps = [
@@ -13,19 +12,6 @@ const orderSteps = [
     number: '02',
     title: 'Find what\'s right for you',
     description: 'Read the detail page for any peptide you\'re interested in. Pay attention to dosage protocols and results timelines before deciding.',
-  },
-  {
-    number: '03',
-    title: 'Place your order',
-    descriptionNode: (
-      <>
-        Head to{' '}
-        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="get-started__link">
-          optimalpep.com
-        </a>{' '}
-        to complete your order. All products ship from our trusted supplier.
-      </>
-    ),
   },
 ]
 
@@ -84,8 +70,8 @@ export default function GetStarted() {
   return (
     <main className="get-started">
       <Helmet>
-        <title>How to Get Started — OptimalPep</title>
-        <meta name="description" content="Learn how to browse the peptide catalog, reconstitute your peptides, and place your order at OptimalPep." />
+        <title>How to Get Started — PeptideDocs</title>
+        <meta name="description" content="Learn how to browse the peptide catalog and reconstitute your peptides." />
       </Helmet>
 
       {/* ── Header ── */}
@@ -93,7 +79,7 @@ export default function GetStarted() {
         <p className="get-started__eyebrow">Preparation &amp; Reconstitution Guide</p>
         <h1 className="get-started__heading">How to Get Started</h1>
         <p className="get-started__subtitle">
-          Everything you need to know — from ordering to preparation.
+          Everything you need to know — from browsing to preparation.
         </p>
       </section>
 
@@ -110,7 +96,7 @@ export default function GetStarted() {
               <div className="get-started__step-content">
                 <strong className="get-started__step-title">{step.title}</strong>
                 <p className="get-started__step-desc">
-                  {step.description ?? step.descriptionNode}
+                  {step.description}
                 </p>
               </div>
             </li>
@@ -163,20 +149,6 @@ export default function GetStarted() {
             </li>
           ))}
         </ol>
-      </section>
-
-      {/* ── Contact & Ordering ── */}
-      <section className="get-started__contact-section">
-        <h2 className="get-started__section-heading">Ready to order?</h2>
-        <p className="get-started__section-intro">
-          Browse the full catalog and complete your order at{' '}
-          <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="get-started__link">
-            optimalpep.com
-          </a>
-          . All products are sourced from our trusted supplier and ship with standard
-          research-grade handling.
-        </p>
-        <Link to="/catalog" className="get-started__btn">Browse the Catalog</Link>
       </section>
     </main>
   )

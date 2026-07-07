@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
-import { SHOP_URL } from '../config.js'
 import { CATEGORY_ORDER, CATEGORY_LABELS } from '../data/categories.js'
 import './Home.css'
 import heroImg from '../assets/hero.png'
@@ -37,20 +36,7 @@ const steps = [
     number: '2',
     title: 'Find what is right for you',
     description:
-      'Read about mechanisms, dosage protocols, and expected timelines to identify the peptide that fits your goals.',
-  },
-  {
-    number: '3',
-    title: 'Place your order',
-    description: (
-      <>
-        Head over to{' '}
-        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="home__step-link">
-          optimalpep.com
-        </a>{' '}
-        to purchase with confidence.
-      </>
-    ),
+      'Read about mechanisms, dosage protocols, and expected timelines to identify the peptide that fits your research.',
   },
 ]
 
@@ -58,7 +44,7 @@ export default function Home() {
   return (
     <main className="home">
       <Helmet>
-        <title>OptimalPep — Research Peptide Information</title>
+        <title>PeptideDocs — Research Peptide Information</title>
         <meta name="description" content="Browse detailed information on research peptides including mechanisms, dosage protocols, effects, and timelines." />
       </Helmet>
 
@@ -113,7 +99,7 @@ export default function Home() {
       <section className="home__how">
         <h2 className="home__section-heading">How to get started</h2>
         <p className="home__section-sub">
-          Three simple steps from research to order
+          Two simple steps to find what you're looking for
         </p>
         <div className="home__steps">
           {steps.map(step => (

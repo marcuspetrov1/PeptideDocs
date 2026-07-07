@@ -25,43 +25,13 @@
   display: inline-flex;
   align-items: center;
   text-decoration: none;
+  font-family: var(--heading);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-h);
   transition: opacity 0.2s;
 }
 
 .header-logo:hover {
   opacity: 0.75;
-}
-
-.header-logo-img {
-  height: 48px;
-  width: auto;
-  display: block;
-}
-
-.header-shop-btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 9px 24px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  letter-spacing: 0.1px;
-  transition: opacity 0.2s, box-shadow 0.2s;
-}
-
-.header-shop-btn:hover {
-  opacity: 0.88;
-  box-shadow: 0 2px 10px rgba(84, 126, 239, 0.4);
-}
-
-[data-theme="dark"] .header-shop-btn:hover {
-  box-shadow: 0 2px 10px rgba(74, 140, 111, 0.45);
-}
-
-.header-shop-btn:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
 }
