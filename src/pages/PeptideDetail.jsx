@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import peptides from '../data/peptides.json'
 import { CATEGORY_LABELS } from '../data/categories.js'
 import ReconstitutionPanel from '../components/ReconstitutionPanel.jsx'
-import './PeptideDetail.css'
+import { Badge } from '../components/ui/badge.jsx'
 
 function WarningIcon() {
   return (
@@ -17,7 +17,7 @@ function WarningIcon() {
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
-      style={{ flexShrink: 0, marginTop: '1px' }}
+      className="mt-px shrink-0"
     >
       <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
       <line x1="12" y1="9" x2="12" y2="13" />
@@ -50,7 +50,13 @@ function linkifyCitation(citation) {
       parts.push(citation.slice(lastIndex, match.index))
     }
     parts.push(
-      <a key={matchIdx++} href={url} target="_blank" rel="noopener noreferrer">
+      <a
+        key={matchIdx++}
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-sm text-primary underline underline-offset-2 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
         {url}
       </a>
     )
@@ -67,7 +73,7 @@ function linkifyCitation(citation) {
 function ResearchNotes({ value }) {
   const citations = value.split(' | ')
   return (
-    <ul className="peptide-detail__research-notes">
+    <ul className="list-disc space-y-2 pl-5 marker:text-muted-foreground">
       {citations.map((citation, idx) => (
         <li key={idx}>{linkifyCitation(citation)}</li>
       ))}
@@ -81,10 +87,15 @@ export default function PeptideDetail() {
 
   if (!peptide) {
     return (
-      <div className="peptide-detail--not-found">
+      <div className="pt-12 pb-16 px-6 text-center text-muted-foreground">
         <h1>Peptide not found</h1>
         <p>No peptide matches <strong>{slug}</strong>.</p>
-        <Link to="/catalog">Back to catalog</Link>
+        <Link
+          to="/catalog"
+          className="rounded-sm text-primary underline underline-offset-2 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          Back to catalog
+        </Link>
       </div>
     )
   }
@@ -92,28 +103,40 @@ export default function PeptideDetail() {
   const activeDose = peptide.doses[0]
 
   return (
-    <article className="peptide-detail">
+    <article className="mx-auto max-w-[800px] px-6 pt-8 pb-16 text-left">
       <Helmet>
         <title>{peptide.name} — PeptideDocs</title>
         <meta name="description" content={`${peptide.overview.slice(0, 155)}...`} />
       </Helmet>
 
       {/* Hero */}
-      <span className="peptide-detail__category">{CATEGORY_LABELS[peptide.category] ?? peptide.category}</span>
-      <div className="peptide-detail__name-row">
-        <h1 className="peptide-detail__name">{peptide.name}</h1>
+      <Badge className="mb-3.5 h-auto rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-mono text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
+        {CATEGORY_LABELS[peptide.category] ?? peptide.category}
+      </Badge>
+      <div className="mb-3 flex flex-wrap items-baseline gap-[14px]">
+        <h1 className="m-0 font-heading text-[48px] leading-[1.05] font-normal tracking-[-1.5px] text-foreground max-[600px]:text-[32px] max-[600px]:tracking-[-0.8px]">
+          {peptide.name}
+        </h1>
       </div>
-      <p className="peptide-detail__overview">{peptide.overview}</p>
+      <p className="mb-10 max-w-[680px] text-[17px] leading-[1.65] text-muted-foreground">
+        {peptide.overview}
+      </p>
 
       {/* Info rows */}
-      <div className="peptide-detail__info" role="list">
+      <div className="mb-9 flex flex-col overflow-hidden rounded-[10px] border border-border" role="list">
         {INFO_ROWS.map(({ key, label }) => {
           const value = peptide[key]
           if (value == null) return null
           return (
-            <div key={key} className="peptide-detail__row" role="listitem">
-              <dt className="peptide-detail__label">{label}</dt>
-              <dd className="peptide-detail__value">
+            <div
+              key={key}
+              className="grid grid-cols-[160px_1fr] border-b border-border last:border-b-0 max-[540px]:grid-cols-1"
+              role="listitem"
+            >
+              <dt className="flex items-start bg-code-bg px-[18px] pt-4 pb-[14px] font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase max-[540px]:bg-transparent max-[540px]:px-4 max-[540px]:pt-[10px] max-[540px]:pb-1">
+                {label}
+              </dt>
+              <dd className="m-0 px-[18px] py-[14px] text-[15px] leading-[1.6] text-foreground max-[540px]:px-4 max-[540px]:pt-0 max-[540px]:pb-[14px]">
                 {key === 'research_notes' ? <ResearchNotes value={value} /> : value}
               </dd>
             </div>
@@ -125,9 +148,9 @@ export default function PeptideDetail() {
       <ReconstitutionPanel dose={activeDose} />
 
       {/* Disclaimer */}
-      <div className="peptide-detail__disclaimer">
+      <div className="mb-9 flex items-start gap-[14px] rounded-lg border border-border border-l-4 border-l-warning bg-[rgba(245,158,11,0.06)] px-5 py-4">
         <WarningIcon />
-        <p className="peptide-detail__disclaimer-text">
+        <p className="m-0 text-[14px] leading-[1.55] text-muted-foreground">
           This information is for educational and research purposes only. It does not
           constitute medical advice, diagnosis, or treatment. Research peptides are not
           approved for human use by any regulatory authority. Always consult a qualified

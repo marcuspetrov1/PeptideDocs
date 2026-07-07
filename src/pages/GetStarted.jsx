@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import './GetStarted.css'
+import { Button } from '../components/ui/button.jsx'
 
 const orderSteps = [
   {
@@ -66,60 +66,89 @@ const reconSteps = [
   },
 ]
 
+const SECTION_CLASS = 'mt-16 border-t border-border pt-12 max-[600px]:mt-12 max-[600px]:pt-9'
+const SECTION_HEADING_CLASS = 'mb-7 text-[22px] font-medium tracking-[-0.3px] text-foreground max-[600px]:mb-5 max-[600px]:text-[19px]'
+const SECTION_INTRO_CLASS = 'mt-[-12px] mb-6 max-w-[640px] text-sm leading-[1.7] text-muted-foreground'
+
+function StepList({ steps, ariaLabel }) {
+  return (
+    <ol className="mb-9 flex list-none flex-col gap-0 p-0" aria-label={ariaLabel}>
+      {steps.map(step => (
+        <li key={step.number} className="group flex items-start gap-6">
+          <div className="flex w-11 shrink-0 flex-col items-center" aria-hidden="true">
+            <span className="w-11 shrink-0 rounded-md border border-primary-border bg-primary-bg px-2.5 py-1 text-center font-mono text-[13px] font-bold tracking-[0.06em] text-primary">
+              {step.number}
+            </span>
+            <div className="mt-1.5 min-h-8 w-0.5 flex-1 bg-primary-border group-last:hidden" />
+          </div>
+          <div className="flex flex-1 flex-col gap-1.5 pb-9 group-last:pb-0">
+            <strong className="pt-0.5 text-[19px] leading-[1.25] font-semibold tracking-[-0.2px] text-foreground">
+              {step.title}
+            </strong>
+            <p className="m-0 text-sm leading-[1.7] text-muted-foreground">
+              {step.description}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
 export default function GetStarted() {
   return (
-    <main className="get-started">
+    <div className="mx-auto max-w-[800px] px-6 pt-8 pb-20 text-left max-lg:pt-6 max-lg:pb-16 max-[600px]:px-4 max-[600px]:pt-4 max-[600px]:pb-12">
       <Helmet>
         <title>How to Get Started — PeptideDocs</title>
         <meta name="description" content="Learn how to browse the peptide catalog and reconstitute your peptides." />
       </Helmet>
 
       {/* ── Header ── */}
-      <section className="get-started__header">
-        <p className="get-started__eyebrow">Preparation &amp; Reconstitution Guide</p>
-        <h1 className="get-started__heading">How to Get Started</h1>
-        <p className="get-started__subtitle">
+      <section>
+        <p className="mb-3.5 font-mono text-[11px] font-semibold tracking-[0.12em] text-primary uppercase">
+          Preparation &amp; Reconstitution Guide
+        </p>
+        <h1 className="mb-4 font-heading text-3xl leading-[1.05] font-normal tracking-[-1.68px] text-foreground max-lg:mb-3 max-lg:text-[38px] max-lg:tracking-[-1px] max-[600px]:text-[30px] max-[600px]:tracking-[-0.6px]">
+          How to Get Started
+        </h1>
+        <p className="m-0 max-w-[560px] text-[17px] leading-[1.6] text-muted-foreground">
           Everything you need to know — from browsing to preparation.
         </p>
       </section>
 
       {/* ── Order process ── */}
-      <section className="get-started__steps-section">
-        <h2 className="get-started__section-heading">The process</h2>
-        <ol className="get-started__steps" aria-label="Getting started steps">
-          {orderSteps.map(step => (
-            <li key={step.number} className="get-started__step">
-              <div className="get-started__step-marker" aria-hidden="true">
-                <span className="get-started__step-number">{step.number}</span>
-                <div className="get-started__step-line" />
-              </div>
-              <div className="get-started__step-content">
-                <strong className="get-started__step-title">{step.title}</strong>
-                <p className="get-started__step-desc">
-                  {step.description}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ol>
-        <div className="get-started__catalog-cta">
-          <Link to="/catalog" className="get-started__btn">Browse the Catalog</Link>
+      <section className={SECTION_CLASS}>
+        <h2 className={SECTION_HEADING_CLASS}>The process</h2>
+        <StepList steps={orderSteps} ariaLabel="Getting started steps" />
+        <div className="mt-1">
+          <Button
+            asChild
+            className="h-auto rounded-full bg-primary px-[26px] py-[11px] text-[15px] font-medium tracking-[0.05px] text-white no-underline transition-[opacity,box-shadow] duration-200 hover:bg-primary hover:opacity-[0.88] hover:shadow-[0_2px_14px_rgba(84,126,239,0.35)] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-primary"
+          >
+            <Link to="/catalog">Browse the Catalog</Link>
+          </Button>
         </div>
       </section>
 
       {/* ── Essential Supplies ── */}
-      <section className="get-started__supplies-section">
-        <h2 className="get-started__section-heading">Essential supplies needed</h2>
-        <p className="get-started__section-intro">
+      <section className={SECTION_CLASS}>
+        <h2 className={SECTION_HEADING_CLASS}>Essential supplies needed</h2>
+        <p className={SECTION_INTRO_CLASS}>
           Before beginning, you will need to purchase the following three items to safely prepare and handle your peptides.
         </p>
-        <div className="get-started__supply-list">
+        <div className="flex flex-col overflow-hidden rounded-[10px] border border-border">
           {supplies.map(item => (
-            <div key={item.num} className="get-started__supply">
-              <span className="get-started__supply-num">{item.num}</span>
-              <div className="get-started__supply-content">
-                <strong className="get-started__supply-title">{item.title}</strong>
-                <p className="get-started__supply-desc">{item.description}</p>
+            <div key={item.num} className="flex items-start gap-5 border-b border-border px-[22px] py-[18px] last:border-b-0">
+              <span className="mt-0.5 shrink-0 rounded-md border border-primary-border bg-primary-bg px-[9px] py-[3px] text-center font-mono text-[13px] font-bold text-primary">
+                {item.num}
+              </span>
+              <div className="flex flex-col gap-1">
+                <strong className="text-[16px] font-semibold tracking-[-0.1px] text-foreground">
+                  {item.title}
+                </strong>
+                <p className="m-0 text-[14px] leading-[1.65] text-muted-foreground">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
@@ -127,29 +156,16 @@ export default function GetStarted() {
       </section>
 
       {/* ── Reconstitution ── */}
-      <section className="get-started__recon-section">
-        <h2 className="get-started__section-heading">Step-by-step reconstitution</h2>
-        <p className="get-started__section-intro">
+      <section className={SECTION_CLASS}>
+        <h2 className={SECTION_HEADING_CLASS}>Step-by-step reconstitution</h2>
+        <p className={SECTION_INTRO_CLASS}>
           Peptides arrive as a freeze-dried powder to preserve stability during transit. Reconstitution is the process of gently mixing this powder with Bacteriostatic Water to create a usable liquid solution.
         </p>
-        <div className="get-started__recon-note">
+        <div className="mb-7 max-w-[600px] rounded-md border border-primary-border border-l-[3px] border-l-primary bg-primary-bg px-4 py-2.5 text-[13px] leading-[1.6] text-muted-foreground">
           The exact amount of BAC water needed varies by peptide. Always refer to the reconstitution panel on each peptide's detail page.
         </div>
-        <ol className="get-started__steps" aria-label="Reconstitution steps">
-          {reconSteps.map(step => (
-            <li key={step.number} className="get-started__step">
-              <div className="get-started__step-marker" aria-hidden="true">
-                <span className="get-started__step-number">{step.number}</span>
-                <div className="get-started__step-line" />
-              </div>
-              <div className="get-started__step-content">
-                <strong className="get-started__step-title">{step.title}</strong>
-                <p className="get-started__step-desc">{step.description}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <StepList steps={reconSteps} ariaLabel="Reconstitution steps" />
       </section>
-    </main>
+    </div>
   )
 }
