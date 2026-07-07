@@ -98,6 +98,14 @@ try {
       return;
     }
 
+    // PeptideDetail.jsx renders peptide.doses[0] unconditionally, so every
+    // peptide needs at least one dose.
+    if (item.doses.length === 0) {
+      errors.push(`Item ${itemIndex} (${item.slug}): doses array is empty`);
+      exitCode = 1;
+      return;
+    }
+
     item.doses.forEach((dose, doseIndex) => {
       // Check if dose has valid mg-based dosing
       const hasMgBased =
@@ -107,46 +115,41 @@ try {
         dose.concentration_mg_per_ml !== undefined;
 
       if (!hasMgBased) {
-        // If not mg-based, check if there's at least one syringe_reference with numeric mg or iu
-        let hasValidSyringeRef = false;
-
-        if (dose.syringe_reference && Array.isArray(dose.syringe_reference)) {
-          for (const ref of dose.syringe_reference) {
-            if (
-              (ref.mg !== null && ref.mg !== undefined && typeof ref.mg === 'number') ||
-              (ref.iu !== null && ref.iu !== undefined && typeof ref.iu === 'number')
-            ) {
-              hasValidSyringeRef = true;
-              break;
-            }
-          }
-        }
-
-        // IU-only dosing also requires a non-empty dose.label
+        // IU-only dosing requires a non-empty dose.label
         const hasLabel =
           dose.label !== null &&
           dose.label !== undefined &&
           typeof dose.label === 'string' &&
           dose.label.trim().length > 0;
 
-        if (!hasValidSyringeRef || !hasLabel) {
-          const reasons = [];
-          if (!hasValidSyringeRef) {
-            reasons.push('no syringe_reference entry with a numeric mg or iu value');
-          }
-          if (!hasLabel) {
-            reasons.push('dose.label is missing or empty');
-          }
-
+        if (!hasLabel) {
           errors.push(
-            `Item ${itemIndex} (${item.slug}), dose ${doseIndex} (label: "${dose.label}"): invalid dose (${reasons.join(
-              '; '
-            )}). ` +
-              `Either vial_mg AND concentration_mg_per_ml must both be non-null, ` +
-              `or dose.label must be a non-empty string AND at least one syringe_reference entry must have a numeric mg or iu value.`
+            `Item ${itemIndex} (${item.slug}), dose ${doseIndex} (label: "${dose.label}"): dose.label is missing or empty. ` +
+              `Either vial_mg AND concentration_mg_per_ml must both be non-null, or dose.label must be a non-empty string.`
           );
           exitCode = 1;
         }
+      }
+
+      // ReconstitutionPanel.jsx always renders dose.syringe_reference.map(...)
+      // regardless of mg-based vs. label-based dosing, so it must always be a
+      // non-empty array, and every row must resolve to a displayable mg or iu.
+      if (!dose.syringe_reference || !Array.isArray(dose.syringe_reference) || dose.syringe_reference.length === 0) {
+        errors.push(
+          `Item ${itemIndex} (${item.slug}), dose ${doseIndex} (label: "${dose.label}"): syringe_reference is missing or empty`
+        );
+        exitCode = 1;
+      } else {
+        dose.syringe_reference.forEach((ref, refIndex) => {
+          const validMg = ref.mg !== null && ref.mg !== undefined && typeof ref.mg === 'number';
+          const validIu = ref.iu !== null && ref.iu !== undefined && typeof ref.iu === 'number';
+          if (!validMg && !validIu) {
+            errors.push(
+              `Item ${itemIndex} (${item.slug}), dose ${doseIndex}, syringe_reference[${refIndex}] (units: ${ref.units}): neither mg nor iu is a numeric value`
+            );
+            exitCode = 1;
+          }
+        });
       }
     });
   });
