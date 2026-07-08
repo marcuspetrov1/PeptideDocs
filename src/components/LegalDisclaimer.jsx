@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -17,13 +17,7 @@ const STORAGE_KEY = 'disclaimer_accepted'
  * user must click "I Understand and Agree".
  */
 export default function LegalDisclaimer() {
-  const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    if (!localStorage.getItem(STORAGE_KEY)) {
-      setOpen(true)
-    }
-  }, [])
+  const [open, setOpen] = useState(() => !localStorage.getItem(STORAGE_KEY))
 
   function handleAccept() {
     localStorage.setItem(STORAGE_KEY, 'true')
