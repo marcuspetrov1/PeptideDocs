@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import peptides from '../data/peptides.json'
+import { getAllPeptides } from '../data/peptides.js'
 import { CATEGORY_ORDER, CATEGORY_LABELS } from '../data/categories.js'
 import { Button } from '../components/ui/button.jsx'
 import { Badge } from '../components/ui/badge.jsx'
+import HomeSearch from '../components/HomeSearch.jsx'
 import heroImg from '../assets/frontpage-main-peptide.webp'
+
+const peptides = getAllPeptides()
 
 // Derive unique categories present in the data, with counts, ordered to
 // match Catalog and labeled from the shared category map so chip text never
@@ -89,7 +92,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Section 2: Categories ── */}
+      {/* ── Section 2: Search ── */}
+      <section className="border-b border-border px-8 py-12 max-lg:px-6 max-lg:py-10 max-[600px]:px-4 max-[600px]:py-8">
+        <h2 className={SECTION_HEADING_CLASS}>Find a peptide</h2>
+        <p className={SECTION_SUB_CLASS}>Search by name across the full catalog</p>
+        <div className="max-w-[600px]">
+          <HomeSearch />
+        </div>
+      </section>
+
+      {/* ── Section 3: Categories ── */}
       <section className="border-b border-border px-8 py-20 max-lg:px-6 max-lg:py-16 max-[600px]:px-4 max-[600px]:py-12">
         <h2 className={SECTION_HEADING_CLASS}>What we carry</h2>
         <p className={SECTION_SUB_CLASS}>

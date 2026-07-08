@@ -1,5 +1,11 @@
 import { test, expect } from '@playwright/test'
 
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem('disclaimer_accepted', 'true')
+  })
+})
+
 test('invalid slug shows the not-found state', async ({ page }) => {
   await page.goto('peptides/not-a-real-peptide')
   await expect(page.getByRole('heading', { level: 1, name: 'Peptide not found' })).toBeVisible()
@@ -10,6 +16,9 @@ test('invalid slug shows the not-found state', async ({ page }) => {
 test('mg-based dose with a titration schedule renders both tables', async ({ page }) => {
   await page.goto('peptides/bpc-157')
   await expect(page.getByRole('heading', { level: 1, name: 'BPC-157' })).toBeVisible()
+
+  // Navigate to Protocol tab to see reconstitution panel
+  await page.getByRole('tab', { name: 'Protocol' }).click()
 
   // mg-based header: vial + bac water -> concentration, not a plain label
   await expect(page.getByText('10mg + 2mL bac water')).toBeVisible()
@@ -22,6 +31,7 @@ test('mg-based dose with a titration schedule renders both tables', async ({ pag
 test('mg-based dose without a titration schedule omits the titration table', async ({ page }) => {
   await page.goto('peptides/glow')
   await expect(page.getByRole('heading', { level: 1, name: 'Glow Blend' })).toBeVisible()
+  await page.getByRole('tab', { name: 'Protocol' }).click()
   await expect(page.getByText('70mg + 3mL bac water')).toBeVisible()
   await expect(page.getByText('Titration schedule')).toHaveCount(0)
 })
@@ -29,6 +39,7 @@ test('mg-based dose without a titration schedule omits the titration table', asy
 test('IU-based dose renders its label instead of a vial/concentration line', async ({ page }) => {
   await page.goto('peptides/hcg')
   await expect(page.getByRole('heading', { level: 1, name: 'HCG' })).toBeVisible()
+  await page.getByRole('tab', { name: 'Protocol' }).click()
   await expect(page.getByText('5000IU')).toBeVisible()
   await expect(page.getByText('250 IU')).toBeVisible()
 })
