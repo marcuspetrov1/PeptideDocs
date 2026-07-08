@@ -9,6 +9,7 @@ import {
   CommandList,
 } from './ui/command.jsx'
 import { getAllPeptides } from '../data/peptides.js'
+import { CATEGORY_LABELS } from '../data/categories.js'
 
 const PROMPTS = [
   "Search 'BPC-157 research protocols'…",
@@ -74,20 +75,30 @@ export default function HomeSearch() {
   const [value, setValue]   = useState('')
   const { placeholder, stop } = useTypewriter(PROMPTS)
 
-  const filtered = value.trim()
-    ? peptides.filter(p => p.name.toLowerCase().includes(value.trim().toLowerCase()))
+  const query = value.trim().toLowerCase()
+  const filtered = query
+    ? peptides.filter(p =>
+        p.name.toLowerCase().includes(query) ||
+        (CATEGORY_LABELS[p.category] ?? '').toLowerCase().includes(query)
+      )
     : peptides
 
   return (
     <Command
       className="rounded-xl border border-border shadow-sm"
       shouldFilter={false}
+      label="Search peptides"
     >
       <CommandInput
         placeholder={placeholder || 'Search peptides…'}
         value={value}
         onValueChange={(v) => { stop(); setValue(v) }}
         onFocus={stop}
+        spellCheck={false}
+        autoComplete="off"
+        inputMode="search"
+        enterKeyHint="search"
+        style={{ touchAction: 'manipulation' }}
       />
       <CommandList>
         <CommandEmpty>No peptides found.</CommandEmpty>

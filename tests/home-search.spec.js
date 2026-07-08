@@ -25,4 +25,16 @@ test.describe('Home Search (Command)', () => {
     await page.getByRole('option', { name: /BPC-157/i }).click()
     await expect(page).toHaveURL(/\/peptides\/bpc-157/)
   })
+
+  test('typing a category term filters to peptides in that category', async ({ page }) => {
+    const input = page.getByRole('combobox')
+    await input.fill('fat loss')
+    await expect(page.getByRole('option', { name: /Adipotide/i })).toBeVisible()
+  })
+
+  test('search input exposes an accessible name and disables spellcheck', async ({ page }) => {
+    const input = page.getByRole('combobox')
+    await expect(input).toHaveAccessibleName(/search peptides/i)
+    await expect(input).toHaveAttribute('spellcheck', 'false')
+  })
 })
