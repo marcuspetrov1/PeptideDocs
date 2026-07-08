@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
 
 test('home to catalog to a real detail page', async ({ page }) => {
   await page.goto('')
-  await page.getByRole('link', { name: 'Browse Catalog' }).click()
+  await page.getByRole('main').getByRole('link', { name: 'Browse Full Catalog' }).click()
   await expect(page).toHaveURL(/\/catalog$/)
   await expect(page.getByRole('heading', { level: 1, name: 'Browse Peptides' })).toBeVisible()
 
@@ -20,7 +20,7 @@ test('home to catalog to a real detail page', async ({ page }) => {
 
 test('home to get-started', async ({ page }) => {
   await page.goto('')
-  await page.getByRole('link', { name: 'How to Get Started' }).click()
+  await page.getByRole('main').getByRole('link', { name: 'Get Started', exact: true }).click()
   await expect(page).toHaveURL(/\/get-started$/)
   await expect(page.getByRole('heading', { level: 1, name: 'How to Get Started' })).toBeVisible()
 })
