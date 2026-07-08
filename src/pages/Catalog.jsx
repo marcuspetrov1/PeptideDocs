@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import peptides from '../data/peptides.json'
+import { getAllPeptides } from '../data/peptides.js'
 import { CATEGORY_ORDER, CATEGORY_LABELS } from '../data/categories.js'
 import { Button } from '../components/ui/button.jsx'
 import { Badge } from '../components/ui/badge.jsx'
 import { Input } from '../components/ui/input.jsx'
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card.jsx'
 import { cn } from '../lib/utils.js'
 
-const sorted = [...peptides].sort((a, b) => a.name.localeCompare(b.name))
+const sorted = [...getAllPeptides()].sort((a, b) => a.name.localeCompare(b.name))
 
 export default function Catalog() {
   const [activeCategory, setActiveCategory] = useState(null)
@@ -78,21 +79,30 @@ export default function Catalog() {
       ) : (
         <div className="grid grid-cols-2 gap-5 max-[560px]:grid-cols-1 max-[560px]:gap-3.5">
           {visible.map(peptide => (
-            <Link
+            <Card
               key={peptide.slug}
-              to={`/peptides/${peptide.slug}`}
-              className="flex flex-col gap-2.5 rounded-xl border border-border bg-card pt-5 px-[22px] pb-[22px] text-inherit no-underline transition-[transform,border-color,box-shadow] duration-200 [animation:fadeUp_0.4s_ease_both] hover:-translate-y-0.5 hover:border-primary-border hover:shadow-[0_4px_20px_rgba(84,126,239,0.12)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:[animation:none] [&:nth-child(2)]:[animation-delay:60ms] [&:nth-child(3)]:[animation-delay:120ms] [&:nth-child(4)]:[animation-delay:180ms] [&:nth-child(5)]:[animation-delay:240ms] [&:nth-child(6)]:[animation-delay:300ms]"
+              asChild
+              className="border-border bg-card pt-5 px-[22px] pb-[22px] transition-[transform,border-color,box-shadow] duration-200 [animation:fadeUp_0.4s_ease_both] hover:-translate-y-0.5 hover:border-primary-border hover:shadow-[0_4px_20px_rgba(84,126,239,0.12)] motion-reduce:[animation:none] [&:nth-child(2)]:[animation-delay:60ms] [&:nth-child(3)]:[animation-delay:120ms] [&:nth-child(4)]:[animation-delay:180ms] [&:nth-child(5)]:[animation-delay:240ms] [&:nth-child(6)]:[animation-delay:300ms]"
             >
-              <Badge className="h-auto self-start rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-mono text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
-                {CATEGORY_LABELS[peptide.category] ?? peptide.category}
-              </Badge>
-              <h2 className="m-0 font-heading text-[22px] leading-[1.15] font-normal tracking-[-0.3px] text-foreground">
-                {peptide.name}
-              </h2>
-              <p className="m-0 line-clamp-2 text-[14px] leading-[1.6] text-muted-foreground">
-                {peptide.overview}
-              </p>
-            </Link>
+              <Link
+                to={`/peptides/${peptide.slug}`}
+                className="flex flex-col gap-2.5 text-inherit no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <CardHeader className="p-0">
+                  <Badge className="h-auto self-start rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-mono text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
+                    {CATEGORY_LABELS[peptide.category] ?? peptide.category}
+                  </Badge>
+                  <CardTitle className="m-0 font-heading text-[22px] leading-[1.15] font-normal tracking-[-0.3px] text-foreground">
+                    {peptide.name}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <p className="m-0 line-clamp-2 text-[14px] leading-[1.6] text-muted-foreground">
+                    {peptide.overview}
+                  </p>
+                </CardContent>
+              </Link>
+            </Card>
           ))}
         </div>
       )}

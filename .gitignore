@@ -33,3 +33,7 @@ sources/
 docs/
 peptide-site.md
 .claude/
+.agents/
+.conductor/
+.github/
+graphify-out/

@@ -1,9 +1,14 @@
 import { useParams, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import peptides from '../data/peptides.json'
+import { getPeptideBySlug } from '../data/peptides.js'
 import { CATEGORY_LABELS } from '../data/categories.js'
 import ReconstitutionPanel from '../components/ReconstitutionPanel.jsx'
+import ReconstitutionCalculator from '../components/ReconstitutionCalculator.jsx'
+import PeptideFAQ from '../components/PeptideFAQ.jsx'
+import GlossaryTerm from '../components/GlossaryTerm.jsx'
 import { Badge } from '../components/ui/badge.jsx'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs.jsx'
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card.jsx'
 
 function WarningIcon() {
   return (
@@ -25,15 +30,6 @@ function WarningIcon() {
     </svg>
   )
 }
-
-const INFO_ROWS = [
-  { key: 'mechanism',       label: 'Mechanism'       },
-  { key: 'effects',         label: 'Effects'         },
-  { key: 'results_timeline', label: 'Results'        },
-  { key: 'timing',          label: 'Timing'          },
-  { key: 'administration',  label: 'Administration'  },
-  { key: 'research_notes',  label: 'Research Notes'  },
-]
 
 const URL_PATTERN = /https?:\/\/\S+/g
 
@@ -83,7 +79,7 @@ function ResearchNotes({ value }) {
 
 export default function PeptideDetail() {
   const { slug } = useParams()
-  const peptide = peptides.find(p => p.slug === slug)
+  const peptide = getPeptideBySlug(slug)
 
   if (!peptide) {
     return (
@@ -118,36 +114,138 @@ export default function PeptideDetail() {
           {peptide.name}
         </h1>
       </div>
-      <p className="mb-10 max-w-[680px] text-[17px] leading-[1.65] text-muted-foreground">
+      <p className="mb-8 max-w-[680px] text-[17px] leading-[1.65] text-muted-foreground">
         {peptide.overview}
       </p>
 
-      {/* Info rows */}
-      <div className="mb-9 flex flex-col overflow-hidden rounded-[10px] border border-border" role="list">
-        {INFO_ROWS.map(({ key, label }) => {
-          const value = peptide[key]
-          if (value == null) return null
-          return (
-            <div
-              key={key}
-              className="grid grid-cols-[160px_1fr] border-b border-border last:border-b-0 max-[540px]:grid-cols-1"
-              role="listitem"
-            >
-              <dt className="flex items-start bg-code-bg px-[18px] pt-4 pb-[14px] font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase max-[540px]:bg-transparent max-[540px]:px-4 max-[540px]:pt-[10px] max-[540px]:pb-1">
-                {label}
-              </dt>
-              <dd className="m-0 px-[18px] py-[14px] text-[15px] leading-[1.6] text-foreground max-[540px]:px-4 max-[540px]:pt-0 max-[540px]:pb-[14px]">
-                {key === 'research_notes' ? <ResearchNotes value={value} /> : value}
-              </dd>
-            </div>
-          )
-        })}
-      </div>
+      {/* Tabs */}
+      <Tabs defaultValue="overview" className="mb-9">
+        <TabsList className="mb-6 w-full justify-start gap-1 overflow-x-auto">
+          <TabsTrigger value="overview">Overview</TabsTrigger>
+          <TabsTrigger value="mechanism">Mechanism &amp; Effects</TabsTrigger>
+          <TabsTrigger value="protocol">
+            <GlossaryTerm term="Reconstitution">Protocol</GlossaryTerm>
+          </TabsTrigger>
+          <TabsTrigger value="research">Research</TabsTrigger>
+        </TabsList>
 
-      {/* Reconstitution panel */}
-      <ReconstitutionPanel dose={activeDose} />
+        {/* Overview tab */}
+        <TabsContent value="overview">
+          <div className="grid grid-cols-2 gap-4 max-[500px]:grid-cols-1">
+            {peptide.category && (
+              <Card>
+                <CardHeader className="pb-1">
+                  <CardTitle className="font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                    Category
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-[15px] text-foreground">
+                  {CATEGORY_LABELS[peptide.category] ?? peptide.category}
+                </CardContent>
+              </Card>
+            )}
+            {peptide.administration && (
+              <Card>
+                <CardHeader className="pb-1">
+                  <CardTitle className="font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                    Administration
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-[15px] text-foreground">
+                  {peptide.administration}
+                </CardContent>
+              </Card>
+            )}
+            {activeDose?.vial_mg && (
+              <Card>
+                <CardHeader className="pb-1">
+                  <CardTitle className="font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                    Vial Size
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-[15px] text-foreground">
+                  {activeDose.vial_mg} mg
+                </CardContent>
+              </Card>
+            )}
+            {activeDose?.concentration_mg_per_ml && (
+              <Card>
+                <CardHeader className="pb-1">
+                  <CardTitle className="font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                    Concentration
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-[15px] text-foreground">
+                  {activeDose.concentration_mg_per_ml} mg/mL
+                </CardContent>
+              </Card>
+            )}
+          </div>
+        </TabsContent>
 
-      {/* Disclaimer */}
+        {/* Mechanism & Effects tab */}
+        <TabsContent value="mechanism">
+          <div className="flex flex-col gap-6">
+            {peptide.mechanism && (
+              <section>
+                <h2 className="mb-2 font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                  Mechanism
+                </h2>
+                <p className="text-[15px] leading-[1.65] text-foreground">{peptide.mechanism}</p>
+              </section>
+            )}
+            {peptide.effects && (
+              <section>
+                <h2 className="mb-2 font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                  Effects
+                </h2>
+                <p className="text-[15px] leading-[1.65] text-foreground">{peptide.effects}</p>
+              </section>
+            )}
+          </div>
+        </TabsContent>
+
+        {/* Protocol tab */}
+        <TabsContent value="protocol">
+          <div className="flex flex-col gap-6">
+            {peptide.results_timeline && (
+              <section>
+                <h2 className="mb-2 font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                  Results Timeline
+                </h2>
+                <p className="text-[15px] leading-[1.65] text-foreground">{peptide.results_timeline}</p>
+              </section>
+            )}
+            {peptide.timing && (
+              <section>
+                <h2 className="mb-2 font-mono text-[11px] font-semibold tracking-[0.07em] text-muted-foreground uppercase">
+                  Timing
+                </h2>
+                <p className="text-[15px] leading-[1.65] text-foreground">{peptide.timing}</p>
+              </section>
+            )}
+            <ReconstitutionCalculator
+              defaultMg={activeDose?.vial_mg ?? 5}
+              defaultMl={activeDose?.bac_water_ml ?? 2}
+            />
+            <ReconstitutionPanel dose={activeDose} />
+          </div>
+        </TabsContent>
+
+        {/* Research tab */}
+        <TabsContent value="research">
+          {peptide.research_notes ? (
+            <ResearchNotes value={peptide.research_notes} />
+          ) : (
+            <p className="text-[15px] text-muted-foreground">No research notes available.</p>
+          )}
+        </TabsContent>
+      </Tabs>
+
+      {/* FAQ */}
+      <PeptideFAQ peptide={peptide} />
+
+      {/* Disclaimer — always visible below tabs */}
       <div className="mb-9 flex items-start gap-[14px] rounded-lg border border-border border-l-4 border-l-warning bg-[rgba(245,158,11,0.06)] px-5 py-4">
         <WarningIcon />
         <p className="m-0 text-[14px] leading-[1.55] text-muted-foreground">
