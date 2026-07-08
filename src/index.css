@@ -219,6 +219,16 @@
     pointer-events: none;
     z-index: 0;
   }
+
+  /* Static (non-animated) accent glow anchored behind the hero search bar. */
+  .search-glow::before {
+    content: '';
+    position: absolute;
+    inset: -40% -20%;
+    background: radial-gradient(closest-side, var(--accent-bg), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
 }
 
 /* ── Entrance animation (consumed by Home/Catalog; ported with those pages in Phase 5) ── */
