@@ -34,6 +34,8 @@ const PILL_BASE = 'h-auto rounded-full border px-3.5 py-1.5 font-mono text-xs fo
 const PILL_ACTIVE = 'border-primary-border bg-primary-bg text-primary hover:bg-primary-bg'
 const PILL_INACTIVE = 'border-border text-muted-foreground hover:border-primary-border hover:bg-primary-bg hover:text-primary'
 
+const DEBOUNCE_MS = 200
+
 export default function Catalog() {
   const [searchParams, setSearchParams] = useSearchParams()
   const { q, cat, route, evidence } = parseSearchParams(searchParams)
@@ -87,7 +89,6 @@ export default function Catalog() {
   // https://react.dev/learn/you-might-not-need-an-effect) rather than via a
   // useEffect that calls setState, which would paint the stale value for a
   // frame first.
-  const DEBOUNCE_MS = 200
   const [localQuery, setLocalQuery] = useState(q)
   const [syncedQuery, setSyncedQuery] = useState(q)
   const [lastPushedQuery, setLastPushedQuery] = useState(q)
