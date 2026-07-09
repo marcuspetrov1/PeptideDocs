@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
 
 const PORT = 4173
-const BASE_PATH = '/PeptideDocs/'
+const BASE_PATH = '/'
 
 export default defineConfig({
   testDir: './tests',
