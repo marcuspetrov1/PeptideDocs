@@ -49,6 +49,10 @@ Note: Vite `base` is `/PeptideDocs/`, so the dev/preview URLs are served under t
 
 CI (`.github/`) mirrors these on PRs to `main`: **lint → validate → build → Playwright**. Deployed on **Vercel**.
 
+### Branching & merge policy
+
+Trunk-based: `main` is the only long-lived branch (no `develop`). All changes land via a short-lived `feat/*`/`fix/*`/`chore/*` branch and a PR — branch protection blocks direct pushes to `main` and requires the `ci` check to pass before merge. Vercel gives every branch/PR its own preview deployment automatically, so there's no separate staging branch to keep in sync.
+
 ## Agentic workflow — when to use which skill
 
 Route by task. Most of these are **SHOULD** (follow by default, deviate with judgment); the three **hard rules** at the bottom are **MUST**.
