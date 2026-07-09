@@ -34,7 +34,7 @@ scripts/              validate-peptides.mjs
 tests/                Playwright specs
 ```
 
-Note: Vite `base` is `/PeptideDocs/`, so the dev/preview URLs are served under that path.
+Note: Vite `base` is the default `/` (root) — the app is served from the domain root on Vercel, not a repo-name subpath. Don't reintroduce a `/PeptideDocs/`-style `base`; it was a GitHub Pages leftover that broke asset loading on Vercel (blank page).
 
 ## Commands
 
