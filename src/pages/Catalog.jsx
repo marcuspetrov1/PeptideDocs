@@ -56,25 +56,41 @@ export default function Catalog() {
   //
   // `q` remains the source of truth for changes that don't originate from
   // this input: initial load (`?q=...`), Back/Forward, chip removal, and
-  // Clear all. Whenever `q` changes we re-sync `localQuery` from it and
-  // cancel any in-flight debounce timer — if the `q` change is our own
-  // debounced push landing, localQuery already equals q (no-op) and the
-  // timer has already fired (nothing to cancel). If it's a genuine external
-  // change (e.g. Clear all arriving mid-debounce), cancelling the pending
-  // timer prevents a stale typed value from overwriting the external change
-  // a moment later.
+  // Clear all. Whenever `q` changes we need to tell apart two cases: (a)
+  // it's just our own debounced push echoing back, in which case a NEWER
+  // debounce may already be scheduled for text typed after that push fired
+  // — that pending timer must be left alone; (b) it's a genuine external
+  // change, which must both overwrite `localQuery` and cancel any pending
+  // timer so a stale typed value can't overwrite the external change a
+  // moment later.
+  //
+  // This is deliberately NOT done by counting edits vs. commits (an earlier
+  // attempt tried that and was proven unsound: React Router wraps
+  // setSearchParams commits in React.startTransition, which coalesces
+  // commits under a fast burst, so an increment/decrement counter drifts).
+  // Instead, `lastPushedQuery` records the exact value most recently pushed
+  // to the URL by this component. Comparing the incoming `q` against that
+  // recorded value — not against a count of events — correctly
+  // distinguishes "this is the echo of what I just pushed" from "this is a
+  // real external change" regardless of how many renders got coalesced in
+  // between, because it compares actual values rather than tracking how
+  // many times something happened.
+  //
+  // `lastPushedQuery` is state, not a ref, even though it's only ever read
+  // (never rendered) — this repo's lint config (the React Compiler's
+  // react-hooks rules) forbids reading a ref's `.current` during render,
+  // and it must be read in the render-time resync branch below.
   //
   // The resync itself is done by comparing `q` against `syncedQuery` and
   // adjusting state directly during render (React's documented pattern for
   // "adjusting state when a prop changes", see
   // https://react.dev/learn/you-might-not-need-an-effect) rather than via a
-  // useEffect that calls setState — this repo's lint config (the React
-  // Compiler's react-hooks rules) flags synchronous setState-in-effect as a
-  // cascading-render smell, and ref reads/writes are similarly restricted to
-  // event handlers and effects, never the render body itself.
+  // useEffect that calls setState, which would paint the stale value for a
+  // frame first.
   const DEBOUNCE_MS = 200
   const [localQuery, setLocalQuery] = useState(q)
   const [syncedQuery, setSyncedQuery] = useState(q)
+  const [lastPushedQuery, setLastPushedQuery] = useState(q)
   const debounceRef = useRef(null)
   // Mirrors the latest facet state so the debounce callback (which can fire
   // well after the keystroke that scheduled it) merges the query with
@@ -83,22 +99,25 @@ export default function Catalog() {
 
   if (q !== syncedQuery) {
     setSyncedQuery(q)
-    setLocalQuery(q)
+    if (q !== lastPushedQuery) {
+      setLocalQuery(q)
+    }
   }
 
   useEffect(() => {
     filtersRef.current = { cat, route, evidence }
   }, [cat, route, evidence])
 
-  // Cancel any in-flight debounce timer whenever `q` changes (see above).
-  // No setState here — only a ref read/clear, which is fine inside an
-  // effect (unlike the render body).
+  // Cancel an in-flight debounce timer when `q` changes for a genuine
+  // external reason (see above) — but not when `q` is merely echoing back
+  // our own last push, since a newer timer may already be pending for text
+  // typed after that push fired.
   useEffect(() => {
-    if (debounceRef.current) {
+    if (q !== lastPushedQuery && debounceRef.current) {
       clearTimeout(debounceRef.current)
       debounceRef.current = null
     }
-  }, [q])
+  }, [q, lastPushedQuery])
 
   // Belt-and-suspenders cleanup on unmount, independent of `q` changing.
   useEffect(() => {
@@ -116,6 +135,7 @@ export default function Catalog() {
     if (debounceRef.current) clearTimeout(debounceRef.current)
     debounceRef.current = setTimeout(() => {
       debounceRef.current = null
+      setLastPushedQuery(value)
       const { cat, route, evidence } = filtersRef.current
       updateFilters({ q: value, cat, route, evidence })
     }, DEBOUNCE_MS)

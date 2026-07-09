@@ -213,3 +213,42 @@ test('fast typing burst followed by an immediate external q change (Clear all) u
   expect(url.searchParams.get('q')).toBeNull()
   expect(url.searchParams.get('cat')).toBeNull()
 })
+
+test('pausing mid-typing (letting the debounce fire) then resuming does not drop keystrokes', async ({ page }) => {
+  // Regression test for a second race a reviewer found in the debounce fix
+  // itself: the effect that cancels a pending debounce timer on external
+  // `q` changes used to fire unconditionally on ANY `q` change, including
+  // the echo of the component's own just-fired push. If a user paused long
+  // enough for the debounce to fire (committing the first chunk of typed
+  // text to the URL) and then resumed typing before that commit's `q`
+  // update finished propagating back into this component, the incoming
+  // echo would both (a) snap `localQuery` back to the first chunk, clobbering
+  // the newly-typed continuation, and (b) cancel the second debounce timer
+  // that would have corrected it — permanently dropping the resumed
+  // keystrokes with no self-correction.
+  //
+  // The fix compares the incoming `q` against the exact value this
+  // component last pushed (`lastPushedQueryRef`) rather than reacting to
+  // any `q` change: an echo of our own push is recognized by value and
+  // ignored (leaving a newer pending timer alone), while a genuine
+  // external change (a different value) still resyncs and cancels as
+  // before. Because that comparison is by value rather than by timing or
+  // event count, the fix is correct regardless of exactly when the second
+  // chunk is typed relative to the first chunk's commit — so this test
+  // deliberately waits right at the debounce boundary (not past it, and
+  // not polling for the URL to settle first) to land the second burst as
+  // close to the ambiguous window as a black-box e2e test can reach, then
+  // asserts on the *eventual* settled state. Under the old unconditional-
+  // cancel bug, hitting that window could leave the input permanently
+  // stuck on the first chunk with the correcting timer already cancelled —
+  // this would time out the poll below rather than self-correct.
+  await page.goto('catalog')
+  const search = page.getByRole('searchbox', { name: 'Search peptides' })
+
+  await search.pressSequentially('bpc', { delay: 0 })
+  await page.waitForTimeout(200)
+  await search.pressSequentially('-157', { delay: 0 })
+
+  await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe('bpc-157')
+  await expect(search).toHaveValue('bpc-157')
+})
