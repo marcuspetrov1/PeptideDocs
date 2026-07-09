@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { XIcon } from 'lucide-react'
@@ -37,8 +38,47 @@ export default function Catalog() {
   const [searchParams, setSearchParams] = useSearchParams()
   const { q, cat, route, evidence } = parseSearchParams(searchParams)
 
+  // Local buffer for the search input's displayed value, decoupled from the
+  // async URL commit cycle. Without this, a burst of keystrokes faster than
+  // React Router's render/commit cycle can settle out of order and snap the
+  // input back to a stale, shorter string mid-typing (characters get
+  // dropped/scrambled). The URL (`q`) remains the source of truth for
+  // external changes (initial load, Back/Forward, chip removal, Clear all);
+  // the effect below re-syncs the buffer whenever `q` changes from one of
+  // those sources rather than from the input itself.
+  //
+  // `pendingEditsRef` counts search-input edits whose setSearchParams call
+  // hasn't yet committed. Every keystroke through handleQueryChange updates
+  // localQuery immediately (synchronous, never blocked on the URL) and
+  // increments the counter; every `q` change consumes one pending edit and
+  // is treated as an "echo" of our own typing rather than a real external
+  // change, so it does NOT overwrite localQuery. This matters because
+  // React Router's setSearchParams commits can land out of order under a
+  // burst of near-simultaneous calls — without this guard, a stale,
+  // out-of-order commit arriving after a later keystroke would still trip
+  // the naive `useEffect(() => setLocalQuery(q), [q])` and snap the visible
+  // input back to an older, shorter value even though the fix already
+  // decoupled the *initial* display from `q`. Once the pending count drains
+  // to zero, any further `q` change is genuinely external and resyncs the
+  // buffer as intended.
+  const [localQuery, setLocalQuery] = useState(q)
+  const pendingEditsRef = useRef(0)
+  useEffect(() => {
+    if (pendingEditsRef.current > 0) {
+      pendingEditsRef.current -= 1
+      return
+    }
+    setLocalQuery(q)
+  }, [q])
+
   function updateFilters(next) {
     setSearchParams(toSearchParams(next), { replace: true })
+  }
+
+  function handleQueryChange(value) {
+    setLocalQuery(value)
+    pendingEditsRef.current += 1
+    updateFilters({ q: value, cat, route, evidence })
   }
 
   function toggleFacet(group, values, value) {
@@ -78,8 +118,8 @@ export default function Catalog() {
 
       <div className="mb-4">
         <PeptideSearch
-          value={q}
-          onChange={value => updateFilters({ q: value, cat, route, evidence })}
+          value={localQuery}
+          onChange={handleQueryChange}
         />
       </div>
 

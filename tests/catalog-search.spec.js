@@ -115,3 +115,24 @@ test('history hygiene: typing in the Catalog search box does not add history ent
   await page.goBack()
   await expect(page).toHaveURL(/\/$/)
 })
+
+test('fast typing does not scramble the search input (out-of-order URL commit race)', async ({ page }) => {
+  // Regression test for a race where the search box was fully controlled by
+  // `q` (parsed straight from useSearchParams) with no local state buffer.
+  // Dispatching keystrokes faster than React Router's async setSearchParams
+  // render/commit cycle could settle out of order and snap the input back to
+  // a stale, shorter string mid-typing. Typing "bpc-157" with zero delay
+  // between keystrokes deterministically reproduced this before the fix
+  // (final value observed as "7", having cycled through out-of-order commits
+  // like q=b -> q=p -> q=pc -> q=p- -> q=p1 -> q=p5 -> q=p7). The fix buffers
+  // the displayed value in local state (decoupled from the URL commit) and
+  // only re-syncs it from `q` via effect for external URL changes.
+  await page.goto('catalog')
+  const search = page.getByRole('searchbox', { name: 'Search peptides' })
+
+  await search.pressSequentially('bpc-157', { delay: 0 })
+
+  await expect(search).toHaveValue('bpc-157')
+  const url = new URL(page.url())
+  expect(url.searchParams.get('q')).toBe('bpc-157')
+})
