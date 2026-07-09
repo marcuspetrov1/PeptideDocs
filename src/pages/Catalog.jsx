@@ -39,37 +39,73 @@ export default function Catalog() {
   const { q, cat, route, evidence } = parseSearchParams(searchParams)
 
   // Local buffer for the search input's displayed value, decoupled from the
-  // async URL commit cycle. Without this, a burst of keystrokes faster than
-  // React Router's render/commit cycle can settle out of order and snap the
-  // input back to a stale, shorter string mid-typing (characters get
-  // dropped/scrambled). The URL (`q`) remains the source of truth for
-  // external changes (initial load, Back/Forward, chip removal, Clear all);
-  // the effect below re-syncs the buffer whenever `q` changes from one of
-  // those sources rather than from the input itself.
+  // URL commit cycle. The input is bound ONLY to `localQuery`, which updates
+  // synchronously on every keystroke (handleQueryChange), so what's on
+  // screen always reflects exactly what the user just typed, with zero
+  // async involvement.
   //
-  // `pendingEditsRef` counts search-input edits whose setSearchParams call
-  // hasn't yet committed. Every keystroke through handleQueryChange updates
-  // localQuery immediately (synchronous, never blocked on the URL) and
-  // increments the counter; every `q` change consumes one pending edit and
-  // is treated as an "echo" of our own typing rather than a real external
-  // change, so it does NOT overwrite localQuery. This matters because
-  // React Router's setSearchParams commits can land out of order under a
-  // burst of near-simultaneous calls — without this guard, a stale,
-  // out-of-order commit arriving after a later keystroke would still trip
-  // the naive `useEffect(() => setLocalQuery(q), [q])` and snap the visible
-  // input back to an older, shorter value even though the fix already
-  // decoupled the *initial* display from `q`. Once the pending count drains
-  // to zero, any further `q` change is genuinely external and resyncs the
-  // buffer as intended.
+  // The URL push is debounced (DEBOUNCE_MS after the last keystroke) rather
+  // than fired on every keystroke. This is the actual fix for the race that
+  // used to scramble fast-typed input: React Router wraps setSearchParams
+  // commits in React.startTransition, which is interruptible, so a burst of
+  // N keystrokes can coalesce into far fewer committed renders, and those
+  // commits are not guaranteed to land in keystroke order. Debouncing means
+  // at most one setSearchParams call is ever in flight for the query at a
+  // time — there's no longer a queue of same-field updates that can land out
+  // of order, so there's nothing to detect or reconcile after the fact.
+  //
+  // `q` remains the source of truth for changes that don't originate from
+  // this input: initial load (`?q=...`), Back/Forward, chip removal, and
+  // Clear all. Whenever `q` changes we re-sync `localQuery` from it and
+  // cancel any in-flight debounce timer — if the `q` change is our own
+  // debounced push landing, localQuery already equals q (no-op) and the
+  // timer has already fired (nothing to cancel). If it's a genuine external
+  // change (e.g. Clear all arriving mid-debounce), cancelling the pending
+  // timer prevents a stale typed value from overwriting the external change
+  // a moment later.
+  //
+  // The resync itself is done by comparing `q` against `syncedQuery` and
+  // adjusting state directly during render (React's documented pattern for
+  // "adjusting state when a prop changes", see
+  // https://react.dev/learn/you-might-not-need-an-effect) rather than via a
+  // useEffect that calls setState — this repo's lint config (the React
+  // Compiler's react-hooks rules) flags synchronous setState-in-effect as a
+  // cascading-render smell, and ref reads/writes are similarly restricted to
+  // event handlers and effects, never the render body itself.
+  const DEBOUNCE_MS = 200
   const [localQuery, setLocalQuery] = useState(q)
-  const pendingEditsRef = useRef(0)
-  useEffect(() => {
-    if (pendingEditsRef.current > 0) {
-      pendingEditsRef.current -= 1
-      return
-    }
+  const [syncedQuery, setSyncedQuery] = useState(q)
+  const debounceRef = useRef(null)
+  // Mirrors the latest facet state so the debounce callback (which can fire
+  // well after the keystroke that scheduled it) merges the query with
+  // current facets rather than ones captured at schedule time.
+  const filtersRef = useRef({ cat, route, evidence })
+
+  if (q !== syncedQuery) {
+    setSyncedQuery(q)
     setLocalQuery(q)
+  }
+
+  useEffect(() => {
+    filtersRef.current = { cat, route, evidence }
+  }, [cat, route, evidence])
+
+  // Cancel any in-flight debounce timer whenever `q` changes (see above).
+  // No setState here — only a ref read/clear, which is fine inside an
+  // effect (unlike the render body).
+  useEffect(() => {
+    if (debounceRef.current) {
+      clearTimeout(debounceRef.current)
+      debounceRef.current = null
+    }
   }, [q])
+
+  // Belt-and-suspenders cleanup on unmount, independent of `q` changing.
+  useEffect(() => {
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current)
+    }
+  }, [])
 
   function updateFilters(next) {
     setSearchParams(toSearchParams(next), { replace: true })
@@ -77,8 +113,12 @@ export default function Catalog() {
 
   function handleQueryChange(value) {
     setLocalQuery(value)
-    pendingEditsRef.current += 1
-    updateFilters({ q: value, cat, route, evidence })
+    if (debounceRef.current) clearTimeout(debounceRef.current)
+    debounceRef.current = setTimeout(() => {
+      debounceRef.current = null
+      const { cat, route, evidence } = filtersRef.current
+      updateFilters({ q: value, cat, route, evidence })
+    }, DEBOUNCE_MS)
   }
 
   function toggleFacet(group, values, value) {

@@ -94,19 +94,25 @@ test('history hygiene: typing in the Catalog search box does not add history ent
   const lengthBeforeTyping = await page.evaluate(() => window.history.length)
 
   const query = 'bpc-157'
-  // Use a human-plausible typing cadence: Catalog's search input is wired
-  // directly to setSearchParams on every keystroke (no debounce), and
-  // dispatching keys back-to-back with zero delay (pressSequentially's
-  // default) can outrun a render/commit cycle and scramble characters —
-  // not what this spec is testing. A per-key delay avoids that and keeps
-  // the assertions focused on history (replace vs. push) semantics.
+  // Use a human-plausible typing cadence. The search input's displayed value
+  // is local state updated synchronously per keystroke, so it can't scramble
+  // regardless of cadence — the per-key delay here is just realism, not a
+  // workaround. The URL push itself is debounced (~200ms after the last
+  // keystroke), so this cadence (50ms/key) never lets the debounce fire
+  // mid-typing; only one setSearchParams call happens, after typing stops.
   await search.pressSequentially(query, { delay: 50 })
   await expect(search).toHaveValue(query)
   await expect(page.getByText('BPC-157', { exact: true })).toBeVisible()
 
-  // Every keystroke updates the URL via setSearchParams(next, { replace:
-  // true }) (Task 5), so the joint session history should not have grown —
-  // each character replaces the previous entry instead of pushing a new one.
+  // Wait for the debounced URL push to actually land before measuring
+  // history — otherwise this assertion could trivially pass just because
+  // the push hasn't happened yet, rather than because `replace: true` keeps
+  // history flat.
+  await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe(query)
+
+  // The single debounced push updates the URL via setSearchParams(next,
+  // { replace: true }), so the joint session history should not have
+  // grown — it replaces the previous entry instead of pushing a new one.
   const lengthAfterTyping = await page.evaluate(() => window.history.length)
   expect(lengthAfterTyping).toBe(lengthBeforeTyping)
 
@@ -124,15 +130,86 @@ test('fast typing does not scramble the search input (out-of-order URL commit ra
   // a stale, shorter string mid-typing. Typing "bpc-157" with zero delay
   // between keystrokes deterministically reproduced this before the fix
   // (final value observed as "7", having cycled through out-of-order commits
-  // like q=b -> q=p -> q=pc -> q=p- -> q=p1 -> q=p5 -> q=p7). The fix buffers
-  // the displayed value in local state (decoupled from the URL commit) and
-  // only re-syncs it from `q` via effect for external URL changes.
+  // like q=b -> q=p -> q=pc -> q=p- -> q=p1 -> q=p5 -> q=p7).
+  //
+  // The fix: the input is bound only to local state (`localQuery`), updated
+  // synchronously on every keystroke with zero async involvement, so the
+  // display can never be clobbered by a URL commit. The URL push itself is
+  // debounced (~200ms after the last keystroke), so at most one
+  // setSearchParams call is ever in flight for the query — there's no queue
+  // of same-field updates left to land out of order. That means the URL
+  // update now trails the input by roughly the debounce delay, so we poll
+  // for it instead of asserting it synchronously.
   await page.goto('catalog')
   const search = page.getByRole('searchbox', { name: 'Search peptides' })
 
   await search.pressSequentially('bpc-157', { delay: 0 })
 
   await expect(search).toHaveValue('bpc-157')
+  await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe('bpc-157')
+})
+
+test('fast typing burst followed by an immediate external q change (Clear all) updates the display correctly', async ({ page }) => {
+  // Regression test for a failure mode introduced by an earlier, since-
+  // reverted fix attempt: that version tracked "edits with a pending
+  // setSearchParams commit" via a plain counter (incremented per keystroke,
+  // decremented per commit) to distinguish the URL echoing back our own
+  // typing from a genuine external change. Because React Router wraps
+  // setSearchParams commits in React.startTransition (interruptible), a fast
+  // burst of N keystrokes can coalesce into far fewer than N committed
+  // renders, so the counter is incremented N times but decremented only a
+  // handful — leaving a positive residual after the burst. That residual
+  // then caused the NEXT genuine external `q` change (Back/Forward, chip
+  // removal, Clear all) to be silently swallowed by the sync effect, so the
+  // search box kept showing stale typed text instead of reflecting the
+  // real change.
+  //
+  // This uses "Clear all" rather than Back to trigger the external change:
+  // every URL update in this component (typing, facet toggles, Clear all)
+  // uses `{ replace: true }`, so Back from Catalog exits the component
+  // entirely (see the "history hygiene" test) rather than changing `q`
+  // while the component stays mounted — it wouldn't exercise the in-place
+  // sync/cancel path this regression is about. Clear all does, and is one
+  // of the external actions the task calls out explicitly.
+  //
+  // The debounce-based fix has no counter: it re-syncs `localQuery` from
+  // `q` on every external change and cancels any in-flight debounce timer
+  // at that point, so a burst-then-external-change sequence can't leave the
+  // display stuck on stale text.
+  // Start with a non-empty `q` already in the URL, so that Clear all causes
+  // a genuine, detectable *value change* to `q` ('xyz' -> gone). If `q`
+  // started empty and the debounce never got a chance to push the typed
+  // burst, Clear all wouldn't actually change `q`'s value (it was already
+  // empty), which would exercise a different, pre-existing "nothing to
+  // resync because q never moved" case rather than the regression this test
+  // targets — so the setup deliberately avoids that.
+  await page.goto('catalog?q=xyz&cat=recovery')
+  const search = page.getByRole('searchbox', { name: 'Search peptides' })
+  await expect(search).toHaveValue('xyz')
+  await expect(page.getByRole('button', { name: 'Remove Recovery filter' })).toBeVisible()
+
+  // Fast burst replacing the existing text — select all first so the burst
+  // overwrites "xyz" rather than appending to it.
+  await search.click()
+  await search.press('ControlOrMeta+A')
+  await search.pressSequentially('bpc-157', { delay: 0 })
+  await expect(search).toHaveValue('bpc-157')
+
+  // Immediately perform a genuine external q-change — before the ~200ms
+  // debounce has a chance to elapse.
+  await page.getByRole('button', { name: 'Clear all', exact: true }).click()
+
+  // The search box must reflect the external Clear all action, not get
+  // stuck showing the just-typed "bpc-157".
+  await expect(search).toHaveValue('')
+  await expect(page.getByRole('button', { name: 'Remove Recovery filter' })).toHaveCount(0)
+
+  // Give the cancelled debounce timer's original delay window time to
+  // elapse, to confirm the stale push never lands and re-adds `q`/`cat` to
+  // the URL after Clear all already ran.
+  await page.waitForTimeout(300)
+  await expect(search).toHaveValue('')
   const url = new URL(page.url())
-  expect(url.searchParams.get('q')).toBe('bpc-157')
+  expect(url.searchParams.get('q')).toBeNull()
+  expect(url.searchParams.get('cat')).toBeNull()
 })
