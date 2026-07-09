@@ -36,4 +36,6 @@ peptide-site.md
 .agents/
 .conductor/
 .github/
+
+# Generated knowledge-graph cache
 graphify-out/
