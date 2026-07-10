@@ -22,6 +22,7 @@
   --sans: 'DM Sans', system-ui, sans-serif;
   --heading: 'DM Serif Display', Georgia, serif;
   --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+  --category: 'Space Grotesk', var(--sans);
 
   /* Page-frame width shared by #root, Catalog, and BackBar (Phase 4/5 point them here). */
   --container-max: 1126px;
@@ -120,6 +121,7 @@
   --font-sans: var(--sans);
   --font-heading: var(--heading);
   --font-mono: var(--mono);
+  --font-category: var(--category);
 
   --shadow-brand: var(--shadow);
 

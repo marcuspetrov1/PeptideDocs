@@ -13,7 +13,7 @@ import { cn } from '../lib/utils.js'
 
 const sorted = [...getAllPeptides()].sort((a, b) => a.name.localeCompare(b.name))
 
-const ROUTE_ORDER = ['subcutaneous', 'intramuscular', 'oral', 'intranasal', 'topical']
+const ROUTE_ORDER = ['subcutaneous', 'intramuscular', 'oral', 'intranasal']
 const ROUTE_LABELS = {
   subcutaneous: 'Subcutaneous',
   intramuscular: 'Intramuscular',
@@ -22,7 +22,7 @@ const ROUTE_LABELS = {
   topical: 'Topical',
 }
 
-const EVIDENCE_ORDER = ['preclinical', 'early-human', 'clinical', 'unclassified']
+const EVIDENCE_ORDER = ['clinical']
 const EVIDENCE_LABELS = {
   preclinical: 'Preclinical',
   'early-human': 'Early human',
@@ -30,7 +30,7 @@ const EVIDENCE_LABELS = {
   unclassified: 'Unclassified',
 }
 
-const PILL_BASE = 'h-auto rounded-full border px-3.5 py-1.5 font-mono text-xs font-semibold tracking-[0.07em] uppercase'
+const PILL_BASE = 'h-auto rounded-full border px-3.5 py-1.5 text-xs font-semibold tracking-[0.07em] uppercase'
 const PILL_ACTIVE = 'border-primary-border bg-primary-bg text-primary hover:bg-primary-bg'
 const PILL_INACTIVE = 'border-border text-muted-foreground hover:border-primary-border hover:bg-primary-bg hover:text-primary'
 
@@ -188,7 +188,7 @@ export default function Catalog() {
         <Button
           variant="ghost"
           onClick={() => updateFilters({ q, cat: [], route, evidence })}
-          className={cn(PILL_BASE, cat.length === 0 ? PILL_ACTIVE : PILL_INACTIVE)}
+          className={cn(PILL_BASE, 'font-category', cat.length === 0 ? PILL_ACTIVE : PILL_INACTIVE)}
         >
           All
         </Button>
@@ -197,7 +197,7 @@ export default function Catalog() {
             key={value}
             variant="ghost"
             onClick={() => toggleFacet('cat', cat, value)}
-            className={cn(PILL_BASE, cat.includes(value) ? PILL_ACTIVE : PILL_INACTIVE)}
+            className={cn(PILL_BASE, 'font-category', cat.includes(value) ? PILL_ACTIVE : PILL_INACTIVE)}
           >
             {CATEGORY_LABELS[value]}
           </Button>
@@ -210,7 +210,7 @@ export default function Catalog() {
             key={value}
             variant="ghost"
             onClick={() => toggleFacet('route', route, value)}
-            className={cn(PILL_BASE, route.includes(value) ? PILL_ACTIVE : PILL_INACTIVE)}
+            className={cn(PILL_BASE, 'font-mono', route.includes(value) ? PILL_ACTIVE : PILL_INACTIVE)}
           >
             {ROUTE_LABELS[value]}
           </Button>
@@ -223,7 +223,7 @@ export default function Catalog() {
             key={value}
             variant="ghost"
             onClick={() => toggleFacet('evidence', evidence, value)}
-            className={cn(PILL_BASE, evidence.includes(value) ? PILL_ACTIVE : PILL_INACTIVE)}
+            className={cn(PILL_BASE, 'font-mono', evidence.includes(value) ? PILL_ACTIVE : PILL_INACTIVE)}
           >
             {EVIDENCE_LABELS[value]}
           </Button>
@@ -236,7 +236,10 @@ export default function Catalog() {
             <Badge
               key={`${chip.group}-${chip.value}`}
               variant="outline"
-              className="h-auto gap-1 rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-mono text-[11px] font-semibold tracking-[0.08em] text-primary uppercase"
+              className={cn(
+                'h-auto gap-1 rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] text-[11px] font-semibold tracking-[0.08em] text-primary uppercase',
+                chip.group === 'cat' ? 'font-category' : 'font-mono'
+              )}
             >
               {chip.label}
               <button
@@ -274,7 +277,7 @@ export default function Catalog() {
                 className="flex flex-col gap-2.5 text-inherit no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <CardHeader className="p-0">
-                  <Badge className="h-auto self-start rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-mono text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
+                  <Badge className="h-auto self-start rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-category text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
                     {CATEGORY_LABELS[peptide.category] ?? peptide.category}
                   </Badge>
                   <CardTitle className="m-0 font-heading text-[22px] leading-[1.15] font-normal tracking-[-0.3px] text-foreground">

@@ -77,7 +77,7 @@ export default function Home() {
               <Badge
                 key={cat.slug}
                 asChild
-                className="h-auto gap-1.5 rounded-full border-primary-border bg-primary-bg px-3.5 py-[7px] font-mono text-xs font-semibold tracking-[0.06em] text-primary uppercase no-underline transition-[opacity,box-shadow] duration-200 hover:!bg-primary-bg hover:opacity-[0.82] hover:shadow-[0_0_0_1px_var(--color-primary-border)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="h-auto gap-1.5 rounded-full border-primary-border bg-primary-bg px-3.5 py-[7px] font-category text-xs font-semibold tracking-[0.06em] text-primary uppercase no-underline transition-[opacity,box-shadow] duration-200 hover:!bg-primary-bg hover:opacity-[0.82] hover:shadow-[0_0_0_1px_var(--color-primary-border)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <Link to="/catalog">
                   {cat.label}
@@ -106,7 +106,7 @@ export default function Home() {
                   <span className="min-w-0 truncate text-base font-semibold tracking-[-0.2px] text-foreground">
                     {p.name}
                   </span>
-                  <Badge variant="outline" className="shrink-0 font-mono text-[10px] tracking-[0.04em] uppercase">
+                  <Badge variant="outline" className="shrink-0 font-category text-[10px] tracking-[0.04em] uppercase">
                     {CATEGORY_LABELS[p.category] ?? p.category}
                   </Badge>
                 </div>

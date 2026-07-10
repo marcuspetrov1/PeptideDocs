@@ -14,7 +14,6 @@ export const CATEGORY_ORDER = [
   'immune',
   'longevity',
   'sleep-repair',
-  'research-peptide',
 ]
 
 export const CATEGORY_LABELS = {
