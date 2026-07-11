@@ -120,7 +120,7 @@ export default function PeptideDetail() {
 
       {/* Tabs */}
       <Tabs defaultValue="overview" className="mb-9">
-        <TabsList className="mb-6 w-full justify-start gap-1 overflow-x-auto">
+        <TabsList className="mb-6 w-full flex-wrap justify-start gap-1 max-[500px]:!h-auto">
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="mechanism">Mechanism &amp; Effects</TabsTrigger>
           <TabsTrigger value="protocol">
