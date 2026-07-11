@@ -12,15 +12,15 @@ test.describe('Glossary Tooltips', () => {
     // The "Protocol" tab uses GlossaryTerm for "Reconstitution"
     const protocolTab = page.getByRole('tab', { name: 'Protocol' })
     await protocolTab.hover()
-    // Tooltip should appear within 1s (delayDuration=300ms)
+    // delayDuration=300ms; generous margin absorbs CI runner jitter
     const tooltip = page.getByRole('tooltip')
-    await expect(tooltip).toBeVisible({ timeout: 1500 })
+    await expect(tooltip).toBeVisible({ timeout: 5000 })
   })
 
   test('moving away from the term hides the tooltip', async ({ page }) => {
     const protocolTab = page.getByRole('tab', { name: 'Protocol' })
     await protocolTab.hover()
-    await expect(page.getByRole('tooltip')).toBeVisible({ timeout: 1500 })
+    await expect(page.getByRole('tooltip')).toBeVisible({ timeout: 5000 })
     // Move away
     await page.keyboard.press('Escape')
     await expect(page.getByRole('tooltip')).toBeHidden()

@@ -25,6 +25,35 @@ const VALID_CATEGORIES = [
   'research-peptide',
 ];
 
+const VALID_ROUTES = [
+  'subcutaneous',
+  'intramuscular',
+  'oral',
+  'intranasal',
+  'topical',
+];
+
+const VALID_EVIDENCE = ['preclinical', 'early-human', 'clinical', 'unclassified'];
+
+// Keys every item is allowed to have. Used to catch typos/unexpected fields
+// as new data fields get added over time.
+const KNOWN_KEYS = new Set([
+  'slug',
+  'name',
+  'aliases',
+  'category',
+  'overview',
+  'mechanism',
+  'effects',
+  'results_timeline',
+  'timing',
+  'administration',
+  'route',
+  'evidence',
+  'research_notes',
+  'doses',
+]);
+
 let exitCode = 0;
 const errors = [];
 
@@ -88,7 +117,79 @@ try {
     }
   });
 
-  // 5. Validate doses
+  // 5. Validate aliases (optional; if present, array of non-empty strings)
+  data.forEach((item, index) => {
+    if (item.aliases === undefined) return;
+
+    if (!Array.isArray(item.aliases)) {
+      errors.push(`Item ${index} (${item.slug}): aliases must be an array`);
+      exitCode = 1;
+      return;
+    }
+
+    item.aliases.forEach((alias, aliasIndex) => {
+      if (typeof alias !== 'string' || alias.trim().length === 0) {
+        errors.push(
+          `Item ${index} (${item.slug}), aliases[${aliasIndex}]: must be a non-empty string`
+        );
+        exitCode = 1;
+      }
+    });
+  });
+
+  // 6. Validate route (required; array; every element in the route enum; may be empty)
+  data.forEach((item, index) => {
+    if (!Array.isArray(item.route)) {
+      errors.push(
+        `Item ${index} (${item.slug}): route field is missing or not an array`
+      );
+      exitCode = 1;
+      return;
+    }
+
+    item.route.forEach((route, routeIndex) => {
+      if (!VALID_ROUTES.includes(route)) {
+        errors.push(
+          `Item ${index} (${item.slug}), route[${routeIndex}]: unknown route "${route}". Valid routes: ${VALID_ROUTES.join(
+            ', '
+          )}`
+        );
+        exitCode = 1;
+      }
+    });
+  });
+
+  // 7. Validate evidence (required; string; one of the evidence enum)
+  data.forEach((item, index) => {
+    if (typeof item.evidence !== 'string' || item.evidence.trim().length === 0) {
+      errors.push(`Item ${index} (${item.slug}): missing evidence field`);
+      exitCode = 1;
+      return;
+    }
+
+    if (!VALID_EVIDENCE.includes(item.evidence)) {
+      errors.push(
+        `Item ${index} (${item.slug}): unknown evidence "${item.evidence}". Valid evidence: ${VALID_EVIDENCE.join(
+          ', '
+        )}`
+      );
+      exitCode = 1;
+    }
+  });
+
+  // 8. Validate no unexpected top-level keys (catches typos in new fields)
+  data.forEach((item, index) => {
+    Object.keys(item).forEach((key) => {
+      if (!KNOWN_KEYS.has(key)) {
+        errors.push(
+          `Item ${index} (${item.slug}): unexpected key "${key}"`
+        );
+        exitCode = 1;
+      }
+    });
+  });
+
+  // 9. Validate doses
   data.forEach((item, itemIndex) => {
     if (!item.doses || !Array.isArray(item.doses)) {
       errors.push(

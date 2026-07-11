@@ -106,7 +106,7 @@ export default function PeptideDetail() {
       </Helmet>
 
       {/* Hero */}
-      <Badge className="mb-3.5 h-auto rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-mono text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
+      <Badge className="mb-3.5 h-auto rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-category text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
         {CATEGORY_LABELS[peptide.category] ?? peptide.category}
       </Badge>
       <div className="mb-3 flex flex-wrap items-baseline gap-[14px]">

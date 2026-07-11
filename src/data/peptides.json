@@ -2,6 +2,10 @@
   {
     "slug": "bpc-157",
     "name": "BPC-157",
+    "aliases": [
+      "Body Protection Compound",
+      "Body Protection Compound-157"
+    ],
     "category": "recovery",
     "overview": "BPC-157 (Body Protection Compound-157) is a synthetic 15-amino-acid peptide based on a fragment naturally found in human gastric juice. It's one of the most-researched “repair” peptides, though evidence is still mostly preclinical — animal models plus early-phase human safety data. It appears to work at very low doses without meaningful toxicity in the studies completed so far.",
     "mechanism": "BPC-157 works through several overlapping pathways: nitric oxide signaling that helps regulate blood flow to damaged tissue, growth factor upregulation that drives new blood vessel formation (angiogenesis) at injury sites, and collagen support for structural rebuilding of tendon, ligament, muscle, and gut tissue. Animal studies show accelerated healing across a wide range of injury types; a completed Phase I human trial evaluated oral safety, and small case reports exist for injectable/intra-articular use, but large-scale controlled human efficacy data is not yet available.",
@@ -9,6 +13,10 @@
     "results_timeline": "The standard titration runs from 200 mcg/day in weeks 1–2 up to 600 mcg/day by weeks 5–8+. Most users evaluate joint, tendon, and gut effects across a full 8–12 week cycle rather than expecting changes in the first days.",
     "timing": "No strong food or time dependency like the GH-secretagogues — pick a consistent daily time and stick to it. Rotate injection sites (abdomen, thighs, upper arms).",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Klicek R et al. — BPC-157 promotes colocutaneous fistula healing via NO-system modulation (rat model), https://www.jstage.jst.go.jp/article/jphs/108/1/108_FP0072161/_article | Józwiak M et al. — Multifunctionality and possible medical application of BPC-157: literature and patent review (2025), https://www.mdpi.com/1424-8247/18/2/185 | Sikiric P et al. — BPC-157 stable gastric pentadecapeptide: novel therapy for wound healing and tissue repair, https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/ | Seiwerth S et al. — BPC-157 and standard angiogenic growth factors: gastrointestinal tract healing and beyond, https://pubmed.ncbi.nlm.nih.gov/29990514/ | Vasireddi N et al. — Emerging use of BPC-157 in orthopaedic sports medicine: systematic review (2025), https://pubmed.ncbi.nlm.nih.gov/40756949/ | Chang CH et al. — BPC-157 promotes tendon-to-bone healing in a rat rotator cuff model, https://pubmed.ncbi.nlm.nih.gov/32710582/ | WHO — Guideline on safety-engineered syringes for IM, ID, and SC injections in health care settings (2016), https://www.ncbi.nlm.nih.gov/books/NBK390474/ | Johns Hopkins Arthritis Center — How to give a subcutaneous injection, https://www.hopkinsarthritis.org/patient-corner/how-to-give-a-subcutaneous-injection/ | ClinicalTrials.gov NCT02637284 — Phase I safety and pharmacokinetics trial of oral BPC-157, https://clinicaltrials.gov/ct2/show/NCT02637284 | CDC — Vaccine administration: subcutaneous route, https://www.cdc.gov/vaccines/hcp/admin/downloads/YCTS-VaxAdmin-Subcut-injection.pdf | Subcutaneous drug injection: pharmacologic considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/ | Sikiric P et al. — Pentadecapeptide BPC-157: from GI tract to whole body healing, https://pmc.ncbi.nlm.nih.gov/articles/PMC6163624/",
     "doses": [
       {
@@ -62,6 +70,7 @@
   {
     "slug": "tb-500",
     "name": "TB-500",
+    "aliases": [],
     "category": "recovery",
     "overview": "TB-500 is a synthetic fragment of Thymosin Beta-4 (Tβ4), a naturally occurring protein the body already uses for tissue repair. It's built around the small active region of Tβ4 responsible for cell movement and vessel growth, aiming to deliver the “repair signal” portion of the molecule without the whole protein.",
     "mechanism": "TB-500 works on the actin cytoskeleton — the internal scaffolding that lets cells move — boosting cell migration to injury sites, stimulating angiogenesis (new blood vessel growth), and supporting collagen deposition that reduces healing time in animal injury models. Newer research suggests TB-500 may act as a prodrug, broken down into a smaller active fragment that drives most of the biological effect; most of the strong evidence base remains preclinical/veterinary, with no large human trials specific to TB-500.",
@@ -69,6 +78,10 @@
     "results_timeline": "The standard titration runs from 500 mcg/day in weeks 1–2 up to 1000 mcg/day by weeks 9–12, averaging roughly 5 mg/week on that schedule. TB-500 is not FDA-approved for human use and is a WADA-banned substance in competitive sports.",
     "timing": "Once daily at any consistent time — no strong circadian dependency. Rotate injection sites (abdomen, thighs, upper arms) to avoid irritation.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Biological activities of thymosin β4 defined by active peptide sequences (TB-500 fragment identification), https://pubmed.ncbi.nlm.nih.gov/20179146/ | Doping control analysis of TB-500 as synthetic thymosin β4 fragment in biological samples, https://pubmed.ncbi.nlm.nih.gov/23084823/ | WADA — Investigation of TB-500 metabolism, synthesis of metabolites, and detection limits, https://www.wada-ama.org/en/resources/scientific-research/investigation-vitroex-vivo-tb-500-metabolism-synthesis-relevant | Racing Medication & Testing Consortium — Thymosin β4 regulatory bulletin, https://rmtcnet.com/wp-content/uploads/2013-07-TB-500-Bulletin-v-2.0-Final.pdf | Thymosin beta4 accelerates wound healing, https://pubmed.ncbi.nlm.nih.gov/10469335/ | Empower Pharmacy — Bacteriostatic water injection guidelines, https://www.empowerpharmacy.com/compounding-pharmacy/bacteriostatic-water-injection/ | NCBI Bookshelf — Best practices for subcutaneous injection, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | WADA — Prohibited List (TB-500 classification), https://www.wada-ama.org/en/prohibited-list | Quantification of TB-500 metabolites and wound healing activity screening (prodrug hypothesis), https://pubmed.ncbi.nlm.nih.gov/38382158/ | CenterWatch — Clinical trial registry, thymosin β4 in acute myocardial infarction, https://www.centerwatch.com/clinical-trials/listings/NCT01311518/ | How to administer subcutaneous injections, https://journals.lww.com/nursing/fulltext/2004/06000/how_to_administer_a_subcutaneous_injection.23.aspx | University of Michigan Health — Patient education guide for subcutaneous injection technique, https://www.med.umich.edu/1libr/NursingUnits/Giving_Subcutaneous_Injection.pdf",
     "doses": [
       {
@@ -123,6 +136,7 @@
   {
     "slug": "glow",
     "name": "Glow Blend",
+    "aliases": [],
     "category": "beauty",
     "overview": "GLOW combines three peptides that each work through a different repair pathway — GHK-Cu (copper peptide for collagen and anti-inflammatory signaling), BPC-157 (gastric-derived healing peptide), and TB-500 (a thymosin fragment driving cell migration and angiogenesis). Stacked together they're meant to cover skin, connective tissue, and general repair simultaneously rather than targeting one system alone.",
     "mechanism": "GHK-Cu upregulates genes tied to tissue growth and collagen/glycosaminoglycan synthesis in fibroblasts while suppressing NF-κB-driven inflammation and promoting new blood vessel formation. TB-500 binds actin to mobilize cells toward injury sites, accelerating capillary growth and recruiting stem/progenitor cells for repair with less disorganized scar tissue. BPC-157 boosts growth factor signaling (VEGF, PDGF receptors) and nitric oxide pathways to improve blood flow to injured tissue while directly reducing inflammatory cytokines at the injury site.",
@@ -130,6 +144,10 @@
     "results_timeline": "Week 1: early anti-inflammatory effects and reduced swelling if injury-related. Weeks 2–3: tissue repair processes ramp up and skin texture changes begin. Week 4: a full cycle completes and is typically reassessed before continuing, followed by a 2–4 week rest period.",
     "timing": "Skin/anti-aging focus: 1–2 mg daily. Injury repair: 2–4 mg daily for a 3–4 week block. Maintenance: 1–2 mg, 2–3× per week.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "unclassified",
     "research_notes": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data (2018), https://www.mdpi.com/1422-0067/19/7/1987 | Exploring the Role of Tripeptides in Wound Healing and Skin Regeneration: A Comprehensive Review (2025), https://www.medsci.org/v22p4175.htm | Thymosin β4 Promotes Dermal Healing (2016), https://pubmed.ncbi.nlm.nih.gov/27450738/ | Thymosin β4: A Multi-Functional Regenerative Peptide. Basic Properties and Clinical Applications (2012), https://pubmed.ncbi.nlm.nih.gov/22074294/ | Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review (2025), https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/ | The Promoting Effect of Pentadecapeptide BPC 157 on Tendon Healing Involves Tendon Outgrowth, Cell Survival, and Cell Migration (2011), https://pubmed.ncbi.nlm.nih.gov/21030672/ | Bachem Peptide Technical Guide — Handling and Storage Guidelines for Peptides (2023), https://www.bachem.com/knowledge-center/peptide-guide/handling-and-storage-guidelines-for-peptides/ | CDC Pink Book (14th Ed.) — General Best Practice Guidelines for Immunization: Vaccine Administration, https://www.cdc.gov/vaccines/hcp/imz-best-practices/vaccine-administration.html",
     "doses": [
       {
@@ -167,6 +185,7 @@
   {
     "slug": "klow",
     "name": "KLOW Blend",
+    "aliases": [],
     "category": "beauty",
     "overview": "KLOW blends GHK-Cu (copper peptide for collagen and tissue remodeling), KPV (an anti-inflammatory tripeptide fragment of alpha-MSH with no pigmentation effect), and BPC-157 (gastric-derived repair peptide). It's built around skin, gut, and general inflammation control rather than the more injury/tendon-focused profile of GLOW.",
     "mechanism": "GHK-Cu stimulates collagen and elastin synthesis, drives wound healing, and modulates gene expression tied to tissue remodeling. KPV inhibits NF-κB signaling and lowers pro-inflammatory cytokines, notably without the melanotropic (pigmentation) side effects of full alpha-MSH-family peptides, since it's only the anti-inflammatory fragment. BPC-157 supports angiogenesis and growth factor modulation, aiding tendon, ligament, muscle, and gut-lining repair in preclinical research.",
@@ -174,6 +193,10 @@
     "results_timeline": "Weeks 1–2: anti-inflammatory effects build and irritation/discomfort eases. Weeks 3–4: tissue repair and collagen support become more noticeable. Weeks 5–8: extended protocols continue at maintenance-style dosing, with reassessment recommended after 8–12 weeks.",
     "timing": "Skin/gut/general wellness: 1–2 mg daily or 5× per week. Recovery/inflammation-focused: 2–4 mg daily for a 3–6 week block, followed by 1–2 mg maintenance 2–3× weekly.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Philp et al. (1999) — Thymosin beta 4 accelerates wound healing, https://pubmed.ncbi.nlm.nih.gov/10469335/ | Thymosin β4 promotes dermal healing in preclinical models and clinical trials, https://pubmed.ncbi.nlm.nih.gov/27450738/ | Emerging use of BPC-157 in orthopaedic sports medicine: systematic review, https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/ | Pharmacokinetics, distribution, metabolism, and excretion of BPC-157 in rats and dogs, https://pmc.ncbi.nlm.nih.gov/articles/PMC9794587/ | PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation, https://pmc.ncbi.nlm.nih.gov/articles/PMC2431115/ | Orally targeted delivery of tripeptide KPV via HA-functionalized nanoparticles alleviates ulcerative colitis, https://pmc.ncbi.nlm.nih.gov/articles/PMC5498804/ | Regenerative and protective actions of the GHK-Cu peptide in light of new gene data, https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/ | GHK peptide as a natural modulator of multiple cellular pathways in skin regeneration, https://pmc.ncbi.nlm.nih.gov/articles/PMC4508379/ | Sigma-Aldrich — Handling and storage guidelines for peptides and proteins, https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/research-and-disease-areas/cell-and-developmental-biology-research/handling-and-storage | CDC — Vaccine administration: subcutaneous injection technique guidelines, https://www.cdc.gov/vaccines/hcp/admin/downloads/YCTS-VaxAdmin-Subcut-injection.pdf | CDC — Vaccine administration best practices (aspiration not recommended for SC injections), https://www.cdc.gov/vaccines/hcp/imz-best-practices/vaccine-administration.html | NCBI Bookshelf — Administration of parenteral medications, https://www.ncbi.nlm.nih.gov/books/NBK596739/ | Thymosin β4: a multi-functional regenerative peptide (basic properties and clinical applications), https://pubmed.ncbi.nlm.nih.gov/22074294/ | The potential of GHK as an anti-aging peptide, https://pmc.ncbi.nlm.nih.gov/articles/PMC8789089/",
     "doses": [
       {
@@ -211,6 +234,9 @@
   {
     "slug": "ghk-cu",
     "name": "GHK-Cu",
+    "aliases": [
+      "Glycyl-L-Histidyl-L-Lysine"
+    ],
     "category": "beauty",
     "overview": "GHK-Cu is a naturally occurring copper-binding tripeptide (glycyl-L-histidyl-L-lysine) that the body already makes, with levels declining with age. Supplementing it targets skin, collagen, and general tissue repair rather than anything hormonal.",
     "mechanism": "GHK-Cu acts as a signal peptide that grabs copper ions and delivers them to cells in a usable form — copper being a required cofactor for lysyl oxidase (needed to build collagen) and superoxide dismutase (a core antioxidant enzyme). Gene-expression studies show it shifts a large share of the genes it touches toward a regenerative pattern, increasing VEGF and bFGF in fibroblasts, recruiting immune cells to injury sites, and helping balance collagen/elastin turnover.",
@@ -218,6 +244,10 @@
     "results_timeline": "Weeks 1–2: improved skin hydration and reduced irritation. Weeks 2–4: tone and texture begin improving. Weeks 4–8: collagen-related firmness and more visible structural skin changes.",
     "timing": "1–2 mg per day, subcutaneous, 5 days on/2 days off (weekends off), titrated up over 8–12 weeks. Given how concentrated the solution is, consider a 30- or 50-unit syringe instead of a standard 100-unit one for better readability at these small volumes.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "The Potential of GHK as an Anti-Aging Peptide, https://pmc.ncbi.nlm.nih.gov/articles/PMC8789089/ | Regenerative and Protective Actions of the GHK-Cu Peptide, https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/ | Tripeptides in Wound Healing and Skin Regeneration, https://www.medsci.org/v22p4175.htm | Topically Applied GHK as an Anti-Wrinkle Peptide, https://pubmed.ncbi.nlm.nih.gov/39963574/ | Stanford PAN Facility — Peptide Synthesis FAQs (storage guidelines), https://pan.stanford.edu/section_html/PEPSYN/FAQ.html | JPT Peptide Technologies — How to Reconstitute Peptides, https://www.jpt.com/blog/reconstitute-peptides/ | MedlinePlus — Giving an Insulin Injection, https://medlineplus.gov/ency/patientinstructions/000660.htm | GHK-Cu in Prevention of Oxidative Stress and Degenerative Conditions, https://pmc.ncbi.nlm.nih.gov/articles/PMC3359723/ | Effect of Human Peptide GHK on Gene Expression, https://www.mdpi.com/2076-3425/7/2/20 | GHK Peptide Prevents Sleep-Deprived Learning Impairment, https://pmc.ncbi.nlm.nih.gov/articles/PMC10081520/",
     "doses": [
       {
@@ -275,6 +305,7 @@
   {
     "slug": "ipamorelin",
     "name": "Ipamorelin",
+    "aliases": [],
     "category": "gh-secretagogue",
     "overview": "Ipamorelin is a synthetic 5-amino-acid peptide (pentapeptide) that stimulates the pituitary gland to release growth hormone. It's one of the more selective GH secretagogues available, doing its job without dragging along the side effects some older compounds caused.",
     "mechanism": "Ipamorelin mimics ghrelin at the GH secretagogue receptor (GHSR-1a), triggering a natural, pulsatile GH release from the pituitary without meaningfully raising ACTH, cortisol, or prolactin. GH levels peak around 40 minutes post-injection and return to baseline within 2–3 hours, fitting well with once-daily dosing; its short half-life (roughly 1.5–2.5 hours) means consistent daily timing matters for keeping the effect steady.",
@@ -282,6 +313,10 @@
     "results_timeline": "Titration typically runs from 100 mcg/day in weeks 1–2 up to 250 mcg/day by weeks 9–12, with 200 mcg being a common middle-of-the-road maintenance dose.",
     "timing": "Best taken 30–60 minutes before bed, on an empty stomach, to stack the injection on top of the body's natural nocturnal GH pulse. Avoid eating for a couple hours before and after if possible.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Beyond the androgen receptor: growth hormone secretagogues in body composition management (2020 review), https://pmc.ncbi.nlm.nih.gov/articles/PMC7108996/ | Ipamorelin, the first selective growth hormone secretagogue (1998), https://pubmed.ncbi.nlm.nih.gov/9849822/ | Chronic in vivo Ipamorelin treatment stimulates body weight gain and GH release in young female rats (2002), https://eurjanat.com/v1/journal/paper.php?id=02010037 | Pharmacokinetic-pharmacodynamic modeling of ipamorelin in human volunteers (1999), https://pubmed.ncbi.nlm.nih.gov/10496658/ | Prospective, randomized, controlled, proof-of-concept study of ipamorelin for postoperative ileus (2014 Phase II trial), https://pubmed.ncbi.nlm.nih.gov/25331030/ | Johns Hopkins Arthritis Center — How to Give a Subcutaneous Injection, https://www.hopkinsarthritis.org/patient-corner/how-to-give-a-subcutaneous-injection/ | NCBI Bookshelf — Best practices for injection, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | Subcutaneous drug injection: pharmacologic considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/ | NIBSC — Peptide handling, dissolution & storage guidelines, https://nibsc.org/science_and_research/virology/cjd_resource_centre/available_samples/peptide_library/peptide_storage.aspx | Bachem — Handling and storage guidelines for peptides, https://www.bachem.com/knowledge-center/peptide-guide/handling-and-storage-guidelines-for-peptides/ | Creative Peptides — How Long Do Peptides Last? Stability & shelf life, https://www.creative-peptides.com/resources/how-long-do-peptides-last.html",
     "doses": [
       {
@@ -336,6 +371,7 @@
   {
     "slug": "cjc-ipamorelin",
     "name": "CJC-1295 + Ipamorelin",
+    "aliases": [],
     "category": "gh-secretagogue",
     "overview": "A pre-blended combination of CJC-1295 (no DAC) and Ipamorelin at a 1:1 ratio — 5 mg of each per 10 mg vial — designed to hit two separate GH-release pathways in one shot. CJC-1295 (no DAC) is a modified GHRH analog that tells the pituitary to release GH, while Ipamorelin is a selective ghrelin-mimetic secretagogue that triggers a separate GH-release pathway.",
     "mechanism": "These two peptides hit different receptors that both lead to GH release, so combining them is meant to produce a bigger, more synergistic pulse than either alone. CJC-1295 (no DAC) is a 29-amino-acid GHRH analog shown in human studies to produce sustained, dose-dependent increases in GH and IGF-1; Ipamorelin adds a fast GH pulse (peaking ~40 minutes post-injection) through the GHSR-1a receptor without meaningfully raising cortisol, ACTH, or prolactin.",
@@ -343,6 +379,10 @@
     "results_timeline": "Titration runs from 100 mcg of each peptide (200 mcg total) in weeks 1–2 up to 250–300 mcg of each (500–600 mcg total) by weeks 7–12.",
     "timing": "Once daily — typically before bed or first thing on waking, to align with natural GH pulsing. Rotate injection sites (abdomen, thighs, upper arms). 1:1 blend means 1 mg total = 0.5 mg CJC + 0.5 mg Ipamorelin.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Prolonged stimulation of GH and IGF-1 secretion by CJC-1295 in healthy adults, https://pubmed.ncbi.nlm.nih.gov/16352683/ | Once-daily CJC-1295 normalizes growth in GHRH knockout mouse, https://pubmed.ncbi.nlm.nih.gov/16822960/ | Ipamorelin, the first selective growth hormone secretagogue, https://pubmed.ncbi.nlm.nih.gov/9849822/ | Beyond the androgen receptor: GH secretagogues in body composition management, https://pmc.ncbi.nlm.nih.gov/articles/PMC7108996/ | Pharmacokinetic-pharmacodynamic modeling of ipamorelin in human volunteers, https://pubmed.ncbi.nlm.nih.gov/10923144/ | Ipamorelin GH pulse kinetics and timing studies, https://pubmed.ncbi.nlm.nih.gov/10496658/ | CDC — Vaccine administration: subcutaneous route, https://www.cdc.gov/vaccines/hcp/administration/during.html | CDC — Subcutaneous injection technique diagram and site guidance, https://www.cdc.gov/vaccines/hcp/admin/downloads/YCTS-VaxAdmin-Subcut-injection.pdf | NCBI Bookshelf — Best practices for injection, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | Subcutaneous drug injection: pharmacologic considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/ | Frontiers in Endocrinology — Growth hormone secretagogues: history and clinical applications, https://www.frontiersin.org/articles/10.3389/fendo.2019.00155/full | Endocrine Reviews — Ghrelin and growth hormone secretagogues: physiology and applications, https://academic.oup.com/edrv/article/25/3/426/2355257",
     "doses": [
       {
@@ -397,6 +437,7 @@
   {
     "slug": "sermorelin",
     "name": "Sermorelin",
+    "aliases": [],
     "category": "gh-secretagogue",
     "overview": "Sermorelin is a synthetic analog of growth hormone-releasing hormone (GHRH) — the original GHRH-based GH therapy, initially developed for pediatric growth hormone deficiency and since studied off-label in adults to support natural GH/IGF-1 output as it declines with age.",
     "mechanism": "Sermorelin binds GHRH receptors on the pituitary gland's somatotrope cells, triggering the body's own pulsatile GH release while preserving natural feedback loops — GH release stays governed by somatostatin and IGF-1 feedback, which reduces the risk of overshooting into excess GH/IGF-1 territory compared with exogenous GH. It only works if the pituitary is functioning normally; it won't help with pituitary damage or primary GH-gene issues.",
@@ -404,6 +445,10 @@
     "results_timeline": "Titration runs from 200 mcg/day in weeks 1–2 up to 500 mcg/day by weeks 7–8. Adult off-label protocols typically run 3–6 months (pediatric trials ran longer, 6–12+ months).",
     "timing": "Bedtime dosing matters more here than with most peptides — GH release naturally peaks during sleep, and sermorelin is designed to work with that pulse. Avoid a big carb-heavy meal right before bed, since that can blunt the GH response.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Prakash & Goa (1999) — Sermorelin: review of its use in diagnosis/treatment of pediatric growth hormone deficiency, https://pubmed.ncbi.nlm.nih.gov/18031173/ | RxList — Sermorelin Acetate Injection Monograph, https://www.rxlist.com/sermorelin-acetate-drug.htm | Mayo Clinic — Sermorelin (injection route): proper use and storage, https://www.mayoclinic.org/drugs-supplements/sermorelin-injection-route/description/drg-20065923 | Johns Hopkins Arthritis Center — How to Give a Subcutaneous Injection, https://www.hopkinsarthritis.org/patient-corner/how-to-give-a-subcutaneous-injection/ | CDC — Vaccine administration: subcutaneous route technique, https://www.cdc.gov/vaccines/hcp/administration/during.html | NCBI Bookshelf — Best practices for parenteral injections, https://www.ncbi.nlm.nih.gov/books/NBK138495/",
     "doses": [
       {
@@ -458,6 +503,9 @@
   {
     "slug": "tesamorelin",
     "name": "Tesamorelin",
+    "aliases": [
+      "Egrifta"
+    ],
     "category": "fat-loss",
     "overview": "Tesamorelin is a synthetic 44-amino-acid GHRH analog notably FDA-approved (as Egrifta) for reducing visceral fat in HIV-associated lipodystrophy — giving it more solid human clinical data than most peptides on this list. It's also studied more broadly for metabolic and fat-loss research and for potential cognitive benefits in older adults.",
     "mechanism": "Like other GHRH analogs, tesamorelin binds pituitary GHRH receptors and triggers pulsatile GH release, raising IGF-1 and driving lipolysis along with general anabolic effects. In clinical trials this translated into meaningful reductions in visceral adipose tissue (measurable within 3–6 months) and improved lipid profiles, with sustained benefit through a full year of continuous use; it's also being researched for liver fat reduction in NAFLD and for cognitive effects tied to age-related GH/IGF-1 decline.",
@@ -465,6 +513,10 @@
     "results_timeline": "Most protocols start with a 1 mg dose for the first week to check tolerability before moving to the full, FDA-approved 2 mg/day dose. Visceral fat reduction is typically measurable after 3–6 months of consistent daily use, with cycles commonly run 12–26 weeks (up to 52 weeks under supervision in trials).",
     "timing": "Night before bed or morning fasted. Avoid big carb meals around dosing — carbs blunt the GH pulse tesamorelin is trying to trigger.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "LiverTox: Clinical and Research Information on Drug-Induced Liver Injury — Tesamorelin (NIH/NIDDK, 2018), https://www.ncbi.nlm.nih.gov/books/NBK548730/ | Mayo Clinic — Tesamorelin (Subcutaneous route), https://www.mayoclinic.org/drugs-supplements/tesamorelin-subcutaneous-route/description/drg-20074632 | Effects of tesamorelin (TH9507) in HIV-infected patients with excess abdominal fat: pooled analysis of two phase 3 trials, https://pubmed.ncbi.nlm.nih.gov/20554713/ | Safety and metabolic effects of tesamorelin in patients with type 2 diabetes: RCT, https://pubmed.ncbi.nlm.nih.gov/28617838/ | Tesamorelin can improve cognitive function (Research Highlight), https://www.nature.com/articles/nrendo.2012.151 | MedlinePlus — Tesamorelin Injection drug information, https://medlineplus.gov/druginfo/meds/a611035.html | Drugs.com — Tesamorelin: Uses, Dosage, Side Effects, Warnings, https://www.drugs.com/tesamorelin.html | Administration of Parenteral Medications (Open RN Nursing Skills textbook), https://www.ncbi.nlm.nih.gov/books/NBK596739/",
     "doses": [
       {
@@ -501,6 +553,7 @@
   {
     "slug": "semaglutide",
     "name": "Semaglutide",
+    "aliases": [],
     "category": "fat-loss",
     "overview": "Semaglutide is a GLP-1 receptor agonist originally developed for type 2 diabetes management that has become one of the most effective researched agents for sustained fat loss. It works by powerfully suppressing appetite and slowing gastric emptying, enabling consistent caloric reduction with minimal conscious effort.",
     "mechanism": "Semaglutide mimics the glucagon-like peptide-1 hormone by binding to GLP-1 receptors throughout the body. It increases glucose-dependent insulin secretion, decreases glucagon release, slows gastric emptying to extend satiety, and activates central nervous system pathways in the hypothalamus that reduce appetite and food cravings. Its long half-life allows once-weekly dosing.",
@@ -508,6 +561,10 @@
     "results_timeline": "Appetite suppression is felt within the first week. Meaningful and visible fat loss typically becomes apparent by weeks 4–8 of consistent use. Full metabolic effects and maximum fat loss develop over 3–6 months.",
     "timing": "Once weekly, same day each week. Subcutaneous injection in the abdomen, thigh, or upper arm. Food timing does not matter. If a dose is missed, take it within 5 days — otherwise skip it and resume the normal schedule. Slow titration is critical to minimize nausea — do not rush the ramp.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Once-Weekly Semaglutide for Weight Management: A Clinical Review, https://pmc.ncbi.nlm.nih.gov/articles/PMC9272494/ | Semaglutide for Weight Loss in Obesity, https://pubmed.ncbi.nlm.nih.gov/30122305/ | NCBI Bookshelf — Semaglutide (StatPearls), https://www.ncbi.nlm.nih.gov/books/NBK603723/ | Mayo Clinic — Semaglutide (Subcutaneous Route), https://www.mayoclinic.org/drugs-supplements/Semaglutide-subcutaneous-route/description/drg-20406730 | Dripdok — The Ultimate Guide to Storing Peptides, https://intercom.help/dripdok/en/articles/9902679-the-ultimate-guide-to-storing-peptides-best-practices-for-maximum-potency-longevity | Wittmer Rejuvenation Clinic — How to Mix Semaglutide with Bacteriostatic Water, https://wittmerrejuvenationclinic.com/how-to-mix-Semaglutide-with-bacteriostatic-water/ | Prime Peptides — How Much Bacteriostatic Water to Add to Peptides, https://primepeptides.co/how-much-bacteriostatic-water-to-add-to-peptides/ | CDC — Vaccine Administration: Subcutaneous Route, https://www.cdc.gov/vaccines/hcp/administration/during.html | Johns Hopkins Arthritis Center — How to Give a Subcutaneous Injection, https://www.hopkinsarthritis.org/patient-corner/how-to-give-a-subcutaneous-injection/ | CDC/Immunize.org — How to Administer Intramuscular and Subcutaneous Vaccine Injections, https://www.immunize.org/news/updates/website/how-to-administer-intramuscular-and-subcutaneous-vaccine-injections-6/ | NCBI Bookshelf — Best Practices for Injection Administration, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | Subcutaneous Drug Injection: Pharmacologic Considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/",
     "doses": [
       {
@@ -579,6 +636,9 @@
   {
     "slug": "tirzepatide",
     "name": "Tirzepatide",
+    "aliases": [
+      "Mounjaro"
+    ],
     "category": "fat-loss",
     "overview": "Tirzepatide is a dual GLP-1 and GIP receptor agonist that produces significant fat loss and metabolic improvements. By simultaneously activating both receptor systems, it achieves stronger appetite suppression and metabolic effects than GLP-1-only peptides, with clinical data showing 15–20% body weight reduction.",
     "mechanism": "GLP-1 agonism activates satiety centers in the hypothalamus, slows gastric emptying to extend fullness, and increases glucose-dependent insulin secretion. GIP agonism complements this by improving insulin sensitivity, reducing glucagon levels, and enhancing fat tissue energy metabolism. The combined dual-receptor effect produces potent, sustained appetite control with favorable metabolic outcomes.",
@@ -586,6 +646,10 @@
     "results_timeline": "Appetite suppression noticeable in weeks 1–4. Meaningful fat loss visible by weeks 4–8. Maximum fat loss and metabolic effects develop over 3–6 months at maintenance dose.",
     "timing": "Once weekly, same day each week. Subcutaneous injection in the abdomen (stay 2 inches from the navel), outer thighs, or upper arms. Food timing does not affect efficacy. At the 20 mg/10 mg-per-mL concentration, doses above 1.0 mL (12.5 mg+) should be split into two injections at separate sites the same day; the 30 mg/15 mg-per-mL vial keeps every dose through 15 mg under 1.0 mL in a single injection. Titrate slowly — never skip titration steps.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "Farzam K, Patel P. Tirzepatide (StatPearls, 2024), https://www.ncbi.nlm.nih.gov/books/NBK585056/ | Gallwitz B. GIP/GLP-1 receptor agonist Tirzepatide for type 2 diabetes and obesity, https://doi.org/10.3389/fendo.2022.1004044 | Frias JP et al. — Efficacy and safety of LY3298176 (Tirzepatide) in type 2 diabetes (Phase 2 trial), https://pubmed.ncbi.nlm.nih.gov/30293770/ | Jastreboff AM et al. — Tirzepatide once weekly for the treatment of obesity, https://www.nejm.org/doi/full/10.1056/NEJMoa2206038 | FDA Prescribing Information — Mounjaro (Tirzepatide) injection, https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/215866s000lbl.pdf | CDC Injection Safety — Preventing Unsafe Injection Practices, https://www.cdc.gov/injection-safety/hcp/clinical-safety/index.html | MedlinePlus — Subcutaneous (SQ) injections, https://medlineplus.gov/ency/patientinstructions/000430.htm | Mayo Clinic — Tirzepatide (Subcutaneous route), https://www.mayoclinic.org/drugs-supplements/Tirzepatide-subcutaneous-route/description/drg-20534045 | CDC — Vaccine administration: subcutaneous injection technique, https://www.cdc.gov/vaccines/hcp/administration/during.html | Jordan MA et al. — Accurate measurement of small-volume parenterals with syringes, https://pubmed.ncbi.nlm.nih.gov/33944846/ | NCBI Bookshelf — Best practices for injection, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | Subcutaneous Drug Injection Review — pharmacologic considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/",
     "doses": [
       {
@@ -737,6 +801,7 @@
   {
     "slug": "retatrutide",
     "name": "Retatrutide",
+    "aliases": [],
     "category": "fat-loss",
     "overview": "Retatrutide is a next-generation triple receptor agonist targeting GLP-1, GIP, and glucagon receptors simultaneously. In Phase 2 trials it demonstrated average weight loss of 22–24% of body weight at 48 weeks on 8–12 mg weekly doses — ahead of what's been reported for dual- or single-receptor agonists — driven in part by the added thermogenic effect of glucagon receptor activation. It is not FDA-approved; this is a research-only compound based on published Phase 2 data.",
     "mechanism": "GLP-1 agonism reduces appetite and slows gastric emptying. GIP agonism improves insulin sensitivity and fat metabolism. Glucagon receptor activation increases basal energy expenditure and promotes fat oxidation — a thermogenic dimension absent in dual-receptor agonists. A fatty-acid modification extends circulation time to roughly a 6-day half-life, supporting once-weekly dosing.",
@@ -744,6 +809,10 @@
     "results_timeline": "Weeks 1–4: tolerance-building at 2 mg, GI symptoms most likely here. Weeks 5–8: escalating to 4 mg, appetite suppression starting to show. Weeks 9–12: 6 mg, more noticeable weight trend and metabolic shift. Weeks 13+: 8 mg standard maintenance, or escalate further toward 12 mg for advanced protocols. Trials ran 36–48 weeks for the full weight-loss effect to materialize.",
     "timing": "Once weekly, same day, any time — food timing does not matter. Rotate injection sites (abdomen, thighs, upper arms). Volumes over 1.0 mL (the 12 mg dose) should be split into two injections at different sites; never skip a titration step.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Rosenstock J et al. — Retatrutide for type 2 diabetes: Phase 2 trial results, https://pubmed.ncbi.nlm.nih.gov/37385280/ | Jastreboff AM et al. — Triple-hormone-receptor agonist Retatrutide for obesity: Phase 2 trial, https://pubmed.ncbi.nlm.nih.gov/37366315/ | ADA — Novel agent Retatrutide results in substantial weight reduction (83rd Scientific Sessions), https://diabetes.org/newsroom/american-diabetes-association-highlights-novel-agent-Retatrutide-results-substantial-weight-reduction-people-with-obesity-type-2-diabetes-during-late-breaking-symposium | ADA Meeting News — Phase 2 trial results: Retatrutide in obesity, type 2 diabetes, NASH, https://www.adameetingnews.org/phase-2-trial-results-demonstrate-benefits-of-Retatrutide-in-obesity-type-2-diabetes-nash/ | ClinicalTrials.gov NCT04881760 — Study of Retatrutide (LY3437943) in adults with obesity, https://clinicaltrials.gov/study/NCT04881760 | Hamza M et al. — Triple agonism based therapies for obesity (review), https://pmc.ncbi.nlm.nih.gov/articles/PMC12304053/ | Coskun T et al. — LY3437943 (Retatrutide): discovery to clinical proof of concept, https://pubmed.ncbi.nlm.nih.gov/35985340/ | Diabetes Care — Incretin-based therapies: GLP-1, GIP, and glucagon receptor pharmacology, https://diabetesjournals.org/care/article/47/3/361/154125/Glucose-Lowering-Agents-and-Cardiovascular | NEJM Supplementary Material — Jastreboff et al. obesity trial appendix, https://www.nejm.org/doi/suppl/10.1056/NEJMoa2301972/suppl_file/nejmoa2301972_appendix.pdf | Hepatology — Triple agonists in NAFLD/NASH: hepatic steatosis resolution, https://journals.lww.com/hep/fulltext/2024/01000/triple_agonism.1.aspx | The Lancet Supplementary Data — Rosenstock et al. diabetes trial appendix, https://www.thelancet.com/cms/10.1016/S0140-6736(23)01053-X/attachment/f9e7c0d4-8c5e-4f8a-9f5e-5d8e7c0d4f9a/mmc1.pdf | CDC — Vaccine administration: subcutaneous route, https://www.cdc.gov/vaccines/hcp/administration/during.html | Johns Hopkins Arthritis Center — How to give a subcutaneous injection, https://www.hopkinsarthritis.org/patient-corner/how-to-give-a-subcutaneous-injection/ | NCBI Bookshelf — Administration of medication: subcutaneous injections, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | GenScript — Peptide storage and handling guidelines, https://www.genscript.com/peptide_storage_and_handling.html | Stability of peptides during freeze-thaw cycles, https://pubmed.ncbi.nlm.nih.gov/29111328/",
     "doses": [
       {
@@ -853,6 +922,7 @@
   {
     "slug": "mots-c",
     "name": "MOTS-c",
+    "aliases": [],
     "category": "metabolic",
     "overview": "MOTS-c is a mitochondria-derived peptide — a small 16-amino-acid signal that mitochondria themselves produce — that works mainly by activating AMPK, the cell's core energy-sensing pathway. It does this partly by blocking part of the folate cycle, causing AICAR to build up and switching cells into an energy-conserving mode with better glucose uptake, more fat-burning, and improved mitochondrial output.",
     "mechanism": "Beyond its metabolic switch, MOTS-c has a secondary role: under stress it moves into the cell nucleus and switches on antioxidant/stress-response genes, which is where a lot of its longevity-adjacent interest comes from. No completed human clinical trials exist yet — the evidence base is preclinical (mouse/cell) data, aside from a modified analog (CB4211) that showed good tolerability in an early human Phase 1 trial, the closest thing to human safety data available.",
@@ -860,6 +930,10 @@
     "results_timeline": "Conservative titration runs from 200 mcg/day in weeks 1–2 up to 1000 mcg/day by weeks 9–10+, staying at each step roughly 2 weeks before increasing. Performance-oriented protocols may push toward the 800 mcg–1 mg end faster if targeting exercise capacity rather than general metabolic support.",
     "timing": "Once daily, subcutaneous, rotating injection sites. Conservative dosing suits general metabolic support; performance-oriented dosing pushes the range faster for exercise capacity goals.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Lee C, Zeng J, Drew BG, et al. — The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4350682/ | Wan W, Zhang L, Lin Y, et al. — Mitochondria-derived peptide MOTS-c: effects and mechanisms related to stress, metabolism and aging, https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-023-03885-2 | Lu H, Wei M, Zhai Y, et al. — MOTS-c peptide regulates adipose homeostasis to prevent ovariectomy-induced metabolic dysfunction, https://pubmed.ncbi.nlm.nih.gov/30725119/ | Reynolds JC, Lai RW, Woodhead JST, et al. — MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7817689/ | Yi X, Hu G, Yang Y, et al. — Role of MOTS-c in the regulation of bone metabolism, https://doi.org/10.3389/fphys.2023.1149120 | Mohtashami Z, Singh MK, Salimiaghdam N, et al. — MOTS-c, the Most Recent Mitochondrial Derived Peptide in Human Aging and Age-Related Diseases, https://doi.org/10.3390/ijms231911991 | Alzheimer's Drug Discovery Foundation — MOTS-c (Cognitive Vitality Profile), https://www.alzdiscovery.org/uploads/cognitive_vitality_media/MOTS-c.pdf | USADA — What is the MOTS-c peptide?, https://www.usada.org/spirit-of-sport/what-is-mots-c-peptide/ | CDC — Vaccine administration: subcutaneous route technique, https://www.cdc.gov/vaccines/hcp/administration/during.html | Kong BS, Lee H, L'Yi S, et al. — Mitochondrial-encoded peptide MOTS-c prevents pancreatic islet cell senescence to delay diabetes, https://pubmed.ncbi.nlm.nih.gov/40855115/ | MedlinePlus — Subcutaneous (SQ) injections, https://medlineplus.gov/ency/patientinstructions/000430.htm | Subcutaneous Drug Injection Review — literature review of factors influencing subcutaneous injection pharmacology, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/",
     "doses": [
       {
@@ -923,6 +997,9 @@
   {
     "slug": "nad-plus",
     "name": "NAD+",
+    "aliases": [
+      "Nicotinamide Adenine Dinucleotide"
+    ],
     "category": "metabolic",
     "overview": "NAD+ (nicotinamide adenine dinucleotide) is a coenzyme every cell relies on for energy metabolism, DNA repair, and mitochondrial maintenance — it's central to glycolysis, the TCA cycle, and oxidative phosphorylation, and levels decline naturally with age and metabolic stress. Most of the rigorous clinical research relies on high-dose IV infusions (500–1000 mg+) under medical supervision; subcutaneous injection at much lower doses is a newer, self-administered approach aimed at maintenance rather than acute clinical treatment.",
     "mechanism": "NAD+ replenishes the cellular pools that fuel sirtuin activity, mitochondrial energy production, and DNA repair pathways, all of which naturally decline with age. Human case reports and pilot studies support cognitive and metabolic benefits in the 100–300 mg/day IV range — far higher than the subcutaneous doses used here, but they establish biological plausibility for the mechanism. High-dose IV protocols have also been explored for substance use disorder support, with reported reductions in cravings in open-label studies.",
@@ -930,6 +1007,10 @@
     "results_timeline": "Daily-support dosing runs 10–20 mg, aimed at general cellular energy and maintenance; a more noticeable subjective push runs 20–50 mg. Most people run this 3–5× per week rather than strictly daily, adjusting frequency based on response, with starting low as the key variable for avoiding side effects.",
     "timing": "Subcutaneous, 3–5× per week rather than daily for most users. Start at the low end of the range and increase gradually. Reconstituted solution should stay refrigerated, be used within 14 days, and be protected from light — discard if it turns cloudy or discolored.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Clinical evidence for targeting NAD+ therapeutically: metabolic pathways and therapeutic potential, https://doi.org/10.3390/ph13090247 | NAD+ and enkephalinase infusions attenuate burden in substance use disorder (pilot of 50 cases), https://pubmed.ncbi.nlm.nih.gov/36118157/ | Fagron Academy — NAD+ dosing review: routes, protocols, and case study insights, https://www.fagronacademy.us/blog/nicotinamide-adenine-dinucleotide-nad-a-review-on-dosing | Jinfiniti — NAD+ Injection Dosage Chart, https://www.jinfiniti.com/nad-injection-dosage-chart/ | Sigma-Aldrich — β-Nicotinamide adenine dinucleotide (NAD+) product specification and stability data, https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/668/557/n8285pis.pdf | PMC — Pharmacology & Potential Implications of NAD+, https://pmc.ncbi.nlm.nih.gov/articles/PMC8612620/ | Frontiers in Aging Neuroscience — Pilot study: changes in human plasma and urine NAD+ metabolome during 6-hour IV infusion, https://doi.org/10.3389/fnagi.2019.00257 | American Journal of Physiology — Evaluation of safety and effectiveness of NAD+ in different clinical conditions: systematic review, https://pubmed.ncbi.nlm.nih.gov/37971292/ | CDC Pink Book (Ch. 6) — Vaccine administration: needle selection and injection technique, https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-6-vaccine-administration.html | CDC — Subcutaneous injection technique diagram and site guidance, https://www.cdc.gov/vaccines/hcp/admin/downloads/YCTS-VaxAdmin-Subcut-injection.pdf | NCBI Bookshelf — Best practices for injections, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | Subcutaneous Drug Injection Review — factors influencing pain and volume at injection site, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/",
     "doses": [
       {
@@ -967,6 +1048,7 @@
   {
     "slug": "glutathione",
     "name": "Glutathione",
+    "aliases": [],
     "category": "metabolic",
     "overview": "Glutathione is the body's master antioxidant — a tripeptide of glutamate, cysteine, and glycine present in nearly every cell. It's the primary redox buffer cells use to neutralize free radicals, and it gets recycled back to its active form after each use, so a healthy glutathione system keeps cycling rather than being used up in one pass.",
     "mechanism": "Glutathione neutralizes reactive oxygen species directly and feeds into Phase II liver detoxification pathways, helping clear toxins and metabolic byproducts. It also supports immune cell function (NK cells, T-cells) and mitochondrial protection. On the skin side, sustained use has been studied for its effect on melanin index and overall brightness/tone.",
@@ -974,6 +1056,10 @@
     "results_timeline": "Weeks 1–2 build baseline levels with no dramatic subjective change yet. By weeks 3–4 some people report better energy or less mental fog. Skin tone and brightness effects tend to become noticeable around weeks 5–8 with consistent dosing, after which maintenance dosing (2–4× per week) sustains levels.",
     "timing": "General wellness dosing runs 50–100 mg a few times per week; an antioxidant/skin-focused push runs 100–200 mg, 2–4× per week — start low and titrate up. Pairs well with NAD+, since the two share some of the same nutrient cofactors (vitamin C, selenium) and are often run back-to-back or same-day. Reconstituted vials are relatively unstable — keep refrigerated, protect from light, and use within 2–3 weeks.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "The antioxidant glutathione: protective roles, cofactor functions, and regeneration mechanisms, https://pubmed.ncbi.nlm.nih.gov/36707132/ | Glutathione and glutathione-dependent enzymes: coordinated defense against oxidative stress, https://pubmed.ncbi.nlm.nih.gov/10517533/ | Glutathione: roles in immune function, detoxification, and clinical applications, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4684116/ | The interplay of glutathione-related processes in antioxidant defense, https://pubmed.ncbi.nlm.nih.gov/21782570/ | Exploring safety and efficacy of glutathione supplementation: narrative review, https://pmc.ncbi.nlm.nih.gov/articles/PMC11862975/ | Glutathione as a skin-lightening agent and in melasma: systematic review, https://pubmed.ncbi.nlm.nih.gov/39444151/ | Glutathione: pharmacological aspects and implications for clinical use in NAFLD, https://pmc.ncbi.nlm.nih.gov/articles/PMC10075255/ | Oxidative stress: role of mitochondria and protection by glutathione, https://pubmed.ncbi.nlm.nih.gov/9699001/ | Efficacy of glutathione for NAFLD treatment: open-label pilot study, https://pmc.ncbi.nlm.nih.gov/articles/PMC5549431/ | Protective effect of glutathione against oxidative stress-induced cytotoxicity via Nrf2/HO-1 pathway, https://pmc.ncbi.nlm.nih.gov/articles/PMC6523540/ | Glutathione in the treatment of liver diseases: clinical practice insights, https://pubmed.ncbi.nlm.nih.gov/27603810/ | Glutathione system enhancement for cardiac protection against oxidative stress, https://www.nature.com/articles/s41419-023-05645-y | Clinical effect of glutathione on skin color and related conditions: systematic review, https://pubmed.ncbi.nlm.nih.gov/30895708/ | Glutathione and its antiaging and antimelanogenic effects: RCT at 250 mg/day, https://pmc.ncbi.nlm.nih.gov/articles/PMC5413479/ | Oxidative stress and regulation of glutathione in lung inflammation, https://pubmed.ncbi.nlm.nih.gov/11028671/ | Subcutaneous drug injection review: pharmacologic considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/ | CDC — Vaccine administration: subcutaneous route, https://www.cdc.gov/vaccines/hcp/administration/during.html | CDC — Subcutaneous injection technique diagram and site guidance, https://www.cdc.gov/vaccines/hcp/admin/downloads/YCTS-VaxAdmin-Subcut-injection.pdf | NCBI Bookshelf — Best practices for injection, https://www.ncbi.nlm.nih.gov/books/NBK138495/",
     "doses": [
       {
@@ -1015,6 +1101,7 @@
   {
     "slug": "semax",
     "name": "Semax",
+    "aliases": [],
     "category": "cognitive",
     "overview": "Semax is a synthetic analogue of ACTH (adrenocorticotropic hormone) developed in Russia and studied extensively for cognitive enhancement, neuroprotection, and stress resilience. It is one of the most well-researched nootropic peptides, with clinical applications in stroke recovery and cognitive impairment research.",
     "mechanism": "Semax enhances BDNF (brain-derived neurotrophic factor) and NGF (nerve growth factor) levels in the brain, modulates dopamine and serotonin neurotransmitter systems, and supports neuroplasticity. It also improves cerebral blood circulation and has neuroprotective effects, supporting both acute cognitive performance and long-term brain health through multiple pathways.",
@@ -1022,6 +1109,11 @@
     "results_timeline": "First dose: mental clarity often noticed within hours. Week 1: consistent focus improvement. Weeks 2–3: memory and learning feel easier and more efficient. Weeks 3–5: stable cognitive performance baseline established. Many run 6–8 weeks on, then 2 weeks off, to avoid diminishing returns.",
     "timing": "Best in the morning or before mentally demanding work. Can be taken before training for a focus enhancement effect. Avoid late evening as it can be stimulating. Use 1–2× daily.",
     "administration": "Subcutaneous or intranasal",
+    "route": [
+      "subcutaneous",
+      "intranasal"
+    ],
+    "evidence": "clinical",
     "research_notes": "Comparative study of Semax administration routes (intranasal vs. subcutaneous) in animal models, https://doi.org/10.1007/s11055-012-9562-6 | Vidal Drug Reference (Russia) — Official prescribing information for Semax 0.1% intranasal drops, https://www.vidal.ru/drugs/semax__28676 | Clinical trial of Semax in ischemic stroke patients (6,000 mcg/day intranasal protocol with cycling), https://pubmed.ncbi.nlm.nih.gov/29798983 | Peptides.org — Semax dosage overview, cycling recommendations, and protocol duration guidance, https://www.peptides.org/semax-dosage-calculator/ | Early human study introducing Semax's nootropic properties and mechanism of action, https://pubmed.ncbi.nlm.nih.gov/9302435 | Human study of Semax in glaucomatous optic neuropathy: 30-day safety data, https://pubmed.ncbi.nlm.nih.gov/11569188 | Johns Hopkins Arthritis Center — Clinical guide to subcutaneous injection technique, https://www.hopkinsarthritis.org/patient-corner/how-to-give-a-subcutaneous-injection/ | CDC — Vaccine administration guidelines for subcutaneous injections, https://www.cdc.gov/vaccines/hcp/administration/during.html | Pharmaceutics (MDPI) — Overview of Russian peptide drugs including Semax: formulation stability and storage, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9030433 | Drug Testing and Analysis — Review of nootropic peptides including Semax, https://pubmed.ncbi.nlm.nih.gov/37357012",
     "doses": [
       {
@@ -1059,6 +1151,7 @@
   {
     "slug": "selank",
     "name": "Selank",
+    "aliases": [],
     "category": "cognitive",
     "overview": "Selank is a synthetic heptapeptide analogue of the endogenous immunomodulatory peptide Tuftsin, developed in Russia. It is studied for anxiolytic, nootropic, and mood-stabilizing effects without sedation, dependence potential, or cognitive impairment — making it distinct from pharmaceutical anxiolytics.",
     "mechanism": "Selank modulates GABA receptor expression, serotonin transport activity, and BDNF levels in the hippocampus. It also exerts immunomodulatory effects by influencing cytokine expression. Unlike benzodiazepines, Selank does not directly bind GABA-A receptors, which explains its anxiolytic effect without sedation, tolerance, or withdrawal.",
@@ -1066,6 +1159,11 @@
     "results_timeline": "First dose: some notice a subtle calming effect within hours. Week 1: improved stress tolerance and mood baseline. Weeks 2–3: consistent cognitive improvements and greater stress resilience. A common cycling pattern is 4 weeks on, 4 weeks off, to avoid tachyphylaxis.",
     "timing": "Best in the morning or before high-stress situations. Can be used 1–2× daily. Generally calming rather than stimulating — can be used later in the day if needed. Keep bac water dated once opened — discard after 28 days.",
     "administration": "Subcutaneous or intranasal",
+    "route": [
+      "subcutaneous",
+      "intranasal"
+    ],
+    "evidence": "early-human",
     "research_notes": "Clinical trial of Selank for generalized anxiety disorder (intranasal, human study), https://pubmed.ncbi.nlm.nih.gov/18454096/ | Selank for neurasthenia: 14-day clinical trial demonstrating anxiolytic and anti-asthenic effects, https://pubmed.ncbi.nlm.nih.gov/18577961/ | Intranasal Selank administration review: neurobehavioral effects and clinical applications, https://www.hindawi.com/journals/bn/2017/5091027/ | Primate studies: intranasal Selank eliminates anxiety behaviors with long-term effects, https://link.springer.com/article/10.1134/S0022093008030101 | Selank attenuates opioid withdrawal symptoms in animal models, https://doi.org/10.1007/s10517-022-05624-x | CDC — Vaccine administration best practices: subcutaneous injection technique, https://www.cdc.gov/vaccines/hcp/administration/during.html | Cleveland Clinic — Subcutaneous injection guide, https://health.clevelandclinic.org/subcutaneous-injection | NCBI Bookshelf — Clinical procedures: injection preparation and administration standards, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | CDC — Injection safety guidelines: single-use devices, sharps disposal, https://www.cdc.gov/injection-safety/hcp/clinical-safety/index.html | NIBSC — Peptide storage guidelines, https://nibsc.org/science_and_research/virology/cjd_resource_centre/available_samples/peptide_library/peptide_storage.aspx | Pharmacologic review: subcutaneous drug delivery and absorption considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/",
     "doses": [
       {
@@ -1103,6 +1201,7 @@
   {
     "slug": "melanotan-2",
     "name": "Melanotan II",
+    "aliases": [],
     "category": "sexual-health",
     "overview": "Melanotan II is a synthetic analogue of alpha-melanocyte-stimulating hormone (α-MSH) that activates melanocortin receptors to stimulate melanin production for enhanced tanning, while also producing libido-enhancing and mild appetite-suppressing effects through central melanocortin pathways.",
     "mechanism": "MT-2 binds to multiple melanocortin receptor subtypes: MC1R activation in skin cells drives melanin production for enhanced tanning with less UV exposure; MC4R activation in the hypothalamus produces the libido-enhancing and appetite-suppressing effects; MC5R contributes to sebaceous gland signaling. The tanning effect requires UV light exposure — MT-2 primes the skin to respond to UV more efficiently.",
@@ -1110,6 +1209,10 @@
     "results_timeline": "First doses: warmth and flushing (normal). Days 3–5: skin begins darkening with UV exposure. Week 1–2: noticeable tan develops. Maintenance: color is sustained with reduced dosing frequency.",
     "timing": "Evening injection is preferred as the flushing response is better tolerated at rest. UV light exposure is required to activate tanning — plan sun or tanning sessions during the loading phase. Loading: daily for 7–14 days. Maintenance: 1–2× weekly.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Dorr RT et al. (1996) — Phase I clinical study of melanotan-II, evaluation of dosing and safety in healthy volunteers, https://pubmed.ncbi.nlm.nih.gov/8637402/ | International Peptide Society — Melanotan II Monograph, https://peptidesociety.org/wp-content/uploads/2018/05/Melanotan-II-monograph-v2.docx.pdf | DermNet NZ — Melanotan II Information for Patients, https://dermnetnz.org/topics/melanotan-ii | Nelson ME et al. (2012) — Case report: Melanotan II injection resulting in systemic toxicity and rhabdomyolysis, https://pubmed.ncbi.nlm.nih.gov/23121206/ | RxList — Melanotan-II Uses, Side Effects and Dosing, https://www.rxlist.com/supplements/melanotan-ii.htm | Cell Sciences Inc. — Product Data Sheet: Melanotan-II storage and stability specifications, https://www.cellsciences.com/PDF/CRM126.pdf | MedlinePlus — Subcutaneous Injections, https://medlineplus.gov/ency/patientinstructions/000430.htm | NCBI Bookshelf — Administration of Parenteral Medications, https://www.ncbi.nlm.nih.gov/books/NBK596739/ | CDC — Vaccine Administration Guidelines, https://www.cdc.gov/vaccines/hcp/administration/during.html | NCBI Bookshelf — Best Practices for Injection Safety, https://www.ncbi.nlm.nih.gov/books/NBK138495/",
     "doses": [
       {
@@ -1147,6 +1250,10 @@
   {
     "slug": "pt-141",
     "name": "PT-141",
+    "aliases": [
+      "Bremelanotide",
+      "Vyleesi"
+    ],
     "category": "sexual-health",
     "overview": "PT-141 (bremelanotide) is a melanocortin receptor agonist — an active metabolite of Melanotan II — that the FDA approved in 2019 (as Vyleesi) for hypoactive sexual desire disorder in premenopausal women. Unlike PDE5 inhibitors, it doesn't act on blood flow directly; it works centrally in the brain.",
     "mechanism": "PT-141 activates MC4R in brain regions tied to reward and arousal — the nucleus accumbens and medial preoptic area — increasing dopamine release there. That's a central, psychological arousal pathway rather than a vascular one, which is why effects can show up as increased desire rather than just a physical response. Subcutaneous dosing has close to 100% bioavailability and is better tolerated than the intranasal version tested earlier in development.",
@@ -1154,6 +1261,10 @@
     "results_timeline": "Typically dosed 1–2× per week, 30–60 minutes before anticipated activity — not a daily-use peptide for most people. A 0.5 mg (10-unit) dose is a mild, good starting point; 1 mg (20 units) is the moderate, most common working dose; 1.5 mg (30 units) produces a stronger effect with a higher chance of nausea or flushing.",
     "timing": "Dose 30–60 minutes before desired effect, subcutaneously, no more than 1–2× per week. Avoid use with uncontrolled hypertension or cardiovascular issues given the transient blood-pressure increase. Reconstituted solution: refrigerate, protect from light, and use within about 30 days.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "ScienceDirect — Bremelanotide: pharmacology, toxicology, and therapeutic overview, https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/bremelanotide | Bremelanotide for treatment of female hypoactive sexual desire: mechanism, trials, and safety review, https://pmc.ncbi.nlm.nih.gov/articles/PMC8788464/ | Effect of bremelanotide on body weight of obese women: data from two phase 1 RCTs, https://www.researchgate.net/publication/358668423_Effect_of_bremelanotide_on_body_weight_of_obese_women_Data_from_two_phase_1_randomized_controlled_trials | Mayo Clinic — Bremelanotide (subcutaneous route): side effects, dosage, precautions, https://www.mayoclinic.org/drugs-supplements/bremelanotide-subcutaneous-route/description/drg-20466805 | MedlinePlus — Patient instructions for subcutaneous injections, https://medlineplus.gov/ency/patientinstructions/000430.htm | CDC — Vaccine administration: subcutaneous route, https://www.cdc.gov/vaccines/hcp/admin/downloads/YCTS-VaxAdmin-Subcut-injection.pdf | CDC — Vaccine administration best practices: during the injection, https://www.cdc.gov/vaccines/hcp/administration/during.html | CDC — Storage and handling of immunobiologics, https://www.cdc.gov/vaccines/hcp/imz-best-practices/storage-handling-immunobiologics.html | Bremelanotide: first approval (comprehensive drug profile), https://pmc.ncbi.nlm.nih.gov/articles/PMC6707882/ | NCBI Bookshelf — Best practices for injection, https://www.ncbi.nlm.nih.gov/books/NBK138495/ | Subcutaneous Drug Injection Review — pharmacologic considerations, https://pmc.ncbi.nlm.nih.gov/articles/PMC6822791/ | Diamond LE et al. (2006) — Double-blind, placebo-controlled evaluation of intranasal bremelanotide (PT-141) in men with erectile dysfunction, https://pubmed.ncbi.nlm.nih.gov/16681477/ | Diamond LE et al. (2006) — Effect on subjective sexual response in premenopausal women with sexual arousal disorder by bremelanotide (PT-141), https://pubmed.ncbi.nlm.nih.gov/16681476/ | Molinoff PB et al. (2003) — PT-141: a melanocortin agonist for the treatment of sexual dysfunction, https://pubmed.ncbi.nlm.nih.gov/14681158/ | Kingsberg SA et al. (2019) — Bremelanotide for treatment of hypoactive sexual desire disorder: two randomized phase 3 trials (RECONNECT), https://pubmed.ncbi.nlm.nih.gov/31135740/",
     "doses": [
       {
@@ -1195,6 +1306,9 @@
   {
     "slug": "5-amino-1mq",
     "name": "5-Amino-1MQ",
+    "aliases": [
+      "5-Amino-1-Methylquinolinium"
+    ],
     "category": "metabolic",
     "overview": "5-Amino-1MQ (5-amino-1-methylquinolinium) is a small-molecule, selective inhibitor of Nicotinamide N-methyltransferase (NNMT) studied for its potential to support fat metabolism, preserve lean muscle, and raise intracellular NAD+ levels.",
     "mechanism": "By inhibiting NNMT, an enzyme often overexpressed in adipose tissue during obesity, 5-Amino-1MQ spares nicotinamide for the NAD+ salvage pathway rather than letting it be methylated and cleared. The resulting rise in NAD+ activates SIRT1 pathways linked to mitochondrial biogenesis, fat oxidation, and metabolic flexibility.",
@@ -1202,6 +1316,10 @@
     "results_timeline": "Not specified in source beyond general week-by-week dosing titration; long-term human outcome timelines are not established.",
     "timing": "Once or twice daily subcutaneous injection; twice-daily (BID) dosing may better sustain NNMT inhibition given a plasma half-life of roughly 3.8–6.9 hours. Morning administration is preferred, with BID protocols split AM/PM.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Nature Medicine (2014) — Nicotinamide N-methyltransferase knockdown protects against diet-induced obesity, https://pubmed.ncbi.nlm.nih.gov/24717514/ | PMC (2024) — Nicotinamide N-methyltransferase inhibition mitigates obesity-related metabolic dysfunctions, https://pmc.ncbi.nlm.nih.gov/articles/PMC11622326/ | Frontiers in Pharmacology (2024) — NNMT: a novel therapeutic target for metabolic syndrome, https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1410479/full | PubMed (2021) — LC-MS/MS assay for 5-amino-1-methylquinolinium: pharmacokinetic and oral bioavailability study, https://pubmed.ncbi.nlm.nih.gov/34304009/",
     "doses": [
       {
@@ -1235,6 +1353,7 @@
   {
     "slug": "adamax",
     "name": "Adamax",
+    "aliases": [],
     "category": "fat-loss",
     "overview": "Adamax is an adamantane-modified analog of Semax, a heptapeptide derivative of ACTH(4-10) studied for nootropic and neuroprotective properties. The adamantane modification is intended to improve blood-brain barrier penetration and stability compared to standard Semax.",
     "mechanism": "Structurally derived from Semax, Adamax is believed to increase brain-derived neurotrophic factor (BDNF) expression and enhance TrkB receptor sensitivity in the hippocampus, promoting neuroplasticity and neuronal survival. It also modulates dopamine and serotonin signaling and activates cAMP/CREB intracellular pathways linked to memory and stress resilience. The adamantane group is thought to add lipophilicity and enzymatic stability versus Semax, extending its effects and reducing dosing frequency needs.",
@@ -1242,6 +1361,10 @@
     "results_timeline": "Weeks 1–2: adaptation period with subtle mood or clarity shifts. Weeks 3–6: more noticeable cognitive benefits (memory, focus). Weeks 6–12: sustained neuroplasticity effects with continued use.",
     "timing": "Once daily subcutaneous injection, preferably in the morning for consistency.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "unclassified",
     "research_notes": "PubMed — Semax: structure, mechanism, and therapeutic potential (ACTH analog overview), https://pubmed.ncbi.nlm.nih.gov/11146367/ | Journal of Neurochemistry (2006) — Semax binds specific brain sites and increases BDNF protein in rat basal forebrain, https://pubmed.ncbi.nlm.nih.gov/16635254/ | Medicinal Chemistry Letters (ACS) — Adamantane modifications enhance peptide stability and CNS penetration, https://pubs.acs.org/doi/10.1021/acsmedchemlett.8b00361 | PubMed — Clinical safety and tolerability of Semax in human studies (no major adverse effects), https://pubmed.ncbi.nlm.nih.gov/15001158/",
     "doses": [
       {
@@ -1296,6 +1419,7 @@
   {
     "slug": "adipotide",
     "name": "Adipotide",
+    "aliases": [],
     "category": "fat-loss",
     "overview": "Adipotide is a synthetic peptidomimetic that targets prohibitin on blood vessels within white adipose tissue, delivering a pro-apoptotic sequence that destroys those vessels. Preclinical studies in obese rodents and primates showed substantial weight loss, but clinical development was discontinued after a Phase 1 human trial due to safety concerns.",
     "mechanism": "Adipotide binds prohibitin-1 on the vascular endothelium of white adipose tissue. Once bound, it delivers a pro-apoptotic peptide sequence that triggers destruction of those blood vessels, cutting off blood supply to nearby fat cells so they undergo apoptosis and are metabolized away.",
@@ -1303,6 +1427,10 @@
     "results_timeline": "Weeks 1–2 correspond to the titration/tolerance-assessment phase. Primate studies observed roughly 11% weight loss by week 4. Rodent studies showed continued fat-loss trajectory through weeks 4–8.",
     "timing": "Once daily, any consistent time, with systematic rotation of injection sites.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Science Translational Medicine (PubMed) — A peptidomimetic targeting white fat causes weight loss and improved insulin resistance in obese monkeys, https://pubmed.ncbi.nlm.nih.gov/22072637/ | MD Anderson Cancer Center — Obese Monkeys Lose Weight on Drug that Attacks Blood Supply of Fat Cells, https://www.mdanderson.org/newsroom/obese-monkeys-lose-weight-on-drug-that-attacks-blood-supply-of-f.h00-158676579.html | Arrowhead Pharmaceuticals News — Dosing of First Patient with Anti-Obesity Treatment Adipotide in a Phase 1 Clinical Trial, https://arrowheadpharma.com/news-press/arrowhead-announces-dosing-of-first-patient-with-anti-obesity-treatment-adipotide-in-a-phase-1-clinical-trial/ | ScienceDaily — Obese monkeys lose weight on drug that attacks blood supply of fat cells, https://www.sciencedaily.com/releases/2011/11/111109143009.htm",
     "doses": [
       {
@@ -1357,6 +1485,9 @@
   {
     "slug": "aicar",
     "name": "AICAR",
+    "aliases": [
+      "5-Aminoimidazole-4-Carboxamide Ribonucleoside"
+    ],
     "category": "metabolic",
     "overview": "AICAR (5-aminoimidazole-4-carboxamide ribonucleoside) is a research compound that activates AMP-activated protein kinase (AMPK), earning it the nickname 'exercise pill' after studies showed sedentary animals given AICAR had dramatic endurance improvements. It is banned by WADA and not approved for human therapeutic use.",
     "mechanism": "AICAR is metabolized intracellularly to ZMP, an AMP analog that directly activates AMPK, the master regulator of cellular energy homeostasis. AMPK activation stimulates glucose uptake and fatty-acid oxidation in muscle and promotes mitochondrial biogenesis, mimicking the cellular effects of exercise or fasting.",
@@ -1364,6 +1495,10 @@
     "results_timeline": "Weeks 1–2 are typically a titration/tolerance phase. Weeks 3–4 are when subjective energy or endurance shifts are commonly reported. Weeks 5–8 and beyond are where metabolic marker changes would be expected based on animal studies.",
     "timing": "Once daily, subcutaneous, at any consistent time; rotate injection sites daily.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "U.S. Anti-Doping Agency (USADA) — What Athletes Should Know About AICAR and Other Prohibited AMPK Activated Protein Kinase Activators, https://www.usada.org/spirit-of-sport/aicar-and-other-prohibited-amp-activated-protein-kinase-activators/ | PubMed (2017) — Doping control study of AICAR; endurance enhancement in sedentary animals (Drug Testing and Analysis), https://pubmed.ncbi.nlm.nih.gov/28407446/ | PubMed (2013) — Acadesine (AICAR) Phase I/II study; maximum tolerated dose 210 mg/kg IV (Cancer Chemotherapy and Pharmacology), https://pubmed.ncbi.nlm.nih.gov/23228986/ | MDPI (2024) — AICAR prevents and reverses diabetic polyneuropathy by regulating mitophagy, https://www.mdpi.com/1422-0067/26/1/80",
     "doses": [
       {
@@ -1413,6 +1548,9 @@
   {
     "slug": "aod-9604",
     "name": "AOD-9604",
+    "aliases": [
+      "Tyr-hGH 177-191"
+    ],
     "category": "fat-loss",
     "overview": "AOD-9604 is a modified fragment of human growth hormone (Tyr-hGH 177–191) that retains GH's lipolytic (fat-reducing) properties without its growth-promoting effects. Clinical trials found it exhibits a placebo-like safety profile in obese adults.",
     "mechanism": "AOD-9604 binds adipose tissue and triggers breakdown of stored fat (lipolysis) while blocking fat cells from restocking (re-esterification). Chronic administration appears to upregulate beta-3 adrenergic receptors in fat tissue, reversing an obesity-associated suppression of these fat-burning receptors. Unlike full-length hGH, it does not meaningfully raise IGF-1 or worsen glucose tolerance.",
@@ -1420,6 +1558,10 @@
     "results_timeline": "Weeks 1–4 are the titration period at 300 mcg. Weeks 5–8 establish the 500 mcg dose with fat-oxidation effects building. Weeks 8–12 is where clinically observed weight-loss differences became most apparent in trials.",
     "timing": "Once daily, subcutaneous; morning administration on an empty stomach is common.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Journal of Endocrinology and Metabolism (2014) — Safety and metabolism of AOD9604 as a nutraceutical ingredient, https://jofem.org/index.php/jofem/article/view/213/278 | Journal of Endocrinology and Metabolism (2013) — Safety and tolerability of AOD9604 in humans; no IGF-1 increase; placebo-like safety profile, https://www.jofem.org/index.php/jofem/article/view/157/194 | Gastroenterology — Drug treatment of the overweight patient; AOD-9604 RCT summary and clinical efficacy, https://www.gastrojournal.org/article/S0016-5085(07)00574-4/fulltext | Endocrinology (OUP) — Chronic AOD9604 treatment in obese and beta3-AR knockout mice; receptor upregulation, https://academic.oup.com/endo/article/142/12/5182/2988749",
     "doses": [
       {
@@ -1456,6 +1598,9 @@
   {
     "slug": "ara-290",
     "name": "Ara-290",
+    "aliases": [
+      "Cibinetide"
+    ],
     "category": "recovery",
     "overview": "Ara-290 (cibinetide) is an 11-amino-acid non-erythropoietic peptide derived from erythropoietin's helix-B domain. It selectively activates the innate repair receptor to promote anti-inflammatory and tissue-protective effects without stimulating red blood cell production.",
     "mechanism": "Ara-290 binds the innate repair receptor (IRR), a heterodimer of EPOR and CD131 (beta common subunit) distinct from the classical erythropoietin receptor. This triggers anti-apoptotic and anti-inflammatory signaling that protects tissue and supports repair. It has also been shown to inhibit TRPV1 ion channels, contributing to an analgesic effect independent of the IRR pathway.",
@@ -1463,6 +1608,10 @@
     "results_timeline": "Week 1 is a titration period at 2 mg to assess tolerance. Weeks 2 onward use the 4 mg/day maintenance dose that clinical trials (28-day protocols) were built around. Nerve fiber density changes in the sarcoidosis trial were measured over similar multi-week windows.",
     "timing": "Once daily, subcutaneous, at any consistent time; rotate injection sites.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Molecular Medicine (2014) — Brines M. et al.: ARA 290 improves metabolic control and neuropathic symptoms in patients with type 2 diabetes, https://molmed.biomedcentral.com/articles/10.2119/molmed.2014.00215 | Molecular Medicine (2013) — Dahan A. et al.: ARA 290 improves symptoms in sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density, https://molmed.biomedcentral.com/articles/10.2119/molmed.2013.00122 | ClinicalTrials.gov (NCT02039687) — Phase 2 study of ARA 290 on corneal nerve fiber density in sarcoidosis (1 mg vs 4 mg vs 8 mg daily SC for 28 days), https://clinicaltrials.gov/study/NCT02039687 | Peptides Journal (2016) — Zhang W. et al.: ARA 290 relieves pathophysiological pain by targeting TRPV1 channel, https://pubmed.ncbi.nlm.nih.gov/26774587/",
     "doses": [
       {
@@ -1499,6 +1648,7 @@
   {
     "slug": "cagrilintide",
     "name": "Cagrilintide",
+    "aliases": [],
     "category": "fat-loss",
     "overview": "Cagrilintide is a long-acting acylated analogue of the pancreatic hormone amylin, designed for once-weekly subcutaneous administration. It activates central amylin receptors to promote satiety, slow gastric emptying, and reduce food intake.",
     "mechanism": "Native amylin promotes satiation, slows gastric emptying, and inhibits postprandial glucagon secretion. Cagrilintide acts on central amylin receptors, particularly in the area postrema and hindbrain, to reduce appetite and energy intake. Lipid (fatty acid) modification of the molecule extends its half-life to roughly 160–195 hours, enabling once-weekly dosing.",
@@ -1506,6 +1656,10 @@
     "results_timeline": "Weeks 1–4 are titration, mostly managing GI side effects. Weeks 5–8 approach or reach the 4.5 mg maintenance dose. Weeks 8–26 is where the weight-loss curve builds, with ~10.8% total loss the 26-week phase 2 benchmark at full dose.",
     "timing": "Once weekly, subcutaneous, on a consistent day each week.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "The Lancet (2021) — Once-weekly cagrilintide for weight management: phase 2 dose-finding trial (Lau et al.), https://pubmed.ncbi.nlm.nih.gov/34798060/ | N Engl J Med (2025) — REDEFINE 1: Coadministered cagrilintide and semaglutide in adults with overweight or obesity, https://www.nejm.org/doi/full/10.1056/NEJMoa2502081 | N Engl J Med (2025) — REDEFINE 2: Cagrilintide-semaglutide in adults with overweight/obesity and type 2 diabetes, https://pubmed.ncbi.nlm.nih.gov/40544432/ | J Med Chem (2021) — Development of cagrilintide: a long-acting amylin analogue, https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c00565",
     "doses": [
       {
@@ -1560,6 +1714,9 @@
   {
     "slug": "cartalax",
     "name": "Cartalax",
+    "aliases": [
+      "AED"
+    ],
     "category": "longevity",
     "overview": "Cartalax is a synthetic tripeptide bioregulator (Ala-Glu-Asp, sequence 'AED') developed by Prof. Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology. It corresponds to a motif in type XI collagen and is studied in preclinical models for effects on fibroblast and chondrocyte function. Published human dosing data is limited; this profile draws on preclinical and observational sources.",
     "mechanism": "As one of the Khavinson bioregulator peptides, Cartalax is proposed to interact with DNA and modulate gene expression at nanomolar concentrations. In fibroblast and chondrocyte culture studies it has been reported to upregulate Ki-67 (a proliferation marker), increase SIRT-1/SIRT-6 expression, reduce p53 and caspase-3 activity (pro-apoptotic signals), and inhibit MMP-9 synthesis, an enzyme linked to extracellular matrix breakdown.",
@@ -1567,6 +1724,10 @@
     "results_timeline": "Not specified in source with clinical confidence — the site notes evidence is limited to in vitro/rodent studies rather than human trial timelines.",
     "timing": "Once daily, any consistent time, with rotation of injection sites.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Neuroendocrinology Letters (2002) — Khavinson VK. Peptides and Ageing. Overview of bioregulatory peptide development and geroprotective mechanisms, https://pubmed.ncbi.nlm.nih.gov/12374906/ | Bulletin of Experimental Biology and Medicine (2016) — Lin'kova NS et al. Peptide Regulation of Skin Fibroblast Functions during Their Aging In Vitro, https://pubmed.ncbi.nlm.nih.gov/27259496/ | International Journal of Molecular Sciences (2023) — Linkova N, Khavinson V et al. Peptide Regulation of Chondrogenic Stem Cell Differentiation, https://pubmed.ncbi.nlm.nih.gov/37175656/ | Bulletin of Experimental Biology and Medicine (2014) — Khavinson VK et al. Peptides regulate the expression of signaling molecules in kidney cell cultures during in vitro aging, https://pubmed.ncbi.nlm.nih.gov/24958378/",
     "doses": [
       {
@@ -1621,6 +1782,7 @@
   {
     "slug": "cerebrolysin",
     "name": "Cerebrolysin",
+    "aliases": [],
     "category": "cognitive",
     "overview": "Cerebrolysin is a porcine brain-derived peptide preparation containing low-molecular-weight neuropeptides and free amino acids that crosses the blood-brain barrier to support neuronal survival. It mimics endogenous neurotrophic factors such as NGF and BDNF and modulates neuroinflammatory mediators.",
     "mechanism": "Composed of biologically active neuropeptides and amino acids under 10 kDa in molecular weight, Cerebrolysin crosses the blood-brain barrier and exerts neurotrophic effects similar to nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF). Preclinical studies show neuroprotective effects including reduced infarct size and improved recovery in ischemia models.",
@@ -1628,6 +1790,10 @@
     "results_timeline": "Week 1 begins at the 20 mg starting dose as a single daily injection. Weeks 2–4 involve titrating up to the 32 mg/day maintenance dose split AM/PM. From week 4 onward, at the maintenance dose, cognitive or neuroprotective effects described in trial literature would be expected to build.",
     "timing": "Once or twice daily; doses above 20 mg are split into AM and PM injections at different sites.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "International Peptide Society — Cerebrolysin Monograph: mechanism, pharmacology, and clinical applications (2018), https://peptidesociety.org/wp-content/uploads/2018/08/Cerebrolysin-Monograph-Complete-1.pdf | Alzheimer's Drug Discovery Foundation — Cerebrolysin cognitive vitality report: evidence synthesis and safety overview (2016), https://www.alzdiscovery.org/uploads/cognitive_vitality_media/addf-cerebrolysin-full-report.pdf | Zhang et al., Med Sci Monit (PMC) — Meta-analysis of Cerebrolysin efficacy and safety in acute ischemic stroke (2017), https://pmc.ncbi.nlm.nih.gov/articles/PMC5474547/ | Kurkin et al., PLOS One — Neuroprotective action of Cerebrolysin in acute/chronic brain ischemia in rats (2021), https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254493",
     "doses": [
       {
@@ -1682,6 +1848,7 @@
   {
     "slug": "chonluten",
     "name": "Chonluten",
+    "aliases": [],
     "category": "longevity",
     "overview": "Chonluten is a short bioregulatory tripeptide (Glu-Asp-Gly) from the Khavinson peptide bioregulator family, studied specifically for its effects on bronchopulmonary tissue and inflammatory signaling in monocyte/macrophage cell models.",
     "mechanism": "Research in THP-1 monocyte/macrophage cell models suggests Chonluten modulates proliferative activity and inflammatory pathways at nanomolar concentrations, consistent with its classification as a tissue-specific bioregulator peptide targeting lung and bronchial tissue.",
@@ -1689,6 +1856,10 @@
     "results_timeline": "As a slow-titration protocol run over 8-16 weeks, most users don't expect noticeable effects until well into the schedule, once doses reach the 2-4 mg/day range around weeks 9-16.",
     "timing": "Once daily, subcutaneous, any consistent time of day with sites rotated between abdomen, thighs, and upper arms.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Peptides Regulating Proliferative Activity and Inflammatory Pathways in the Monocyte/Macrophage THP-1 Cell Line, Int J Mol Sci (2022), https://doi.org/10.3390/ijms23073607 | Overcoming Oral Cavity Barriers for Peptide Delivery Using Advanced Pharmaceutical Techniques and Nano-Formulation Platforms, Biomedicines (2025), https://doi.org/10.3390/biomedicines13112735 | Therapeutic peptides: current applications and future directions, Signal Transduction and Targeted Therapy (2022), https://www.nature.com/articles/s41392-022-00904-4",
     "doses": [
       {
@@ -1770,6 +1941,7 @@
   {
     "slug": "cjc-1295-dac",
     "name": "CJC-1295 DAC",
+    "aliases": [],
     "category": "gh-secretagogue",
     "overview": "CJC-1295 DAC is a long-acting growth hormone-releasing hormone (GHRH) analog modified with a Drug Affinity Complex (DAC) that binds to serum albumin, extending its half-life to roughly 6-8 days. This allows once-weekly dosing rather than the daily injections needed for standard GHRH analogs.",
     "mechanism": "The DAC modification causes the peptide to bind covalently to albumin in the bloodstream after injection, dramatically slowing its clearance. It then acts on GHRH receptors on pituitary somatotrope cells to amplify natural, pulsatile GH synthesis and release, while preserving the normal frequency and amplitude of GH pulses rather than flooding the body with GH the way exogenous HGH does.",
@@ -1777,6 +1949,10 @@
     "results_timeline": "Sleep quality changes can appear within 1-2 weeks. Recovery and fat metabolism effects tend to show up around weeks 3-6, with more visible body composition changes by weeks 6-12. IGF-1 elevation can persist up to 28 days after repeated dosing.",
     "timing": "Once weekly, subcutaneous, ideally in the evening before bed on an empty stomach (2+ hours after eating) to align with natural nocturnal GH release and avoid blood-sugar-related blunting.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Teichman et al., Prolonged stimulation of growth hormone and insulin-like growth factor I secretion by CJC-1295, a long-acting growth hormone-releasing hormone analog, Journal of Clinical Endocrinology & Metabolism, https://academic.oup.com/jcem/article/91/3/799/2843268 | DAC technology: albumin-binding for extended peptide half-life, Clinical Pharmacology & Therapeutics, https://pubmed.ncbi.nlm.nih.gov/16988206/ | Activation of the GH/IGF-1 axis by CJC-1295 and serum protein profile changes, Growth Hormone & IGF Research, https://www.sciencedirect.com/science/article/abs/pii/S1096637409000409 | GHRH analogs and preservation of pulsatile GH secretion patterns, Endocrine Reviews, https://academic.oup.com/edrv/article/19/6/717/2530852",
     "doses": [
       {
@@ -1810,6 +1986,10 @@
   {
     "slug": "cjc-1295-no-dac",
     "name": "CJC-1295 NO DAC",
+    "aliases": [
+      "Modified GRF 1-29",
+      "Mod GRF"
+    ],
     "category": "gh-secretagogue",
     "overview": "CJC-1295 NO DAC, also known as Modified GRF 1-29 or Mod GRF, is a short-acting synthetic 29-amino-acid GHRH analog. Unlike the DAC version, it lacks the albumin-binding tail, giving it a short half-life of roughly 30 minutes and producing a sharper, more physiologic GH pulse.",
     "mechanism": "Four amino acid substitutions (D-Ala2, Gln8, Ala15, Leu27) protect the peptide from enzymatic degradation. It binds to GHRH receptors on pituitary somatotrophs to stimulate synthesis and pulsatile release of endogenous growth hormone, preserving the body's physiologic feedback loop rather than producing supraphysiologic GH levels the way exogenous GH would.",
@@ -1817,6 +1997,10 @@
     "results_timeline": "Early weeks (1-2) are mostly adjustment with possible early sleep changes. Recovery and energy improvements tend to show around weeks 3-6, with body composition and IGF-1-related changes becoming more noticeable from week 5 through week 12.",
     "timing": "Once daily, subcutaneous, typically at bedtime and in a fasted state (2+ hours since last meal) to align with and not blunt the natural nocturnal GH pulse.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Modified GRF (1-29): structure, amino acid substitutions, and pharmacokinetics, Wikipedia, https://en.wikipedia.org/wiki/CJC-1295 | Teichman et al., Prolonged stimulation of growth hormone and IGF-I by CJC-1295 in healthy adults, Journal of Clinical Endocrinology & Metabolism (2006), https://pubmed.ncbi.nlm.nih.gov/16352683/ | Alba et al., Once-daily CJC-1295 normalizes growth in GHRH knockout mice, American Journal of Physiology (2006), https://pubmed.ncbi.nlm.nih.gov/16822960/ | Veldhuis et al., Pulsatile GH secretion persists during continuous CJC-1295 stimulation, Journal of Clinical Endocrinology & Metabolism (2006), https://pubmed.ncbi.nlm.nih.gov/17018654/",
     "doses": [
       {
@@ -1875,6 +2059,7 @@
   {
     "slug": "cortagen",
     "name": "Cortagen",
+    "aliases": [],
     "category": "longevity",
     "overview": "Cortagen (Ala-Glu-Asp-Pro) is a synthetic tetrapeptide derived from amino acid analysis of the brain cortex preparation Cortexin, part of the Khavinson bioregulator peptide class. It is studied for neuroprotective and neuroregenerative properties, particularly peripheral nerve regeneration and cognitive function.",
     "mechanism": "Cortagen acts as a gene expression modulator and epigenetic regulator, influencing synthesis of proteins involved in neuronal growth, differentiation, and stress resistance. Preclinical studies show it can upregulate neurotrophic factors, reduce oxidative stress markers, and accelerate peripheral nerve regeneration.",
@@ -1882,6 +2067,10 @@
     "results_timeline": "Weeks 1-2 are a titration phase at the lower 1 mg dose with limited expected effect. Once the full 2 mg dose is reached in weeks 3-4, this is where most of the reported research effects would be expected to apply, continuing through an optional 8-week extension.",
     "timing": "Once daily, subcutaneous, morning administration preferred over evening.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Effect of tetrapeptide cortagen on regeneration of sciatic nerve, PubMed, https://pubmed.ncbi.nlm.nih.gov/11276314/ | Cortexin and cortagen as correcting agents in functional and metabolic disorders in the brain in chronic ischemia, PubMed, https://pubmed.ncbi.nlm.nih.gov/21476278/ | Elucidation of the effect of brain cortex tetrapeptide Cortagen on gene expression in mouse heart by microarray, PubMed (Neuroendocrinology Letters), https://pubmed.ncbi.nlm.nih.gov/15159690/ | Peptide bioregulation of aging: results and prospects, PubMed (Biogerontology), https://pubmed.ncbi.nlm.nih.gov/19830585/",
     "doses": [
       {
@@ -1918,6 +2107,9 @@
   {
     "slug": "dsip",
     "name": "DSIP",
+    "aliases": [
+      "Delta Sleep-Inducing Peptide"
+    ],
     "category": "sleep-repair",
     "overview": "DSIP (Delta Sleep-Inducing Peptide) is a naturally occurring nonapeptide first isolated from rabbit brain tissue, studied for its effects on slow-wave sleep architecture and stress modulation.",
     "mechanism": "DSIP is thought to influence sleep by modulating GABAergic transmission and interacting with opioid receptor systems, increasing delta-wave (slow-wave) sleep duration without significantly altering REM architecture. It has also shown stress-protective and adaptogenic properties in various models, potentially through modulation of the hypothalamic-pituitary-adrenal axis.",
@@ -1925,6 +2117,10 @@
     "results_timeline": "Week 1 is mostly adjustment to injections with possibly subtle early changes. Sleep depth and quality shifts tend to appear around weeks 2-3, with the most consistent sleep and stress-resilience benefits reported from week 4 through week 8.",
     "timing": "Once daily, subcutaneous, typically in the evening before bedtime.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Schoenenberger GA, Monnier M, Characterization of a delta-electroencephalogram (-sleep)-inducing peptide, Proc Natl Acad Sci USA (1977), https://pubmed.ncbi.nlm.nih.gov/16592440/ | Schneider-Helmert D, Schoenenberger GA, Effects of DSIP in man: multifunctional psychophysiological properties, Neuropsychobiology (1983), https://pubmed.ncbi.nlm.nih.gov/6633115/ | Sudakov KV et al., Delta-sleep-inducing peptide sequelae: stress protective effect, Ann N Y Acad Sci (2004), https://pubmed.ncbi.nlm.nih.gov/15677401/ | Graf MV, Kastin AJ, Delta-sleep-inducing peptide (DSIP): a review, Neurosci Biobehav Rev (1984), https://pubmed.ncbi.nlm.nih.gov/6392951/",
     "doses": [
       {
@@ -1991,6 +2187,9 @@
   {
     "slug": "epitalon",
     "name": "Epitalon",
+    "aliases": [
+      "Epithalon"
+    ],
     "category": "longevity",
     "overview": "Epitalon (also called Epithalon) is a synthetic tetrapeptide (Ala-Glu-Asp-Gly) developed from pineal gland research, studied for its geroprotective potential — particularly telomerase activation, melatonin regulation, and longevity outcomes in both animal and human studies.",
     "mechanism": "Epitalon's primary mechanism is telomerase activation, which promotes telomere elongation in cells, allowing continued division beyond the normal Hayflick limit in vitro. It also stimulates nocturnal melatonin release from the pineal gland, normalizing circadian hormone rhythms, along with reported antioxidant and immune-modulating effects.",
@@ -1998,6 +2197,10 @@
     "results_timeline": "Sleep and circadian rhythm shifts may begin within the first week as melatonin regulation kicks in. The core 20-day dosing window is what most research protocols are built around. Telomere and longevity-related effects are long-horizon outcomes not felt day to day.",
     "timing": "Once daily, subcutaneous, preferably in the evening or at bedtime to align with natural melatonin rhythms, for 20 consecutive days followed by a 4-6 month break.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "Overview of Epitalon: Highly Bioactive Pineal Tetrapeptide with Promising Properties, Int J Mol Sci (MDPI) (2025), https://www.mdpi.com/1422-0067/26/6/2691 | Epitalon increases telomere length in human cell lines through telomerase upregulation, PMC/Biogerontology, https://pmc.ncbi.nlm.nih.gov/articles/PMC12411320/ | Synthetic tetrapeptide Epitalon restores neuroendocrine regulation in senescent monkeys, Neuroendocrinology Letters (PubMed), https://pubmed.ncbi.nlm.nih.gov/11524632/ | Geroprotective effect of epithalamine in elderly with accelerated aging (12-year RCT), Bull Exp Biol Med (PubMed), https://pubmed.ncbi.nlm.nih.gov/17426848/",
     "doses": [
       {
@@ -2035,6 +2238,9 @@
   {
     "slug": "foxo4-dri",
     "name": "FOXO4-DRI",
+    "aliases": [
+      "Proxofim"
+    ],
     "category": "longevity",
     "overview": "FOXO4-DRI (also known as Proxofim) is a synthetic D-retro-inverso peptide designed to selectively induce apoptosis in senescent cells by disrupting the FOXO4-p53 protein interaction. It is one of the most-discussed senolytic peptides in longevity research, though it currently has no human clinical data behind it.",
     "mechanism": "In normal cells, FOXO4 binds p53 and sequesters it in the nucleus. FOXO4-DRI disrupts this interaction specifically in senescent cells, causing p53 to translocate to the mitochondria and trigger apoptotic cell death in aged, dysfunctional cells while sparing healthy ones. Its D-retro-inverso structure enhances resistance to enzymatic breakdown.",
@@ -2042,6 +2248,10 @@
     "results_timeline": "Not specified in source for humans — all reported tissue-level improvements come from mouse studies measured over weeks to months of dosing, not days, and there is no established human timeline.",
     "timing": "Once daily, subcutaneous, any consistent time, with doses gradually titrated upward over 8-16 weeks.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "FOXO4-DRI induces keloid senescent fibroblast apoptosis by promoting nuclear exclusion of upregulated p53-serine 15 phosphorylation, Nature Communications Biology, https://www.nature.com/articles/s42003-025-07738-0 | FOXO4-DRI alleviates age-related testosterone secretion insufficiency by targeting senescent Leydig cells in aged mice, Aging (Albany NY), https://www.aging-us.com/article/102682/text | FOXO4 peptide targets myofibroblast, ameliorates bleomycin-induced pulmonary fibrosis in mice, Journal of Cellular and Molecular Medicine, https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17333 | FOXO4-DRI safety note: no human clinical dosing data exist yet, Aging (Albany NY) — Methods & Protocols, https://www.aging-us.com/article/102682/text#materialsandmethods",
     "doses": [
       {
@@ -2087,6 +2297,9 @@
   {
     "slug": "ghrp-2",
     "name": "GHRP-2",
+    "aliases": [
+      "Growth Hormone-Releasing Peptide-2"
+    ],
     "category": "gh-secretagogue",
     "overview": "GHRP-2 (Growth Hormone-Releasing Peptide-2) is a synthetic hexapeptide that stimulates potent, dose-dependent growth hormone release by activating ghrelin receptors — a distinct mechanism from GHRH analogs like CJC-1295.",
     "mechanism": "GHRP-2 binds to and activates ghrelin (GH secretagogue) receptors, triggering pulsatile GH release from the pituitary in a dose-dependent manner. Clinical studies in GH-deficient children demonstrated meaningful GH increases even at low doses over months of treatment.",
@@ -2094,6 +2307,10 @@
     "results_timeline": "Weeks 1-2 at the starting dose are mostly about gauging tolerance. Weeks 3-4 involve stepping the dose up, where appetite and energy changes may appear. From week 5 through week 16 at the full dose, body composition changes are most likely to become noticeable with consistent use.",
     "timing": "Once daily, subcutaneous; evening administration may align with nocturnal GH rhythms. Frequent dosing (e.g., every 2 hours) causes rapid receptor desensitization, so once-daily is preferred over multiple daily injections.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Effects of GHRP-2 on GH release and growth performance in swine, Domest Anim Endocrinol, https://pubmed.ncbi.nlm.nih.gov/10793268/ | Effects of eight months treatment with graded doses of GHRP-2 in GH-deficient children, J Clin Endocrinol Metab, https://pubmed.ncbi.nlm.nih.gov/9661608/ | Five-day treatment with daily subcutaneous GHRP-2: response attenuation and IGF-I effects in healthy young men, Eur J Endocrinol, https://pubmed.ncbi.nlm.nih.gov/9820615/ | GH/IGF-1 response to acute and chronic GHRP-2, GHRH 1-44, and their combination in older adults, Endocrine, https://pubmed.ncbi.nlm.nih.gov/11322505/",
     "doses": [
       {
@@ -2143,6 +2360,9 @@
   {
     "slug": "ghrp-6",
     "name": "GHRP-6",
+    "aliases": [
+      "Growth Hormone-Releasing Peptide 6"
+    ],
     "category": "gh-secretagogue",
     "overview": "GHRP-6 (Growth Hormone-Releasing Peptide 6) is a synthetic hexapeptide and potent growth hormone secretagogue that binds the ghrelin receptor (GHS-R1a). Its short half-life means it's typically dosed multiple times per day rather than once, and it also carries a separate tissue-protective signaling pathway distinct from its GH effects.",
     "mechanism": "GHRP-6 mimics ghrelin by binding GHS-R1a in the pituitary and hypothalamus, triggering pulsatile GH release while reducing somatostatin's inhibitory brake — though the body's natural feedback loop still keeps GH within physiologic ranges. Separately, it interacts with CD36 receptors on immune and muscle cells, activating PI3K/Akt cell-survival signaling that underlies reported cardioprotective, neuroprotective, and anti-fibrotic effects in preclinical models.",
@@ -2150,6 +2370,10 @@
     "results_timeline": "Weeks 1-2 involve adjusting to the three-times-daily schedule, with appetite increase most noticeable here. Recovery and sleep architecture improvements tend to show around weeks 3-6, with muscle/fat composition changes and accumulated tissue-protective effects appearing from week 6 through week 12 of consistent dosing.",
     "timing": "Three times daily, subcutaneous, spaced at least 4 hours apart, on an empty stomach (2-3 hours after eating, waiting 30 minutes before the next meal) to maximize GH response.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Growth hormone-releasing peptides: comprehensive review of GHRP mechanisms and effects, European Journal of Endocrinology (1997), https://pubmed.ncbi.nlm.nih.gov/9186261/ | Synthetic GHRPs: historical appraisal of cytoprotective effects and mechanisms, Clinical Medicine Insights: Cardiology (2017), https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5392015/ | Pharmacokinetic study of GHRP-6 in healthy male volunteers, European Journal of Pharmaceutical Sciences (2013), https://pubmed.ncbi.nlm.nih.gov/23099431/ | GHRP-6 prevents cutaneous hypertrophic scarring: proteome study, International Wound Journal (2018), https://doi.org/10.1111/iwj.12895",
     "doses": [
       {
@@ -2195,6 +2419,10 @@
   {
     "slug": "gonadorelin",
     "name": "Gonadorelin",
+    "aliases": [
+      "Gonadotropin-Releasing Hormone",
+      "GnRH"
+    ],
     "category": "hormonal",
     "overview": "Gonadorelin is a synthetic version of gonadotropin-releasing hormone (GnRH), the decapeptide the hypothalamus naturally secretes in pulses. It's used in research protocols to reactivate the hypothalamic-pituitary-gonadal (HPG) axis by prompting the pituitary to release LH and FSH.",
     "mechanism": "Gonadorelin binds GnRH receptors on pituitary gonadotrophs, triggering pulsatile release of LH and FSH. LH drives Leydig cell testosterone production in men and ovulation in women, while FSH supports spermatogenesis and follicle development. Because it mimics the body's own short, pulsatile GnRH signal (rather than a continuous agonist), brief periodic dosing preserves normal signaling instead of desensitizing receptors.",
@@ -2202,6 +2430,10 @@
     "results_timeline": "Not specified in source in week-by-week detail; effects on LH/FSH stimulation are described as occurring with each pulsatile dose, with functional outcomes (testosterone, spermatogenesis) building over the 4-8 week protocol.",
     "timing": "Subcutaneous injections 2-3 times weekly on non-consecutive days (e.g., Mon/Wed/Fri) to mimic pulsatile GnRH release; morning injections preferred. An advanced/post-cycle approach uses daily dosing but strictly limited to 14 consecutive days to avoid receptor desensitization.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "GnRH agonists: gonadorelin, leuprolide, and nafarelin - overview of pharmacology and clinical applications, PubMed, https://pubmed.ncbi.nlm.nih.gov/1835275/ | Gonadorelin injection routes and indications for LH/FSH stimulation testing, Mayo Clinic, https://www.mayoclinic.org/drugs-supplements/gonadorelin-intravenous-route-injection-route/description/drg-20067426 | Gonadotropin-releasing hormone analogs: pulsatile vs. continuous effects on FSH/LH, PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC4229791/ | Pulsatile gonadorelin pump induces earlier spermatogenesis in congenital HH men, PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC6775549/",
     "doses": [
       {
@@ -2251,6 +2483,11 @@
   {
     "slug": "hcg",
     "name": "HCG",
+    "aliases": [
+      "Human Chorionic Gonadotropin",
+      "Pregnyl",
+      "Novarel"
+    ],
     "category": "hormonal",
     "overview": "Human Chorionic Gonadotropin (HCG) is a glycoprotein hormone that mimics luteinizing hormone (LH), used in research and clinical protocols to maintain testicular function and fertility, especially alongside testosterone replacement therapy or after suppression from anabolic steroid use.",
     "mechanism": "HCG binds the same LH receptors as endogenous LH on testicular Leydig cells, stimulating testosterone production. Unlike LH, which has roughly a 30-minute half-life, HCG's half-life is about 36 hours, giving it sustained gonadal stimulation from infrequent dosing. Low doses maintain intratesticular testosterone during suppression from exogenous testosterone; higher doses are used to restart spermatogenesis and endogenous production after prolonged suppression.",
@@ -2258,6 +2495,10 @@
     "results_timeline": "Not specified in source with a discrete week-by-week timeline; standard maintenance protocols run 8-16 weeks, while high-dose recovery protocols for restarting spermatogenesis are typically continued 3-6 months.",
     "timing": "Subcutaneous injections 3 times weekly (e.g., Mon/Wed/Fri) is sufficient given HCG's long half-life; daily dosing is unnecessary. Consistent injection days/times are recommended, with site rotation across abdomen and thighs.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "Human Chorionic Gonadotropin: structure, function, and LH receptor binding mechanisms, National Center for Biotechnology Information (NCBI), https://www.ncbi.nlm.nih.gov/books/NBK532950/ | Pharmacokinetics and pharmacodynamics of HCG: extended half-life and sustained activity, Seminars in Reproductive Medicine, https://pubmed.ncbi.nlm.nih.gov/11265525/ | Coviello AD et al., Low-dose hCG maintains intratesticular testosterone in men with testosterone-induced gonadotropin suppression, The Journal of Clinical Endocrinology & Metabolism (2005), https://pubmed.ncbi.nlm.nih.gov/15713727/ | Chorionic Gonadotropin (Pregnyl/Novarel): reconstituted solution stable for 60 days when refrigerated; do not freeze, FDA Prescribing Information, https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f93b2baa-03ac-4650-b35a-20b818d712d6",
     "doses": [
       {
@@ -2311,6 +2552,10 @@
   {
     "slug": "hgh-191aa",
     "name": "HGH 191AA",
+    "aliases": [
+      "Somatropin",
+      "Human Growth Hormone"
+    ],
     "category": "gh-secretagogue",
     "overview": "HGH 191AA is recombinant human growth hormone (somatropin), structurally identical to the growth hormone naturally secreted by the pituitary gland. It's studied for effects on body composition, fat metabolism, and tissue repair, typically dosed once daily by subcutaneous injection to mimic the body's natural GH secretion pattern.",
     "mechanism": "As a bioidentical copy of endogenous GH, it acts on GH receptors throughout the body to enhance lipolysis, stimulate protein synthesis, and drive IGF-1 production in the liver. Once-daily subcutaneous dosing, especially at bedtime, is meant to approximate the body's natural nighttime GH secretion pattern rather than deliver a single large pulse.",
@@ -2318,6 +2563,10 @@
     "results_timeline": "Not specified in source as a discrete short-term timeline; body composition changes were measured over six months in the foundational Rudman study, and long-term GH-deficient adult follow-up studies showed sustained improvements over roughly 10 years of maintenance dosing.",
     "timing": "Once daily subcutaneous injection, preferably at bedtime to mirror the body's physiological GH secretion pattern. Injection sites should be rotated systematically to prevent lipoatrophy.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "Rudman et al., Six months of HGH administration in older men significantly increased lean body mass and decreased adipose mass compared to placebo, N. Engl. J. Med. (1990), https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1549453/full | Gotherstrom et al., 10-year adult GH deficiency follow-up showed sustained increases in muscle strength and improved body composition with maintenance dosing, J. Clin. Endocrinol. Metab. (2010), https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1549453/full | Liu et al., Systematic review of GH in healthy athletes found GH increased lean body mass but did not significantly improve muscle strength or exercise performance, Ann. Intern. Med. (2008) | Hadzovic et al., Moderate doses of GH (70-400 mcg) in healthy adults produce dose-dependent increases in lipolysis and fat oxidation, Bosn. J. Basic Med. Sci. (2004), https://www.bjbms.org/ojs/index.php/bjbms/article/download/3365/971/12109",
     "doses": [
       {
@@ -2400,6 +2649,11 @@
   {
     "slug": "hmg",
     "name": "HMG",
+    "aliases": [
+      "Human Menopausal Gonadotropin",
+      "Menotropins",
+      "Menopur"
+    ],
     "category": "hormonal",
     "overview": "Human Menopausal Gonadotropin (HMG) is a purified gonadotropin preparation providing a 1:1 mix of FSH and LH activity. In male fertility protocols it is used alongside HCG to add the FSH stimulation needed for spermatogenesis, particularly in hypogonadotropic hypogonadism or infertility where HCG alone is insufficient.",
     "mechanism": "HMG supplies both FSH and LH activity derived from purified human menopausal urine. FSH is essential for spermatogenesis; when HCG (which mainly drives LH-like testosterone production) fails to induce adequate sperm production on its own, adding HMG's FSH activity supports testicular function and fertility.",
@@ -2407,6 +2661,10 @@
     "results_timeline": "Clinical response typically requires a minimum of 12 weeks, with full spermatogenesis taking 3-6 months to develop.",
     "timing": "Subcutaneous injection three times weekly (e.g., Monday/Wednesday/Friday), almost always combined with concurrent HCG dosing (2-3 times weekly) for a minimum 12-week course, extendable to 16 weeks.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "hMG composition: 1:1 blend of FSH and LH derived from postmenopausal urine, Metrovan Urology, https://www.metrovanurology.com/hormones-and-male-infertility | Human menopausal gonadotropin for subcutaneous administration; each vial contains 75 IU FSH + 75 IU LH activity, Menopur (Menotropins) Product Monograph, https://pdf.hres.ca/dpd_pm/00061244.PDF | Randomized trial: HMG 75 IU subcutaneously three times weekly for 3 months significantly improved sperm motility and morphology; pregnancy rate 57% vs. control, International Journal of Reproductive BioMedicine (2014) | Review of hCG and hMG combination therapy for hypogonadotropic hypogonadism; FSH supplementation critical for spermatogenesis when hCG monotherapy inadequate, Reproductive Medicine and Biology (2018), https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6105660/",
     "doses": [
       {
@@ -2436,6 +2694,9 @@
   {
     "slug": "igf-1-lr3",
     "name": "IGF-1 LR3",
+    "aliases": [
+      "Long R3 Insulin-like Growth Factor-1"
+    ],
     "category": "gh-secretagogue",
     "overview": "IGF-1 LR3 (Long R3 Insulin-like Growth Factor-1) is a modified analog of human IGF-1 engineered for a significantly extended half-life. It's studied in research settings for anabolic and metabolic effects, with once-daily dosing made possible by its reduced binding to IGF binding proteins.",
     "mechanism": "IGF-1 LR3 carries an N-terminal 13-amino-acid extension and a glutamic acid substitution at position 3, which sharply reduces its binding affinity to IGF binding proteins. This extends its half-life from the minutes seen with native IGF-1 to several hours, allowing more stable plasma levels and once-daily administration. It exerts anabolic and metabolic effects via IGF-1 receptor binding but has insulin-like activity that requires active blood glucose management.",
@@ -2443,6 +2704,10 @@
     "results_timeline": "Not specified in source as a discrete results timeline; dosing follows an 8-week titration/maintenance cycle, with cycling protocols (e.g., 8 weeks on, 4-8 weeks off) used to manage diminishing response over time.",
     "timing": "Once daily subcutaneous injection, typically administered in the morning or post-workout, with or shortly after food to mitigate insulin-like effects on blood glucose.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "unclassified",
     "research_notes": "Insulin-Like Growth Factor-1 (IGF-1) and Its Monitoring in Medical Diagnostic and in Sports, Biomolecules (MDPI), https://www.mdpi.com/2218-273X/11/2/217 | Insulin-like growth factor 1 (IGF-1) and long chain IGF (LR3IGF-1): Medical information and safety overview, Dopinglinkki (FINCIS Anti-Doping Authority), https://dopinglinkki.fi/en/info-bank/doping-substances/insulin-like-growth-factor-1-igf-1-and-long-chain-igf-ir3igf-1/ | Mecasermin (Subcutaneous route): Proper Use and Handling - guidance on IGF-1 administration timing with meals, Mayo Clinic / IBM Micromedex, https://www.mayoclinic.org/drugs-supplements/mecasermin-subcutaneous-route/proper-use/drg-20068117 | Detection of LongR3-IGF-I, Des(1-3)-IGF-I, and R3-IGF-I using immunopurification and high resolution mass spectrometry for antidoping purposes, Drug Testing and Analysis (PubMed), https://pubmed.ncbi.nlm.nih.gov/33587816/",
     "doses": [
       {
@@ -2488,6 +2753,9 @@
   {
     "slug": "kisspeptin",
     "name": "Kisspeptin",
+    "aliases": [
+      "Metastin"
+    ],
     "category": "hormonal",
     "overview": "Kisspeptin (also known as metastin) is a naturally occurring neuroendocrine peptide central to human reproduction, acting as the upstream trigger that stimulates GnRH secretion. It is studied in research protocols as a once-daily subcutaneous approach to support the hypothalamic-pituitary-gonadal (HPG) axis.",
     "mechanism": "Kisspeptin binds GPR54 (kisspeptin) receptors on GnRH neurons in the hypothalamus, causing an immediate release of GnRH, which in turn stimulates the pituitary to secrete LH and FSH, driving sex steroid production and gametogenesis. Its action is strictly GnRH-dependent -- if GnRH release is blocked, kisspeptin cannot induce LH/FSH secretion -- meaning it works by unlocking the body's own GnRH stores rather than replacing GnRH directly.",
@@ -2495,6 +2763,10 @@
     "results_timeline": "Not specified in source as a discrete timeline; protocols run 8-12 weeks with an initial 1-2 week lower-dose period to assess sensitivity before titrating up.",
     "timing": "Once-daily subcutaneous injection at any consistent time, with systematic site rotation. Cycle length is kept to 8-12 weeks, avoiding prolonged continuous use to reduce the risk of tachyphylaxis.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Emerging Therapeutic Potential of Kisspeptin and Neurokinin B, Endocrine Reviews (Oxford Academic), https://academic.oup.com/edrv/article/45/1/30/7226658 | Kisspeptin-54 triggers egg maturation in IVF with reduced OHSS risk, Journal of Clinical Investigation, https://www.jci.org/articles/view/75730 | Kisspeptin-10 Clinical Reference Sheet -- starting dose recommendations and titration guidance, https://genoracle.com/wp-content/uploads/sites/26/2024/03/Kisspeptin-10-Doctor-Sheet.pdf",
     "doses": [
       {
@@ -2531,6 +2803,9 @@
   {
     "slug": "kpv",
     "name": "KPV",
+    "aliases": [
+      "Lysine-Proline-Valine"
+    ],
     "category": "immune",
     "overview": "KPV (Lysine-Proline-Valine) is the C-terminal tripeptide fragment of alpha-melanocyte-stimulating hormone (alpha-MSH), studied for potent anti-inflammatory activity without the melanotropic (skin-pigmentation) effects of the parent hormone.",
     "mechanism": "KPV retains the anti-inflammatory portion of the alpha-MSH molecule while dropping its melanotropic activity. Preclinical work shows it reduces pro-inflammatory cytokines (TNF-alpha, IL-6, IL-1beta) and modulates immune cell activity, largely through inhibition of NF-kappaB signaling and modulation of inflammatory mediator release.",
@@ -2538,6 +2813,10 @@
     "results_timeline": "Not specified in source with a discrete week-by-week outcomes timeline; standard protocols run 8-12 weeks with a ~4 week dose titration built in.",
     "timing": "Once-daily subcutaneous injection at any consistent time, with systematic site rotation.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Pawar K. et al., KPV as an alpha-MSH fragment retains potent anti-inflammatory activity without melanotropic side effects, Journal of Pharmaceutical Drug Delivery Research (2022), https://www.scitechnol.com/peer-review/recent-advances-in-kpv-peptidedelivery-8OYD.php?article_id=18216 | Brzoska T. et al., alpha-MSH and related tripeptides: modulation of colitis, inflammation, and melanocortin receptors, FASEB Journal (2003) | Dalmasso G. et al., PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation in DSS colitis models, Gastroenterology (2008), https://pubmed.ncbi.nlm.nih.gov/18061177/",
     "doses": [
       {
@@ -2592,6 +2871,7 @@
   {
     "slug": "l-carnitine",
     "name": "L-Carnitine",
+    "aliases": [],
     "category": "metabolic",
     "overview": "L-Carnitine is an amino acid derivative essential for shuttling fatty acids into mitochondria for energy production. Subcutaneous dosing is used in research protocols to achieve near-complete bioavailability and avoid the gut-bacteria-driven TMAO production associated with oral high-dose carnitine.",
     "mechanism": "L-Carnitine acts as an obligate cofactor for the carnitine palmitoyltransferase (CPT) enzyme system, which transports long-chain fatty acids across the inner mitochondrial membrane for beta-oxidation -- a core step in converting fat stores to usable energy. Oral L-Carnitine has poor bioavailability (5-18% at high doses) and unabsorbed carnitine is converted by gut bacteria into trimethylamine, which becomes TMAO in the liver, a metabolite linked to cardiovascular risk. Subcutaneous or IV administration bypasses this pathway entirely, providing close to 100% bioavailability without TMAO production.",
@@ -2599,6 +2879,10 @@
     "results_timeline": "Not specified in source as a discrete short-term timeline; benefits in the cited dialysis-patient trial were measured over a 24-week course of treatment.",
     "timing": "Once-daily subcutaneous injection, any consistent time (morning or pre-exercise commonly used). Doses above about 1.0 mL may be split into two injections at different sites for comfort. Letting the solution reach room temperature before injecting reduces discomfort.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "Sawicka AK et al., The bright and the dark sides of L-carnitine supplementation: a systematic review, Journal of the International Society of Sports Nutrition (2020), https://jissn.biomedcentral.com/articles/10.1186/s12970-020-00377-2 | Talenezhad N et al., Meta-analysis of 37 RCTs: L-carnitine supplementation yields ~1.2 kg weight loss at ~2,000 mg/day oral dosing, Clinical Nutrition ESPEN (2020), https://pubmed.ncbi.nlm.nih.gov/32359762/ | Evans AM & Fornasini G., Pharmacokinetics of L-carnitine: oral bioavailability only 5-18% at high doses vs. much higher absorption from IV/parenteral routes, Clinical Pharmacokinetics (2003), https://pubmed.ncbi.nlm.nih.gov/12908852/ | Zhao Y et al., Subcutaneous L-carnitine bypasses gut bacterial TMAO production and does not promote atherosclerosis in ApoE-/- mice, unlike oral dosing, Molecular Nutrition & Food Research (2018), https://pubmed.ncbi.nlm.nih.gov/29178259/",
     "doses": [
       {
@@ -2635,6 +2919,7 @@
   {
     "slug": "livagen",
     "name": "Livagen",
+    "aliases": [],
     "category": "longevity",
     "overview": "Livagen (Lys-Glu-Asp-Ala) is a synthetic tetrapeptide bioregulator studied in preclinical research for effects on peptidase inhibition and epigenetic modulation in aging tissue. No standardized human dosing protocol exists; research-context dosing is extrapolated from similar peptide bioregulators.",
     "mechanism": "Livagen strongly inhibits enkephalin-degrading enzymes in human serum, which may prolong endogenous enkephalin activity, notably without directly binding opioid receptors. In aging cells it has been shown to induce heterochromatin decondensation and reactivate ribosomal genes, and in rat liver organ cultures it enhanced cellular structure and regenerative processes.",
@@ -2642,6 +2927,10 @@
     "results_timeline": "Not specified in source; no human trial data exists to establish a results timeline.",
     "timing": "Once-daily subcutaneous injection at any consistent time, with systematic site rotation.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Effects of Livagen and Epitalon on Enkephalin-Degrading Enzymes from Human Serum, Biology Bulletin (Springer), https://link.springer.com/article/10.1023/A:1024809822681 | Effect of peptide Livagen on activity of digestive enzymes in gastrointestinal tract and non-digestive organs in rats of different ages, PubMed, https://pubmed.ncbi.nlm.nih.gov/16075683/ | Functional morphology of an organotypic liver culture exposed to the peptide Livagen, PubMed, https://pubmed.ncbi.nlm.nih.gov/12577697/ | Peptides and Ageing: heterochromatin decondensation and gene reactivation, ResearchGate / Neuroendocrinology Letters, https://www.researchgate.net/publication/11084943_Peptides_and_Ageing",
     "doses": [
       {
@@ -2696,6 +2985,9 @@
   {
     "slug": "ll-37",
     "name": "LL-37",
+    "aliases": [
+      "CAP-18"
+    ],
     "category": "immune",
     "overview": "LL-37 (also called CAP-18) is a 37-amino-acid cationic peptide and the only cathelicidin produced naturally in humans, cleaved from the hCAP18 precursor. It is studied for broad-spectrum antimicrobial activity and immune-modulating effects, with particular research interest in wound healing and infection control.",
     "mechanism": "LL-37 is amphipathic and carries a strong net positive charge, allowing it to bind and disrupt negatively charged microbial cell membranes directly. Separately, it can bind bacterial LPS (endotoxin) and block its interaction with CD14/TLR4, dampening the inflammatory cytokine cascade that follows infection. In animal sepsis models it also triggered neutrophils to release antimicrobial-protein-rich microvesicles, which lowered bacterial burden and improved survival.",
@@ -2703,6 +2995,10 @@
     "results_timeline": "Effects are dose- and goal-dependent; wound-healing changes in trials were assessed over multi-week treatment courses. For general immune/tissue-repair use, most protocols run 8-12 weeks before evaluating results, with the option to extend to 16 weeks.",
     "timing": "Once-daily subcutaneous injection, any consistent time of day; some protocols use a 5-days-on/2-days-off schedule instead of daily dosing.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Kanji S et al., Journal of Immunology (PMC3836506) — Little peptide, big effects: the role of LL-37 in inflammation and autoimmune disease, https://pmc.ncbi.nlm.nih.gov/articles/PMC3836506/ | Innate Immunity (PMC7556193) — Antimicrobial peptide LL-37 ameliorates a murine sepsis model via microvesicle release from neutrophils, https://pmc.ncbi.nlm.nih.gov/articles/PMC7556193/ | Wound Repair and Regeneration (PMC9298190) — Evaluation of LL-37 in healing of hard-to-heal venous leg ulcers: a multicentric prospective RCT, https://pmc.ncbi.nlm.nih.gov/articles/PMC9298190/ | Archives of Dermatological Research (PMC10514151) — Efficacy of LL-37 cream in enhancing healing of diabetic foot ulcer: a randomized double-blind controlled trial, https://pmc.ncbi.nlm.nih.gov/articles/PMC10514151/",
     "doses": [
       {
@@ -2789,6 +3085,9 @@
   {
     "slug": "mazdutide",
     "name": "Mazdutide",
+    "aliases": [
+      "IBI362"
+    ],
     "category": "fat-loss",
     "overview": "Mazdutide (IBI362) is a long-acting dual GLP-1/glucagon receptor agonist developed for chronic weight management and type 2 diabetes. It has shown 6-14% body weight reduction over 24-48 weeks in clinical trials, with mostly mild gastrointestinal side effects, and received initial regulatory approval for obesity in China.",
     "mechanism": "Mazdutide activates both GLP-1 and glucagon receptors simultaneously, combining GLP-1's appetite suppression and glucose-lowering action with the added energy-expenditure boost from glucagon receptor activity. This dual-agonist approach differentiates it from single-target GLP-1 drugs and appears to drive its strong weight-loss efficacy in trials.",
@@ -2796,6 +3095,10 @@
     "results_timeline": "Phase 2 data showed 6.7-11.3% weight loss over 24 weeks at 3-6 mg weekly. A 48-week phase 3 trial reported 11-14% sustained weight loss at 4-6 mg weekly maintenance dosing.",
     "timing": "Once-weekly subcutaneous injection, same day each week. Volumes over 3 mL should be split across two injection sites.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "EClinicalMedicine (PubMed 36247927) — Phase 1b trial: Safety and efficacy of mazdutide 9-10 mg in Chinese adults with overweight/obesity, https://pubmed.ncbi.nlm.nih.gov/36247927/ | Nature Communications — Phase 2 randomized controlled trial of mazdutide in Chinese overweight/obese adults, https://www.nature.com/articles/s41467-023-44067-4 | New England Journal of Medicine (PubMed 40421736) — Phase 3 trial: Once-weekly mazdutide in Chinese adults with obesity or overweight (48-week results), https://pubmed.ncbi.nlm.nih.gov/40421736/ | Diabetes Care (PubMed 37482087) — Phase 2 trial: Efficacy and safety of mazdutide in Chinese patients with type 2 diabetes (20-week results), https://pubmed.ncbi.nlm.nih.gov/37482087/",
     "doses": [
       {
@@ -2848,6 +3151,10 @@
   {
     "slug": "mgf",
     "name": "MGF",
+    "aliases": [
+      "Mechano Growth Factor",
+      "IGF-1Ec"
+    ],
     "category": "recovery",
     "overview": "Mechano Growth Factor (MGF) is a splice variant of IGF-1 (IGF-1Ec) produced locally in muscle tissue in response to mechanical stress or injury. It is studied in preclinical models for its role in muscle repair, satellite cell activation, and bone regeneration, though no completed human clinical trials exist.",
     "mechanism": "MGF arises from alternative splicing of the IGF-1 gene after mechanical loading or tissue damage, producing a peptide with a unique C-terminal E domain not found in systemic IGF-1. This E domain activates satellite cells (muscle stem cells), promotes osteoblast proliferation, and has been linked to neurogenesis in preclinical models, suggesting MGF functions as a localized, transient tissue-repair signal rather than a systemic growth factor.",
@@ -2855,6 +3162,10 @@
     "results_timeline": "No human trial data exists to anchor a timeline. Preclinical protocols generally run 8-12 weeks with gradual titration, extendable to 16 weeks; any training-related recovery changes would track with resistance-training cycles.",
     "timing": "Once-daily subcutaneous injection, any consistent time; pairing administration with resistance training is commonly discussed since mechanical loading is what naturally triggers MGF expression.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "PLOS ONE (2013) — Insulin-like growth factor I (IGF-1) Ec/Mechano Growth Factor: splice variant characterization within the growth plate, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0076133 | International Orthopaedics (2011) — Mechano growth factor E peptide promotes osteoblast proliferation and bone-defect healing in rabbits, https://link.springer.com/article/10.1007/s00264-010-1141-2 | Molecular Brain (2017) — Mechano growth factor promotes neurogenesis in the aging mouse brain, https://link.springer.com/article/10.1186/s13041-017-0304-0 | Experimental Cell Research (2008) — MGF E-peptide activates human muscle satellite cells, https://pubmed.ncbi.nlm.nih.gov/17950277/",
     "doses": [
       {
@@ -2918,6 +3229,9 @@
   {
     "slug": "ovagen",
     "name": "Ovagen",
+    "aliases": [
+      "EDL"
+    ],
     "category": "longevity",
     "overview": "Ovagen is a synthetic ultrashort tripeptide (Glu-Asp-Leu, or EDL) studied as a bioregulator of gastrointestinal and liver tissue. In vitro research shows it increases cell proliferation and shifts aging-related gene markers in kidney cell cultures, though no controlled human trials exist.",
     "mechanism": "As an ultrashort peptide, EDL is thought to enter cells and interact directly with DNA, modulating gene expression and protein synthesis rather than acting through a conventional surface receptor. In vitro work shows it alters aging-related gene markers (p16, p21, p53, SIRT-6) in renal cell cultures, pointing to cytoprotective effects; it has also been separately identified as an HIV-1 protease inhibitor with measurable binding affinity in the enzyme's active site.",
@@ -2925,6 +3239,10 @@
     "results_timeline": "No human trial data exists. The studied protocol uses a slow 16-week titration, with the low-dose phase in weeks 1-8 and a maintenance phase in weeks 9-16 where cumulative bioregulatory effects would theoretically be most relevant based on the underlying cell research.",
     "timing": "Once-daily subcutaneous injection, any consistent time; doses are very small (10-150 mcg) and titrated slowly, adding 10-20 mcg every 1-2 weeks as tolerated.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "MDPI International Journal of Molecular Sciences — Transport of biologically active ultrashort peptides using POT and LAT carriers, https://www.mdpi.com/1422-0067/23/14/7733 | PubMed — Advances in Gerontology — Tripeptides slow down aging process in renal cell culture (Khavinson et al., 2014), https://pubmed.ncbi.nlm.nih.gov/25946838/ | Nature — Signal Transduction and Targeted Therapy — Therapeutic peptides: current applications and future directions (Li et al., 2022), https://www.nature.com/articles/s41392-022-00904-4 | PubMed — Biochemistry — HIV-1 protease inhibitors Glu-Asp-Leu and Glu-Asp-Phe: thermodynamic studies (Velazquez-Campoy & Freire, 2000), https://pubmed.ncbi.nlm.nih.gov/11062223/",
     "doses": [
       {
@@ -2988,6 +3306,7 @@
   {
     "slug": "oxytocin",
     "name": "Oxytocin",
+    "aliases": [],
     "category": "hormonal",
     "overview": "Oxytocin is a nonapeptide hormone best known for its roles in childbirth, lactation, and social bonding. In research settings it is studied for effects on stress, social cognition, appetite/metabolism, and pain modulation, administered here via subcutaneous injection.",
     "mechanism": "Oxytocin binds oxytocin receptors (OXTR), G-protein coupled receptors expressed centrally and peripherally. Centrally it acts as a neuromodulator influencing dopamine signaling and dampening the HPA stress axis, underlying its effects on trust and social bonding. Peripherally it contracts smooth muscle (uterine contraction, milk ejection) and appears to modulate pain and inflammation via sensory nerves or immune cells in skin tissue. It does not cross the blood-brain barrier well from the bloodstream, so subcutaneous dosing primarily engages peripheral receptors, while intranasal dosing is used in research to better reach central receptors.",
@@ -2995,6 +3314,10 @@
     "results_timeline": "Oxytocin has rapid clearance, so most documented effects are acute and per-dose rather than cumulative. For metabolic or mood-related research goals, protocols typically run 8-12 weeks (extendable to 16) before assessing trends.",
     "timing": "Once-daily subcutaneous injection, any consistent time; effects are largely acute given oxytocin's rapid clearance rather than building up gradually.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "PubMed (38815173) — Intranasal Oxytocin for Obesity (8-week trial using 96 IU per day in adults), https://pubmed.ncbi.nlm.nih.gov/38815173/ | PubMed (38642595) — Subcutaneous Oxytocin Injection Reduces Heat Pain: A Randomized-Controlled Trial, https://pubmed.ncbi.nlm.nih.gov/38642595/ | PubMed (21429671) — A review of safety, side-effects and subjective reactions to intranasal oxytocin in human research, https://pubmed.ncbi.nlm.nih.gov/21429671/ | PubMed (28960210) — The effects of oxytocin on eating behaviour and metabolism in humans, https://pubmed.ncbi.nlm.nih.gov/28960210/",
     "doses": [
       {
@@ -3058,6 +3381,9 @@
   {
     "slug": "pe-22-28",
     "name": "PE-22-28",
+    "aliases": [
+      "GVSWGLR"
+    ],
     "category": "cognitive",
     "overview": "PE-22-28 is a synthetic heptapeptide (GVSWGLR) derived from the sortilin propeptide, engineered as a shortened, more potent analog of spadin that selectively blocks TREK-1 potassium channels. Preclinical research shows rapid antidepressant-like effects, enhanced neurogenesis, and neuroprotection with a clean cardiac and metabolic safety profile, though no human trials exist.",
     "mechanism": "PE-22-28 selectively antagonizes TREK-1 (KCNK2) two-pore-domain potassium channels, which depolarizes neurons and increases serotonergic neuron firing and monoamine transmission. In rodent studies this produces measurable increases in hippocampal neurogenesis and synaptogenesis markers within 4 days, alongside activation of CaMKII/CREB pathways linked to neuronal survival and plasticity. It is roughly 300 times more potent than its parent compound spadin (IC50 ~0.12 nM vs 40-60 nM) and has a longer duration of action (~23 hours vs ~7 hours).",
@@ -3065,6 +3391,10 @@
     "results_timeline": "In rodent studies, neurogenesis and synaptogenesis marker changes appear within 4 days. No human timeline exists; suggested human protocols use a 2-week low-dose start, 100 mcg maintenance through week 8, with optional escalation to 150-200 mcg through week 16.",
     "timing": "Once-daily subcutaneous injection, consistent timing, with systematic site rotation.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Mazella J et al., PLoS Biology (2010) — Spadin, a sortilin-derived peptide targeting TREK-1 channels; novel antidepressant mechanism, https://pubmed.ncbi.nlm.nih.gov/20405001/ | Moha Ou Maati H et al., Neuropharmacology (2012) — Spadin as antidepressant; absence of TREK-1-related side effects, https://pubmed.ncbi.nlm.nih.gov/21807005/ | Djillani A et al., Frontiers in Pharmacology (2017) — Shortened spadin analogs (PE-22-28); superior TREK-1 inhibition, in vivo stability, antidepressant activity, https://pubmed.ncbi.nlm.nih.gov/28955242/ | Pietri M et al., Neuropharmacology (2019) — Protective effects on stroke recovery and post-stroke depression induced by sortilin-derived peptides, https://pubmed.ncbi.nlm.nih.gov/31325429/",
     "doses": [
       {
@@ -3119,6 +3449,7 @@
   {
     "slug": "peg-mgf",
     "name": "PEG MGF",
+    "aliases": [],
     "category": "recovery",
     "overview": "PEG-MGF is a pegylated variant of Mechano Growth Factor, a muscle-derived IGF-1 splice isoform upregulated after mechanical stress or injury. Pegylation extends its half-life to allow once-daily systemic subcutaneous dosing, unlike native MGF which requires frequent local injection. All efficacy data comes from animal and cell-based studies, with no completed human trials.",
     "mechanism": "MGF's unique C-terminal E peptide activates muscle satellite cells and drives local protein synthesis to initiate tissue repair, working alongside conventional IGF-1 receptor signaling. Pegylation slows clearance of this normally short-lived, locally-acting signal, letting a single daily subcutaneous injection achieve systemic exposure instead of relying on repeated intramuscular dosing.",
@@ -3126,6 +3457,10 @@
     "results_timeline": "No human data exists to define a timeline. Preclinical protocols run a standard 8-week titration cycle, extendable to 12-16 weeks, with regeneration markers building progressively across that window in animal models.",
     "timing": "Once-daily subcutaneous injection, any consistent time; often discussed alongside resistance training since mechanical loading is what naturally triggers MGF expression.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "The Physiological Society — MGF: a local growth factor or a local tissue repair factor?, https://www.physoc.org/magazine-articles/mgf-a-local-growth-factor-or-a-local-tissue-repair-factor/ | In Vivo, PubMed (19567392) — Expression of IGF-1 isoforms after exercise-induced muscle damage in humans: characterization of the MGF E peptide actions in vitro, https://pubmed.ncbi.nlm.nih.gov/19567392/ | American Journal of Transplantation, PubMed (17845560) — A synthetic mechano growth factor E peptide enhances myogenic precursor cell transplantation success, https://pubmed.ncbi.nlm.nih.gov/17845560/ | Frontiers in Physiology, PubMed (31164836) — Impaired skeletal muscle regeneration induced by macrophage depletion could be partly ameliorated by MGF injection, https://pubmed.ncbi.nlm.nih.gov/31164836/",
     "doses": [
       {
@@ -3180,6 +3515,7 @@
   {
     "slug": "pinealon",
     "name": "Pinealon",
+    "aliases": [],
     "category": "longevity",
     "overview": "Pinealon is a synthetic tripeptide bioregulator (Glu-Asp-Arg) developed as part of Professor Vladimir Khavinson's peptide bioregulator research program. It is studied for neuroprotective effects, cognitive support, and gene expression modulation in brain tissue, run in short 10-20 day cycles rather than long-term weekly protocols.",
     "mechanism": "As an ultrashort tripeptide, Pinealon is believed to cross cellular and nuclear membranes and interact directly with DNA, regulating gene expression in brain tissue. Research indicates it reduces reactive oxygen species accumulation and necrotic cell death in neurons, modulates the cell cycle toward proliferative pathways, and reduces caspase-3 activity (an apoptosis-related enzyme), which may lower unnecessary neuronal cell death.",
@@ -3187,6 +3523,10 @@
     "results_timeline": "Effects are reported to typically become noticeable after 10-14 days of consistent daily administration, aligning with the mid-to-late portion of the standard 10-20 day cycle.",
     "timing": "Once-daily subcutaneous injection, preferably morning or early afternoon to align with reported cognitive benefit timing. Run in short 10-20 day cycles (extendable to 28 days), repeated every 2-3 months rather than continuously.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Khavinson VK, Biogerontology (PubMed 19830585) — Peptide bioregulation of aging: 35-year research overview by Khavinson and Anisimov, https://pubmed.ncbi.nlm.nih.gov/19830585/ | PMC (PMC3342713) — Pinealon protects rat offspring from prenatal hyperhomocysteinemia and cognitive deficits, https://pmc.ncbi.nlm.nih.gov/articles/PMC3342713/ | Doklady Biological Sciences (PubMed 18336762) — Regulatory peptides protect brain neurons from hypoxia in vivo, https://pubmed.ncbi.nlm.nih.gov/18336762/ | PubMed (26390612) — Effects of synthetic peptides in patients with chronic polymorbidity and organic brain syndrome, https://pubmed.ncbi.nlm.nih.gov/26390612/",
     "doses": [
       {
@@ -3232,6 +3572,7 @@
   {
     "slug": "pnc-27",
     "name": "PNC-27",
+    "aliases": [],
     "category": "research-peptide",
     "overview": "PNC-27 is a synthetic 32-amino-acid chimeric peptide combining a p53-derived HDM-2-binding domain with a membrane-penetrating sequence, studied preclinically for selective cytotoxicity toward cancer cells expressing abnormal p53/HDM-2 complexes. No human clinical trials exist, and the FDA has explicitly warned that PNC-27 products are unapproved with no established safety data.",
     "mechanism": "PNC-27 fuses a segment of the p53 tumor suppressor protein (residues 12-26) to a membrane-penetrating leader sequence. Preclinical studies indicate it selectively binds HDM-2 expressed on the surface of cancer cells, causing membrane destabilization and necrotic cell death via direct membrane lysis rather than the conventional apoptosis pathway, while reportedly sparing normal cells.",
@@ -3239,6 +3580,8 @@
     "results_timeline": "Not specified in source. No human trials have been conducted, so no legitimate timeline for human effects exists; all timing data below is a speculative extrapolation, not a validated finding.",
     "timing": "Not specified in source beyond a proposed once-daily subcutaneous schedule; the source explicitly states any human dosing above a few hundred micrograms per day is speculative, and PNC-27 has no established human safety profile.",
     "administration": "Subcutaneous (per proposed educational protocol; underlying animal research used intraperitoneal administration)",
+    "route": [],
+    "evidence": "preclinical",
     "research_notes": "Journal of Biomedical Science (2017) — Review of therapeutic peptides; PNC-27 mechanism and cancer cell selectivity, https://link.springer.com/article/10.1186/s12929-017-0328-x | Cancer Chemotherapy and Pharmacology (2010) — PNC-27 induces tumor cell membrane lysis; preclinical mechanism study, https://pubmed.ncbi.nlm.nih.gov/20182728/ | FDA Drug Safety Communication (2015) — Warning: PNC-27 is unapproved; safety not established, https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-cancer-patients-not-use-pnc-27-products-treatment | BMC Cancer (2008) — PNC-27 selectively kills cancer cells via HDM-2 binding and membrane disruption, https://bmccancer.biomedcentral.com/articles/10.1186/1471-2407-8-237",
     "doses": [
       {
@@ -3276,6 +3619,9 @@
   {
     "slug": "prostamax",
     "name": "Prostamax",
+    "aliases": [
+      "KEDP"
+    ],
     "category": "longevity",
     "overview": "Prostamax is a synthetic tetrapeptide (Lys-Glu-Asp-Pro, or KEDP) belonging to the Khavinson-style class of bioregulator peptides, originally derived from research into prostate tissue peptide complexes. It has been studied in animal models for supporting prostate tissue health, particularly reducing inflammation associated with prostatitis and BPH.",
     "mechanism": "Prostamax is theorized to act through epigenetic mechanisms, interacting with chromatin structure and histone proteins to modulate gene expression rather than working through a conventional receptor-ligand pathway. In preclinical rat models, intramuscular KEDP administration reduced inflammatory markers and appeared to help prevent fibrotic changes in prostate tissue.",
@@ -3283,6 +3629,11 @@
     "results_timeline": "Not specified in source (based on preclinical studies running 15-60 days of daily administration in animal models; no human timeline data available).",
     "timing": "Administered once daily at a consistent time, intramuscularly into large muscle groups (rotate between deltoid, vastus lateralis, glute).",
     "administration": "Intramuscular (subcutaneous mentioned as an alternative route)",
+    "route": [
+      "intramuscular",
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Zhurbenko et al., Modern Research in Inflammation (2013) — experimental study of Prostamax in chronic aseptic prostatitis therapy, https://doi.org/10.4236/mri.2013.23007 | Modern Research in Inflammation (2014) — experimental study of KEDP tetrapeptide in a benign prostatic hyperplasia model, https://doi.org/10.4236/mri.2014.33013 | Bulletin of Experimental Biology and Medicine (2004) — effects of short peptides on lymphocyte chromatin in senile subjects, https://doi.org/10.1023/B:BEBM.0000024393.40560.05 | Stem Cell Reviews and Reports (2020) — peptide regulation of cell differentiation and epigenetic mechanisms of short bioregulatory peptides, https://doi.org/10.1007/s12015-019-09938-8",
     "doses": [
       {
@@ -3337,6 +3688,7 @@
   {
     "slug": "slu-pp-332",
     "name": "SLU-PP-332",
+    "aliases": [],
     "category": "metabolic",
     "overview": "SLU-PP-332 is a synthetic small-molecule pan-agonist of the estrogen-related receptors (ERRalpha, ERRbeta, and ERRgamma), studied exclusively in mouse models for its ability to trigger an exercise-mimetic gene program that boosts mitochondrial function, endurance, and cardiometabolic health. As of the source material, no human trials have been conducted, so all information here reflects preclinical animal research only.",
     "mechanism": "The compound acts as a pan-agonist across all three ERR subtypes, with the strongest activity at ERRalpha, activating the transcriptional program normally triggered by aerobic exercise. In mouse studies this increased mitochondrial respiration and fatty-acid oxidation in skeletal muscle without requiring physical exertion.",
@@ -3344,6 +3696,8 @@
     "results_timeline": "Not specified in source — all timeline data comes from acute-to-8-week murine study designs, not human use.",
     "timing": "Not applicable to humans; published murine protocols used twice-daily intraperitoneal dosing at consistent intervals.",
     "administration": "Intraperitoneal in published animal studies; subcutaneous route is not validated for this compound in humans",
+    "route": [],
+    "evidence": "preclinical",
     "research_notes": "Billon et al., ACS Chemical Biology (2023) — synthetic ERRa/b/g agonist induces an ERRalpha-dependent acute aerobic exercise response and enhances exercise capacity, https://pubmed.ncbi.nlm.nih.gov/36988910/ | Journal of Pharmacology and Experimental Therapeutics (2024) — a synthetic ERR agonist alleviates metabolic syndrome, https://pubmed.ncbi.nlm.nih.gov/37739806/ | Circulation (2024) — novel pan-ERR agonists ameliorate heart failure through enhancing cardiac fatty acid metabolism and mitochondrial function, https://pubmed.ncbi.nlm.nih.gov/37961903/ | American Journal of Pathology (2023) — estrogen-related receptor agonism reverses mitochondrial dysfunction and inflammation in the aging kidney, https://pubmed.ncbi.nlm.nih.gov/37717940/",
     "doses": [
       {
@@ -3369,6 +3723,9 @@
   {
     "slug": "snap-8",
     "name": "SNAP-8",
+    "aliases": [
+      "Acetyl Octapeptide-3"
+    ],
     "category": "beauty",
     "overview": "SNAP-8 (Acetyl Octapeptide-3) is a synthetic octapeptide developed as a cosmeceutical anti-wrinkle ingredient. It is an extended, more potent analog of the hexapeptide Argireline, designed to mimic part of the SNAP-25 protein involved in neurotransmitter release at neuromuscular junctions.",
     "mechanism": "SNAP-8 competitively inhibits SNAP-25 within the SNARE complex, reducing acetylcholine release at neuromuscular junctions. This relaxes the small facial muscles responsible for expression lines without causing full paralysis the way botulinum toxin does, since it does not cleave SNAP-25 but rather competes for the same binding site. Lab work found it roughly 30% more effective at reducing neurotransmitter release than Argireline, with better formulation stability.",
@@ -3376,6 +3733,10 @@
     "results_timeline": "Noticeable smoothing of expression lines typically appears after 2-4 weeks of consistent daily use, with continued improvement through 8-12 weeks as dosing reaches its target level.",
     "timing": "Once daily at any consistent time, subcutaneously, with gradual dose titration over 8-12 weeks (extendable to 16).",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "International Journal of Cosmetic Science — Argireline hexapeptide with antiwrinkle activity in a human study, https://pubmed.ncbi.nlm.nih.gov/18498523/ | Annals of Dermatology — clinical safety and efficacy of a dissolving microneedle patch containing SNAP-8 in a 24-subject trial, https://doi.org/10.5021/ad.23.136 | Journal of Drugs in Dermatology — open-label 14-week trial of a multi-peptide serum including SNAP-8, https://jddonline.com/articles/an-open-label-clinical-trial-of-a-peptide-treatment-serum-and-supporting-regimen-designed-to-improve-S1545961616P1100X | Frontiers in Chemistry — cosmeceutical peptides review covering SNAP-8's SNARE-complex mechanism and comparative potency versus Argireline, https://www.frontiersin.org/articles/10.3389/fchem.2020.572923/full",
     "doses": [
       {
@@ -3426,6 +3787,10 @@
   {
     "slug": "ss-31",
     "name": "SS-31",
+    "aliases": [
+      "Elamipretide",
+      "Forzinity"
+    ],
     "category": "metabolic",
     "overview": "SS-31 (elamipretide) is a mitochondria-targeted tetrapeptide that binds cardiolipin in the inner mitochondrial membrane. It has shown protective effects in preclinical models of heart failure, neurodegeneration, kidney disease, and age-related muscle atrophy, and received FDA accelerated approval in 2025 (as Forzinity) as the first treatment for Barth syndrome.",
     "mechanism": "SS-31 selectively accumulates in the inner mitochondrial membrane, binding cardiolipin — a phospholipid essential for organizing electron transport chain supercomplexes and maintaining cristae structure. By stabilizing these cardiolipin-protein interactions, it improves electron transport efficiency, reduces pathological reactive oxygen species generation, and enhances ATP synthesis in metabolically demanding tissues.",
@@ -3433,6 +3798,10 @@
     "results_timeline": "Not specified in source for general use; clinical trials assessing functional outcomes ran 4-12 weeks, with the Barth syndrome (TAZPOWER) trial showing significant strength and walk-distance improvements over its trial duration.",
     "timing": "Once daily subcutaneous injection at a consistent time; doses above 10 mg should be split into two injections at sites at least two inches apart.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "International Journal of Molecular Sciences (MDPI) — comprehensive review of elamipretide structure, mechanism of action, and therapeutic potential, https://www.mdpi.com/1422-0067/26/3/944 | U.S. Food & Drug Administration — FDA grants accelerated approval to elamipretide (Forzinity) as first treatment for Barth syndrome (2025), https://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-first-treatment-barth-syndrome | Journal of the American College of Cardiology (JACC) — PROGRESS-HF trial: safety and tolerability of elamipretide in heart failure patients, https://www.jacc.org/doi/10.1016/j.jchf.2020.02.009 | Neurology (AAN Journals) — MMPOWER-2 trial: elamipretide in primary mitochondrial myopathy, https://n.neurology.org/content/94/7/e733",
     "doses": [
       {
@@ -3473,6 +3842,9 @@
   {
     "slug": "survodutide",
     "name": "Survodutide",
+    "aliases": [
+      "BI 456906"
+    ],
     "category": "fat-loss",
     "overview": "Survodutide (BI 456906) is an investigational dual GLP-1/glucagon receptor agonist under development for obesity and metabolic liver disease. In phase 2 trials, once-weekly dosing produced dose-dependent weight loss of 12.5-14.9% versus placebo over 46 weeks.",
     "mechanism": "The GLP-1 component enhances satiety and improves glycemic control, while the glucagon receptor component increases energy expenditure and promotes hepatic lipid oxidation. This dual mechanism is hypothesized to provide additive or synergistic effects on body weight and liver fat compared to GLP-1 agonism alone.",
@@ -3480,6 +3852,10 @@
     "results_timeline": "Not specified in source beyond the 46-week phase 2 trial window showing the full weight-loss effect; gradual titration over the first 10-12 weeks is intended to reduce GI side effects along the way.",
     "timing": "Once weekly subcutaneous injection, same day each week, with rotating injection sites; gradual dose titration over 10-12 weeks to a maintenance dose.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Le Roux et al., Lancet Diabetes & Endocrinology (2024) — phase 2 trial of once-weekly subcutaneous survodutide (0.6-4.8 mg) in obesity showing dose-dependent weight loss of 12.5-14.9%, https://pubmed.ncbi.nlm.nih.gov/38330987/ | Guo et al., Journal of Hepatology (2023) — efficacy, tolerability, and pharmacokinetics of survodutide in NAFLD/NASH patients, https://pubmed.ncbi.nlm.nih.gov/38857788/ | Wharton et al., Obesity (Silver Spring) (2024) — SYNCHRONIZE-1 & 2 phase 3 trial design for survodutide in obesity, https://pubmed.ncbi.nlm.nih.gov/39495965/ | Wan et al., Diabetology & Metabolic Syndrome (2024) — meta-analysis of survodutide weight-loss efficacy across randomized controlled trials, https://link.springer.com/article/10.1186/s13098-024-01501-x",
     "doses": [
       {
@@ -3557,6 +3933,9 @@
   {
     "slug": "testagen",
     "name": "Testagen",
+    "aliases": [
+      "KEDG"
+    ],
     "category": "longevity",
     "overview": "Testagen is a synthetic tetrapeptide (Lys-Glu-Asp-Gly, or KEDG), an anterior pituitary-derived bioregulator studied for its role in modulating endocrine function, particularly the pituitary-gonadal axis. Preclinical research points to effects on thyroid hormone normalization and male reproductive hormone modulation.",
     "mechanism": "Testagen belongs to a class of short bioregulatory peptides hypothesized to act through gene-regulatory mechanisms influencing hormone synthesis and secretion, rather than through a conventional receptor-based pathway. Preclinical avian research showed it could normalize thyroid hormone levels in hypophysectomized (pituitary-removed) subjects and modulate signaling along the pituitary-gonadal axis.",
@@ -3564,6 +3943,10 @@
     "results_timeline": "Not specified in source — no human trial timeline exists; animal studies do not translate directly to a human onset timeline.",
     "timing": "Once daily at a consistent time, subcutaneously, with gradual titration over 8-12 weeks (extendable to 16).",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "MDPI Molecules — the inhibitory effect and adsorption properties of Testagen peptide on copper surfaces (structural characterization), https://doi.org/10.3390/molecules30153141 | MDPI Molecules — peptide regulation of gene expression: a systematic review, https://www.mdpi.com/1420-3049/26/22/7053 | PubMed — effects of hypophyseal Lys-Glu-Asp-Gly peptide on immunity, hemostasis, and thyroid function in hypophysectomized chickens, https://pubmed.ncbi.nlm.nih.gov/20731122/ | PubMed — effects of Lys-Glu-Asp-Gly peptide on hormonal activity and thyroid morphology in hypophysectomized mature and old birds, https://pubmed.ncbi.nlm.nih.gov/21809626/",
     "doses": [
       {
@@ -3618,6 +4001,9 @@
   {
     "slug": "thymosin-alpha-1",
     "name": "Thymosin Alpha-1",
+    "aliases": [
+      "Ta1"
+    ],
     "category": "immune",
     "overview": "Thymosin Alpha-1 (Ta1) is a 28-amino-acid peptide originally isolated from the thymus gland, recognized for broad immunomodulatory properties. It has been investigated as an immune enhancer in chronic viral infections (hepatitis B/C, HIV/AIDS) and critical illness including sepsis and COVID-19.",
     "mechanism": "Thymosin Alpha-1 enhances the maturation and differentiation of T-cells, augments dendritic cell function, and promotes production of key cytokines including interferon-alpha and interleukin-2, modulating immune function through multiple coordinated pathways.",
@@ -3625,6 +4011,10 @@
     "results_timeline": "Not specified in source as a standalone timeline; clinical benefit in the studied conditions (chronic viral infection, critical illness) was evaluated over the course of multi-week to multi-month treatment courses.",
     "timing": "Once daily subcutaneous injection at a consistent time; an 8-week protocol starts at a lower dose in week 1 to gauge tolerance before increasing to a maintenance dose from week 2 onward. Treatment durations of 8-16 weeks are commonly reported.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "clinical",
     "research_notes": "Dominari et al., World Journal of Virology (2020) — comprehensive review of Thymosin Alpha-1 mechanisms, dosing (0.8-6.4 mg SC), and clinical applications, https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/ | Tao et al., Molecules (2023) — Thymosin Alpha-1 in viral diseases: mechanisms and therapeutic applications in HBV, HCV, and HIV, https://pmc.ncbi.nlm.nih.gov/articles/PMC10144284/ | Soeroto et al., Inflammopharmacology (2023) — meta-analysis of Ta1 in COVID-19 showing significant mortality reduction in moderate-to-critical patients, https://pmc.ncbi.nlm.nih.gov/articles/PMC10589223/ | Annals of the New York Academy of Sciences — Thymosin Alpha-1: biological activities, clinical applications, and pharmacokinetics review, https://pubmed.ncbi.nlm.nih.gov/17804536/",
     "doses": [
       {
@@ -3661,6 +4051,9 @@
   {
     "slug": "vesugen",
     "name": "Vesugen",
+    "aliases": [
+      "KED"
+    ],
     "category": "longevity",
     "overview": "Vesugen (Lys-Glu-Asp, or KED) is a tripeptide bioregulator synthesized at the Saint Petersburg Institute of Bioregulation and Gerontology, derived from amino acids associated with vascular wall proteins. Research suggests it may support vascular endothelial cell renewal and has also shown neuroprotective signals in preliminary studies.",
     "mechanism": "Vesugen is thought to support vascular endothelial cell proliferation by modulating expression of Ki-67, a protein closely tied to cell division, potentially through epigenetic interaction with the Ki-67 gene's promoter region. Additional research suggests it may normalize endothelin-1 expression and increase sirtuin-1 (SIRT-1) expression in vascular endothelial cells.",
@@ -3668,6 +4061,10 @@
     "results_timeline": "Not specified in source for the injectable protocol; cited neuroprotective findings come from separate oral-administration research in elderly subjects rather than the dosing schedule described here.",
     "timing": "Once daily at a consistent time, subcutaneously, with gradual titration over 8-12 weeks (extendable to 16).",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "early-human",
     "research_notes": "Khavinson et al., Bulletin of Experimental Biology and Medicine (2016) — short peptides regulate gene expression, https://pubmed.ncbi.nlm.nih.gov/27909961/ | Advances in Gerontology (2014) — epigenetic aspects of peptidergic regulation of vascular endothelial cell proliferation during aging, https://pubmed.ncbi.nlm.nih.gov/25051766/ | Advances in Gerontology (2016) — molecular aspects of vasoprotective peptide KED activity during atherosclerosis and restenosis, https://pubmed.ncbi.nlm.nih.gov/28539025/ | Bulletin of Experimental Biology and Medicine (2021) — peptide KED: molecular-genetic aspects of neurogenesis regulation in Alzheimer's disease, https://pubmed.ncbi.nlm.nih.gov/34173097/",
     "doses": [
       {
@@ -3722,6 +4119,7 @@
   {
     "slug": "vilon",
     "name": "Vilon",
+    "aliases": [],
     "category": "longevity",
     "overview": "Vilon (Lys-Glu) is a synthetic immunoregulatory dipeptide made of lysine and glutamic acid residues, one of the shortest bioregulator peptides studied by Russian gerontology researchers. Preclinical work suggests it may enhance immune markers including CD5+ lymphocytes and interleukin-2 expression in thymic and splenic cell cultures.",
     "mechanism": "Vilon is proposed to modulate lymphocyte populations and cytokine gene expression. In vitro studies show it increases CD5+ cell counts in thymus cell cultures and upregulates interleukin-2 (IL-2) mRNA expression in splenocyte preparations. Additional preclinical work suggests effects on TGF-beta1 and vascular permeability in renal stress models.",
@@ -3729,6 +4127,10 @@
     "results_timeline": "Not specified in source for human use; the pulsed cycle protocol itself (5 days on, roughly 23 days off, run for 2-4 cycles) is analogized from related short-peptide regimens such as Epitalon rather than derived from human timeline data.",
     "timing": "Once daily subcutaneous injection for 5 consecutive days per 4-week cycle, then a rest period for the remainder of the cycle; repeat for 2-4 cycles total.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": "Sevostianova et al. (2013) — immunomodulating effects of Vilon and its analogue in the culture of human and animal thymus cells, https://doi.org/10.1007/s10517-013-2000-0 | Kazakova et al. (2002) — in vitro effect of short peptides on expression of interleukin-2 gene in splenocytes, https://link.springer.com/article/10.1023/A:1020210615148 | Gavrisheva et al. (2005) — effect of Vilon peptide on TGF-beta1 and vascular permeability in chronic renal failure, https://pubmed.ncbi.nlm.nih.gov/16027222/ | Chernyak et al. (2000) — synthetic dipeptide Vilon inhibits tumor growth and prolongs life in mice, https://pubmed.ncbi.nlm.nih.gov/10994281/",
     "doses": [
       {
@@ -3797,6 +4199,7 @@
   {
     "slug": "wolverine",
     "name": "Wolverine Stack",
+    "aliases": [],
     "category": "recovery",
     "overview": "The Wolverine Stack combines BPC-157 and TB-500 — two of the most-studied repair peptides — in a single 1:1 blend aimed at healing rather than hormonal effects. BPC-157 works locally at the injury site while TB-500 works systemically, covering both ends of the tissue-repair process in one preparation.",
     "mechanism": "BPC-157 modulates nitric oxide pathways and supports angiogenesis/collagen deposition right at the injury site, with broad effects across gut, tendon, ligament, and muscle tissue. TB-500 — the active fragment of Thymosin Beta-4 — drives cell migration and new blood vessel formation by acting on the actin cytoskeleton, helping repair cells move into damaged areas faster. Together the idea is trophic/anti-inflammatory support (BPC-157) plus enhanced cell trafficking and angiogenesis (TB-500) — complementary rather than overlapping mechanisms.",
@@ -3804,6 +4207,10 @@
     "results_timeline": "Weeks 1–2: 600 mcg/day total (300 + 300 mcg). Weeks 3–4: escalate to 800 mcg/day (400 + 400 mcg). Weeks 5–8: return to 600 mcg/day for maintenance. Some more aggressive protocols front-load up to 1 mg/day total for acute injuries before tapering, though the phased approach above is the more conservative default.",
     "timing": "Once daily, any consistent time. Rotate injection sites (abdomen, thighs, upper arms, flank) to avoid irritation.",
     "administration": "Subcutaneous",
+    "route": [
+      "subcutaneous"
+    ],
+    "evidence": "preclinical",
     "research_notes": null,
     "doses": [
       {

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { SearchIcon } from 'lucide-react'
 import {
   Command,
   CommandEmpty,
@@ -9,7 +10,7 @@ import {
   CommandList,
 } from './ui/command.jsx'
 import { getAllPeptides } from '../data/peptides.js'
-import { CATEGORY_LABELS } from '../data/categories.js'
+import { matchesQuery, toSearchParams } from '../lib/search.js'
 
 const PROMPTS = [
   "Search 'BPC-157 research protocols'…",
@@ -75,19 +76,41 @@ export default function HomeSearch() {
   const [value, setValue]   = useState('')
   const { placeholder, stop } = useTypewriter(PROMPTS)
 
-  const query = value.trim().toLowerCase()
-  const filtered = query
-    ? peptides.filter(p =>
-        p.name.toLowerCase().includes(query) ||
-        (CATEGORY_LABELS[p.category] ?? '').toLowerCase().includes(query)
-      )
-    : peptides
+  const hasQuery = value.trim().length > 0
+  // matchesQuery normalizes/lowercases its own needle, and treats an empty
+  // needle as "match everything" — so this single call covers both the
+  // "browsing" and "searching" states that the old ternary handled by hand.
+  const filtered = peptides.filter(p => matchesQuery(p, value))
+
+  function goToCatalog() {
+    const params = toSearchParams({ q: value })
+    navigate(`/catalog?${new URLSearchParams(params).toString()}`)
+  }
+
+  // cmdk's own Enter handling always fires (it runs our onKeyDown first,
+  // then — unless we've called preventDefault — selects whatever item is
+  // currently highlighted). Because cmdk auto-highlights the first
+  // suggestion whenever the list is non-empty, "Enter selects the top
+  // suggestion" already covers the has-results case and must stay
+  // untouched. The one case cmdk can't handle on its own is zero results:
+  // no item is ever highlighted, so Enter would otherwise do nothing. Route
+  // that case to the full Catalog search instead. (When results exist but
+  // the user wants the full Catalog anyway, the "Search catalog" row below
+  // the list — reachable by click or by arrowing down and hitting Enter on
+  // it — covers that.)
+  function handleKeyDown(e) {
+    if (e.key === 'Enter' && hasQuery && filtered.length === 0) {
+      e.preventDefault()
+      goToCatalog()
+    }
+  }
 
   return (
     <Command
       className="rounded-xl border border-border shadow-sm"
       shouldFilter={false}
       label="Search peptides"
+      onKeyDown={handleKeyDown}
     >
       <CommandInput
         placeholder={placeholder || 'Search peptides…'}
@@ -113,6 +136,14 @@ export default function HomeSearch() {
             </CommandItem>
           ))}
         </CommandGroup>
+        {hasQuery && (
+          <CommandGroup>
+            <CommandItem value={`__catalog-search__${value}`} onSelect={goToCatalog}>
+              <SearchIcon className="opacity-60" aria-hidden="true" />
+              Search catalog for &ldquo;{value.trim()}&rdquo;
+            </CommandItem>
+          </CommandGroup>
+        )}
       </CommandList>
     </Command>
   )
