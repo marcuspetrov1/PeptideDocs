@@ -8,7 +8,7 @@ const ACCENT_RGB = '84, 126, 239'
 // Ambient particle-network animation used as the generated-visual stand-in
 // for the homepage hero and peptide detail hero. Pure Canvas, no external
 // assets, so it ships without depending on any generated image/video pipeline.
-export default function MolecularField({ density = 1, cluster = false, maxDistance, className = '' }) {
+export default function MolecularField({ density = 1, cluster = false, edgeBias = false, maxDistance, className = '' }) {
   const canvasRef = useRef(null)
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function MolecularField({ density = 1, cluster = false, maxDistan
 
     function build() {
       const area = width * height
-      const count = Math.max(6, Math.min(80, Math.round((area / 15000) * density)))
+      const count = Math.max(14, Math.min(160, Math.round((area / 6000) * density)))
       nodes = []
       for (let i = 0; i < count; i++) {
         let x
@@ -46,6 +46,13 @@ export default function MolecularField({ density = 1, cluster = false, maxDistan
           const cy = height * 0.5
           x = cx + (Math.random() - 0.5) * width * 0.6
           y = cy + (Math.random() - 0.5) * height * 0.9
+        } else if (edgeBias) {
+          // Thin out the vertical center — where a hero's headline/search UI
+          // sits — and concentrate particles toward the top/bottom margins
+          // that stay visually clear of that content.
+          x = Math.random() * width
+          const t = Math.random() ** 2.4
+          y = Math.random() < 0.5 ? t * height * 0.5 : height - t * height * 0.5
         } else {
           x = Math.random() * width
           y = Math.random() * height
@@ -55,10 +62,10 @@ export default function MolecularField({ density = 1, cluster = false, maxDistan
           y,
           vx: (Math.random() - 0.5) * 0.22,
           vy: (Math.random() - 0.5) * 0.22,
-          r: 1.1 + Math.random() * 1.9,
+          r: 1.8 + Math.random() * 2.8,
         })
       }
-      linkDistance = maxDistance || Math.min(150, Math.max(90, width * 0.12))
+      linkDistance = maxDistance || Math.min(170, Math.max(100, width * 0.14))
     }
 
     function step() {
@@ -80,9 +87,9 @@ export default function MolecularField({ density = 1, cluster = false, maxDistan
           const dy = a.y - b.y
           const d = Math.sqrt(dx * dx + dy * dy)
           if (d < linkDistance) {
-            const alpha = (1 - d / linkDistance) * 0.16
+            const alpha = (1 - d / linkDistance) * 0.38
             ctx.strokeStyle = `rgba(${ACCENT_RGB}, ${alpha.toFixed(3)})`
-            ctx.lineWidth = 1
+            ctx.lineWidth = 1.2
             ctx.beginPath()
             ctx.moveTo(a.x, a.y)
             ctx.lineTo(b.x, b.y)
@@ -91,7 +98,7 @@ export default function MolecularField({ density = 1, cluster = false, maxDistan
         }
       }
       for (const p of nodes) {
-        ctx.fillStyle = `rgba(${ACCENT_RGB}, 0.6)`
+        ctx.fillStyle = `rgba(${ACCENT_RGB}, 0.85)`
         ctx.beginPath()
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
         ctx.fill()
@@ -145,7 +152,7 @@ export default function MolecularField({ density = 1, cluster = false, maxDistan
       ro.disconnect()
       io.disconnect()
     }
-  }, [density, cluster, maxDistance])
+  }, [density, cluster, edgeBias, maxDistance])
 
   return <canvas ref={canvasRef} aria-hidden="true" className={className} />
 }

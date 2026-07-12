@@ -107,11 +107,11 @@ export default function PeptideDetail() {
       </Helmet>
 
       {/* Hero */}
-      <div className="relative overflow-hidden">
+      <div className="relative isolate overflow-hidden">
         <MolecularField
-          density={1.5}
+          density={3.2}
           cluster
-          className="pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-70"
+          className="pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-95"
         />
         <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,var(--bg)_38%,transparent_88%)]" />
 
