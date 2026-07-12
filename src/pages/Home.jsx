@@ -6,6 +6,7 @@ import { Button } from '../components/ui/button.jsx'
 import { Badge } from '../components/ui/badge.jsx'
 import { Card } from '../components/ui/card.jsx'
 import HomeSearch from '../components/HomeSearch.jsx'
+import MolecularField from '../components/MolecularField.jsx'
 
 const peptides = getAllPeptides()
 
@@ -57,7 +58,12 @@ export default function Home() {
       </Helmet>
 
       {/* ── Hero: search-first ── */}
-      <section className="home-hero-grain search-glow relative flex min-h-[calc(100svh-84px)] flex-col items-center justify-center overflow-hidden border-b border-border bg-[linear-gradient(160deg,var(--bg)_0%,var(--code-bg)_55%,var(--bg)_100%)] px-8 py-16 text-center max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
+      <section className="home-hero-grain search-glow relative isolate flex min-h-[calc(100svh-84px)] flex-col items-center justify-center overflow-hidden border-b border-border bg-[linear-gradient(160deg,var(--bg)_0%,var(--code-bg)_55%,var(--bg)_100%)] px-8 py-16 text-center max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
+        <MolecularField
+          density={2.6}
+          edgeBias
+          className="pointer-events-none absolute inset-0 -z-10 h-full w-full"
+        />
         <div className="relative z-[1] flex w-full max-w-[720px] flex-col items-center">
           <p className="mb-4 font-mono text-[11px] font-semibold tracking-[0.12em] text-primary uppercase [animation:fadeUp_0.5s_ease_both] motion-reduce:[animation:none]">
             Research peptide reference

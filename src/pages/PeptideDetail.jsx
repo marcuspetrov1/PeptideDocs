@@ -6,6 +6,7 @@ import ReconstitutionPanel from '../components/ReconstitutionPanel.jsx'
 import ReconstitutionCalculator from '../components/ReconstitutionCalculator.jsx'
 import PeptideFAQ from '../components/PeptideFAQ.jsx'
 import GlossaryTerm from '../components/GlossaryTerm.jsx'
+import MolecularField from '../components/MolecularField.jsx'
 import { Badge } from '../components/ui/badge.jsx'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs.jsx'
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card.jsx'
@@ -106,17 +107,26 @@ export default function PeptideDetail() {
       </Helmet>
 
       {/* Hero */}
-      <Badge className="mb-3.5 h-auto rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-category text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
-        {CATEGORY_LABELS[peptide.category] ?? peptide.category}
-      </Badge>
-      <div className="mb-3 flex flex-wrap items-baseline gap-[14px]">
-        <h1 className="m-0 font-heading text-[48px] leading-[1.05] font-normal tracking-[-1.5px] text-foreground max-[600px]:text-[32px] max-[600px]:tracking-[-0.8px]">
-          {peptide.name}
-        </h1>
+      <div className="relative isolate overflow-hidden">
+        <MolecularField
+          density={3.2}
+          cluster
+          className="pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-95"
+        />
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,var(--bg)_38%,transparent_88%)]" />
+
+        <Badge className="mb-3.5 h-auto rounded-full border-primary-border bg-primary-bg px-2.5 py-[3px] font-category text-[11px] font-semibold tracking-[0.08em] text-primary uppercase">
+          {CATEGORY_LABELS[peptide.category] ?? peptide.category}
+        </Badge>
+        <div className="mb-3 flex flex-wrap items-baseline gap-[14px]">
+          <h1 className="m-0 font-heading text-[48px] leading-[1.05] font-normal tracking-[-1.5px] text-foreground max-[600px]:text-[32px] max-[600px]:tracking-[-0.8px]">
+            {peptide.name}
+          </h1>
+        </div>
+        <p className="mb-8 max-w-[680px] text-[17px] leading-[1.65] text-muted-foreground">
+          {peptide.overview}
+        </p>
       </div>
-      <p className="mb-8 max-w-[680px] text-[17px] leading-[1.65] text-muted-foreground">
-        {peptide.overview}
-      </p>
 
       {/* Tabs */}
       <Tabs defaultValue="overview" className="mb-9">
