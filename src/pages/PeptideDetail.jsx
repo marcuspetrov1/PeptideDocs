@@ -51,7 +51,7 @@ function linkifyCitation(citation) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-sm text-primary underline underline-offset-2 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        className="break-all rounded-sm text-primary underline underline-offset-2 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         {url}
       </a>
