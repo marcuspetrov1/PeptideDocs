@@ -6,7 +6,6 @@ import { Button } from '../components/ui/button.jsx'
 import { Badge } from '../components/ui/badge.jsx'
 import { Card } from '../components/ui/card.jsx'
 import HomeSearch from '../components/HomeSearch.jsx'
-import MolecularField from '../components/MolecularField.jsx'
 
 const peptides = getAllPeptides()
 
@@ -46,32 +45,45 @@ const FEATURED_SLUGS = [
 const featured = FEATURED_SLUGS.map(getPeptideBySlug).filter(Boolean)
 
 const SECTION_HEADING_CLASS =
-  'mb-2 font-heading text-[30px] font-normal tracking-[-0.5px] text-foreground text-balance max-lg:text-lg'
-const SECTION_SUB_CLASS = 'mb-8 text-[16px] text-muted-foreground'
+  'mb-2 font-heading text-[30px] font-normal tracking-[-0.5px] text-white text-balance max-lg:text-lg'
+const SECTION_SUB_CLASS = 'mb-8 text-[16px] text-white/70'
 
 export default function Home() {
   return (
-    <div className="w-full text-left">
+    <div className="home-page w-full text-left">
       <Helmet>
         <title>PeptideDocs — Research Peptide Information</title>
         <meta name="description" content="Browse detailed information on research peptides including mechanisms, dosage protocols, effects, and timelines." />
       </Helmet>
 
+      {/* ── Full-page video background: fixed behind all three sections below,
+          scoped to Home via the .home-page ancestor (no positioned/isolated
+          ancestor traps the negative z-index, so it stays viewport-fixed and
+          paints below every section's now-transparent, normal-flow content). ── */}
+      <video
+        className="pointer-events-none fixed inset-0 -z-10 h-full w-full bg-[#05060f] object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/hero-bg-poster.jpg"
+        aria-hidden="true"
+      >
+        <source src="/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(180deg,rgba(5,6,15,0.72)_0%,rgba(5,6,15,0.5)_45%,rgba(5,6,15,0.8)_100%)]" />
+
       {/* ── Hero: search-first ── */}
-      <section className="home-hero-grain search-glow relative isolate flex min-h-[calc(100svh-84px)] flex-col items-center justify-center overflow-hidden border-b border-border bg-[linear-gradient(160deg,var(--bg)_0%,var(--code-bg)_55%,var(--bg)_100%)] px-8 py-16 text-center max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
-        <MolecularField
-          density={2.6}
-          edgeBias
-          className="pointer-events-none absolute inset-0 -z-10 h-full w-full"
-        />
+      <section className="home-hero-grain relative flex min-h-svh snap-start flex-col items-center justify-center overflow-hidden px-8 py-16 text-center max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
         <div className="relative z-[1] flex w-full max-w-[720px] flex-col items-center">
           <p className="mb-4 font-mono text-[11px] font-semibold tracking-[0.12em] text-primary uppercase [animation:fadeUp_0.5s_ease_both] motion-reduce:[animation:none]">
             Research peptide reference
           </p>
-          <h1 className="mb-4 text-balance text-[56px] leading-[1.05] font-normal tracking-[-1.5px] text-foreground [animation:fadeUp_0.55s_ease_120ms_both] motion-reduce:[animation:none] max-lg:text-[40px] max-lg:tracking-[-1px] max-[600px]:text-[32px] max-[600px]:tracking-[-0.6px]">
+          <h1 className="mb-4 text-balance text-[56px] leading-[1.05] font-normal tracking-[-1.5px] text-white [animation:fadeUp_0.55s_ease_120ms_both] motion-reduce:[animation:none] max-lg:text-[40px] max-lg:tracking-[-1px] max-[600px]:text-[32px] max-[600px]:tracking-[-0.6px]">
             Your <em className="italic">peptide</em> reference guide
           </h1>
-          <p className="mb-9 max-w-[540px] text-[17px] leading-[1.6] text-muted-foreground [animation:fadeUp_0.55s_ease_240ms_both] motion-reduce:[animation:none] max-[600px]:text-sm">
+          <p className="mb-9 max-w-[540px] text-[17px] leading-[1.6] text-white/75 [animation:fadeUp_0.55s_ease_240ms_both] motion-reduce:[animation:none] max-[600px]:text-sm">
             Search 65 research peptide profiles — mechanisms, dosing protocols, and
             expected timelines. For informational purposes only — not medical advice.
           </p>
@@ -83,7 +95,7 @@ export default function Home() {
               <Badge
                 key={cat.slug}
                 asChild
-                className="h-auto gap-1.5 rounded-full border-primary-border bg-primary-bg px-3.5 py-[7px] font-category text-xs font-semibold tracking-[0.06em] text-primary uppercase no-underline transition-[opacity,box-shadow] duration-200 hover:!bg-primary-bg hover:opacity-[0.82] hover:shadow-[0_0_0_1px_var(--color-primary-border)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="h-auto gap-1.5 rounded-full border-primary-border bg-primary-bg px-3.5 py-[7px] font-category text-xs font-semibold tracking-[0.06em] text-primary uppercase no-underline backdrop-blur-sm transition-[opacity,box-shadow] duration-200 hover:!bg-primary-bg hover:opacity-[0.82] hover:shadow-[0_0_0_1px_var(--color-primary-border)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <Link to="/catalog">
                   {cat.label}
@@ -95,15 +107,16 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <ScrollCue />
       </section>
 
       {/* ── Popular peptides ── */}
-      <section className="border-b border-border px-8 py-20 max-lg:px-6 max-lg:py-16 max-[600px]:px-4 max-[600px]:py-12">
+      <section className="flex min-h-svh snap-start flex-col justify-center px-8 py-20 max-lg:px-6 max-lg:py-16 max-[600px]:px-4 max-[600px]:py-12">
         <h2 className={SECTION_HEADING_CLASS}>Popular Peptides</h2>
         <p className={SECTION_SUB_CLASS}>A few well-known peptides to start with</p>
         <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-2 max-[500px]:grid-cols-1">
           {featured.map(p => (
-            <Card key={p.slug} className="transition-shadow duration-200 hover:shadow-md">
+            <Card key={p.slug} className="bg-card/90 backdrop-blur-sm transition-shadow duration-200 hover:shadow-md">
               <Link
                 to={`/peptides/${p.slug}`}
                 className="flex min-w-0 flex-col gap-2 px-(--card-spacing) no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
@@ -126,8 +139,8 @@ export default function Home() {
       </section>
 
       {/* ── Get started strip ── */}
-      <section className="px-8 py-14 max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
-        <div className="flex flex-wrap items-center justify-between gap-5 rounded-xl border border-border bg-card px-7 py-6 max-[600px]:flex-col max-[600px]:items-start">
+      <section className="flex min-h-svh snap-start flex-col justify-center px-8 py-14 max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
+        <div className="flex flex-wrap items-center justify-between gap-5 rounded-xl border border-border bg-card/90 px-7 py-6 backdrop-blur-sm max-[600px]:flex-col max-[600px]:items-start">
           <div>
             <h2 className="mb-1 font-heading text-[22px] font-normal tracking-[-0.3px] text-foreground text-balance">
               New to peptides?
@@ -154,5 +167,18 @@ export default function Home() {
         </div>
       </section>
     </div>
+  )
+}
+
+function ScrollCue() {
+  return (
+    <span
+      aria-hidden="true"
+      className="absolute bottom-8 left-1/2 h-9 w-9 -translate-x-1/2 animate-bounce rounded-full border border-white/25 text-white/70 motion-reduce:animate-none max-[600px]:hidden"
+    >
+      <svg viewBox="0 0 24 24" fill="none" className="m-auto h-4 w-4" stroke="currentColor" strokeWidth="2">
+        <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </span>
   )
 }

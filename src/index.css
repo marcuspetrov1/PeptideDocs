@@ -221,15 +221,20 @@
     pointer-events: none;
     z-index: 0;
   }
+}
 
-  /* Static (non-animated) accent glow anchored behind the hero search bar. */
-  .search-glow::before {
-    content: '';
-    position: absolute;
-    inset: -40% -20%;
-    background: radial-gradient(closest-side, var(--accent-bg), transparent 70%);
-    pointer-events: none;
-    z-index: 0;
+/* ── Home scroll-snap: scoped to the document scroller via :has() so it only
+   activates while a .home-page root is mounted (Home's three full-height
+   sections carry snap-start) — other routes have no snap-aligned children,
+   so this rule is inert there without needing any JS/route-change cleanup. ── */
+html:has(.home-page) {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 84px; /* matches Header.jsx's sticky h-[84px] */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page video {
+    display: none;
   }
 }
 
