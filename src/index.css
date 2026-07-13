@@ -232,12 +232,6 @@ html:has(.home-page) {
   scroll-padding-top: 84px; /* matches Header.jsx's sticky h-[84px] */
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .home-page video {
-    display: none;
-  }
-}
-
 /* ── Entrance animation (consumed by Home/Catalog; ported with those pages in Phase 5) ── */
 @keyframes fadeUp {
   from {

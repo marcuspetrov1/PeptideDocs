@@ -6,6 +6,7 @@ import { Button } from '../components/ui/button.jsx'
 import { Badge } from '../components/ui/badge.jsx'
 import { Card } from '../components/ui/card.jsx'
 import HomeSearch from '../components/HomeSearch.jsx'
+import heroImg from '../assets/frontpage-main-peptide.webp'
 
 const peptides = getAllPeptides()
 
@@ -45,8 +46,8 @@ const FEATURED_SLUGS = [
 const featured = FEATURED_SLUGS.map(getPeptideBySlug).filter(Boolean)
 
 const SECTION_HEADING_CLASS =
-  'mb-2 font-heading text-[30px] font-normal tracking-[-0.5px] text-white text-balance max-lg:text-lg'
-const SECTION_SUB_CLASS = 'mb-8 text-[16px] text-white/70'
+  'mb-2 font-heading text-[30px] font-normal tracking-[-0.5px] text-foreground text-balance max-lg:text-lg'
+const SECTION_SUB_CLASS = 'mb-8 text-[16px] text-muted-foreground'
 
 export default function Home() {
   return (
@@ -56,23 +57,17 @@ export default function Home() {
         <meta name="description" content="Browse detailed information on research peptides including mechanisms, dosage protocols, effects, and timelines." />
       </Helmet>
 
-      {/* ── Full-page video background: fixed behind all three sections below,
+      {/* ── Full-page background image: fixed behind all three sections below,
           scoped to Home via the .home-page ancestor (no positioned/isolated
           ancestor traps the negative z-index, so it stays viewport-fixed and
           paints below every section's now-transparent, normal-flow content). ── */}
-      <video
-        className="pointer-events-none fixed inset-0 -z-10 h-full w-full bg-[#05060f] object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        poster="/hero-bg-poster.jpg"
+      <img
+        src={heroImg}
+        alt=""
         aria-hidden="true"
-      >
-        <source src="/hero-bg.mp4" type="video/mp4" />
-      </video>
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(180deg,rgba(5,6,15,0.72)_0%,rgba(5,6,15,0.5)_45%,rgba(5,6,15,0.8)_100%)]" />
+        className="pointer-events-none fixed inset-0 -z-10 h-full w-full object-cover"
+      />
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(180deg,rgba(255,255,255,0.62)_0%,rgba(255,255,255,0.4)_45%,rgba(255,255,255,0.78)_100%)]" />
 
       {/* ── Hero: search-first ── */}
       <section className="home-hero-grain relative flex min-h-svh snap-start flex-col items-center justify-center overflow-hidden px-8 py-16 text-center max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
@@ -80,10 +75,10 @@ export default function Home() {
           <p className="mb-4 font-mono text-[11px] font-semibold tracking-[0.12em] text-primary uppercase [animation:fadeUp_0.5s_ease_both] motion-reduce:[animation:none]">
             Research peptide reference
           </p>
-          <h1 className="mb-4 text-balance text-[56px] leading-[1.05] font-normal tracking-[-1.5px] text-white [animation:fadeUp_0.55s_ease_120ms_both] motion-reduce:[animation:none] max-lg:text-[40px] max-lg:tracking-[-1px] max-[600px]:text-[32px] max-[600px]:tracking-[-0.6px]">
+          <h1 className="mb-4 text-balance text-[56px] leading-[1.05] font-normal tracking-[-1.5px] text-foreground [animation:fadeUp_0.55s_ease_120ms_both] motion-reduce:[animation:none] max-lg:text-[40px] max-lg:tracking-[-1px] max-[600px]:text-[32px] max-[600px]:tracking-[-0.6px]">
             Your <em className="italic">peptide</em> reference guide
           </h1>
-          <p className="mb-9 max-w-[540px] text-[17px] leading-[1.6] text-white/75 [animation:fadeUp_0.55s_ease_240ms_both] motion-reduce:[animation:none] max-[600px]:text-sm">
+          <p className="mb-9 max-w-[540px] text-[17px] leading-[1.6] text-muted-foreground [animation:fadeUp_0.55s_ease_240ms_both] motion-reduce:[animation:none] max-[600px]:text-sm">
             Search 65 research peptide profiles — mechanisms, dosing protocols, and
             expected timelines. For informational purposes only — not medical advice.
           </p>
@@ -174,7 +169,7 @@ function ScrollCue() {
   return (
     <span
       aria-hidden="true"
-      className="absolute bottom-8 left-1/2 h-9 w-9 -translate-x-1/2 animate-bounce rounded-full border border-white/25 text-white/70 motion-reduce:animate-none max-[600px]:hidden"
+      className="absolute bottom-8 left-1/2 h-9 w-9 -translate-x-1/2 animate-bounce rounded-full border border-border bg-background/50 text-muted-foreground backdrop-blur-sm motion-reduce:animate-none max-[600px]:hidden"
     >
       <svg viewBox="0 0 24 24" fill="none" className="m-auto h-4 w-4" stroke="currentColor" strokeWidth="2">
         <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
