@@ -6,7 +6,7 @@ import { Button } from '../components/ui/button.jsx'
 import { Badge } from '../components/ui/badge.jsx'
 import { Card } from '../components/ui/card.jsx'
 import HomeSearch from '../components/HomeSearch.jsx'
-import heroImg from '../assets/frontpage-main-peptide.webp'
+import MolecularField from '../components/MolecularField.jsx'
 
 const peptides = getAllPeptides()
 
@@ -57,17 +57,16 @@ export default function Home() {
         <meta name="description" content="Browse detailed information on research peptides including mechanisms, dosage protocols, effects, and timelines." />
       </Helmet>
 
-      {/* ── Full-page background image: fixed behind all three sections below,
-          scoped to Home via the .home-page ancestor (no positioned/isolated
-          ancestor traps the negative z-index, so it stays viewport-fixed and
-          paints below every section's now-transparent, normal-flow content). ── */}
-      <img
-        src={heroImg}
-        alt=""
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 -z-10 h-full w-full object-cover"
+      {/* ── Full-page ambient background: the particle-network canvas, fixed
+          behind all three sections below, scoped to Home via the .home-page
+          ancestor (no positioned/isolated ancestor traps the negative
+          z-index, so it stays viewport-fixed and paints below every
+          section's now-transparent, normal-flow content). ── */}
+      <MolecularField
+        density={2.2}
+        edgeBias
+        className="pointer-events-none fixed inset-0 -z-10 h-full w-full"
       />
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(180deg,rgba(255,255,255,0.62)_0%,rgba(255,255,255,0.4)_45%,rgba(255,255,255,0.78)_100%)]" />
 
       {/* ── Hero: search-first ── */}
       <section className="home-hero-grain relative flex min-h-svh snap-start flex-col items-center justify-center overflow-hidden px-8 py-16 text-center max-lg:px-6 max-lg:py-12 max-[600px]:px-4 max-[600px]:py-10">
